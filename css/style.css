@@ -3323,7 +3323,7 @@ a.logo:hover{
 	font-size: 11px;
 	color: #777;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .work-full-detail p{ 
 	padding: 4px 0;
