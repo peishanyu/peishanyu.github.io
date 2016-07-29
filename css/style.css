@@ -352,7 +352,8 @@ img:not([draggable]), embed, object, video{
 body{
 	color: #111;
 	font-size: 14px;
-	font-family: "微軟正黑體", Bangla Sangam MN Bold, "roboto thin", "open sans", arial, sans-serif;	line-height: 1.6;	
+	font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  line-height: 1.6;	
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -435,7 +436,7 @@ hr.black{
 	letter-spacing: 1px;
 }
 .font-alt{
-    font-family: "微軟正黑體", Bangla Sangam MN Bold, "roboto thin", "open sans", arial, sans-serif;
+    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -1152,7 +1153,7 @@ a.btn-mod:focus{
 }
 .logo,
 a.logo:hover{
-    font-family: "微軟正黑體", Bangla Sangam MN Bold, "roboto thin", "open sans", arial, sans-serif;
+    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 	font-size: 18px;
 	font-weight: 400 !important;
 	text-transform: uppercase;
@@ -3390,7 +3391,8 @@ a.logo:hover{
     background: none;
     border: none;
     text-align: center;
-    font-family: "微軟正黑體", Bangla Sangam MN Bold, "roboto thin", "open sans", arial, sans-serif;	font-size: 18px;
+    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     letter-spacing: 0;
@@ -4061,7 +4063,7 @@ a.blog-item-more:hover{
 
 .pagination{
 	font-size: 13px;
-  font-family: "微軟正黑體", Bangla Sangam MN Bold, "roboto thin", "open sans", arial, sans-serif;
+  font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 }
 .pagination a{
 	display: inline-block;
@@ -4138,7 +4140,7 @@ a.blog-item-more:hover{
 .comment-item-data{
 	margin: 0 0 5px;
 	text-transform: uppercase;
-	font-family: "微軟正黑體", Bangla Sangam MN Bold, "roboto thin", "open sans", arial, sans-serif;	font-size: 12px;
+	font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 	color: #777;
 }
 .comment-item-data a{
