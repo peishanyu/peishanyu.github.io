@@ -2044,7 +2044,7 @@ a.logo:hover{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
     
-	padding: 140px 0;
+	padding: 100px 0;
 }
 .small-section{
 	padding: 70px 0;
@@ -2968,7 +2968,7 @@ a.logo:hover{
 }
 .works-filter a{
 	display: inline-block;
-	margin: 0 27px;
+	margin: 0 1em;
 	color: #999;
 	text-decoration: none;
 	
@@ -2989,7 +2989,7 @@ a.logo:hover{
 	cursor: default;
 }
 .works-filter a.active:hover{
-	color: #111;
+	color: #fff;
 }
 
 
