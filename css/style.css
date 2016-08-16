@@ -352,7 +352,7 @@ img:not([draggable]), embed, object, video{
 body{
 	color: #111;
 	font-size: 14px;
-	font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+	font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
   line-height: 1.6;	
 	-webkit-font-smoothing: antialiased;
 }
@@ -385,7 +385,7 @@ p{
 	margin: 0 0 2em 0;
 }
 ul, ol{
-    margin: 0 0 1.5em 0;
+    /*margin: 0 0 1.5em 0;*/
 }
 blockquote{
 	margin: 3em 0 3em 0;
@@ -436,7 +436,7 @@ hr.black{
 	letter-spacing: 1px;
 }
 .font-alt{
-    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -1153,7 +1153,7 @@ a.btn-mod:focus{
 }
 .logo,
 a.logo:hover{
-    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
 	font-size: 18px;
 	font-weight: 400 !important;
 	text-transform: uppercase;
@@ -3391,7 +3391,7 @@ a.logo:hover{
     background: none;
     border: none;
     text-align: center;
-    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -4063,7 +4063,7 @@ a.blog-item-more:hover{
 
 .pagination{
 	font-size: 13px;
-  font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
 }
 .pagination a{
 	display: inline-block;
@@ -4140,7 +4140,7 @@ a.blog-item-more:hover{
 .comment-item-data{
 	margin: 0 0 5px;
 	text-transform: uppercase;
-	font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+	font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
 	color: #777;
 }
 .comment-item-data a{
