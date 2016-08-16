@@ -3772,7 +3772,10 @@ a.logo:hover{
 
 .footer{
     text-align: center;
-    font-size: 12px;   
+    font-size: 12px;
+    padding: 40px 0;
+    padding-bottom: 20px;
+ 
 }
 .footer a{
     color: #888;
