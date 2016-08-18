@@ -437,8 +437,7 @@ hr.black{
 }
 .font-alt{
     font-family: "Open Sans", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 .serif{
 	font-family: "Times New Roman", Times, serif;
@@ -667,15 +666,15 @@ a.btn-mod:focus{
 }
 
 .btn-mod.btn-border{
-  	color: #151515;
-	border: 2px solid #151515;
-  	background: transparent;
+  color: #2e939c;
+	border: 2px solid #43b5bf;
+  background: transparent;
 }
 .btn-mod.btn-border:hover,
 .btn-mod.btn-border:focus{
   	color: #fff;
 	border-color: transparent;
-  	background: #000;
+  	background: #43b5bf;
 }
 
 .btn-mod.btn-border-c{
@@ -1014,13 +1013,13 @@ a.btn-mod:focus{
 
 
 .hs-line-14{
-    margin-top: 0;
-    position: relative;
+  margin-top: 0;
+  position: relative;
 	font-size: 48px;
 	font-weight: 400;
-    line-height: 1.4;
+  line-height: 1.4;
 	text-transform: uppercase;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 }
 
 .no-transp{
@@ -2981,11 +2980,11 @@ a.logo:hover{
 	cursor: pointer;
 }
 .works-filter a:hover{
-	color: #111;
+	color: #2e939c;
 	text-decoration: none;
 }
 .works-filter a.active{
-	color: #111;
+	color: #2e939c;
 	cursor: default;
 }
 .works-filter a.active:hover{
@@ -3599,7 +3598,7 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: #111;
+    background: #43b5bf;
     
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -3794,7 +3793,7 @@ a.logo:hover{
 .footer-copy{
     margin-bottom: 5px;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 .footer-made{
     font-size: 11px;
