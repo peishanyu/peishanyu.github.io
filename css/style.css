@@ -2401,7 +2401,7 @@ a.logo:hover{
 .section-text{
 	font-size: 15px;
 	font-weight: 300;
-	color: #777;
+	color: #333;
 	line-height: 1.7;
 }
 .section-text blockquote{
@@ -3320,7 +3320,7 @@ a.logo:hover{
 	margin-bottom: 0;
 }
 .work-full-detail{
-	font-size: 11px;
+	font-size: 16px;
 	color: #777;
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
