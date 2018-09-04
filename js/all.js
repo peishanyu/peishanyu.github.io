@@ -17,7 +17,7 @@
         
         
         initWorkFilter();
-        init_scroll_navigate();
+
         
         $(window).trigger("scroll");
         $(window).trigger("resize");
@@ -38,15 +38,14 @@
         init_classic_menu();
         init_fullscreen_menu();
         init_side_panel();
-        init_lightbox();
+
         init_parallax();
-        init_shortcodes();
+
         init_tooltips();
-        init_counters();
+
         init_team();
         initPageSliders();
-        init_map();
-        init_wow();
+
         init_masonry();
     });
     
@@ -280,72 +279,11 @@
     
     
     
-    /* ---------------------------------------------
-     Scroll navigation
-     --------------------------------------------- */
-    
-    function init_scroll_navigate(){
-        
-        $(".local-scroll").localScroll({
-            target: "body",
-            duration: 1500,
-            offset: 0,
-            easing: "easeInOutExpo"
-        });
-        
-        var sections = $(".home-section, .split-section, .page-section");
-        var menu_links = $(".scroll-nav li a");
-        
-        $(window).scroll(function(){
-        
-            sections.filter(":in-viewport:first").each(function(){
-                var active_section = $(this);
-                var active_link = $('.scroll-nav li a[href="#' + active_section.attr("id") + '"]');
-                menu_links.removeClass("active");
-                active_link.addClass("active");
-            });
-            
-        });
-        
-    }
     
     
     
-    /* ---------------------------------------------
-     Lightboxes
-     --------------------------------------------- */
     
-    function init_lightbox(){
     
-        // Works Item Lightbox				
-        $(".work-lightbox-link").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        
-        // Works Item Lightbox	
-        $(".lightbox-gallery-1").magnificPopup({
-            gallery: {
-                enabled: true
-            }
-        });
-        
-        // Other Custom Lightbox
-        $(".lightbox-gallery-2").magnificPopup({
-            gallery: {
-                enabled: true
-            }
-        });
-        $(".lightbox-gallery-3").magnificPopup({
-            gallery: {
-                enabled: true
-            }
-        });
-        $(".lightbox").magnificPopup();
-        
-    }
     
     
     
@@ -432,9 +370,7 @@
             return false;
         });
         
-        // Responsive video
-        $(".video, .resp-media, .blog-media").fitVids();
-        $(".work-full-media").fitVids(); 
+
                
     }
     
@@ -458,22 +394,7 @@
     
     
     
-    /* ---------------------------------------------
-     Some facts section
-     --------------------------------------------- */
-    
-     function init_counters(){
-        $(".count-number").appear(function(){
-            var count = $(this);
-            count.countTo({
-                from: 0,
-                to: count.html(),
-                speed: 1300,
-                refreshInterval: 60,
-            });
-            
-        });
-    }
+
     
     
     
