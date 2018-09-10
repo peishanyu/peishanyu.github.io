@@ -3343,7 +3343,11 @@ a.logo:hover{
 	margin-bottom: 0;
 }
 .work-full-detail{
+<<<<<<< Updated upstream
 	font-size: 14px;
+=======
+	font-size: 16px;
+>>>>>>> Stashed changes
 	color: #777;
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
