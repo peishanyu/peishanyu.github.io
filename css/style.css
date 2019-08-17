@@ -226,29 +226,6 @@ img:not([draggable]), embed, object, video{
     height: auto;
 }
 
-.video-container {
-
-position: relative;
-
-padding-bottom: 56.25%;
-
-padding-top: 30px;
-
-height: 0;
-
-overflow: hidden;
-
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-
-position: absolute;
-
-top: 0;left: 0;
-
-width: 100%;
-
-height: 100%;}
 
 
 /* ==============================
@@ -2424,7 +2401,7 @@ a.logo:hover{
 .section-text{
 	font-size: 15px;
 	font-weight: 300;
-	color: #333;
+	color: #777;
 	line-height: 1.7;
 }
 .section-text blockquote{
@@ -3343,11 +3320,7 @@ a.logo:hover{
 	margin-bottom: 0;
 }
 .work-full-detail{
-<<<<<<< Updated upstream
-	font-size: 14px;
-=======
-	font-size: 16px;
->>>>>>> Stashed changes
+	font-size: 11px;
 	color: #777;
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
