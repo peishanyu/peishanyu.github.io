@@ -62,7 +62,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section,c
 
 body {
   margin: 0;
-  font-family: 'Noto Serif CJK TC',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'Noto Serif CJK TC';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -302,7 +302,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",'Tahoma','Arial','Noto Serif CJK TC';
+  font-family: 'Noto Serif CJK TC';
   line-height: 1.5;
 }
 
@@ -772,6 +772,13 @@ p {
 |  7.0 Custom
 |--------------------------------------------------------------------------
 */
+
+.btn-text-b {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
+.btn-text-w {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#fff;}
+
+.description a:hover {text-decoration:none}
+.btn-round-w {max-width:256px;height:52px;padding:8px 35px 9px;background:#fff;border-radius:100rem;font-size:24px;font-weight:600;color:#40220F;}
+
 #footer {height:400px;background:url(../static/images/bg_footer.jpg) no-repeat;background-size:cover;}
 #footer>.container {width:85%;position:absolute;padding:60px 0;left:0;right:0;top:50%;transform:translateY(-50%);}
 .footer-logo {width:262px;;margin-bottom:40px;padding:0 15px}
@@ -786,14 +793,19 @@ p {
 */
 
 @media only screen and (max-width: 1366px) {
+  .btn-text-b,.btn-text-w,.btn-round-w {font-size:18px}
+
   #footer {height:320px}
   #footer>.container {width:85%;padding:40px 0}
   .footer-item {font-size:20px}
-} 
+}
+
+@media only screen and (max-width: 1024px) {
+   .btn-text-b,.btn-text-w,.btn-round-w {font-size:18px;vertical-align:top;}
+}
 
 @media only screen and (max-width: 768px) {
   .social-item {padding:0 15px}
-
   .footer-logo {padding:0 5px;margin-bottom:20px;}
   .social-item {padding:0 5px;width:30%}
 }
@@ -801,6 +813,12 @@ p {
 @media only screen and (max-width: 480px) {
   .col-xs-100 {width:100%}
   .col-xs-50 {width:50%}
+
+  .bg-position-x-l {background-position-x:left!important;}
+  .bg-position-x-33 {background-position-x:33%!important;}
+  .bg-position-x-c {background-position-x:center!important;}
+  .bg-position-x-66 {background-position-x:66%!important;}
+  .bg-position-x-r {background-position-x:right!important;}
 
   #footer>.container>.row {position:relative;}
   .socialmedia {position:absolute;right:0;bottom:0;}

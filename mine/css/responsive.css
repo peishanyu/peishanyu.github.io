@@ -16,33 +16,39 @@
    ============================== */
 
 @media only screen and (max-width: 1680px) {
+   .st2 .st2-short {margin-left:20px}
    .st1>img, .st2>img {height:510px}
 } 
 
 @media only screen and (max-width: 1440px) {
-   #story h1 {width:100%;height:80px;font-size:18px;line-height:1.4}
-   .arrow-b {width:10px}
+   #story {padding:60px 90px;}
+   #story .info {max-width:517px}
+   #story h3 {width:100%;height:80px;font-size:18px;line-height:1.4}
+   .arrow-b {width:10px;margin-top:4px}
    .alink {bottom:0;}
    .st1>img, .st2>img {height:390px}
+   .st2 .st2-short {margin-left:54px}
 
-   .ad-full.ad-1 {height:380px}
+   .ad-full.ad-1 {height:400px;}
    .ad-full.ad-2 {height:520px;}
-   .ad-full h1 {font-size:42px}
-   .ad-full p {font-size:22px}
+
+   .ad-full h3,.ad-carousel h3 {font-size:42px}
+   .ad-full p,.ad-carousel p {font-size:22px}
 }
 
 @media only screen and (max-width: 1366px) {
-   .btn-text-b,.btn-text-w {font-size:18px}
-   #story {padding:60px 130px;}
-
+   .st2 .st2-short {margin-left:93px;}
    .st1>img, .st2>img {height:350px}
 } 
-
+@media only screen and (max-width: 1280px) {
+   #story h3 {width:95%;}
+   .st2 .st2-short {margin-left:54px}
+}
 @media only screen and (max-width: 1200px) {
-    
+
 }
 @media only screen and (max-width: 1199px) {
-
+   .st2 .st2-short {margin-left:62px}
 }
 
 /* ==============================
@@ -50,8 +56,10 @@
    ============================== */
 
 @media only screen and (max-width: 1024px) {
-   .btn-text-b,.btn-text-w {font-size:18px;vertical-align:top;}
+   #story .info {max-width: 375px;}
    .st1>img, .st2>img {height:254px}
+   .st2 .st2-short {margin-left:54px;}
+
    .ad-full.ad-2 {background-position-x:center;}
 }
   
@@ -70,9 +78,14 @@
    #story .info {margin-top:20px}
    .st1>img, .st2>img {height:239px}
 
-   .ad-full {height:350px;background-position-x:60%;}
+   .st1 .info {max-width:353px!important}
+   .st2 .st2-short {margin-left:30px}
 
-   .ad-full h1 {font-size:24px}
+   .ad-full {height:350px;}
+   .ad-r .description {top:60%;transform:translateY(-50%);}
+   .ad-carousel h3 {font-size:46px}
+   .ad-carousel p {font-size:22px}
+   .ad-full h3 {font-size:24px}
    .ad-full p {font-size:16px}
 
    .l-orange-bar {width:10px}
@@ -89,11 +102,15 @@
   
 @media only screen and (max-width: 480px) {
 
-   #story h1 {height:90px}
+   #story h3 {height:90px}
    .st1, .st2 {margin:20px 0;padding:0;}
    .st1>img, .st2>img {height:auto}
+   .st2 .st2-short {margin-left:-15px}
+   .ad-r .description {top:70%;transform:translateY(-50%);}
+   .ad-carousel h3 {font-size:34px}
+   .ad-carousel p {font-size:17px}
    .ad-full .description {right:7%}
-   .l-orange-bar {width:7px}
+   .l-orange-bar {width:10px}
 }
 
 
@@ -102,7 +119,7 @@
    ============================== */
   
 @media only screen and (max-width: 320px) {
-   #story h1 {height:100px}
+   #story h3 {height:100px}
 }
 
 
