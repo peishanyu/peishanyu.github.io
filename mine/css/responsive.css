@@ -1,14 +1,4 @@
 @charset "utf-8";
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Small desktop
-2. Tablet landskape
-3. Tablet Portrait
-4. Phone
-5. Small Phone
-6. Max Height 768
--------------------------------------------------------------------*/
 
 
 /* ==============================
@@ -29,10 +19,10 @@
    .st1>img, .st2>img {height:390px}
    .st2 .st2-short {margin-left:54px}
 
-   .ad-full.ad-1 {height:400px;}
+   .ad-full.ad-1 {height:450px;}
    .ad-full.ad-2 {height:520px;}
 
-   .ad-full h3,.ad-carousel h3 {font-size:42px}
+   .ad-full h3,.ad-carousel h3 {font-size:48px}
    .ad-full p,.ad-carousel p {font-size:22px}
 }
 
@@ -56,11 +46,12 @@
    ============================== */
 
 @media only screen and (max-width: 1024px) {
-   #story .info {max-width: 375px;}
+   #story .info {max-width:375px;margin-top:20px}
    .st1>img, .st2>img {height:254px}
    .st2 .st2-short {margin-left:54px;}
 
    .ad-full.ad-2 {background-position-x:center;}
+   #story h3 {width:100%;}
 }
   
 @media only screen and (max-width: 992px) {
