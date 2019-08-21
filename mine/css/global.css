@@ -64,7 +64,11 @@ header {position:fixed;z-index:1}
 
 body {
   margin: 0;
+<<<<<<< Updated upstream
+  font-family: 'Noto Serif CJK TC','Kozuka Mincho Pro','Kozuka Mincho Std','小塚明朝 Pro R','小塚明朝 Std R','Hiragino Mincho Pro','Times New Roman', serif;
+=======
   font-family: 'Noto Serif CJK TC','Noto Serif SC','Kozuka Mincho Pro','Kozuka Mincho Std','小塚明朝 Pro R','小塚明朝 Std R','Hiragino Mincho Pro','Times New Roman', serif;
+>>>>>>> Stashed changes
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -187,11 +191,6 @@ label {
 
 button {
   border-radius: 0
-}
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color
 }
 
 button,input,optgroup,select,textarea {
@@ -563,7 +562,8 @@ button:focus {
 /* Box Shodow
 ================================================== */
 .block-shadow-1 {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20) !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6)!important;
+  border-radius: 12px;
 }
 .block-shadow-2 {
   box-shadow: 0 2px 20px rgba(125, 125, 255, 0.25) !important;
@@ -757,6 +757,7 @@ button:focus {
   line-height: 1.5;
 }
 .col-form-label>span {color:#9C9C9C}
+.form-group {margin-bottom:12px}
 
 /*
 |--------------------------------------------------------------------------
@@ -829,13 +830,14 @@ button:focus {
 .btn-text-b {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
 .btn-text-w {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#fff;}
 .text-link-1 {font-size:17px;text-decoration:underline;}
+.btn-text-gray {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
 
 .sendSms {width:118px;height:35px;border-radius:10rem;font-size:15px;font-weight:600;color:#fff;background:#666;}
   .sendSms:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
 
 .description a:hover {text-decoration:none}
-.btn-round-w {max-width:256px;height:52px;padding:8px 35px 9px;background:#fff;border-radius:100rem;font-size:24px;font-weight:600;color:#40220F;}
-
+.btn-round-w {background:#fff;border-radius:100rem;font-size:24px;padding:8px 24px}
+.btn-round-w:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
 /* --- */
 
 
@@ -862,8 +864,8 @@ button:focus {
 }
 
 @media only screen and (max-width: 480px) {
-  .col-xs-100 {width:100%}
-  .col-xs-50 {width:50%}
+  .col-xs-100 {width:100%!important}
+  .col-xs-50 {width:50%!important}
 
   .bg-position-x-l {background-position:left!important;}
   .bg-position-x-33 {background-position-x:33%!important;}

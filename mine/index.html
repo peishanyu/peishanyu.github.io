@@ -117,36 +117,44 @@
 
 <!-- LOGIN popup start-->
 <div class="modal_all" style="position:fixed;z-index:99;width:100%">
-<div id="modal_login" class="elementToFadeIn modal modal-m" style="display:none;">
-	<div class="modal-header">
-		<div></div>
-		<div class="col-50 pd-0">
-			<span class="font-size-24 fw-bold">登入</span> 
-			<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
-		</div>
-		<div class="col-50 pd-0 text-r">
-			<a href="" class="text-link-1 fw-bold" onclick="changeToSignUp()">註冊</a>
-		</div>
-		<div class="clearfix line"></div>
-	</div>
+	<div id="modal_login" class="elementToFadeIn modal modal-m" style="display:none;">
+		<div class="mg-5 block-shadow-1">
+			<div class="modal-header">
+				<div></div>
+				<div class="col-50 pd-0">
+					<span class="font-size-24 fw-bold">登入</span> 
+					<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
+				</div>
+				<div class="col-50 pd-0 text-r">
+					<a href="" class="text-link-1 fw-bold" onclick="changeToSignUp()">註冊</a>
+				</div>
+				<div class="clearfix line"></div>
+			</div>
 
-	<div class="modal-body">
-		<div class="container">
-			<div class="form-group row">
-				<div class="col-20 col-form-label"><span class="">手機號碼</span></div>
-				<div class="col-50 col-form-label"><input class="width-100" type="" name=""></div>
-				<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
+			<div class="modal-body">
+				<div class="container">
+					<div class="form-group row">
+						<div class="col-20 col-xs-100 col-form-label"><span class="">手機號碼</span></div>
+						<div class="col-50 col-xs-100 col-form-label"><input class="width-100" type="" name=""></div>
+						<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
+					</div>
+					<div class="form-group row">
+						<div class="col-16 col-xs-100 col-form-label"><span class="">驗證碼</span></div>
+						<div class="col-84 col-xs-100 col-form-label"><input class="width-100" type="" name=""></div>
+					</div>
+				</div>
 			</div>
-			<div class="form-group row">
-				<div class="col-16 col-form-label"><span class="">驗證碼</span></div>
-				<div class="col-84 col-form-label"><input class="width-100" type="" name=""></div>
-			</div>
+			<div class="modal-footer">
+				<button class="col-xs-100 btn modal-btn-comfirm" class="mr-1" onclick="loginModal()"/>確認</button>
+				<div class="inline mt-3 mb-2">
+					<img src="static/images/modal/ic-fb_login.svg" class="pr-1 pl-1" />
+					<img src="static/images/modal/ic-google_login.svg" class="pr-1 pl-1" />
+					<img src="static/images/modal/ic-line_login.svg" class="pr-1 pl-1" />
+				</div>
+				<button class="btn btn-round-gray">需要幫助？</button>
+			</div>	
 		</div>
 	</div>
-	<div class="modal-footer">
-		<button class="btn modal-btn-comfirm" onclick="loginModal()"/>確認</button>
-	</div>
-</div>	
 </div>
 <div id="add-modalMask" class="modal-mask" style="display:none" onclick="loginModal();editTaskModal()"></div>
 <!-- login end -->
