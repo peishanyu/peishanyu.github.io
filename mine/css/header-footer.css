@@ -29,6 +29,11 @@
 |--------------------------------------------------------------------------
 */
 
+@media only screen and (max-width: 1440px) {
+  #ic-member,#ic-cart,#ic-menu {width:40px}
+  .ic-menu-item div:last-child {margin-right:10px;}
+}
+
 @media only screen and (max-width: 1366px) {
   .mask-header {height:20%}
   .container.menu {padding:40px 40px 20px;}
@@ -37,7 +42,6 @@
   
   #ic-member,#ic-cart,#ic-menu {width:35px}
   .ic-menu-item div .dot-cart {width:10px;height:10px;right:-24px;}
-
   #footer {height:320px}
   #footer>.container {width:85%;padding:40px 0}
   .footer-item {font-size:20px}
@@ -62,6 +66,7 @@
 @media only screen and (max-width: 480px) {
   .logo-header {width:80%;}
   .container.menu {padding:25px;}
+  .ic-menu-item div:last-child {margin-right:0;}
   #footer>.container>.row {position:relative;}
   .socialmedia {position:absolute;right:0;bottom:6px;}
   .footer-item {font-size:15px}

@@ -781,12 +781,16 @@ p {
 |--------------------------------------------------------------------------
 */
 
+@media only screen and (max-width: 1680px) {
+  .btn-text-b, .btn-text-w, .btn-round-w {font-size:22px;}
+}
+
 @media only screen and (max-width: 1366px) {
-  .btn-text-b,.btn-text-w,.btn-round-w {font-size:18px}
+  .btn-text-b, .btn-text-w, .btn-round-w {font-size:18px;}
 }
 
 @media only screen and (max-width: 1024px) {
-   .btn-text-b,.btn-text-w,.btn-round-w {font-size:18px;vertical-align:top;}
+   .btn-text-b,.btn-text-w,.btn-round-w {font-size:16px;vertical-align:top;}
 }
 
 @media only screen and (max-width: 768px) {
@@ -802,4 +806,7 @@ p {
   .bg-position-x-c {background-position-x:center!important;}
   .bg-position-x-66 {background-position-x:66%!important;}
   .bg-position-x-r {background-position:right!important;}
+
+  .btn-text-b,.btn-text-w,.btn-round-w {font-size:15px;vertical-align:top;}
+
 }

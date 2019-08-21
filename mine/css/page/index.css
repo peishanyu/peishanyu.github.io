@@ -31,11 +31,14 @@
 @media only screen and (max-width: 1680px) {
    .page-index .st2 .st2-short {margin-left:20px}
    .page-index .st1>img, .page-index .st2>img {height:510px}
+
+      .page-index .ad-full h3, .page-index .ad-carousel h3 {font-size:42px}
+   .page-index .ad-full p, .page-index .ad-carousel p {font-size:22px}
 } 
 
 @media only screen and (max-width: 1440px) {
    .page-index #story {padding:60px 90px;}
-   .page-index #story .info {max-width:517px}
+   .page-index #story .info {max-width:576px}
    .page-index #story h3 {width:100%;height:80px;font-size:18px;line-height:1.4}
    .page-index .arrow-b {width:10px;margin-top:4px}
    .page-index .alink {bottom:0;}
@@ -44,14 +47,16 @@
 
    .page-index .ad-full.ad-1 {height:450px;}
    .page-index .ad-full.ad-2 {height:520px;}
-
-   .page-index .ad-full h3, .page-index .ad-carousel h3 {font-size:48px}
-   .page-index .ad-full p, .page-index .ad-carousel p {font-size:22px}
 }
 
 @media only screen and (max-width: 1366px) {
    .page-index .st2 .st2-short {margin-left:93px;}
    .page-index .st1>img, .page-index .st2>img {height:350px}
+
+   .page-index .ad-full h3, .page-index .ad-carousel h3 {font-size:36px}
+   .page-index .ad-full p, .page-index .ad-carousel p {font-size:18px}
+
+   .page-index #story .info {max-width:517px;}
 } 
 @media only screen and (max-width: 1280px) {
    .page-index #story h3 {width:95%;}
@@ -72,6 +77,9 @@
    .page-index #story .info {max-width:375px;margin-top:20px}
    .page-index .st1>img, .page-index .st2>img {height:254px}
    .page-index .st2 .page-index .st2-short {margin-left:54px;}
+
+   .page-index .ad-full h3, .page-index .ad-carousel h3 {font-size:32px}
+   .page-index .ad-full p, .page-index .ad-carousel p {font-size:16px}
 
    .page-index .ad-full.ad-2 {background-position-x:center;}
    .page-index #story h3 {width:100%;}
@@ -97,10 +105,6 @@
 
    .page-index .ad-full {height:350px;}
    .page-index .ad-r .description {top:60%;transform:translateY(-50%);}
-   .page-index .ad-carousel h3 {font-size:46px}
-   .page-index .ad-carousel p {font-size:22px}
-   .page-index .ad-full h3 {font-size:24px}
-   .page-index .ad-full p {font-size:16px}
 
    .page-index .l-orange-bar {width:10px}
 }
@@ -121,8 +125,8 @@
    .page-index .st1>img, .page-index .st2>img {height:auto}
    .page-index .st2 .st2-short {margin-left:-15px}
    .page-index .ad-r .description {top:70%;transform:translateY(-50%);}
-   .page-index .ad-carousel h3 {font-size:34px}
-   .page-index .ad-carousel p {font-size:17px}
+   .page-index .ad-full h3,.page-index .ad-carousel h3 {font-size:30px}
+   .page-index .ad-full p,.page-index .ad-carousel p {font-size:15px}
    .page-index .ad-full .description {right:7%}
    .page-index .l-orange-bar {width:10px}
 }
