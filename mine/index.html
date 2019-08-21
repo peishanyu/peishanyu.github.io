@@ -23,34 +23,128 @@
 
 <body>
 
+	<!-- Modal Login -->
+	<div class="col-50 bd-example bd-example-modal">
+		<!-- Modal Start -->
+		<div class="moda fade show" id="login-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-c">
+						<img src="images/header/img_logo_menu.png" style="width:184px">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute;right:1rem;">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="container-full">
+							<div id="login-tab" class="mb-3">
+								<div class="col-50">
+									<div id="Username" class="text-c fw-bold font-size-16 active" onclick="changeToUsername()" />帐号登录</div>	
+								</div>
+							    
+							    <div class="col-50">
+							    	<div id="MobileNum" class="text-c fw-bold font-size-16" onclick="changeToMobileNum()" />手机登录</div>
+								</div>
+
+							    <div class="clearfix"></div>
+							</div>
+
+							<div id="username_login">
+								<div class="form-group mb-3">
+									<input class="form-control input-pl-50" type="text" placeholder="请输入用户名">
+									<span class="input-icon">
+										<img class="img-responsive" src="images/icons/icon_user@2x.png">
+									</span>
+									<small class="font-color-7">*您的用户名不正确 (提示文字)</small>
+								</div>
+
+								<div class="form-group mb-3">
+									<input class="form-control input-pl-50" type="text" placeholder="请输入您的登录密码">
+									<span class="input-icon">
+										<img class="img-responsive" src="images/icons/icon_lock@2x.png">
+									</span>
+									<small class="font-color-7">*您的登录密码不正确 (提示文字)</small>
+								</div>
+
+								<input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value8">
+								<label for="styled-checkbox-8" class="font-size-14">记住我</label>
+
+								<div class="float-r inlinepd-0 text-r font-size-14"><a href="">忘记密码?</a> </div>
+
+								<button type="button" class="mt-2 mb-2 btn btn-block btn-fill-3 corner-radius">立即登录</button>
+								<div class="inline pd-0 font-size-14">还没有帐户? <a href="">点击注册>> </a> </div>
+							</div>
+
+							<div id="mobile_login" style="display:none">
+
+								<div class="form-group mb-3">
+									<input class="form-control input-pl-50" type="text" placeholder="请输入您的手机号码">
+									<span class="input-icon">
+										<img class="img-responsive" src="images/icons/icon_mobile@2x.png">
+									</span>
+								</div>
+
+								<div class="form-group mb-3">
+									<div class="col-66 pd-0">
+										<input class="form-control input-pl-50" type="text" placeholder="请输入验证码">
+										<span class="input-icon">
+											<img class="img-responsive" src="images/icons/icon_sms@2x.png">
+										</span>													
+									</div>
+									<div class="pd-0 col-33 text-r">
+										<button class="btn btn-fill-3 corner-radius" type="button">发送验证码</button>
+									</div>
+									<div class="clearfix"></div>
+									<small class="font-color-7">*您的手机验证码不正却 (提示文字)</small>	
+								</div>
+
+								<button type="button" class="mt-2 mb-2 btn btn-block btn-fill-3 disabled corner-radius">立即登录</button>
+								<div class="inline pd-0 font-size-14">还没有帐户? <a href="">点击注册>> </a> </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<p class="font-size-14">登录时有任何问题，请 <a href="">联系</a> 我们24小时在线客服协助解决，本网站采用 Global Trust 最先进的 128/256 bit SSL 服务器加密机制。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end -->
+	</div>	
+
+
 <!-- LOGIN popup start-->
 <div class="modal_all" style="position:fixed;z-index:99;width:100%">
-<div id="modal_login" class="elementToFadeIn modal modal-m bshadow-1" style="display:none;">
+<div id="modal_login" class="elementToFadeIn modal modal-m" style="display:none;">
 	<div class="modal-header">
 		<div></div>
 		<div class="col-50 pd-0">
-			<span class="font-size-24">登入</span> 
+			<span class="font-size-24 fw-bold">登入</span> 
 			<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
 		</div>
 		<div class="col-50 pd-0 text-r">
-			<a href="" class="text-link-1">註冊</a>
+			<a href="" class="text-link-1 fw-bold" onclick="changeToSignUp()">註冊</a>
 		</div>
 		<div class="clearfix line"></div>
 	</div>
+
 	<div class="modal-body">
-		<div class="container-fluid mg-b-20 mg-t-20">
-			<div class="row mg-b-5">
-				<div class="col-80"><span class="fs18 dark">任務名稱</span><span class="red">*</span></div>
-				<div class="col-20 t-align-r"><span class="fs13 lighter">4 / 30</span></div>
+		<div class="container">
+			<div class="form-group row">
+				<div class="col-20 col-form-label"><span class="">手機號碼</span></div>
+				<div class="col-50 col-form-label"><input class="width-100" type="" name=""></div>
+				<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
 			</div>
-			<div class="row">
-				<input class="w-100" type="" name="">	
+			<div class="form-group row">
+				<div class="col-16 col-form-label"><span class="">驗證碼</span></div>
+				<div class="col-84 col-form-label"><input class="width-100" type="" name=""></div>
 			</div>
 		</div>
 	</div>
-	<div class="modal-footer t-align-r">
-		<button class="btn btn-m outline mg-r-15" onclick="loginModal()"/>取消</button>
-		<button class="btn btn-l main white" onclick="loginModal()"/>確定新增</button>
+	<div class="modal-footer">
+		<button class="btn modal-btn-comfirm" onclick="loginModal()"/>確認</button>
 	</div>
 </div>	
 </div>
@@ -212,7 +306,6 @@
 <!-- FOOTER end -->
 
 <script type="text/javascript">
-
 	function loginModal() {
 	  var x = document.getElementById("add-modalMask");
 	  if (x.style.display === "none") {
@@ -246,9 +339,9 @@
 	  };	  
 
 	};
-
 </script>
 
+<script src="js/modal_login.js"></script>
 
 </body>
 </html>
