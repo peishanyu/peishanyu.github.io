@@ -64,11 +64,7 @@ header {position:fixed;z-index:1}
 
 body {
   margin: 0;
-<<<<<<< Updated upstream
-  font-family: 'Noto Serif CJK TC','Kozuka Mincho Pro','Kozuka Mincho Std','小塚明朝 Pro R','小塚明朝 Std R','Hiragino Mincho Pro','Times New Roman', serif;
-=======
   font-family: 'Noto Serif CJK TC','Noto Serif SC','Kozuka Mincho Pro','Kozuka Mincho Std','小塚明朝 Pro R','小塚明朝 Std R','Hiragino Mincho Pro','Times New Roman', serif;
->>>>>>> Stashed changes
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
