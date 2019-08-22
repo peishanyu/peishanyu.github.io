@@ -823,6 +823,7 @@ button:focus {
 |  7.0 Custom
 |--------------------------------------------------------------------------
 */
+.scrollNone {overflow-y:hidden;overflow-x:hidden;}
 
 /* button*/
 .btn-text-b {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}

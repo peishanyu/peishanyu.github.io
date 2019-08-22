@@ -20,7 +20,32 @@
 .footer-item {font-size:22px;color:#fff;font-weight:600;line-height:3;}
 /* ------ */
 
+/* menu */
+.page-all.menu-r {position:fixed;right:0;z-index:5;width:100%;height:100vh;background:rgba(0, 0, 0, 0.3);}
+.page-all.menu-r .container {width:470px;height:100vh;padding:20px;background:#fff;top:0;right:0;z-index:2}
+.page-all.menu-r .container .close {position:absolute;right:20px;top:20px}
+.page-all.menu-r .mask {position:absolute;right:22%;z-index:1}
 
+.menuFadeInRight {
+  opacity: 1;
+  animation: fadeRight .5s linear;
+}
+  @keyframes fadeRight {
+      0% { opacity:0;right:-150px }
+      50%,100% { opacity:1;right:0 }
+  }
+
+.menuFadeInMask {
+  opacity: 1;
+  animation: fadeInMask .2s linear;
+}
+  @keyframes fadeInMask {
+      0% { opacity:0;right:-150px }
+      100% { opacity:1;right:right:30%; }
+      0% { opacity:0;right:-150px }
+  }
+
+/* ----- */
 
 
 /*
@@ -30,6 +55,8 @@
 */
 
 @media only screen and (max-width: 1440px) {
+  .page-all.menu-r .container {width:420px}
+  .page-all.menu-r .mask {right:30%}
   #ic-member,#ic-cart,#ic-menu {width:40px}
   .ic-menu-item div:last-child {margin-right:10px;}
 }

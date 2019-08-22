@@ -21,11 +21,10 @@
 
 </head>
 
-<body>
+<body id="page-all">
 
 <!-- LOGIN popup start-->
 <div class="modal_all" style="position:fixed;z-index:99;width:100%">
-
 	<div id="modal_login" class="elementToFadeIn modal modal-m" style="display:none;">
 		<div class="mg-5 block-shadow-1">
 			<div id="userLogin">
@@ -106,10 +105,18 @@
 			</div>
 		</div>
 	</div>
-
 </div>
 <div id="add-modalMask" class="modal-mask" style="display:none" onclick="loginModal();editTaskModal()"></div>
 <!-- login end -->
+
+<!-- Menu Start -->
+<div id="menu-r" class="page-all menu-r" onclick="menuClose()">
+	<div class="menuFadeInRight absolute container menuFadeInRight">
+		<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
+	</div>
+	<img src="static/images/menu/img-mask_menu.svg" class="mask menuFadeInMask" />
+</div>
+<!-- Menu end -->
 
 <!-- HEADER start -->
 <header>
@@ -127,7 +134,7 @@
 						<li><a href="">VIP室</li></a>
 					</ul>
 				</div>
-				<div class="col-30 text-r ic-menu-item">
+				<div class="col-30 text-r ic-menu-item" >
 					<div>
 						<img src="static/images/ic-member_header.svg" id="ic-member" class="pointer" onclick="loginModal();addBlur()" />
 					</div>
@@ -136,7 +143,7 @@
 						<img src="static/images/ic-cart_header.svg" id="ic-cart" class="pointer" />
 					</div>
 					<div>
-						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" />	
+						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuClose()" />	
 					</div>
 					
 				</div>
@@ -265,43 +272,8 @@
 </footer>
 <!-- FOOTER end -->
 
-<script type="text/javascript">
-	function loginModal() {
-	  var x = document.getElementById("add-modalMask");
-	  if (x.style.display === "none") {
-	    x.style.display = "block";
-	  } else {
-	    x.style.display = "none";
-	  };
-
-	var y = document.getElementById("modal_login");
-	  if (y.style.display === "none") {
-	    y.style.display = "block";
-	  } else {
-	    y.style.display = "none";
-	  };	  
-
-	};
-
-	function loginModal() {
-	  var x = document.getElementById("add-modalMask");
-	  if (x.style.display === "none") {
-	    x.style.display = "block";
-	  } else {
-	    x.style.display = "none";
-	  };
-
-	var y = document.getElementById("modal_login");
-	  if (y.style.display === "none") {
-	    y.style.display = "block";
-	  } else {
-	    y.style.display = "none";
-	  };	  
-
-	};
-</script>
-
 <script src="js/modal_login.js"></script>
+<script src="js/menu_header.js"></script>
 
 </body>
 </html>
