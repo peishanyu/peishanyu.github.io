@@ -875,4 +875,9 @@ button:focus {
 
   .btn-text-b,.btn-text-w,.btn-round-w {font-size:15px;vertical-align:top;}
 
+  .form-group {margin-bottom:20px}
+  .col-form-label {padding-top:0;padding-bottom:0;font-size:16px;}
+  .btn.sendSms {margin:10px 0}
+  .modal-footer img {width:50px}
+
 }

@@ -37,9 +37,12 @@
 
 
 @media only screen and (max-width: 480px) {
-	.modal {top:50px;}
+	.modal {top:20px;}
 	@keyframes fade {
-	  0% { opacity:0;top:80px }
-	  50%,100% { opacity:1;top:50px }
+	  0% { opacity:0;top:40px }
+	  50%,100% { opacity:1;top:20px }
 	}
+
+	.modal-header {padding:30px 30px 0;}
+	.modal-footer {padding-bottom:30px}
 }
