@@ -30,18 +30,25 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   clear:both
 }
 
+.page-about.about-inner {padding:40px 0;background:#fff}
+
+.page-about.about-inner h3 {margin-bottom:20px;font-size:36px;font-weight:600}
+.page-about.about-inner p {font-size:20px}
 
 /* Responseve */
 @charset "utf-8";
 
 @media only screen and (max-width: 1680px) {
-
+.page-about.about-inner h3 {font-size:30px}
+.page-about.about-inner p {font-size:18px}
 } 
 
 @media only screen and (max-width: 1440px) {
-
+.page-about.about-inner h3 {font-size:24px}
+.page-about.about-inner p {font-size:16px}
 }
 
 @media only screen and (max-width: 1366px) {
