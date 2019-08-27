@@ -64,13 +64,13 @@
 }
  
 ::-webkit-scrollbar-track {
-  border-radius:10px;
+  border-radius:100px;
   padding:4px;
   background: #FF9A20
 }
  
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 100px;
   background:#fff;
   border:5px solid #FF9A20;
 }
