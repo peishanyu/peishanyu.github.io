@@ -11,7 +11,7 @@
 .page-about .ad-carousel p {margin-bottom:36px;font-size:24px}
 
 /* video */
-.vimeo-wrapper {
+.page-about .vimeo-wrapper {
    position: fixed;
    top: 0;
    left: 0;
@@ -20,8 +20,9 @@
    z-index: -1;
    pointer-events: none;
    overflow: hidden;
+   background:#696057;
 }
-.vimeo-wrapper iframe {
+.page-about .vimeo-wrapper iframe {
    width: 100vw;
    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
    min-height: 100vh;
@@ -33,12 +34,244 @@
    clear:both
 }
 
-.page-about.about-inner {padding:40px 0;background:#fff}
+.page-about.about-inner {padding:40px 15px;background:#fff}
 
 .page-about.about-inner h3 {margin-bottom:20px;font-size:36px;font-weight:600}
 .page-about.about-inner p {font-size:20px}
 
-/* Responseve */
+/* slider */
+
+/*---- NUMBER OF SLIDE CONFIGURATION ----*/
+.page-about .wrapper {
+  max-width: 60em;
+  margin: 1em auto;
+  position: relative;
+}
+
+.page-about input {
+  display: none;
+}
+
+.page-about .inner {
+  width: 500%;
+  line-height: 0;
+}
+
+.page-about article {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+.page-about article img {
+  width: 100%;
+}
+
+/*---- SET UP CONTROL ----*/
+.page-about .slider-prev-next-control {
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.page-about .slider-prev-next-control label {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.7;
+}
+.page-about .slider-prev-next-control label:hover {
+  opacity: 1;
+}
+
+.page-about .slider-dot-control {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.page-about .slider-dot-control label {
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page-about .slider-dot-control label:hover {
+  background: #ccc;
+  border-color: #777;
+}
+
+/* Info Box */
+.page-about .info {
+  position: absolute;
+  font-style: italic;
+  line-height: 20px;
+  opacity: 0;
+  color: #000;
+  text-align: left;
+  -webkit-transition: all 1000ms ease-out 600ms;
+  -moz-transition: all 1000ms ease-out 600ms;
+  transition: all 1000ms ease-out 600ms;
+}
+.page-about .info h3 {
+  color: #fcfff4;
+  margin: 0 0 5px;
+  font-weight: normal;
+  font-size: 1.5em;
+  font-style: normal;
+}
+.page-about .info.top-left {
+  top: 30px;
+  left: 30px;
+}
+.page-about .info.top-right {
+  top: 30px;
+  right: 30px;
+}
+.page-about .info.bottom-left {
+  bottom: 30px;
+  left: 30px;
+}
+.page-about .info.bottom-right {
+  bottom: 30px;
+  right: 30px;
+}
+
+.showMobile {display:none}
+
+/* Slider Styling */
+
+/*---- NUMBER OF SLIDE CONFIGURATION ----*/
+.page-about .wrapper {max-width:60em;margin:0 auto;position:relative;}
+.page-about .inner {width:500%;line-height:0;}
+
+.page-about article {width:20%;float:left;position:relative;}
+.page-about article img {width:100%;}
+
+/*---- SET UP CONTROL ----*/
+.page-about .slider-dot-control {position:absolute;width:100%;bottom:0;text-align:center;}
+.page-about .slider-dot-control label {
+  cursor:pointer;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background:#bbb;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page-about .slider-dot-control label:hover {background:#ccc;border-color:#777;}
+
+/* Slider Styling */
+.page-about .slider-wrapper {
+  width: 100%;
+  margin: 15px 0;
+  overflow: hidden;
+  background: #fff;
+  background: #fcfff4;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+.page-about .slider-wrapper .inner {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/*---- SET POSITION FOR SLIDE ----*/
+#slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, 
+#slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, 
+#slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, 
+#slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, 
+#slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after {
+  content: "\f105";
+  padding-left: 15px;
+}
+
+#slide1:checked ~ .slider-prev-next-control label:nth-child(2), 
+#slide2:checked ~ .slider-prev-next-control label:nth-child(3), 
+#slide3:checked ~ .slider-prev-next-control label:nth-child(4), 
+#slide4:checked ~ .slider-prev-next-control label:nth-child(5), 
+#slide5:checked ~ .slider-prev-next-control label:nth-child(1) {
+  display: block;
+  float: right;
+  margin-right: 5px;
+}
+
+#slide2:checked ~ .slider-prev-next-control label:nth-child(1), 
+#slide3:checked ~ .slider-prev-next-control label:nth-child(2), 
+#slide4:checked ~ .slider-prev-next-control label:nth-child(3), 
+#slide5:checked ~ .slider-prev-next-control label:nth-child(4), 
+#slide1:checked ~ .slider-prev-next-control label:nth-child(5) {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+
+#slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, 
+#slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, 
+#slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, 
+#slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, 
+#slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
+  content: "\f104";
+  padding-left: 8px;
+}
+
+#slide1:checked ~ .slider-dot-control label:nth-child(1), 
+#slide2:checked ~ .slider-dot-control label:nth-child(2), 
+#slide3:checked ~ .slider-dot-control label:nth-child(3), 
+#slide4:checked ~ .slider-dot-control label:nth-child(4), 
+#slide5:checked ~ .slider-dot-control label:nth-child(5) {
+  background: #333;
+}
+
+
+#slide1:checked ~ .slider-wrapper .inner {
+  margin-left: 0%;
+}
+
+#slide2:checked ~ .slider-wrapper .inner {
+  margin-left: -100%;
+}
+
+#slide3:checked ~ .slider-wrapper .inner {
+  margin-left: -200%;
+}
+
+#slide4:checked ~ .slider-wrapper .inner {
+  margin-left: -300%;
+}
+
+#slide5:checked ~ .slider-wrapper .inner {
+  margin-left: -400%;
+}
+
+
+
+
+/* Responsive */
 @charset "utf-8";
 
 @media only screen and (max-width: 1680px) {
@@ -58,12 +291,8 @@
 @media only screen and (max-width: 1280px) {
 
 }
-@media only screen and (max-width: 1200px) {
 
-}
-@media only screen and (max-width: 1199px) {
 
-}
 
 /* ==============================
    Tablet landskape
@@ -74,22 +303,15 @@
 	.page-about .ad-carousel p {font-size:16px}
 }
   
-@media only screen and (max-width: 992px) {
-    
-}
-  
-  
-/* ==============================
-   Tablet Portrait
-   ============================== */
+
   
 @media only screen and (max-width: 768px) {
-
+.page-about.about-inner h3 {font-size:20px}
+.page-about.about-inner p {font-size:14px}
+.showMobile {display:block}
+.showPC {display:none}
 }
 
-@media only screen and (max-width: 767px) {
- 
-}
 
 
 /* ==============================
