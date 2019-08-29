@@ -1,5 +1,5 @@
 .container.menu {max-width:1800px;padding-top:40px}
-.mask-header {position:fixed;width:100%;height:17%;background:url(../static/images/mask-header.svg) repeat-x bottom;}
+.mask-header {position:fixed;width:100%;height:17%;background:url(../static/images/mask-header.svg) repeat-x bottom;z-index:3}
 .mask-header>img {height:8px}
 .logo-header {width:20%;margin-bottom:-10px;}
 
@@ -24,7 +24,7 @@
 .page-all.menu-r {position:fixed;right:0;z-index:5;width:100%;height:100vh;background:rgba(0, 0, 0, 0.3);}
 .page-all.menu-r .container {overflow:auto;width:470px;height:100vh;padding: 20px 40px 40px 25px;background:#fff;top:0;right:0;z-index:2}
 
-.page-all.menu-r .container .close {position:absolute;right:22px;top:30px}
+.page-all.menu-r .container .close {position:absolute;right:78px;top:50px}
 .page-all.menu-r .mask {position:absolute;right:22%;z-index:1}
 
 .menuFadeInRight {
@@ -90,6 +90,10 @@
   #ic-member,#ic-cart,#ic-menu {width:40px}
   .ic-menu-item div:last-child {margin-right:10px;}
   #menu-r .menu-r-item {font-size:16px}
+
+  .page-all.menu-r .container .close {right:48px;top:44px;}
+
+
 }
 
 @media only screen and (max-width: 1366px) {
@@ -121,6 +125,9 @@
   .logo-header {width:50%;}
   .footer-logo {margin-bottom:20px;}
   .social-item {padding:0 5px;width:30%}
+
+  .page-all.menu-r .container .close {right:28px;top:37px;}
+  
 }
 
 @media only screen and (max-width: 480px) {
