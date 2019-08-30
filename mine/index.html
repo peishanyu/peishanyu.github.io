@@ -110,10 +110,10 @@
 <!-- login end -->
 
 <!-- Menu Start -->
-<div id="menu-r" class="page-all menu-r" style="display:none" onclick="menuClose()">
+<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display: none;" >
 	
-	<div class="menuFadeInRight absolute container menuFadeInRight">
-		<div class="NoscrollZone"><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
+	<div class="absolute container menuFadeOutRight">
+		<div onclick="menuClose();" ><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
 		<div class="menu-r-list">
 
 			<div class="menu-r-item"><a href="index.html">首頁 <span>HOME PAGE</span></a></div>
@@ -139,9 +139,13 @@
 			
 		</div>
 	</div>
+<<<<<<< HEAD
 	<!--
 	<img src="static/images/menu/img-mask_menu.svg" class="mask menuFadeInMask" />
 	-->
+=======
+	<!-- <img src="static/images/menu/img-mask_menu.svg" class="mask menuFadeInMask" />  -->
+>>>>>>> origin/master
 </div>
 <!-- Menu end -->
 
@@ -173,7 +177,7 @@
 						<img src="static/images/ic-cart_header.svg" id="ic-cart" class="pointer" />
 					</div>
 					<div>
-						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuClose()" />	
+						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuShow();" />	
 					</div>
 					
 				</div>
