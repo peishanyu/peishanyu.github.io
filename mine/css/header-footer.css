@@ -112,28 +112,37 @@
 
 /* scroll bar */
 
-<<<<<<< HEAD
-#menu-r ::-webkit-scrollbar {
-=======
+
 /*
 ::-webkit-scrollbar {
->>>>>>> origin/master
+
   position: absolute;
   right:0;
   width:15px;
   background:#FF9A20;
   border:3px solid #FF9A20;
 }
-<<<<<<< HEAD
+
+::-webkit-scrollbar-track {
+  border-radius:100px;
+  padding:4px;
+  background: #FF9A20
+}
  
-#menu-r ::-webkit-scrollbar-track {
-=======
+ #menu-r ::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background:#fff;
+  border:5px solid #FF9A20;
+}
+ 
+
 */
 
-/** pulse handle */
+/** pulse handle **/
 #ic-member:hover, #ic-member:active  {
   	animation: pulse .75s infinite;
 }
+
 #ic-cart:hover, #ic-cart:active  {
 	animation: pulse .75s infinite;
 }
@@ -171,21 +180,7 @@
 	  }
 	}
 
-
- /** ----- */
-::-webkit-scrollbar-track {
->>>>>>> origin/master
-  border-radius:100px;
-  padding:4px;
-  background: #FF9A20
-}
- 
-#menu-r ::-webkit-scrollbar-thumb {
-  border-radius: 100px;
-  background:#fff;
-  border:5px solid #FF9A20;
-}
-
+/** ----- **/
 
 
 /*
