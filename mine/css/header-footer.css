@@ -27,23 +27,80 @@
 .page-all.menu-r .container .close {position:absolute;right:78px;top:50px}
 .page-all.menu-r .mask {position:absolute;right:22%;z-index:1}
 
-.menuFadeInRight {
+.menuSlideInRight {
   opacity: 1;
-  animation: fadeRight .5s linear;
+  animation: menuSlideInRight .35s forwards;
+  
 }
-  @keyframes fadeRight {
-      0% { opacity:0;right:-150px }
-      50%,100% { opacity:1;right:0 }
+  @keyframes menuSlideInRight {
+      from {
+	    -webkit-transform: translate3d(100%, 0, 0);
+	    transform: translate3d(100%, 0, 0);
+	    visibility: visible;
+	    opacity: 0.8;
+	  }
+	
+	  to {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	    opacity: 1;
+	  }
   }
 
-.menuFadeInMask {
-  opacity: 1;
-  animation: fadeInMask .25s linear;
+.menuSlideOutRight {
+  animation: slideOutRight .35s forwards;
+  opacity: 0;
+  pointer-events: none;
 }
-  @keyframes fadeInMask {
-      0% { opacity:0;right:-120px }
-      100% { opacity:1;right:right:30%;}
+  @keyframes slideOutRight {
+      from {
+      	opacity: 1;
+      	visibility: visible;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	
+	  to {
+	  	opacity: 0.8;
+	    visibility: hidden;
+    	-webkit-transform: translate3d(100%, 0, 0);
+    	transform: translate3d(100%, 0, 0);
+	  }
   }
+/*Menu mask*/
+.menuMaskFadeIn {
+  animation: fadeInMenuMask 0.3s forwards;
+  display: block;
+}
+  @keyframes fadeInMenuMask {
+      from {
+        opacity: 0;
+	    visibility: hidden;
+	  }
+	
+	  to {
+	  	opacity: 1;
+	  	visibility: visible;
+	  }
+  }
+  
+.menuMaskFadeOut {
+  animation: fadeOutMenuMask .3s forwards;
+  pointer-events: none;
+  display: block;
+}
+  @keyframes fadeOutMenuMask {
+      from {
+      	opacity: 1;
+	    visibility: visible;
+	  }
+	
+	  to {
+	 	opacity: 0;
+	    visibility: hidden;
+	  }
+  }
+/*Menu mask*/
 
 #menu-r .NoscrollZone {position:fixed;height:70px;;z-index:3;right:0;top:0;width:470px;padding-top:30px;padding-right:23px;text-align:right;}
 
@@ -55,6 +112,7 @@
 
 /* scroll bar */
 
+/*
 ::-webkit-scrollbar {
   position: absolute;
   right:10px;
@@ -62,7 +120,51 @@
   background:#FF9A20;
   border:3px solid #FF9A20;
 }
- 
+*/
+
+/** pulse handle */
+#ic-member:hover, #ic-member:active  {
+  	animation: pulse .75s infinite;
+}
+#ic-cart:hover, #ic-cart:active  {
+	animation: pulse .75s infinite;
+}
+	@-webkit-keyframes pulse {
+	  from {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1);
+	  }
+	
+	  50% {
+	    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+	    transform: scale3d(1.25, 1.25, 1.25);
+	  }
+	
+	  to {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1);
+	  }
+	}
+	
+	@keyframes pulse {
+	  from {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1);
+	  }
+	
+	  50% {
+	    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+	    transform: scale3d(1.25, 1.25, 1.25);
+	  }
+	
+	  to {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1);
+	  }
+	}
+
+
+ /** ----- */
 ::-webkit-scrollbar-track {
   border-radius:100px;
   padding:4px;
