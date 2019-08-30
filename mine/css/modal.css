@@ -36,6 +36,19 @@
 .modal_all .btn-round-gray {font-size:15px;font-weight:600;color:#7d7d7d;text-decoration:underline;}
 
 
+@media only screen and (max-width: 1440px) {
+	.modal-header {padding:30px 30px 0;}
+	.modal-header-title {font-size:22px;margin-top:3px}
+	.modal-body {padding: 20px 10px 10px;}
+	.modal_all input {height: calc(1.5rem + 4px);}
+
+	.modal-footer {padding: 0 22px 20px;}
+	.modal-header .line {padding-top:50px;}
+
+	.modal-btn-comfirm {font-size:16px;height:40px;}
+
+
+}
 
 @media only screen and (max-width: 480px) {
 	.modal {top:10px;}
@@ -47,7 +60,7 @@
 	.modal-header {padding:25px 25px 0;}
 	.modal-header-title {font-size:20px;margin-top:3px}
 	.modal-body {padding: 20px 10px 10px;}
-	.modal_all input {height: calc(1.5rem + 4px);}
+	.modal_all input {height: calc(1.5rem);}
 
 	.modal-footer {padding: 0 22px 20px;}
 	.modal-header .line {padding-top:40px;}

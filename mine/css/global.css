@@ -885,10 +885,12 @@ button:focus {
   .bg-position-x-r {background-position:right!important;}
 
   .btn-text-b,.btn-text-w,.btn-round-w {font-size:15px;vertical-align:top;}
+  .text-link-1 {padding:0}
 
-  .form-group {margin-bottom:10px}
+  .form-group {margin-bottom:15px}
   .col-form-label {padding-top:0;padding-bottom:0;font-size:16px;}
   .btn.sendSms {margin:10px 0}
+  .modal-header img {width:12px;}
   .modal-footer img {width:50px}
 
 }
