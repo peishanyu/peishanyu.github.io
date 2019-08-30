@@ -304,6 +304,16 @@ body {
 
 .pointer {cursor: pointer;}
 
+.close {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+          transition:         transform 0.5s ease-in-out;
+}
+.close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 /* 1.3_Typography
 ================================================== */
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
