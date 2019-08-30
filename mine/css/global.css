@@ -834,7 +834,7 @@ button:focus {
 |  7.0 Custom
 |--------------------------------------------------------------------------
 */
-.scrollNone {overflow-y:hidden;overflow-x:hidden;}
+.scrollNone {position:fixed;overflow-y:scroll!important;}
 
 /* button*/
 .btn-text-b {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
@@ -886,7 +886,7 @@ button:focus {
 
   .btn-text-b,.btn-text-w,.btn-round-w {font-size:15px;vertical-align:top;}
 
-  .form-group {margin-bottom:20px}
+  .form-group {margin-bottom:10px}
   .col-form-label {padding-top:0;padding-bottom:0;font-size:16px;}
   .btn.sendSms {margin:10px 0}
   .modal-footer img {width:50px}
