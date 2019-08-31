@@ -113,30 +113,28 @@
 /* scroll bar */
 
 
-/*
-::-webkit-scrollbar {
-
+#menu-r ::-webkit-scrollbar {
   position: absolute;
   right:0;
   width:15px;
   background:#FF9A20;
   border:3px solid #FF9A20;
 }
-
-::-webkit-scrollbar-track {
-  border-radius:100px;
+ 
+#menu-r ::-webkit-scrollbar-track {
+  border-radius:10px;
   padding:4px;
   background: #FF9A20
 }
  
- #menu-r ::-webkit-scrollbar-thumb {
-  border-radius: 100px;
+#menu-r ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
   background:#fff;
   border:5px solid #FF9A20;
 }
  
 
-*/
+/**-----**/
 
 /** pulse handle **/
 #ic-member:hover, #ic-member:active  {
