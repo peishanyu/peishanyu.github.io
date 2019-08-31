@@ -306,8 +306,8 @@
 
   
 @media only screen and (max-width: 768px) {
-.page-about.about-inner h3 {font-size:20px}
-.page-about.about-inner p {font-size:14px}
+.page-about.about-inner h3 {font-size:19px;font-weight:700;}
+.page-about.about-inner p {font-size:12px}
 .showMobile {display:block}
 .showPC {display:none}
 }
@@ -319,7 +319,10 @@
    ============================== */
   
 @media only screen and (max-width: 480px) {
-
+  .page-about.about-inner {padding:0}
+  .page-about .showMobile {padding:20px 30px}
+  .page-about .full-m {padding:0}
+  .page-about .full-m .slider-wrapper {margin-bottom:0}
 }
 
 
@@ -332,10 +335,4 @@
 }
 
 
-/* ==============================
-   Max Height 768
-   ============================== */
 
-@media only screen and (max-height: 767px) {
-
-}

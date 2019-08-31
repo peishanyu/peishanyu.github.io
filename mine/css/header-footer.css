@@ -7,6 +7,7 @@
 .menu-item li {display:inline-block;padding:0 12px;}
 .menu-item li a:hover {text-decoration:none}
 .ic-menu-item {margin-top:6px}
+#ic-member:hover, #ic-cart:hover, #ic-menu:hover {opacity:.75}
 .ic-menu-item div {display:inline-block;margin:0 20px;}
 .ic-menu-item div:last-child {margin-right:0;}
 .ic-menu-item div .dot-cart {display:none;width:13px;height:13px;border-radius:12rem;background:#FF9933;top:0;right:-24px;}
@@ -231,8 +232,8 @@
 @media only screen and (max-width: 768px) {
   .mask-header>img {height:6px}
   .logo-header {width:50%;}
-  .footer-logo {margin-bottom:20px;}
-  .social-item {padding:0 5px;width:30%}
+  .footer-logo {width:100%;margin:15px 0;}
+  .social-item {padding:0 5px;width:27%}
 
   .page-all.menu-r .container .close {right:28px;top:37px;}
   
@@ -245,10 +246,12 @@
   #footer>.container {padding:0}
   #footer>.container>.row {position:relative;}
   .socialmedia {position:absolute;right:0;bottom:6px;}
-  .footer-item {font-size:15px}
+  .footer-item {font-size:14px}
   .page-all.menu-r .mask {right: 70%;}
   .page-all.menu-r .container {width:95%}
+  .footer-item {line-height:2.7}
   #menu-r .NoscrollZone {width:95%}
   #menu-r .menu-r-item {font-size:14px}
   #menu-r .NoscrollZone>img {width:30px}
+
 }

@@ -1,5 +1,5 @@
 .modal_all {position:fixed;z-index:99;width:100%}
-.modal-btn-comfirm {width:204px;height:46px;border-radius:10rem;font-size:19px;color:#fff;font-weight:bold;background:url(../static/images/btn-bg.jpg) no-repeat center 95%;}
+.modal-btn-comfirm {width:190px;height:46px;margin-right:20px;border-radius:10rem;font-size:19px;color:#fff;font-weight:bold;background:url(../static/images/btn-bg.jpg) no-repeat center 95%;}
 
 /* Login Popup */
 .modal {z-index:9;position:absolute;top:100px;bottom:0;right:0;left:0;margin:10px auto}
@@ -9,11 +9,21 @@
 
 .modal-header {padding:40px 30px 0;background:#fff;border-radius:12px 12px 0 0;color:#FF9933}
 .modal-header-title {font-size:24px}
+.modal-header img {margin-left:6px}
 .modal-header .line {border-bottom:2px solid #ED5917;padding-top:54px;}
 .modal-body {padding: 20px 20px 10px;background:#fff}
+
+.sendSms {width:118px;height:35px;border-radius:10rem;font-size:15px;font-weight:600;color:#fff;background:#666;}
+  .sendSms:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
+
 .modal-footer {padding:0 30px 50px;background:#fff;border-radius:0 0 12px 12px;}
+.modal-footer img {width:50px;}
+
 
 .modal-mask {z-index:4;position:fixed;top:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.5);}
+
+.modal-header .text-link-1 {font-size:15px;font-weight:600}
+
 
 .elementToFadeIn {
 	opacity: 1;
@@ -39,10 +49,10 @@
 @media only screen and (max-width: 1440px) {
 	.modal-header {padding:30px 30px 0;}
 	.modal-header-title {font-size:22px;margin-top:3px}
-	.modal-body {padding: 20px 10px 10px;}
+	.modal-body {padding: 20px 15px 10px;}
 	.modal_all input {height: calc(1.5rem + 4px);}
 
-	.modal-footer {padding: 0 22px 20px;}
+	.modal-footer {padding: 0 27px 20px;}
 	.modal-header .line {padding-top:50px;}
 
 	.modal-btn-comfirm {font-size:16px;height:40px;}
@@ -66,4 +76,10 @@
 	.modal-header .line {padding-top:40px;}
 
 	.modal-btn-comfirm {font-size:16px;height:40px;}
+
+	.col-form-label.input {padding:0 15px;}
+
+	.btn.sendSms {margin-top:10px;}
+	.modal-header img {width:12px;}
+	.modal-footer img {width:50px}
 }
