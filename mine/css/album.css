@@ -1,0 +1,133 @@
+html, body, main {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#album {
+	position: relative;
+	height: 400px;
+	top: 50%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#album div {
+	position: absolute;
+	transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+	opacity: 1;
+}
+
+#album div img {
+	width: 400px;
+	transition: width 1s;
+}
+
+#album div.hideLeft {
+	left: 0%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+}
+
+#album div.hideLeft img {
+	width: 200px;
+}
+
+#album div.hideRight {
+	left: 100%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+}
+
+#album div.hideRight img {
+	width: 200px;
+}
+
+#album div.prev {
+	z-index: 5;
+	left: 30%;
+	transform: translateY(50px) translateX(-50%);
+}
+
+#album div.prev img {
+	width: 300px;
+}
+
+#album div.prevLeftSecond {
+	z-index: 4;
+	left: 15%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0.7;
+}
+
+#album div.prevLeftSecond img {
+	width: 200px;
+}
+
+#album div.selected {
+	z-index: 10;
+	left: 50%;
+	transform: translateY(0px) translateX(-50%);
+}
+
+#album div.next {
+	z-index: 5;
+	left: 70%;
+	transform: translateY(50px) translateX(-50%);
+}
+
+#album div.next img {
+	width: 300px;
+}
+
+#album div.nextRightSecond {
+	z-index: 4;
+	left: 85%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0.7;
+}
+
+#album div.nextRightSecond img {
+	width: 200px;
+}
+
+#albumContainer {
+	position: relative;
+	margin: 0px auto;
+	width: 50%;
+	display: block;
+}
+
+.buttons {
+	position: absolute;
+	left: calc(50% - 225px); /* 50% -( 1/2 of showing stone image width + 1/2 button width)*/
+	top: 175px; /* 1/2 of showing stone image height -  1/2 button width */
+	z-index: 50;
+	display: table;
+	width: 100%;
+}
+
+#prevBtn {
+	transform: rotate(180deg);
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 0;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+}
+
+#nextBtn {
+	width: 50px;
+	height: 50px;
+	margin-left: 350px; /* showing stone image width - button width */
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 0;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+}
