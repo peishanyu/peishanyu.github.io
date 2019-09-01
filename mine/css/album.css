@@ -105,7 +105,7 @@ html, body, main {
 	top: 175px; /* 1/2 of showing stone image height -  1/2 button width */
 	z-index: 50;
 	display: table;
-	width: 100%;
+	width: calc(50% - 25px);
 }
 
 #prevBtn {
