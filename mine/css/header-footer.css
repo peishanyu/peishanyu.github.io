@@ -7,17 +7,18 @@
 .menu-item li {display:inline-block;padding:0 12px;}
 .menu-item li a:hover {text-decoration:none}
 .ic-menu-item {margin-top:6px}
+#ic-member:hover, #ic-cart:hover, #ic-menu:hover {opacity:.75}
 .ic-menu-item div {display:inline-block;margin:0 20px;}
 .ic-menu-item div:last-child {margin-right:0;}
 .ic-menu-item div .dot-cart {display:none;width:13px;height:13px;border-radius:12rem;background:#FF9933;top:0;right:-24px;}
 .ic-menu-item div .dot-cart.active {display:inline-block;}
 
 /* footer */
-#footer {height:400px;background:url(../static/images/bg_footer.jpg) no-repeat;background-size:cover;}
+#footer {height:340px;background:url(../static/images/bg_footer.jpg) no-repeat;background-size:cover;}
 #footer>.container {width:85%;position:absolute;padding:60px 0;left:0;right:0;top:50%;transform:translateY(-50%);}
 .footer-logo {width:262px;;margin-bottom:40px;margin-right:9px;padding:0 12px}
 .social-item {padding:0 15px}
-.footer-item {font-size:22px;color:#fff;font-weight:600;line-height:3;}
+.footer-item {font-size:20px;color:#fff;font-weight:600;line-height:3;}
 /* ------ */
 
 /* menu */
@@ -208,9 +209,11 @@
   
   #ic-member,#ic-cart,#ic-menu {width:35px}
   .ic-menu-item div .dot-cart {width:10px;height:10px;right:-24px;}
-  #footer {height:320px}
+  #footer {height:280px}
   #footer>.container {width:85%;padding:40px 0}
-  .footer-item {font-size:20px}
+  .footer-logo {width:230px;margin-bottom:25px}
+  .footer-item {font-size:18px}
+  .social-item {width:75px}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -227,8 +230,8 @@
 @media only screen and (max-width: 768px) {
   .mask-header>img {height:6px}
   .logo-header {width:50%;}
-  .footer-logo {margin-bottom:20px;}
-  .social-item {padding:0 5px;width:30%}
+  .footer-logo {width:100%;margin:15px 0;}
+  .social-item {padding:0 5px;width:27%}
 
   .page-all.menu-r .container .close {right:28px;top:37px;}
   
@@ -238,12 +241,15 @@
   .logo-header {width:80%;}
   .container.menu {padding:25px;}
   .ic-menu-item div:last-child {margin-right:0;}
+  #footer>.container {padding:0}
   #footer>.container>.row {position:relative;}
   .socialmedia {position:absolute;right:0;bottom:6px;}
-  .footer-item {font-size:15px}
+  .footer-item {font-size:14px}
   .page-all.menu-r .mask {right: 70%;}
   .page-all.menu-r .container {width:95%}
+  .footer-item {line-height:2.7}
   #menu-r .NoscrollZone {width:95%}
   #menu-r .menu-r-item {font-size:14px}
   #menu-r .NoscrollZone>img {width:30px}
+
 }

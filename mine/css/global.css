@@ -765,7 +765,9 @@ button:focus {
   font-size:18px;
   line-height: 1.5;
 }
-.col-form-label>span {color:#9C9C9C}
+.col-form-label.title {padding-right:0}
+.col-form-label.input {padding-left:0}
+.col-form-label>span {color:#616161;}
 .form-group {margin-bottom:12px}
 
 /*
@@ -843,8 +845,6 @@ button:focus {
 .text-link-1:hover {text-decoration:underline;}
 .btn-text-gray {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
 
-.sendSms {width:118px;height:35px;border-radius:10rem;font-size:15px;font-weight:600;color:#fff;background:#666;}
-  .sendSms:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
 
 .description a:hover {text-decoration:none}
 .btn-round-w {background:#fff;border-radius:100rem;font-size:24px;padding:8px 24px}
@@ -885,10 +885,10 @@ button:focus {
   .bg-position-x-r {background-position:right!important;}
 
   .btn-text-b,.btn-text-w,.btn-round-w {font-size:15px;vertical-align:top;}
+  .text-link-1 {padding:0}
 
-  .form-group {margin-bottom:10px}
+  .form-group {margin-bottom:15px}
   .col-form-label {padding-top:0;padding-bottom:0;font-size:16px;}
-  .btn.sendSms {margin:10px 0}
-  .modal-footer img {width:50px}
+
 
 }

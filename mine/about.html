@@ -30,7 +30,7 @@
 			<div id="userLogin">
 				<div class="modal-header">
 					<div class="col-50 pd-0">
-						<span class="font-size-24 fw-bold">登入</span> 
+						<span class="modal-header-title fw-bold">登入</span> 
 						<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
 					</div>
 					<div class="col-50 pd-0 text-r">
@@ -66,7 +66,7 @@
 			<div id="userSignup" style="display:none">
 				<div class="modal-header">
 					<div class="col-50 pd-0">
-						<span class="font-size-24 fw-bold">註冊</span> 
+						<span class="modal-header-title fw-bold">註冊</span> 
 						<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
 					</div>
 					<div class="col-50 pd-0 text-r">
@@ -110,17 +110,17 @@
 <!-- login end -->
 
 <!-- Menu Start -->
-<div id="menu-r" class="page-all menu-r" style="display:none" onclick="menuClose()">
+<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display: none;" onclick="menuClose();" />
 	
-	<div class="menuFadeInRight absolute container menuFadeInRight">
-		<div class="NoscrollZone"><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
+	<div class="absolute container menuFadeOutRight">
+		<div onclick="menuClose();" ><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
 		<div class="menu-r-list">
 
 			<div class="menu-r-item"><a href="index.html">首頁 <span>HOME PAGE</span></a></div>
 			<div class="menu-r-item"><a href="about.html">關於我們 <span>ABOUT US</span></a></div>
 			<div class="menu-r-item"><a href="">本季作品 <span>NEW ARRIVAL</span></a></div>
 			<div class="menu-r-item"><a href="">主題系列 <span>EVENT</span></a></div>
-			<div class="menu-r-item" onclick="loginModal();addBlur()">會員 <span>MEMBER</span></div>
+			<div class="menu-r-item pointer" onclick="loginModal();addBlur()">會員 <span>MEMBER</span></div>
 			<div class="menu-r-item"><a href="">購物車 <span>CART</span></a></div>
 			<div class="menu-r-item-line"><img src="static/images/menu/line-sep_menu.svg" class="width-100" /></div>
 			<div class="menu-r-item"><a href="">新品上架 <span>NEW ARRIVAL</span></a></div>
@@ -139,14 +139,14 @@
 			
 		</div>
 	</div>
-	<!--
-	<img src="static/images/menu/img-mask_menu.svg" class="mask menuFadeInMask" />
-	-->
+
+	<!-- <img src="static/images/menu/img-mask_menu.svg" class="mask menuFadeInMask" />  -->
+
 </div>
 <!-- Menu end -->
 
 <!-- HEADER start -->
-<div>
+<header>
 	<div class="mask-header">
 		<img src="static/images/header_top_line.png" class="absolute width-100" />
 		<div class="container menu">
@@ -159,6 +159,9 @@
 						<li><a href="about.html">關於我們</li></a>
 						<li><a href="">本季新品</li></a>
 						<li><a href="">主題系列</li></a>
+						<!--
+						<li><a href="">VIP室</li></a>
+						-->
 					</ul>
 				</div>
 				<div class="col-30 text-r ic-menu-item" >
@@ -170,14 +173,14 @@
 						<img src="static/images/ic-cart_header.svg" id="ic-cart" class="pointer" />
 					</div>
 					<div>
-						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuClose()" />	
+						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuShow();" />	
 					</div>
 					
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</header>
 <!-- header end -->
 
 <!-- Video -->
@@ -211,12 +214,12 @@
 					</p>
 					<br>
 					<p>
-						如同太陽般，溫暖了靈魂，渲染了記憶，Mine jade & jewelry為您生活的每一刻畫下耀眼的分界點，成為您獨一無二的專屬飾品。
+						如同太陽般，溫暖了靈魂，渲染了記憶，Mine jade & jewelry 為您生活的每一刻畫下耀眼的分界點，成為您獨一無二的專屬飾品。
 					</p>
 				</div>
 			</div>
 
-			<div class="col-50 col-xs-100">
+			<div class="col-50 col-xs-100 full-m">
 				<div class="wrapper">
 				  <input checked type=radio name="slider" id="slide1" />
 				  <input type=radio name="slider" id="slide2" />
