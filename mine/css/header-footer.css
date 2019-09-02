@@ -28,6 +28,93 @@
 .page-all.menu-r .container .close {position:absolute;right:70px;top:50px}
 .page-all.menu-r .mask {position:absolute;right:22%;z-index:1}
 
+
+
+#ic-menu {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  vertical-align: middle;
+  border-style: none;
+  text-align: center;
+  display:inline-block;
+}
+
+#ic-menu span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  vertical-align: middle;
+  margin-top:5px;
+}
+
+#ic-menu span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#ic-menu span:nth-child(2) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#ic-menu span:nth-child(3) {
+  top: 28px;
+  -webkit-transform-origin: left center;	
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#ic-menu.open-menu span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+#ic-menu.open-menu span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#ic-menu.open-menu span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 31px;
+}
+
 .menuSlideInRight {
   opacity: 1;
   animation: menuSlideInRight .35s forwards;
@@ -101,37 +188,32 @@
 	    visibility: hidden;
 	  }
   }
-/*Menu mask*/
+/******/
 
 #menu-r .NoscrollZone {position:fixed;height:70px;;z-index:3;right:0;top:0;width:470px;padding-top:30px;padding-right:23px;text-align:right;}
 
 #menu-r .menu-r-list {padding:20px;padding-top:50px;}
 #menu-r .menu-r-item {color:#4A4A4A;font-size:16px;margin:17px 0;}
 #menu-r .menu-r-item a:hover {text-decoration:none; opacity:0.5; transition: opacity .5s;}
-#menu-r .mobileShowItem {display:none;}
-/* ----- */
-
-/* scroll bar */
-
 
 #menu-r ::-webkit-scrollbar {
   position: absolute;
   right:0;
   width:15px;
-  background:#FF9A20;
-  border:3px solid #FF9A20;
+  background:#FF9933;
+  border:3px solid #FF9933;
 }
  
 #menu-r ::-webkit-scrollbar-track {
   border-radius:10px;
   padding:4px;
-  background: #FF9A20
+  background: #FF9933;
 }
  
 #menu-r ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background:#fff;
-  border:5px solid #FF9A20;
+  border:5px solid #FF9933;
 }
  
 
@@ -189,20 +271,21 @@
 */
 
 @media only screen and (max-width: 1440px) {
-  .page-all.menu-r .container {width:420px}
-  #menu-r .NoscrollZone {width:420px}
-  .page-all.menu-r .mask {right:30%}
-  #ic-member,#ic-cart,#ic-menu {width:40px}
+  .page-all.menu-r .container {width:420px;}
+  #menu-r .NoscrollZone {width:420px;}
+  .page-all.menu-r .mask {right:30%;}
+  #ic-member,#ic-cart,#ic-menu {width:40px;}
   .ic-menu-item div:last-child {margin-right:10px;}
-  #menu-r .menu-r-item {font-size:14px}
+  #menu-r .menu-r-item {font-size:14px;}
 
   .page-all.menu-r .container .close {right:48px;top:44px;}
 
-
+  #ic-menu.open-menu span:nth-child(3) {top: 28px;}
+  
 }
 
 @media only screen and (max-width: 1366px) {
-  .mask-header {height:20%}
+  .mask-header {height:20%;}
   .container.menu {padding:40px 40px 20px;}
   .logo-header {width:30%;margin-bottom:-24px;}
 
@@ -214,6 +297,8 @@
   .footer-logo {width:230px;margin-bottom:25px}
   .footer-item {font-size:18px}
   .social-item {width:75px}
+  
+  #ic-menu.open-menu span:nth-child(3) {top: 25px;}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -249,7 +334,7 @@
   .page-all.menu-r .container {width:95%}
   .footer-item {line-height:2.7}
   #menu-r .NoscrollZone {width:95%}
-  #menu-r .menu-r-item {font-size:14px}
+  #menu-r .menu-r-item {font-size:14px;}
   #menu-r .NoscrollZone>img {width:30px}
 
 }

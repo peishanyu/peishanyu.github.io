@@ -112,8 +112,8 @@
 <!-- Menu Start -->
 <div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display: none;" onclick="menuClose();">
 	
-	<div class="absolute container menuFadeOutRight">
-		<div onclick="menuClose();" ><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
+	<div class="absolute container ">
+		<div><img src="static/images/menu/ic-close_menu.svg" class="close pointer"  onclick="menuClose();" /></div>
 		<div class="menu-r-list">
 
 			<div class="menu-r-item"><a href="index.html">首頁 <span>HOME PAGE</span></a></div>
@@ -172,8 +172,10 @@
 						<div class="absolute dot-cart active"></div>
 						<img src="static/images/ic-cart_header.svg" id="ic-cart" class="pointer" />
 					</div>
-					<div>
-						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuShow();" />	
+					<div id="ic-menu" onclick="menuClick()">
+					  <span></span>
+					  <span></span>
+					  <span></span>
 					</div>
 					
 				</div>
