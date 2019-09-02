@@ -19,6 +19,7 @@
 .footer-logo {width:262px;;margin-bottom:40px;margin-right:9px;padding:0 12px}
 .social-item {padding:0 15px}
 .footer-item {font-size:20px;color:#fff;font-weight:600;line-height:3;}
+.footer-item a {text-decoration:none}
 /* ------ */
 
 /* menu */

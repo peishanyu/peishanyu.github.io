@@ -442,6 +442,12 @@ button:focus {
   margin-right: auto;
   margin-left: auto;
 }
+.container.blank {
+  width:100%;
+  max-width:100%;
+  padding:50px 68px;
+}
+
 .row {
 	margin-right: -15px;
 	margin-left: -15px;
@@ -537,7 +543,7 @@ button:focus {
 
 /* Font Color
 ================================================== */
-.font-color-1 { color: #774c00 !important;}
+.font-color-1 { color: #6a3906 !important;} /* 深棕色 */
 .font-color-2 { color: #A4724D !important;}
 .font-color-3 { color: #FBC000 !important;}
 .font-color-4 { color: #cccccc !important;}

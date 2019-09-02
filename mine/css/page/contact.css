@@ -1,0 +1,16 @@
+.page-contact.banner {height:350px;background:url(../../static/images/contact/banner-contact.jpg) no-repeat center center;}
+
+.page-contact .blank.mainTitleBlock {position:absolute;bottom:0;}
+.page-contact.contact-info {background-color:#fff7f0;}
+
+.page-contact h1.mainTitle {font-size:45px;font-weight:600;}
+.page-contact h2.subTitle {margin-top:17px;margin-bottom:0;font-size:36px;font-weight:700;color:#6a3906}
+
+.page-contact.contact-info p {margin:45px 0 60px;line-height:1.2;font-size:20px;font-weight:bold}
+
+.page-contact .speechBubble {position:absolute;right:75px}
+
+.page-contact .faqItem {margin:45px -15px 0}
+.page-contact .faqItem .label {display:inline-block;height:40px;margin:15px;padding:10px 40px;line-height:1;background:#A8A8A8;border-radius:10rem;font-size:20px;color:#fff;cursor:pointer;}
+.page-contact .faqItem .label.active {background:#ff9933;color:#fff}
+.page-contact .faqItem .line {margin:35px 15px;border-top:3px solid #c7c7c7}
