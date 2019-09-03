@@ -2,8 +2,9 @@
 
 .page-contact .blank.mainTitleBlock {position:absolute;bottom:0;}
 .page-contact.contact-info {background-color:#fff7f0;}
+.page-contact.answerZone {background-color:#e8e8e8;}
 
-.page-contact h1.mainTitle {font-size:45px;font-weight:600;}
+.page-contact h1.mainTitle {font-size:45px;font-weight:bold;}
 .page-contact h2.subTitle {margin-top:17px;margin-bottom:0;font-size:36px;font-weight:700;color:#6a3906}
 
 .page-contact.contact-info p {margin:45px 0 60px;line-height:1.2;font-size:20px;font-weight:bold}
@@ -11,6 +12,67 @@
 .page-contact .speechBubble {position:absolute;right:75px}
 
 .page-contact .faqItem {margin:45px -15px 0}
-.page-contact .faqItem .label {display:inline-block;height:40px;margin:15px;padding:10px 40px;line-height:1;background:#A8A8A8;border-radius:10rem;font-size:20px;color:#fff;cursor:pointer;}
-.page-contact .faqItem .label.active {background:#ff9933;color:#fff}
+.page-contact .faqItem .label {display:inline-block;margin:15px;padding:10px 30px;line-height:1;background:#A8A8A8;border-radius:10rem;font-size:22px;color:#fff;font-weight:500;cursor:pointer;transition: all 0.2s ease-in-out;}
+.page-contact .faqItem .label:hover, .page-contact .faqItem .label.active {background:#ff9933;color:#fff}
+.page-contact .faqItem .label:active {box-shadow: 0 0 0 0.25rem rgba(255, 152, 51, 0.3);}
 .page-contact .faqItem .line {margin:35px 15px;border-top:3px solid #c7c7c7}
+
+.page-contact.answerZone .label-title {display:inline-block;margin:15px;padding:10px 30px;line-height:1;background:#ff9933;border-radius:10rem;font-size:24px;color:#fff;font-weight:500;}
+.page-contact p.answerContent {margin:30px 15px 40px;line-height:2;font-size:24px}
+
+/* Responseve */
+
+@media only screen and (max-width: 1680px) {
+
+}
+
+@media only screen and (max-width: 1440px) {
+	.page-contact.banner {height:300px;}
+	.page-contact .speechBubble {width:98px;bottom:-70px;}
+	.page-contact h1.mainTitle {font-size:39px}
+	.page-contact h2.subTitle {font-size:28px}
+	.page-contact .faqItem .label {font-size:18px;}
+	.page-contact.contact-info p {font-size:18px}
+
+	.page-contact.answerZone .label-title {font-size:20px;}
+	.page-contact p.answerContent {font-size:18px}
+}
+
+@media only screen and (max-width: 1366px) {
+
+} 
+@media only screen and (max-width: 1280px) {
+
+}
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* ==============================
+   Tablet Portrait
+   ============================== */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* ==============================
+   Phone
+   ============================== */
+  
+@media only screen and (max-width: 480px) {
+
+}
+
+
+/* ==============================
+   Small Phone
+   ============================== */
+  
+@media only screen and (max-width: 320px) {
+
+}
