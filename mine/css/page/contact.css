@@ -17,8 +17,11 @@
 .page-contact .faqItem .label:active {box-shadow: 0 0 0 0.25rem rgba(255, 152, 51, 0.3);}
 .page-contact .faqItem .line {margin:35px 15px;border-top:3px solid #c7c7c7}
 
-.page-contact.answerZone .label-title {display:inline-block;margin:15px;padding:10px 30px;line-height:1;background:#ff9933;border-radius:10rem;font-size:24px;color:#fff;font-weight:500;}
+.page-contact.answerZone .label-title {position:relative;display:inline-block;margin:15px;padding:10px 30px;line-height:1;background:#ff9933;border-radius:10rem;font-size:24px;color:#fff;font-weight:500;}
 .page-contact p.answerContent {margin:30px 15px 40px;line-height:2;font-size:24px}
+.page-contact .ic-arrowUp {position:absolute;top:45px;right:50px}
+
+#m-contactInfo {display:none}
 
 /* Responseve */
 
@@ -65,7 +68,21 @@
    ============================== */
   
 @media only screen and (max-width: 480px) {
+	.container.blank {padding:50px 20px;}
 
+	.page-contact .speechBubble {width:65px;bottom:-48px;right:30px;}
+
+	.page-contact .faqItem {margin: 45px -5px 0;}
+	.page-contact .faqItem .line {margin:25px 5px;border-top:2px solid #c7c7c7;}
+	.page-contact .faqItem .label {margin:10px 5px;padding:8px 20px;font-size:13px;}	
+
+	.page-contact .ic-arrowUp {width:30px;top:5%;right:7%;}
+	#contactInfo {display:none}
+	#m-contactInfo {display:block}
+
+	.page-contact .info-email img, .page-contact .info-phone img {width:60px;}
+	.page-contact .info-email h3,.page-contact .info-phone h3 {margin-top:20px;font-size:18px;font-weight:bold}
+	.page-contact .info-email p,.page-contact .info-phone p {margin:20px 0 0;font-size:13px}
 }
 
 
