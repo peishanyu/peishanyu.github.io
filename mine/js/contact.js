@@ -37,7 +37,9 @@ document.getElementById("faq").querySelectorAll('a[href^="#"]').forEach(anchor =
 	    showAnswer.classList.add("blank");
 	    showAnswer.classList.add("answer-on-show");
 	    
-	    showAnswer.scrollTop = targetHref.offsetTop;
+	    showAnswer.scrollIntoView({
+	        behavior: 'smooth'
+	    });
        
     });
 });
