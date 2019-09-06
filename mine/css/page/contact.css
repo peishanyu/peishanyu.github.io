@@ -135,6 +135,7 @@
 
 	#contactInfo {display:none}
 	#m-contactInfo {display:block}
+	#m-contactInfo a { text-decoration:none;}
 
 	.page-contact .info-email img, .page-contact .info-phone img {width:48px;}
 	.page-contact .info-email h3,.page-contact .info-phone h3 {margin-top:20px;font-size:16px;font-weight:bold}
