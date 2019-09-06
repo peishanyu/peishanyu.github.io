@@ -3523,7 +3523,7 @@ button.bg-dark:hover {
 }
 
 .text-monospace {
-	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important
+	font-family:'Noto Serif TC', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important
 }
 
 .text-justify {
