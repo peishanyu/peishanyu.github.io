@@ -847,6 +847,7 @@ button:focus {
 /* button*/
 .btn-text-b {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
 .btn-text-w {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#fff;}
+
 .text-link-1 {font-size:17px;color:#FF9933;text-decoration:underline;}
 .text-link-1:hover {text-decoration:underline;}
 .btn-text-gray {display:inline-block;margin-right:15px;vertical-align:sub;text-decoration:underline;font-size:25px;font-weight:600;color:#231815;}
@@ -854,7 +855,11 @@ button:focus {
 
 .description a:hover {text-decoration:none}
 .btn-round-w {background:#fff;border-radius:100rem;font-size:24px;padding:8px 24px}
-.btn-round-w:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
+.btn-round-w:active,.btn-outline-orange:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
+
+.btn-outline-orange {border:1px solid #ff9933;color:#ff9933;background:transparent;border-radius:100rem;font-size:20px;padding:6px 32px}
+
+
 /* --- */
 
 
@@ -866,10 +871,13 @@ button:focus {
 
 @media only screen and (max-width: 1680px) {
   .btn-text-b, .btn-text-w, .btn-round-w {font-size:22px;}
+  .btn-outline-orange {font-size:18px;}
+
 }
 
 @media only screen and (max-width: 1440px) {
   .btn-text-b, .btn-text-w, .btn-round-w {font-size:18px;}
+  .btn-outline-orange {font-size:16px;}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -890,7 +898,7 @@ button:focus {
   .bg-position-x-66 {background-position-x:66%!important;}
   .bg-position-x-r {background-position:right!important;}
 
-  .btn-text-b,.btn-text-w,.btn-round-w {font-size:15px;vertical-align:top;}
+  .btn-text-b,.btn-text-w,.btn-round-w,.btn-outline-orange {font-size:15px;vertical-align:top;}
   .text-link-1 {padding:0}
 
   .form-group {margin-bottom:15px}

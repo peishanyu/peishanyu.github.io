@@ -20,6 +20,7 @@ html, body, main {
 }
 
 #album div img {
+	max-width: unset;
 	width: calc(100vh * 0.4);
 	transition: width 1s;
 }
