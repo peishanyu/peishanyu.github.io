@@ -182,8 +182,7 @@
 	.page-material .colorSquare.active {width:52px;height:52px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
 
-	.page-material .colorSquare.active>img {width:18px;top:-10px;right:-8px}
-
+	.page-material .colorSquare.active>img, .page-material .mineType.active>img, .page-material .meanType.active>img {width:18px;top:-10px;right:-8px}
 
 	/* mineType */
 	.page-material .mineType {display:inline-block;margin:8px 12px;padding:8px 20px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
@@ -231,7 +230,7 @@
 
 	/* button */
 	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 50px );} 
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.315) - 50px );} 
 
 
 
@@ -266,8 +265,6 @@
 	}
 	.page-material .colorSquare.active {width:44px;height:44px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
-
-	.page-material .colorSquare.active>img {width:18px;top:-10px;right:-8px}
 
 
 	/* mineType */
