@@ -217,7 +217,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-	.page-material.banner {height:30vh;}
+	.page-material.banner {height:45vh;}
 	.page-material h2.subTitle {margin-right:15px;font-size:20px;}
 
 	/* album */
@@ -229,16 +229,17 @@
 
 	.page-material #albumContainer .buttons {
 	    min-width: calc( calc(100vh * 0.4) + 75px );
-	    left: calc( 50% - calc( calc(100vh * 0.185) + 25px) );
+	    left: calc( 50% - calc( calc(100vh * 0.19) + 25px) );
 	    top: calc( calc(100vh * 0.2) - 25px );
 	}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.425) - 50px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.41) - 50px );}
 
 	.page-material #displayResult {width:100%;}
 
 }
 
 @media only screen and (max-width: 768px) {
+	.page-material.banner {height:30vh;}
 	.page-material #album div.prev {transform: translateY(20%) translateX(-50%);}
 	.page-material #album div.next {transform: translateY(20%) translateX(-50%);}
 	.page-material #albumContainer .buttons {top: calc( calc(100vh * 0.215) - 25px );}
