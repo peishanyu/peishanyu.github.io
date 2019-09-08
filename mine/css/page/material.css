@@ -230,8 +230,8 @@
 	.page-material #album div.prevLeftSecond img {width: calc(100vw * 0.25);}
 
 	/* button */
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.5) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.305) - 50px );} 
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 50px );} 
 
 
 
