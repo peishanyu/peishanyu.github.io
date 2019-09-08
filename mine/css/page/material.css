@@ -102,6 +102,20 @@
 .page-material .colorSquare.color-28 {background:url(../../static/images/material/empty.svg) center no-repeat;background-size:cover}
 .page-material .colorSquare.over {background:url(../../static/images/material/img-over8.svg) center no-repeat;background-size:cover;}
 
+.page-material #resultColor .colorSquare {
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	width:24px;height:24px;
+	margin:2px;
+	border:0;
+}
+
+.page-material #resultColor .colorSquare.color-24 {
+	border:1px solid #ddd;
+}
+
+
 /* mineType */
 .page-material .mineType>img {display:none;cursor:pointer;}
 .page-material .mineType.active>img {display:block;position:absolute;top:-12px;right:-10px;z-index:2}
@@ -161,6 +175,8 @@
 
 	.page-material .recommandLink {font-size:16px}
 
+	.zoneArrow >img {width:24px}
+
 	/* filter Popup */
 	#filterPopup.page-material .closePopup {padding-bottom:10px;}
 	#filterPopup.page-material h2.popupTitle {padding:10px 40px;padding-top:40px;font-size:24px;}
@@ -173,17 +189,17 @@
 	/* Color Square */
 	#filterPopup.page-material .searchOption .colorSquare.active {width:24px;height:24px;margin:4px -2px}
 	.page-material .colorSquare {
-		width:46px;height:43px;
+		width:47px;height:43px;
 		margin:6px -2px;
-		border:1px solid #fff;
+		border:2px solid #fff;
+		/*
 		border-left-width:2px;
-		border-right-width:2px;
+		border-right-width:2px;*/
 	}
 	.page-material .colorSquare.active {width:52px;height:52px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
 
-	.page-material .colorSquare.active>img {width:18px;top:-10px;right:-8px}
-
+	.page-material .colorSquare.active>img, .page-material .mineType.active>img, .page-material .meanType.active>img {width:18px;top:-10px;right:-8px}
 
 	/* mineType */
 	.page-material .mineType {display:inline-block;margin:8px 12px;padding:8px 20px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
@@ -230,8 +246,8 @@
 	.page-material #album div.prevLeftSecond img {width: calc(100vw * 0.25);}
 
 	/* button */
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.5) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.305) - 50px );} 
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.315) - 50px );} 
 
 
 
@@ -242,7 +258,7 @@
 	.page-material .recommandLink {margin:10px 25px;}
 
 	/* filter Popup */
-	#filterPopup.page-material .container {width:90%;}
+	#filterPopup.page-material .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );}
 	#filterPopup.page-material .closePopup {padding-right:20px;}
 
 	#filterPopup.page-material h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:22px;}
@@ -253,6 +269,8 @@
 		#filterPopup.page-material .searchOption .colorSquare.active {width:20px;height:20px;}
 	#filterPopup.page-material .optionZone {padding:30px 20px;}
 
+	.zoneArrow >img {width:18px}
+
 	/* Color Square */
 	.page-material .colorSquare {
 		display:inline-block;
@@ -260,14 +278,12 @@
 		vertical-align:-webkit-baseline-middle;
 		width:36px;height:33px;
 		margin:8px -2px;
-		border:1px solid #fff;
+		border:2px solid #fff;
 		border-left-width:2px;
 		border-right-width:2px;
 	}
 	.page-material .colorSquare.active {width:44px;height:44px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
-
-	.page-material .colorSquare.active>img {width:18px;top:-10px;right:-8px}
 
 
 	/* mineType */
