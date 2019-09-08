@@ -241,7 +241,7 @@
 	.page-material .recommandLink {margin:10px 25px;}
 
 	/* filter Popup */
-	#filterPopup.page-material .container {width:90%;max-height:calc( calc(100vh * 0.9) + -60px );}
+	#filterPopup.page-material .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );}
 	#filterPopup.page-material .closePopup {padding-right:20px;}
 
 	#filterPopup.page-material h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:22px;}
