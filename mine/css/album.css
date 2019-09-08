@@ -15,6 +15,8 @@ html, body, main {
 
 #album div {
 	position: absolute;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
 	transition: transform 1s, left 1s, opacity 1s, z-index 0s;
 	opacity: 1;
 }
@@ -28,7 +30,7 @@ html, body, main {
 #album div.hideLeft {
 	left: 0%;
 	opacity: 0;
-	transform: translateY(50%) translateX(-50%);
+	transform: translateY( calc(50vh * 0.4) ) translateX( calc(50vh * -0.4) );
 }
 
 #album div.hideLeft img {
@@ -38,7 +40,7 @@ html, body, main {
 #album div.hideRight {
 	left: 100%;
 	opacity: 0;
-	transform: translateY(50%) translateX(-50%);
+	transform: translateY( calc(50vh * 0.4) ) translateX( calc(50vh * -0.4) );
 }
 
 #album div.hideRight img {
@@ -48,7 +50,7 @@ html, body, main {
 #album div.prev {
 	z-index: 5;
 	left: 30%;
-	transform: translateY(50px) translateX(-50%);
+	transform: translateY(50px) translateX( calc(50vh * -0.3) );
 }
 
 #album div.prev img {
@@ -58,7 +60,7 @@ html, body, main {
 #album div.prevLeftSecond {
 	z-index: 4;
 	left: 15%;
-	transform: translateY(50%) translateX(-50%);
+	transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.2) );
 	opacity: 0.7;
 }
 
@@ -69,13 +71,13 @@ html, body, main {
 #album div.selected {
 	z-index: 10;
 	left: 50%;
-	transform: translateY(0px) translateX(-50%);
+	transform: translateY(0px) translateX( calc(50vh * -0.4) );
 }
 
 #album div.next {
 	z-index: 5;
 	left: 70%;
-	transform: translateY(50px) translateX(-50%);
+	transform: translateY(50px) translateX( calc(50vh * -0.3) );
 }
 
 #album div.next img {
@@ -85,7 +87,7 @@ html, body, main {
 #album div.nextRightSecond {
 	z-index: 4;
 	left: 85%;
-	transform: translateY(50%) translateX(-50%);
+	transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.2) );
 	opacity: 0.7;
 }
 
@@ -137,21 +139,64 @@ html, body, main {
 @media (max-aspect-ratio: 4/3) {
   #album {height: calc(100vw * 0.35);}
   #album div img {width: calc(100vw * 0.35);}
-  
+
+
+  /** hide left **/
+  #album div.hideLeft {
+	transform: translateY( calc(50vw * 0.35) ) translateX( calc(50vw * -0.35) );
+  }
   #album div.hideLeft img {width: calc(100vw * 0.15);}
+  
+  
+  /**  left pre 1 **/
+  #album div.prev {
+	transform: translateY(50px) translateX( calc(50vw * -0.25) );
+  }
   #album div.prev img {width: calc(100vw * 0.25);}
+  
+
+
+  /**  left pre 2 **/
+  #album div.prevLeftSecond {
+	transform: translateY( 80px ) translateX( calc(50vw * -0.15) );
+  }
   #album div.prevLeftSecond img {width: calc(100vw * 0.15);}
   
+  
+  
+  /**  selected center **/
+  #album div.selected {
+	transform: translateY(0px) translateX( calc(50vw * -0.35) );
+  }
+  
+  
+  /** hide right **/
+  #album div.hideRight {
+	transform: translateY( calc(50vw * 0.35) ) translateX( calc(50vw * -0.35) );
+  }
   #album div.hideRight img {width: calc(100vw * 0.15);}
+  
+  /** next 1 **/
+  #album div.next {
+	transform: translateY(50px) translateX( calc(50vw * -0.25) );
+  }
   #album div.next img {width: calc(100vw * 0.25);}
+  
+  
+  /** next 2 **/
+  #album div.nextRightSecond {
+	transform: translateY( 80px ) translateX( calc(50vw * -0.15) );
+  }
   #album div.nextRightSecond img {width: calc(100vw * 0.15);}
 
   
+  /** button **/
   .buttons {
   	left: calc( 50% -  calc( calc(100vw * 0.175) + 15px) ); /* 50% -( 1/2 of showing stone image width + 1/2 button width)*/
 	top: calc( calc(100vw * 0.175) - 15px ); /* 1/2 of showing stone image height -  1/2 button width */
 	min-width : calc( calc(100vw * 0.35) + 50px );
   }
+  
   #nextBtn {
   	width: 30px;
   	height: 30px;
