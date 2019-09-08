@@ -857,7 +857,7 @@ button:focus {
 .btn-round-w {background:#fff;border-radius:100rem;font-size:24px;padding:8px 24px}
 .btn-round-w:active,.btn-outline-orange:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
 
-.btn-outline-orange {border:1px solid #ff9933;color:#ff9933;background:transparent;border-radius:100rem;font-size:20px;padding:6px 32px}
+.btn-outline-orange {border:1px solid #ff9933;color:#ff9933;background:transparent;border-radius:100rem;font-weight:bold;font-size:20px;padding:6px 32px}
 
 
 /* --- */
@@ -881,6 +881,8 @@ button:focus {
 }
 
 @media only screen and (max-width: 1024px) {
+   .col-md-auto {width:auto!important}
+   
    .btn-text-b,.btn-text-w,.btn-round-w {font-size:16px;vertical-align:top;}
 }
 
