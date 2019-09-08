@@ -7,6 +7,10 @@
 .page-material h3.subTitle {margin-right:50px;font-size:22px;font-weight:700;color:#6a3906;}
 
 /* album */
+
+
+
+
 .page-material #albumPage{margin-top:25px}
 .page-material #album {z-index:0;height: calc(100vh * 0.5);}
 
@@ -254,12 +258,33 @@
 }
 
 @media only screen and (max-width: 1024px) {
+	.page-material.banner {height:45vh;}
 	.page-material h2.subTitle {margin-right:15px;font-size:20px;}
+
+	/* album */
+	.page-material #albumContainer {width:100%;}
+	.page-material #album {height: calc(100vh * 0.4);}
+	.page-material #album div img {width: calc(100vh * 0.4);}
+	.page-material #album div.prev img, .page-material #album div.next img {width: calc(100vh * 0.3);}
+	.page-material #album div.prevLeftSecond img,.page-material #album div.nextRightSecond img {width: calc(100vh * 0.2);}
+
+	.page-material #albumContainer .buttons {
+	    min-width: calc( calc(100vh * 0.4) + 75px );
+	    left: calc( 50% - calc( calc(100vh * 0.19) + 25px) );
+	    top: calc( calc(100vh * 0.2) - 25px );
+	}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.41) - 50px );}
+
+	.page-material #displayResult {width:100%;}
+
 }
 
 @media only screen and (max-width: 768px) {
+	.page-material.banner {height:30vh;}
 	.page-material #album div.prev {transform: translateY(20%) translateX(-50%);}
 	.page-material #album div.next {transform: translateY(20%) translateX(-50%);}
+	.page-material #albumContainer .buttons {top: calc( calc(100vh * 0.215) - 25px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.415) - 50px );}
 }
 
 /* ==============================
@@ -267,8 +292,10 @@
    ============================== */
   
 @media only screen and (max-width: 480px) {
-	.page-material.banner {height:355px;}
+	.page-material.banner {height:260px;}
 	.page-material.container.blank {padding:35px 25px 25px;}
+
+	.page-material h2.subTitle {font-size:18px;}
 
 	/* album */
 	.page-material #albumContainer {width:100%;}
@@ -294,16 +321,17 @@
 
 
 	.page-material #displayResult {width:100%;}
+	.page-material #displayResult .item {margin:5px 8px;font-size:14px;}
 
 	.page-material .recommandLabel{margin:20px -25px}
-	.page-material .recommandLink {margin:10px 25px;}
+	.page-material .recommandLink {margin:10px 25px;font-size:14px}
 
 	/* filter Popup */
 	#filterPopup.page-material .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );}
 	#filterPopup.page-material .closePopup {padding-right:20px;}
 
-	#filterPopup.page-material h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:22px;}
-	#filterPopup.page-material .searchBar {margin-bottom:8px;padding:10px 20px;font-size:16px;}
+	#filterPopup.page-material h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:18px;}
+	#filterPopup.page-material .searchBar {margin-bottom:8px;padding:10px 20px;font-size:15px;}
 
 	#filterPopup.page-material .searchOption {padding:10px 20px;font-size:16px}
 		#filterPopup.page-material .searchOption .choosen {font-size:13px}
@@ -318,13 +346,13 @@
 		display:inline-block;
 		position:relative;
 		vertical-align:-webkit-baseline-middle;
-		width:36px;height:33px;
+		width:33px;height:32px;
 		margin:8px -2px;
 		border:2px solid #fff;
 		border-left-width:2px;
 		border-right-width:2px;
 	}
-	.page-material .colorSquare.active {width:44px;height:44px;border:2px solid #fff;margin-right:0}
+	.page-material .colorSquare.active {width:42px;height:42px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
 
 
