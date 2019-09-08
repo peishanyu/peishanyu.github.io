@@ -175,6 +175,8 @@
 
 	.page-material .recommandLink {font-size:16px}
 
+	.zoneArrow >img {width:24px}
+
 	/* filter Popup */
 	#filterPopup.page-material .closePopup {padding-bottom:10px;}
 	#filterPopup.page-material h2.popupTitle {padding:10px 40px;padding-top:40px;font-size:24px;}
@@ -267,6 +269,8 @@
 		#filterPopup.page-material .searchOption .colorSquare.active {width:20px;height:20px;}
 	#filterPopup.page-material .optionZone {padding:30px 20px;}
 
+	.zoneArrow >img {width:18px}
+
 	/* Color Square */
 	.page-material .colorSquare {
 		display:inline-block;
@@ -274,7 +278,7 @@
 		vertical-align:-webkit-baseline-middle;
 		width:36px;height:33px;
 		margin:8px -2px;
-		border:1px solid #fff;
+		border:2px solid #fff;
 		border-left-width:2px;
 		border-right-width:2px;
 	}
