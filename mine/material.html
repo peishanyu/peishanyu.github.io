@@ -210,7 +210,8 @@
 				<div class="col-15 col-xs-100 pl-0"><span>顏色: </span></div>
 				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
 					<div class="inline choosen" style="vertical-align:-webkit-baseline-middle;">已選擇: </div>
-					<div class="inline text-nowrap">
+				
+					<div id="materialColorChoosen" class="inline text-nowrap">
 
 						<div class="colorSquare color-1 active"></div>
 						<div class="colorSquare color-2 active"></div>
@@ -226,12 +227,12 @@
 
 						<div class="colorSquare over active"></div>
 					</div>
-					<div class="zoneArrow inline" style="margin-left:15px;vertical-align:middle;"><img src="static/images/material/img-arrowL.svg" /></div>
+					<div  id="colorZoneArrow" class="zoneArrow inline" style="margin-left:15px;vertical-align:middle;"><img src="static/images/material/img-arrowL.svg" /></div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 
-			<div class="optionZone">
+			<div id="materialColorOptions" class="optionZone unfoldSelectionZone">
 				<div class="colorSquare color-1">
 					<img src="static/images/material/ic-close_colorSquare.svg" />
 				</div>
@@ -326,7 +327,7 @@
 				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
 					<div class="inline choosen" style="">已選擇: </div>
 
-					<div class="inline text-nowrap choosen">
+					<div id="materialMineTypeChoosen" class="inline text-nowrap choosen">
 
 						<span class="">水晶</span>
 						<span>、</span>
@@ -334,12 +335,12 @@
 
 					</div>
 
-					<div class="inline zoneArrow" style="margin-left:15px;"><img src="static/images/material/img-arrowL.svg" /></div>
+					<div id="mineTypeZoneArrow" class="inline zoneArrow" style="margin-left:15px;"><img src="static/images/material/img-arrowL.svg" /></div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 
-			<div class="optionZone">
+			<div id="materialMineTypeOptions" class="optionZone unfoldSelectionZone">
 				<div class="mineType">
 					<div>瑪瑙</div>
 					<img src="static/images/material/ic-close_colorSquare.svg" />
@@ -381,19 +382,19 @@
 				<div class="col-15 col-xs-100 pl-0"><span>意義: </span></div>
 				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
 					<div class="inline choosen" style="">已選擇: </div>
-					<div class="inline text-nowrap choosen">
+					<div id="materialMeaningChoosen" class="inline text-nowrap choosen">
 
 						<span class="">金錢</span>
 						<span>、</span>
 						<span class="">健康</span>
 						
 					</div>
-					<div class="zoneArrow inline" style="margin-left:15px;"><img src="static/images/material/img-arrowL.svg" /></div>
+					<div id="meaningZoneArrow" class="zoneArrow inline" style="margin-left:15px;"><img src="static/images/material/img-arrowL.svg" /></div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 
-			<div class="optionZone">
+			<div  id="materialMeaningOptions" class="optionZone unfoldSelectionZone">
 				<div class="meanType">
 					<div class="mean">
 						<img src="static/images/material/img-empty.svg" class="meanImg">
@@ -453,7 +454,7 @@
 			</div>
 			<!-- end meaning Filter -->
 
-			<div class="filterSubmit">
+			<div id="meterialFilterSubmitBtn" class="filterSubmit">
 				<button class="col-xs-50 btn modal-btn-comfirm">搜尋</button>
 			</div>
 

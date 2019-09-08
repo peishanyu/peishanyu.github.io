@@ -43,7 +43,34 @@
 #filterPopup.page-material .searchOption {padding:10px 50px;padding-right:20px;font-size:18px;font-weight:700;color:#6a3906;}
 	#filterPopup.page-material .searchOption .choosen {font-size:16px}
 	
-#filterPopup.page-material .optionZone {font-size:0;padding:40px 50px;background:#c2c2c2}
+#filterPopup.page-material .optionZone {font-size:0;background:#c2c2c2}
+
+#filterPopup.page-material .unfoldSelectionZone {
+	border-top: none;
+	padding: 40px 50px;
+	max-height: 350px;
+	height: 100%;
+	transition-property: height, max-height, opacity, padding-top ; 
+	transition-duration: 0.35s;
+	transition-timing-function: ease-in-out;
+	opacity: 1;
+}
+
+#filterPopup.page-material .foldSelectionZone {
+	border-top: 5px #ff9933 solid;
+	padding: 0px 50px;
+	max-height: 0;
+	height: 0%;
+	transition-property: height, max-height,opacity, padding-top ; 
+	transition-duration: 0.35s;
+	transition-timing-function: ease-in-out;
+	opacity: 0.3;
+	line-height:0;
+	overflow: hidden;
+}
+
+
+
 
 .filterToFadeIn {
 	opacity: 1;
@@ -140,6 +167,19 @@
 
 .page-material .filterSubmit {text-align:center;margin:30px 15px;}
 
+/*zone arrow*/
+.page-material .zoneArrow {
+	transition-duration: .35s;
+	
+}
+
+.page-material .zoneArrowClose {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
 
 /* Responseve */
 
@@ -188,7 +228,8 @@
 
 	#filterPopup.page-material .searchOption {padding:10px 40px;font-size:18px}
 		#filterPopup.page-material .searchOption .choosen {font-size:15px}
-	#filterPopup.page-material .optionZone {padding:30px 40px;}
+	#filterPopup.page-material .unfoldSelectionZone  {padding:30px 40px;}
+	#filterPopup.page-material .foldSelectionZone  {padding: 0px 40px;}
 
 	/* Color Square */
 	#filterPopup.page-material .searchOption .colorSquare.active {width:24px;height:24px;margin:4px -2px}
@@ -295,7 +336,8 @@
 	#filterPopup.page-material .searchOption {padding:10px 20px;font-size:16px}
 		#filterPopup.page-material .searchOption .choosen {font-size:13px}
 		#filterPopup.page-material .searchOption .colorSquare.active {width:20px;height:20px;}
-	#filterPopup.page-material .optionZone {padding:30px 20px;}
+	#filterPopup.page-material .unfoldSelectionZone  {padding:30px 20px;}
+	#filterPopup.page-material .foldSelectionZone  {padding:0px 20px;}
 
 	.zoneArrow >img {width:18px}
 
