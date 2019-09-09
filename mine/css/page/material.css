@@ -7,25 +7,32 @@
 .page-material h3.subTitle {margin-right:50px;font-size:22px;font-weight:700;color:#6a3906;}
 
 /* album */
-
-
-
-
 .page-material #albumPage{margin-top:25px}
 .page-material #album {z-index:0;height: calc(100vh * 0.5);}
 
+
+.page-material #albumContainer{width:80%}
+
+/* 1 */
+.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.5) );}
 .page-material #album div img {width: calc(100vh * 0.5);}
 
+/* 2 */
+.page-material #album div.next{left:63%;}
 .page-material #album div.next img {width: calc(100vh * 0.4);}
+
 .page-material #album div.prev img {width: calc(100vh * 0.4);}
 
+/* 3 */
+.page-material #album div.nextRightSecond {left:80%;transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.25) );}
 .page-material #album div.nextRightSecond img {width: calc(100vh * 0.25);}
+.page-material #album div.prevLeftSecond{left:20%;transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.25) );}
 .page-material #album div.prevLeftSecond img {width: calc(100vh * 0.25);}
 
 .page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.5) + 75px );left: calc( 50% - calc( calc(100vh * 0.25) + 25px) );top: calc( calc(100vh * 0.25) - 25px );z-index:0;}
 .page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.5) - 50px );} 
 
-.page-material #displayResult {width:85%;margin:auto;margin-top:25px}
+.page-material #displayResult {width:63%;margin:auto;margin-top:25px}
 
 .page-material #displayResult .item {margin:5px 15px;font-size:18px;font-weight:bold;color:#ff9933}
 .page-material #displayResult .item span, .page-material #displayResult .item p {color:#6a3906;font-weight:500}
@@ -54,10 +61,11 @@
 	transition-duration: 0.25s;
 	transition-timing-function: ease-out;
 	opacity: 1;
+	box-sizing: content-box;
 }
 
 #filterPopup.page-material .foldSelectionZone {
-	border-top: 5px #ff9933 solid;
+	border-top: 1px #231815 solid;
 	padding: 0px 50px;
 	max-height: 0;
 	height: 0%;
@@ -85,7 +93,7 @@
 
 
 /* Color Square */
-#filterPopup.page-material .searchOption .colorSquare.active {width:28px;height:28px;}
+
 .page-material .colorSquare>img {display:none;cursor:pointer;}
 .page-material .colorSquare {
 	display:inline-block;
@@ -146,6 +154,7 @@
 	border:1px solid #ddd;
 }
 
+#filterPopup.page-material .searchOption .colorSquare.active {margin: 0 2px;width:28px;height:28px;border:1px solid #fff;}
 
 /* mineType */
 .page-material .mineType>img {display:none;cursor:pointer;}
@@ -191,23 +200,26 @@
 	.page-material.container.blank {padding:35px 50px 25px;}
 	.page-material h2.subTitle {font-size:21px;}
 	.page-material h3.subTitle {font-size:18px;}
-	.page-material #displayResult {width:75%}
+	.page-material #displayResult {width:80%}
 
 	/* album */
-	.page-material #albumContainer {width:80%;}
 
 	/* 1 */
 	.page-material #album {height: calc(100vh * 0.6);}
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.6) );}
 	.page-material #album div img {width: calc(100vh * 0.6);}
 
 	/* 2 */
 	.page-material #album div.prev {transform: translateY(11%) translateX(-50%);}
-	.page-material #album div.next {transform: translateY(11%) translateX(-50%);}
+	.page-material #album div.next {left: 70%;transform: translateY(11%) translateX(-50%);}
 	.page-material #album div.prev img {width: calc(100vh * 0.5);}
 	.page-material #album div.next img {width: calc(100vh * 0.5);}
 
 	/* 3 */
+	.page-material #album div.prevLeftSecond {left:11%;transform: translateY( calc(50vh * 0.3) ) translateX( calc(50vh * -0.3) );}
 	.page-material #album div.prevLeftSecond img {width: calc(100vh * 0.3);}
+
+	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.3) ) translateX( calc(50vh * -0.05) );}
 	.page-material #album div.nextRightSecond img {width: calc(100vh * 0.3);}
 
 	/* button */
@@ -232,7 +244,8 @@
 	#filterPopup.page-material .foldSelectionZone  {padding: 0px 40px;}
 
 	/* Color Square */
-	#filterPopup.page-material .searchOption .colorSquare.active {width:24px;height:24px;margin:4px -2px}
+	#filterPopup.page-material .searchOption .colorSquare.active {width:24px;height:24px;}
+
 	.page-material .colorSquare {
 		width:47px;height:43px;
 		margin:6px -2px;
@@ -244,7 +257,9 @@
 	.page-material .colorSquare.active {width:52px;height:52px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
 
-	.page-material .colorSquare.active>img, .page-material .mineType.active>img, .page-material .meanType.active>img {width:18px;top:-10px;right:-8px}
+	.page-material .colorSquare.active>img, 
+	.page-material .mineType.active>img, 
+	.page-material .meanType.active>img {width:18px;top:-10px;right:-8px}
 
 	/* mineType */
 	.page-material .mineType {display:inline-block;margin:8px 12px;padding:8px 20px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
@@ -264,16 +279,28 @@
 	/* album */
 	.page-material #albumContainer {width:100%;}
 	.page-material #album {height: calc(100vh * 0.4);}
+
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.4) );}
 	.page-material #album div img {width: calc(100vh * 0.4);}
-	.page-material #album div.prev img, .page-material #album div.next img {width: calc(100vh * 0.3);}
-	.page-material #album div.prevLeftSecond img,.page-material #album div.nextRightSecond img {width: calc(100vh * 0.2);}
+
+	.page-material #album div.prev {transform: translateY(11%) translateX(-40%);}
+	.page-material #album div.next {transform: translateY(11%) translateX(-65%);}
+	.page-material #album div.prev img, 
+	.page-material #album div.next img {width: calc(100vh * 0.325);}
+
+	.page-material #album div.nextRightSecond {transform: translateY( 80px ) translateX( calc(50vw * -0.15) );}
+	.page-material #album div.prevLeftSecond {left:19%;transform: translateY( 80px ) translateX( calc(50vw * -0.15) );}
+
+	.page-material #album div.prevLeftSecond img,
+	.page-material #album div.nextRightSecond img {width: calc(100vh * 0.2);}
+
 
 	.page-material #albumContainer .buttons {
 	    min-width: calc( calc(100vh * 0.4) + 75px );
-	    left: calc( 50% - calc( calc(100vh * 0.19) + 25px) );
+	    left: calc( 50% - calc( calc(100vh * 0.185) + 25px) );
 	    top: calc( calc(100vh * 0.2) - 25px );
 	}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.41) - 50px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.425) - 50px );}
 
 	.page-material #displayResult {width:100%;}
 
@@ -281,10 +308,14 @@
 
 @media only screen and (max-width: 768px) {
 	.page-material.banner {height:30vh;}
-	.page-material #album div.prev {transform: translateY(20%) translateX(-50%);}
-	.page-material #album div.next {transform: translateY(20%) translateX(-50%);}
-	.page-material #albumContainer .buttons {top: calc( calc(100vh * 0.215) - 25px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.415) - 50px );}
+	.page-material #album div.prev {transform: translateY(12%) translateX(-50%);}
+	.page-material #album div.next {transform: translateY(12%) translateX(-50%);left: 70%;}
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.375) + 75px );left: calc( 50% - calc( calc(100vh * 0.2) + 25px) );top: calc( calc(100vh * 0.215) - 25px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.4) - 20px );}
+
+	.page-material #album div.prevLeftSecond {transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.24) );}
+	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.15) );}
+
 }
 
 /* ==============================
@@ -292,7 +323,7 @@
    ============================== */
   
 @media only screen and (max-width: 480px) {
-	.page-material.banner {height:260px;}
+
 	.page-material.container.blank {padding:35px 25px 25px;}
 
 	.page-material h2.subTitle {font-size:18px;}
@@ -302,20 +333,29 @@
 	.page-material #album {height: calc(100vw * 0.5);}
 
 	/* 1 */
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.285) );}
 	.page-material #album div img {width: calc(100vw * 0.5);}
 
 	/* 2 */
+	.page-material #album div.prev {transform: translateY(22%) translateX(-50%);}
+	.page-material #album div.next {transform: translateY(22%) translateX(-50%);}
 	.page-material #album div.prev img {width: calc(100vw * 0.35);}
 	.page-material #album div.next img {width: calc(100vw * 0.35);}
 
 
 	/* 3 */
+	.page-material #album div.prevLeftSecond {transform: translateY( calc(50vh * 0.15) ) translateX( calc(50vh * -0.18) );}
+	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.15) ) translateX( calc(50vh * -0.095) );}
 	.page-material #album div.nextRightSecond img {width: calc(100vw * 0.25);}
 	.page-material #album div.prevLeftSecond img {width: calc(100vw * 0.25);}
 
 	/* button */
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.315) - 50px );} 
+	.page-material #albumContainer .buttons {
+		min-width: calc( calc(100vh * 0.25) + 55px );
+		left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );
+		top: calc( calc(100vw * 0.25) - 15px );
+	}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 46px );} 
 
 
 
@@ -365,4 +405,14 @@
 	.page-material .mean {font-size:16px}
 	.page-material .mean>img {width:32px;}
 
+}
+
+@media only screen and (height: 812px) {
+
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.23) );}
+
+	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.135) ) translateX( calc(50vh * -0.075) );}
+
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 15px );left: calc( 50% - calc( calc(100vh * 0.125) + 5px) );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.25) - 47px );}
 }
