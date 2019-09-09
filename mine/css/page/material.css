@@ -51,8 +51,8 @@
 	max-height: 350px;
 	height: 100%;
 	transition-property: height, max-height, opacity, padding-top ; 
-	transition-duration: 0.35s;
-	transition-timing-function: ease-in-out;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
 	opacity: 1;
 }
 
@@ -62,8 +62,8 @@
 	max-height: 0;
 	height: 0%;
 	transition-property: height, max-height,opacity, padding-top ; 
-	transition-duration: 0.35s;
-	transition-timing-function: ease-in-out;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
 	opacity: 0.3;
 	line-height:0;
 	overflow: hidden;
