@@ -319,7 +319,7 @@
    ============================== */
   
 @media only screen and (max-width: 480px) {
-	.page-material.banner {height:260px;}
+
 	.page-material.container.blank {padding:35px 25px 25px;}
 
 	.page-material h2.subTitle {font-size:18px;}
