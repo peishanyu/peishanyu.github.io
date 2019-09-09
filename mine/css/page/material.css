@@ -333,7 +333,7 @@
 	.page-material #album {height: calc(100vw * 0.5);}
 
 	/* 1 */
-	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.3) );}
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.285) );}
 	.page-material #album div img {width: calc(100vw * 0.5);}
 
 	/* 2 */
@@ -352,10 +352,10 @@
 	/* button */
 	.page-material #albumContainer .buttons {
 		min-width: calc( calc(100vh * 0.25) + 55px );
-		left: calc( 50% - calc( calc(100vh * 0.135) + 25px) );
+		left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );
 		top: calc( calc(100vw * 0.25) - 15px );
 	}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 44px );} 
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 46px );} 
 
 
 
@@ -409,10 +409,10 @@
 
 @media only screen and (height: 812px) {
 
-	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.25) );}
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.23) );}
 
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.135) ) translateX( calc(50vh * -0.075) );}
 
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 15px );left: calc( 50% - calc( calc(100vh * 0.135) + 5px) );}
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 15px );left: calc( 50% - calc( calc(100vh * 0.125) + 5px) );}
 	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.25) - 47px );}
 }
