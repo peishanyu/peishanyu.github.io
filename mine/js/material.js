@@ -114,7 +114,7 @@ function updateMineTypeSelected() {
 	addSearchSection.innerHTML = "";
 	var selectedOptions = document.getElementById("materialMineTypeOptions").querySelectorAll(".mineType.active");
 	for(var si=0; si < selectedOptions.length ; si++){
-		if(si < 8) {
+		if(si < 5) {
 			addSearchSection.innerHTML += "<span>" + selectedOptions[si].textContent + "</span>";
 			if( si+1 !== selectedOptions.length ){
 				addSearchSection.innerHTML += "<span>、</span>";
@@ -131,7 +131,7 @@ function updateMeaningSelected() {
 	addSearchSection.innerHTML = "";
 	var selectedOptions = document.getElementById("materialMeaningOptions").querySelectorAll(".meanType.active");
 	for(var si=0; si < selectedOptions.length ; si++){
-		if(si < 6) {
+		if(si < 5) {
 			addSearchSection.innerHTML += "<span>" + selectedOptions[si].textContent + "</span>";
 			if( si+1 !== selectedOptions.length ){
 				addSearchSection.innerHTML += "<span>、</span>";
