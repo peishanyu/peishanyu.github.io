@@ -7,10 +7,11 @@ html, body, main {
 
 #album {
 	position: relative;
-	height: calc(100vh * 0.4);
+	height: calc(100vh * 0.55);
 	top: 50%;
 	width: 100%;
 	overflow: hidden;
+	z-index: 1;
 }
 
 #album div {
@@ -23,93 +24,93 @@ html, body, main {
 
 #album div img {
 	max-width: unset;
-	width: calc(100vh * 0.4);
+	width: calc(100vh * 0.55);
 	transition: width 1s;
 }
 
 #album div.hideLeft {
 	left: 0%;
 	opacity: 0;
-	transform: translateY( calc(50vh * 0.4) ) translateX( calc(50vh * -0.4) );
+	transform: translateY( calc(50vh * 0.55) ) translateX( calc(50vh * -0.55) );
 }
 
 #album div.hideLeft img {
-	width: calc(100vh * 0.2);
+	width: calc(100vh * 0.35);
 }
 
 #album div.hideRight {
 	left: 100%;
 	opacity: 0;
-	transform: translateY( calc(50vh * 0.4) ) translateX( calc(50vh * -0.4) );
+	transform: translateY( calc(50vh * 0.55) ) translateX( calc(50vh * -0.55) );
 }
 
 #album div.hideRight img {
-	width: calc(100vh * 0.2);
+	width: calc(100vh * 0.35);
 }
 
 #album div.prev {
 	z-index: 5;
 	left: 30%;
-	transform: translateY(50px) translateX( calc(50vh * -0.3) );
+	transform: translateY(50px) translateX( calc(50vh * -0.45) );
 }
 
 #album div.prev img {
-	width: calc(100vh * 0.3);
+	width: calc(100vh * 0.45);
 }
 
 #album div.prevLeftSecond {
 	z-index: 4;
 	left: 15%;
-	transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.2) );
+	transform: translateY( calc(50vh * 0.35) ) translateX( calc(50vh * -0.35) );
 	opacity: 0.7;
 }
 
 #album div.prevLeftSecond img {
-	width: calc(100vh * 0.2);
+	width: calc(100vh * 0.35);
 }
 
 #album div.selected {
 	z-index: 10;
 	left: 50%;
-	transform: translateY(0px) translateX( calc(50vh * -0.4) );
+	transform: translateY(0px) translateX( calc(50vh * -0.55) );
 }
 
 #album div.next {
 	z-index: 5;
 	left: 70%;
-	transform: translateY(50px) translateX( calc(50vh * -0.3) );
+	transform: translateY(50px) translateX( calc(50vh * -0.45) );
 }
 
 #album div.next img {
-	width: calc(100vh * 0.3);
+	width: calc(100vh * 0.45);
 }
 
 #album div.nextRightSecond {
 	z-index: 4;
 	left: 85%;
-	transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.2) );
+	transform: translateY( calc(50vh * 0.35) ) translateX( calc(50vh * -0.35) );
 	opacity: 0.7;
 }
 
 #album div.nextRightSecond img {
-	width: calc(100vh * 0.2);
+	width: calc(100vh * 0.35);
 }
 
 #albumContainer {
 	position: relative;
 	margin: 0px auto;
-	width: 50%;
+	width: 80%;
 	display: block;
 }
 
 .buttons {
 	position: absolute;
-	left: calc( 50% -  calc( calc(100vh * 0.2) + 25px) ); /* 50% -( 1/2 of showing stone image width + 1/2 button width)*/
-	top: calc( calc(100vh * 0.2) - 25px ); /* 1/2 of showing stone image height -  1/2 button width */
-	z-index: 50;
+	left: calc( calc(50% - calc( 50vh * 0.55 )) - 25px );
+	bottom: calc( calc( 50vh * 0.55 ) - 25px);
+	z-index: 2;
 	display: table;
 	width: calc(50% - 25px);
-	min-width : calc( calc(100vh * 0.4) + 75px );
+	min-width : calc( calc(100vh * 0.55) + 75px );
 }
 
 #prevBtn {
@@ -120,87 +121,87 @@ html, body, main {
 	display: inline-block;
 	line-height: 0;
 	float: left;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 }
 
 #nextBtn {
 	width: 50px;
 	height: 50px;
-	margin-left: calc( calc(100vh * 0.4) - 50px ); /* showing stone image width - button width */
+	margin-left: calc( calc(100vh * 0.55) - 50px ); /* showing stone image width - button width */
 	vertical-align: middle;
 	display: inline-block;
 	line-height: 0;
 	float: left;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 }
 
-@media (max-aspect-ratio: 4/3) {
-  #album {height: calc(100vw * 0.35);}
-  #album div img {width: calc(100vw * 0.35);}
+@media (max-aspect-ratio: 4/3)  {
+  #album {height: calc(100vh * 0.25);}
+  #album div img {width: calc(100vh * 0.25);}
 
 
   /** hide left **/
   #album div.hideLeft {
-	transform: translateY( calc(50vw * 0.35) ) translateX( calc(50vw * -0.35) );
+	transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.25) );
   }
-  #album div.hideLeft img {width: calc(100vw * 0.15);}
+  #album div.hideLeft img {width: calc(100vh * 0.1);}
   
   
   /**  left pre 1 **/
   #album div.prev {
-	transform: translateY(50px) translateX( calc(50vw * -0.25) );
+	transform: translateY(50px) translateX( calc(50vh * -0.2) );
   }
-  #album div.prev img {width: calc(100vw * 0.25);}
+  #album div.prev img {width: calc(100vh * 0.2);}
   
 
 
   /**  left pre 2 **/
   #album div.prevLeftSecond {
-	transform: translateY( 80px ) translateX( calc(50vw * -0.15) );
+	transform: translateY( 80px ) translateX( calc(50vh * -0.1) );
   }
-  #album div.prevLeftSecond img {width: calc(100vw * 0.15);}
+  #album div.prevLeftSecond img {width: calc(100vh * 0.1);}
   
   
   
   /**  selected center **/
   #album div.selected {
-	transform: translateY(0px) translateX( calc(50vw * -0.35) );
+	transform: translateY(0px) translateX( calc(50vh * -0.25) );
   }
   
   
   /** hide right **/
   #album div.hideRight {
-	transform: translateY( calc(50vw * 0.35) ) translateX( calc(50vw * -0.35) );
+	transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.3) );
   }
-  #album div.hideRight img {width: calc(100vw * 0.15);}
+  #album div.hideRight img {width: calc(100vh * 0.1);}
   
   /** next 1 **/
   #album div.next {
-	transform: translateY(50px) translateX( calc(50vw * -0.25) );
+	transform: translateY(50px) translateX( calc(50vh * -0.2) );
   }
-  #album div.next img {width: calc(100vw * 0.25);}
+  #album div.next img {width: calc(100vh * 0.2);}
   
   
   /** next 2 **/
   #album div.nextRightSecond {
-	transform: translateY( 80px ) translateX( calc(50vw * -0.15) );
+	transform: translateY( 80px ) translateX( calc(50vh * -0.1) );
   }
-  #album div.nextRightSecond img {width: calc(100vw * 0.15);}
+  #album div.nextRightSecond img {width: calc(100vh * 0.1);}
 
   
   /** button **/
   .buttons {
-  	left: calc( 50% -  calc( calc(100vw * 0.175) + 15px) ); /* 50% -( 1/2 of showing stone image width + 1/2 button width)*/
-	top: calc( calc(100vw * 0.175) - 15px ); /* 1/2 of showing stone image height -  1/2 button width */
-	min-width : calc( calc(100vw * 0.35) + 50px );
+  	left: calc( 50% -  calc( calc(50vh * 0.25) + 15px) ); /* 50% -( 1/2 of showing stone image width + 1/2 button width)*/
+	top: calc( calc(50vh * 0.25) - 15px ); /* 1/2 of showing stone image height -  1/2 button width */
+	min-width : calc( calc(100vh * 0.25) + 50px );
   }
   
   #nextBtn {
   	width: 30px;
   	height: 30px;
-  	margin-left: calc( calc(100vw * 0.35) - 30px ); /* showing stone image width - button width */
+  	margin-left: calc( calc(100vh * 0.25) - 30px ); /* showing stone image width - button width */
   }
   
   #prevBtn {

@@ -7,23 +7,31 @@
 .page-material h3.subTitle {margin-right:50px;font-size:22px;font-weight:700;color:#6a3906;}
 
 /* album */
+
+#albumPage{
+	
+}
+/* for main album, refer to album.css*/ 
+/*
 .page-material #albumPage{margin-top:25px}
 .page-material #album {z-index:0;height: calc(100vh * 0.5);}
 
 
 .page-material #albumContainer{width:80%}
+*/
 
-/* 1 */
+/* 1 
 .page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.5) );}
 .page-material #album div img {width: calc(100vh * 0.5);}
+*/
 
-/* 2 */
+/* 2
 .page-material #album div.next{left:63%;}
 .page-material #album div.next img {width: calc(100vh * 0.4);}
 
 .page-material #album div.prev img {width: calc(100vh * 0.4);}
-
-/* 3 */
+ */
+/* 3 
 .page-material #album div.nextRightSecond {left:80%;transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.25) );}
 .page-material #album div.nextRightSecond img {width: calc(100vh * 0.25);}
 .page-material #album div.prevLeftSecond{left:20%;transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.25) );}
@@ -31,6 +39,7 @@
 
 .page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.5) + 75px );left: calc( 50% - calc( calc(100vh * 0.25) + 25px) );top: calc( calc(100vh * 0.25) - 25px );z-index:0;}
 .page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.5) - 50px );} 
+*/
 
 .page-material #displayResult {width:63%;margin:auto;margin-top:25px}
 
@@ -58,8 +67,8 @@
 	max-height: 350px;
 	height: 100%;
 	transition-property: height, max-height, opacity, padding-top ; 
-	transition-duration: 0.35s;
-	transition-timing-function: ease-in-out;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
 	opacity: 1;
 	box-sizing: content-box;
 }
@@ -70,8 +79,8 @@
 	max-height: 0;
 	height: 0%;
 	transition-property: height, max-height,opacity, padding-top ; 
-	transition-duration: 0.35s;
-	transition-timing-function: ease-in-out;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
 	opacity: 0.3;
 	line-height:0;
 	overflow: hidden;
@@ -177,7 +186,7 @@
 .page-material .filterSubmit {text-align:center;margin:30px 15px;}
 
 /*zone arrow*/
-.page-material .zoneArrow {
+.page-material .zoneArrow img {
 	transition-duration: .35s;
 	
 }
@@ -204,28 +213,28 @@
 
 	/* album */
 
-	/* 1 */
+	/* 1 
 	.page-material #album {height: calc(100vh * 0.6);}
 	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.6) );}
 	.page-material #album div img {width: calc(100vh * 0.6);}
-
-	/* 2 */
+*/
+	/* 2 
 	.page-material #album div.prev {transform: translateY(11%) translateX(-50%);}
 	.page-material #album div.next {left: 70%;transform: translateY(11%) translateX(-50%);}
 	.page-material #album div.prev img {width: calc(100vh * 0.5);}
 	.page-material #album div.next img {width: calc(100vh * 0.5);}
-
-	/* 3 */
+*/
+	/* 3 
 	.page-material #album div.prevLeftSecond {left:11%;transform: translateY( calc(50vh * 0.3) ) translateX( calc(50vh * -0.3) );}
 	.page-material #album div.prevLeftSecond img {width: calc(100vh * 0.3);}
 
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.3) ) translateX( calc(50vh * -0.05) );}
 	.page-material #album div.nextRightSecond img {width: calc(100vh * 0.3);}
-
-	/* button */
+*/
+	/* button 
 	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.6) + 75px );left: calc( 50% - calc( calc(100vh * 0.3) + 25px) );top: calc( calc(100vh * 0.3) - 25px );}
 	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.6) - 50px );} 
-
+*/
 	.page-material #displayResult .item {margin:5px 15px;font-size:16px;font-weight:bold;color:#ff9933}
 	.page-material #displayResult .item span, .page-material #displayResult .item p {color:#6a3906;font-weight:500}
 
@@ -276,7 +285,7 @@
 	.page-material.banner {height:45vh;}
 	.page-material h2.subTitle {margin-right:15px;font-size:20px;}
 
-	/* album */
+	/* album 
 	.page-material #albumContainer {width:100%;}
 	.page-material #album {height: calc(100vh * 0.4);}
 
@@ -301,6 +310,7 @@
 	    top: calc( calc(100vh * 0.2) - 25px );
 	}
 	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.425) - 50px );}
+	*/
 
 	.page-material #displayResult {width:100%;}
 
@@ -308,6 +318,7 @@
 
 @media only screen and (max-width: 768px) {
 	.page-material.banner {height:30vh;}
+	/*
 	.page-material #album div.prev {transform: translateY(12%) translateX(-50%);}
 	.page-material #album div.next {transform: translateY(12%) translateX(-50%);left: 70%;}
 	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.375) + 75px );left: calc( 50% - calc( calc(100vh * 0.2) + 25px) );top: calc( calc(100vh * 0.215) - 25px );}
@@ -315,6 +326,7 @@
 
 	.page-material #album div.prevLeftSecond {transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.24) );}
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.15) );}
+	*/
 
 }
 
@@ -328,35 +340,36 @@
 
 	.page-material h2.subTitle {font-size:18px;}
 
-	/* album */
+	/* album 
 	.page-material #albumContainer {width:100%;}
 	.page-material #album {height: calc(100vw * 0.5);}
+	*/
 
-	/* 1 */
+	/* 1 
 	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.285) );}
 	.page-material #album div img {width: calc(100vw * 0.5);}
-
-	/* 2 */
+*/
+	/* 2 
 	.page-material #album div.prev {transform: translateY(22%) translateX(-50%);}
 	.page-material #album div.next {transform: translateY(22%) translateX(-50%);}
 	.page-material #album div.prev img {width: calc(100vw * 0.35);}
 	.page-material #album div.next img {width: calc(100vw * 0.35);}
+*/
 
-
-	/* 3 */
+	/* 3 
 	.page-material #album div.prevLeftSecond {transform: translateY( calc(50vh * 0.15) ) translateX( calc(50vh * -0.18) );}
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.15) ) translateX( calc(50vh * -0.095) );}
 	.page-material #album div.nextRightSecond img {width: calc(100vw * 0.25);}
 	.page-material #album div.prevLeftSecond img {width: calc(100vw * 0.25);}
-
-	/* button */
+*/
+	/* button 
 	.page-material #albumContainer .buttons {
 		min-width: calc( calc(100vh * 0.25) + 55px );
 		left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );
 		top: calc( calc(100vw * 0.25) - 15px );
 	}
 	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 46px );} 
-
+*/
 
 
 
@@ -397,22 +410,23 @@
 
 
 	/* mineType */
-	.page-material .mineType {display:inline-block;margin:8px 10px;padding:8px 15px;font-size:14px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
+	.page-material .mineType {display:inline-block;margin:8px 10px;padding:8px 15px;font-size:14px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer; width: 65px;}
 
 
 	/* meanType */
-	.page-material .meanType {display:inline-block;margin:10px 12px;padding:12px 15px;font-size:14px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
-	.page-material .mean {font-size:16px}
-	.page-material .mean>img {width:32px;}
+	.page-material .meanType {display:inline-block;margin:10px 12px;padding: 8px 10px;font-size:14px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
+	.page-material .mean {font-size:14px}
+	.page-material .mean>img {width:28px;}
 
 }
 
 @media only screen and (height: 812px) {
-
+/*
 	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.23) );}
 
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.135) ) translateX( calc(50vh * -0.075) );}
 
 	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 15px );left: calc( 50% - calc( calc(100vh * 0.125) + 5px) );}
 	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.25) - 47px );}
+	*/
 }
