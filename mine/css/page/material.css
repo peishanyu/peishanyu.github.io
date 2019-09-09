@@ -351,10 +351,11 @@
 
 	/* button */
 	.page-material #albumContainer .buttons {
-		min-width: calc( calc(100vh * 0.25) + 50px );
-		left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );
+		min-width: calc( calc(100vh * 0.25) + 55px );
+		left: calc( 50% - calc( calc(100vh * 0.135) + 25px) );
+		top: calc( calc(100vw * 0.25) - 15px );
 	}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 50px );} 
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 44px );} 
 
 
 
@@ -412,6 +413,6 @@
 
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.135) ) translateX( calc(50vh * -0.075) );}
 
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 10px );left: calc( 50% - calc( calc(100vh * 0.135) + 5px) );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.25) - 50px );}
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 15px );left: calc( 50% - calc( calc(100vh * 0.135) + 5px) );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.25) - 47px );}
 }
