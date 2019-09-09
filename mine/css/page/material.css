@@ -61,10 +61,11 @@
 	transition-duration: 0.35s;
 	transition-timing-function: ease-in-out;
 	opacity: 1;
+	box-sizing: content-box;
 }
 
 #filterPopup.page-material .foldSelectionZone {
-	border-top: 5px #ff9933 solid;
+	border-top: 1px #231815 solid;
 	padding: 0px 50px;
 	max-height: 0;
 	height: 0%;
