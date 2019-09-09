@@ -195,7 +195,7 @@ document.getElementById("meterialFilterSubmitBtn").addEventListener('click', fun
 
 
 document.getElementById("mineTypeZoneArrow").addEventListener('click', function (e) {
-	e.preventDefault();
+	//e.preventDefault();
 	var element = event.target;
 	var foldZone = document.getElementById("materialMineTypeOptions");
 	
@@ -213,7 +213,7 @@ document.getElementById("mineTypeZoneArrow").addEventListener('click', function 
 });
 
 document.getElementById("meaningZoneArrow").addEventListener('click', function (e) {
-	e.preventDefault();
+	//e.preventDefault();
 	var element = event.target;
 	var foldZone = document.getElementById("materialMeaningOptions");
 	
@@ -231,7 +231,7 @@ document.getElementById("meaningZoneArrow").addEventListener('click', function (
 });
 
 document.getElementById("colorZoneArrow").addEventListener('click', function (e) {
-	e.preventDefault();
+	//e.preventDefault();
 	var element = event.target;
 	var foldZone = document.getElementById("materialColorOptions");
 	
