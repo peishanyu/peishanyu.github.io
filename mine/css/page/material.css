@@ -280,12 +280,14 @@
 
 	.page-material #album div.prev {transform: translateY(11%) translateX(-40%);}
 	.page-material #album div.next {transform: translateY(11%) translateX(-65%);}
-	.page-material #album div.prev img, .page-material #album div.next img {width: calc(100vh * 0.325);}
+	.page-material #album div.prev img, 
+	.page-material #album div.next img {width: calc(100vh * 0.325);}
 
 	.page-material #album div.nextRightSecond {transform: translateY( 80px ) translateX( calc(50vw * -0.15) );}
 	.page-material #album div.prevLeftSecond {left:19%;transform: translateY( 80px ) translateX( calc(50vw * -0.15) );}
 
-	.page-material #album div.prevLeftSecond img,.page-material #album div.nextRightSecond img {width: calc(100vh * 0.2);}
+	.page-material #album div.prevLeftSecond img,
+	.page-material #album div.nextRightSecond img {width: calc(100vh * 0.2);}
 
 
 	.page-material #albumContainer .buttons {
@@ -330,11 +332,15 @@
 	.page-material #album div img {width: calc(100vw * 0.5);}
 
 	/* 2 */
+	.page-material #album div.prev {transform: translateY(22%) translateX(-50%);}
+	.page-material #album div.next {transform: translateY(22%) translateX(-50%);}
 	.page-material #album div.prev img {width: calc(100vw * 0.35);}
 	.page-material #album div.next img {width: calc(100vw * 0.35);}
 
 
 	/* 3 */
+	.page-material #album div.prevLeftSecond {transform: translateY( calc(50vh * 0.15) ) translateX( calc(50vh * -0.18) );}
+	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.15) ) translateX( calc(50vh * -0.095) );}
 	.page-material #album div.nextRightSecond img {width: calc(100vw * 0.25);}
 	.page-material #album div.prevLeftSecond img {width: calc(100vw * 0.25);}
 
