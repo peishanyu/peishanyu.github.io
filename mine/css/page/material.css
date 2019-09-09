@@ -397,13 +397,13 @@
 
 
 	/* mineType */
-	.page-material .mineType {display:inline-block;margin:8px 10px;padding:8px 15px;font-size:14px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
+	.page-material .mineType {display:inline-block;margin:8px 10px;padding:8px 15px;font-size:14px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer; width: 65px;}
 
 
 	/* meanType */
-	.page-material .meanType {display:inline-block;margin:10px 12px;padding:12px 15px;font-size:14px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
-	.page-material .mean {font-size:16px}
-	.page-material .mean>img {width:32px;}
+	.page-material .meanType {display:inline-block;margin:10px 12px;padding: 8px 10px;font-size:14px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
+	.page-material .mean {font-size:14px}
+	.page-material .mean>img {width:28px;}
 
 }
 
