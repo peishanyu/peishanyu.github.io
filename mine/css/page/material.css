@@ -93,7 +93,7 @@
 
 
 /* Color Square */
-#filterPopup.page-material .searchOption .colorSquare.active {width:28px;height:28px;}
+
 .page-material .colorSquare>img {display:none;cursor:pointer;}
 .page-material .colorSquare {
 	display:inline-block;
@@ -154,6 +154,7 @@
 	border:1px solid #ddd;
 }
 
+#filterPopup.page-material .searchOption .colorSquare.active {margin: 0 2px;width:28px;height:28px;border:1px solid #fff;}
 
 /* mineType */
 .page-material .mineType>img {display:none;cursor:pointer;}
@@ -243,7 +244,8 @@
 	#filterPopup.page-material .foldSelectionZone  {padding: 0px 40px;}
 
 	/* Color Square */
-	#filterPopup.page-material .searchOption .colorSquare.active {width:24px;height:24px;margin:4px -2px}
+	#filterPopup.page-material .searchOption .colorSquare.active {width:24px;height:24px;}
+
 	.page-material .colorSquare {
 		width:47px;height:43px;
 		margin:6px -2px;
@@ -255,7 +257,9 @@
 	.page-material .colorSquare.active {width:52px;height:52px;border:2px solid #fff;margin-right:0}
 	.page-material .colorSquare.last {border-right-width:2px}
 
-	.page-material .colorSquare.active>img, .page-material .mineType.active>img, .page-material .meanType.active>img {width:18px;top:-10px;right:-8px}
+	.page-material .colorSquare.active>img, 
+	.page-material .mineType.active>img, 
+	.page-material .meanType.active>img {width:18px;top:-10px;right:-8px}
 
 	/* mineType */
 	.page-material .mineType {display:inline-block;margin:8px 12px;padding:8px 20px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
@@ -306,8 +310,8 @@
 	.page-material.banner {height:30vh;}
 	.page-material #album div.prev {transform: translateY(12%) translateX(-50%);}
 	.page-material #album div.next {transform: translateY(12%) translateX(-50%);left: 70%;}
-	.page-material #albumContainer .buttons {top: calc( calc(100vh * 0.215) - 25px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.415) - 50px );}
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.375) + 75px );left: calc( 50% - calc( calc(100vh * 0.2) + 25px) );top: calc( calc(100vh * 0.215) - 25px );}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.4) - 20px );}
 
 	.page-material #album div.prevLeftSecond {transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.24) );}
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.2) ) translateX( calc(50vh * -0.15) );}
@@ -346,8 +350,11 @@
 	.page-material #album div.prevLeftSecond img {width: calc(100vw * 0.25);}
 
 	/* button */
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 75px );left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );}
-	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.315) - 50px );} 
+	.page-material #albumContainer .buttons {
+		min-width: calc( calc(100vh * 0.25) + 50px );
+		left: calc( 50% - calc( calc(100vh * 0.125) + 25px) );top: calc( calc(100vw * 0.25) - 15px );
+	}
+	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.3) - 50px );} 
 
 
 
@@ -405,6 +412,6 @@
 
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.135) ) translateX( calc(50vh * -0.075) );}
 
-	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 10px );left: calc( 50% - calc( calc(100vh * 0.125) + 5px) );}
+	.page-material #albumContainer .buttons {min-width: calc( calc(100vh * 0.25) + 10px );left: calc( 50% - calc( calc(100vh * 0.135) + 5px) );}
 	.page-material #albumContainer #nextBtn {margin-left: calc( calc(100vh * 0.25) - 50px );}
 }
