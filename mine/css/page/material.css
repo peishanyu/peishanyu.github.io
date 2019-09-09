@@ -329,7 +329,7 @@
 	.page-material #album {height: calc(100vw * 0.5);}
 
 	/* 1 */
-	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.28) );}
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.3) );}
 	.page-material #album div img {width: calc(100vw * 0.5);}
 
 	/* 2 */
@@ -400,7 +400,8 @@
 }
 
 @media only screen and (height: 812px) {
-	.page-material #album div.selected {left:55%;}
+
+	.page-material #album div.selected {transform: translateY(0px) translateX( calc(50vh * -0.25) );}
 
 	.page-material #album div.nextRightSecond {transform: translateY( calc(50vh * 0.135) ) translateX( calc(50vh * -0.075) );}
 
