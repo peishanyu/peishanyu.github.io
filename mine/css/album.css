@@ -99,7 +99,7 @@ html, body, main {
 #albumContainer {
 	position: relative;
 	margin: 0px auto;
-	width: 80%;
+	width: 90%;
 	display: block;
 }
 
@@ -151,7 +151,7 @@ html, body, main {
   
   /**  left pre 1 **/
   #album div.prev {
-	transform: translateY(50px) translateX( calc(50vh * -0.2) );
+	transform: translateY(40px) translateX( calc(50vh * -0.2) );
   }
   #album div.prev img {width: calc(100vh * 0.2);}
   
@@ -159,7 +159,7 @@ html, body, main {
 
   /**  left pre 2 **/
   #album div.prevLeftSecond {
-	transform: translateY( 80px ) translateX( calc(50vh * -0.1) );
+	transform: translateY( 70px ) translateX( calc(50vh * -0.1) );
   }
   #album div.prevLeftSecond img {width: calc(100vh * 0.1);}
   
@@ -173,20 +173,20 @@ html, body, main {
   
   /** hide right **/
   #album div.hideRight {
-	transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * -0.3) );
+	transform: translateY( calc(50vh * 0.25) ) translateX( calc(50vh * 0.25) );
   }
   #album div.hideRight img {width: calc(100vh * 0.1);}
   
   /** next 1 **/
   #album div.next {
-	transform: translateY(50px) translateX( calc(50vh * -0.2) );
+	transform: translateY(40px) translateX( calc(50vh * -0.2) );
   }
   #album div.next img {width: calc(100vh * 0.2);}
   
   
   /** next 2 **/
   #album div.nextRightSecond {
-	transform: translateY( 80px ) translateX( calc(50vh * -0.1) );
+	transform: translateY( 70px ) translateX( calc(50vh * -0.1) );
   }
   #album div.nextRightSecond img {width: calc(100vh * 0.1);}
 
