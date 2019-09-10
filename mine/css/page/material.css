@@ -1,3 +1,5 @@
+
+
 .page-material.banner {height:60vh;background:url(../../static/images/material/bg-top.jpg) no-repeat center center;background-size:cover;}
 
 .page-material.container.blank {padding-top:50px;padding-bottom:30px}
@@ -51,13 +53,16 @@
 /* album end */
 
 /* filter Popup */
+#filterPopup.page-material {top:5%;position:fixed;z-index:99;width:100%}
 #filterPopup.page-material .closePopup {position:absolute;right:0;display:inline-block;text-align:right;padding:30px}
 #filterPopup.page-material .container {position:absolute;right:0;left:0;width:80%;max-height:90vh;overflow-y:scroll;overflow-x:hidden;padding:0;background:#fff;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);}
 #filterPopup.page-material h2.popupTitle {padding:10px 50px;padding-top:40px;font-size:29px;font-weight:700;color:#6a3906;}
 #filterPopup.page-material .searchBar {margin-bottom:8px;padding:10px 50px;font-size:20px;font-weight:700;color:#6a3906;}
+	#filterPopup.page-material .searchBar input {margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto}
 
 #filterPopup.page-material .searchOption {padding:10px 50px;padding-right:20px;font-size:18px;font-weight:700;color:#6a3906;}
-	#filterPopup.page-material .searchOption .choosen {font-size:16px}
+	#filterPopup.page-material .searchOption .choosen {font-size:16px;}
+	#filterPopup.page-material .searchOption .choosen.color {vertical-align:-webkit-baseline-middle;}
 	
 #filterPopup.page-material .optionZone {font-size:0;background:#c2c2c2}
 
@@ -186,6 +191,8 @@
 .page-material .filterSubmit {text-align:center;margin:30px 15px;}
 
 /*zone arrow*/
+.page-material .zoneArrow {margin-left:15px;vertical-align:middle;}
+
 .page-material .zoneArrow img {
 	transition-duration: .35s;
 	
