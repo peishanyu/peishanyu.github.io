@@ -1,0 +1,64 @@
+.page-newseason .banner {
+	height:100vh;
+	background:url(../../static/images/newseason/bgCover.jpg) no-repeat center;
+	background-size:cover;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 98%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 98%);
+}
+
+.page-newseason .bg-under {
+	position:absolute;
+	width:100%;
+	height:1280px;
+	top:50px;
+	background:url(../../static/images/newseason/bgSand.jpg) no-repeat center;
+	background-size:cover;
+	z-index:-1;
+}
+
+.page-newseason .discount {bottom:5%;right:3.5%}
+.page-newseason .discount h3, .page-newseason .discount .description {color:#574c45}
+.page-newseason .discount h3 {margin-bottom:19px;font-size:53px;font-weight:600}
+.page-newseason .discount .description {margin-bottom:40px;font-size:27px}
+
+.page-newseason .modal-btn-comfirm {
+	width:auto;
+    height:100%;
+    margin-right:0;
+    font-size:34px;
+    padding:12px 50px;
+}
+
+/* Responseve */
+
+@media only screen and (max-width: 1680px) {
+	.page-newseason .banner {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 54%, 0% 95%);
+    	clip-path: polygon(0 0, 100% 0, 100% 54%, 0% 95%);
+    }
+
+	.page-newseason .discount {bottom:5%;right:5%}
+	.page-newseason .discount h3 {margin-bottom:10px;font-size:40px;}
+	.page-newseason .discount .description {margin-bottom:30px;font-size:20px}
+	.page-newseason .modal-btn-comfirm {font-size:25px;padding:8px 40px;}
+}
+
+@media only screen and (max-width: 1440px) {
+	.page-newseason .bg-under {height:900px;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* ==============================
+   Phone
+   ============================== */
+  
+@media only screen and (max-width: 480px) {
+
+}
