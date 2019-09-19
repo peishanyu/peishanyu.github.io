@@ -10,10 +10,26 @@
 	position:absolute;
 	width:100%;
 	height:1280px;
-	top:50px;
+	top:50vh;
 	background:url(../../static/images/newseason/bgSand.jpg) no-repeat center;
 	background-size:cover;
 	z-index:-1;
+}
+
+.page-newseason .bg-stone {
+	width:100%;
+	height:1200px;
+	background:url(../../static/images/newseason/bgStone.png) no-repeat left center;
+	background-size:cover;
+	margin-top:8%;
+}
+
+.page-newseason .square {
+	position:absolute;
+	width:1300px;
+	height:1264px;
+	right:0;
+	background:url(../../static/images/newseason/bg_new1_square.jpg) no-repeat left;
 }
 
 .page-newseason .discount {bottom:5%;right:3.5%}
@@ -29,6 +45,9 @@
     padding:12px 50px;
 }
 
+.page-newseason .leaf-r {bottom:-20%;right:20%}
+.page-newseason .leaf-l {bottom:-55%;left:-1%;}
+
 /* Responseve */
 
 @media only screen and (max-width: 1680px) {
@@ -41,6 +60,11 @@
 	.page-newseason .discount h3 {margin-bottom:10px;font-size:40px;}
 	.page-newseason .discount .description {margin-bottom:30px;font-size:20px}
 	.page-newseason .modal-btn-comfirm {font-size:25px;padding:8px 40px;}
+
+	.page-newseason .leaf-r {width:25%;right:25%;bottom:-19%;}
+	.page-newseason .leaf-l {width:45%;}
+
+	.page-newseason .bg-stone {height: 900px;}
 }
 
 @media only screen and (max-width: 1440px) {
