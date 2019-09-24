@@ -14,9 +14,10 @@
 	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	
 	<!-- custom -->
-	<link rel="stylesheet" type="text/css" href="css/page/index.css">
+	<link rel="stylesheet" type="text/css" href="css/album.css">
+	<link rel="stylesheet" type="text/css" href="css/page/newseason.css">
 
-	<title>MINE</title>
+	<title>MINE | 本季新品</title>
 	<link rel="icon" href="static/favicon.ico" class="next-head">
 
 </head>
@@ -42,13 +43,13 @@
 				<div class="modal-body">
 					<div class="container">
 						<div class="form-group row">
-							<div class="col-20 col-xs-100 col-form-label title"><span class="">手機號碼</span></div>
-							<div class="col-50 col-xs-100 col-form-label input"><input class="width-100" type="" name=""></div>
-							<div class="col-30 col-xs-100 col-form-label text-r"><button class="btn sendSms">寄送驗證碼</button></div>
+							<div class="col-20 col-xs-100 col-form-label"><span class="">手機號碼</span></div>
+							<div class="col-50 col-xs-100 col-form-label"><input class="width-100" type="" name="" /></div>
+							<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
 						</div>
 						<div class="form-group row">
-							<div class="col-16 col-xs-100 col-form-label title"><span class="">驗證碼</span></div>
-							<div class="col-84 col-xs-100 col-form-label input"><input class="width-100" type="" name=""></div>
+							<div class="col-16 col-xs-100 col-form-label"><span class="">驗證碼</span></div>
+							<div class="col-84 col-xs-100 col-form-label"><input class="width-100" type="" name="" /></div>
 						</div>
 					</div>
 				</div>
@@ -78,17 +79,17 @@
 				<div class="modal-body">
 					<div class="container">
 						<div class="form-group row">
-							<div class="col-20 col-xs-100 col-form-label title"><span class="">手機號碼</span></div>
-							<div class="col-50 col-xs-100 col-form-label input"><input class="width-100" type="" name=""></div>
-							<div class="col-30 col-xs-100 col-form-label text-r"><button class="btn sendSms">寄送驗證碼</button></div>
+							<div class="col-20 col-xs-100 col-form-label"><span class="">手機號碼</span></div>
+							<div class="col-50 col-xs-100 col-form-label"><input class="width-100" type="" name="" /></div>
+							<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
 						</div>
 						<div class="form-group row">
-							<div class="col-15 col-xs-100 col-form-label title"><span class="">驗證碼</span></div>
-							<div class="col-84 col-xs-100 col-form-label input clearfix"><input class="width-100" type="" name=""></div>
+							<div class="col-16 col-xs-100 col-form-label"><span class="">驗證碼</span></div>
+							<div class="col-84 col-xs-100 col-form-label clearfix"><input class="width-100" type="" name="" /></div>
 						</div>
 						<div class="form-group row">
-							<div class="col-15 col-xs-100 col-form-label title"><span class="">姓 名</span></div>
-							<div class="col-84 col-xs-100 col-form-label input"><input class="width-100" type="" name=""></div>
+							<div class="col-16 col-xs-100 col-form-label"><span class="">姓名</span></div>
+							<div class="col-84 col-xs-100 col-form-label clearfix"><input class="width-100" type="" name="" /></div>
 						</div>
 					</div>
 				</div>
@@ -106,14 +107,14 @@
 		</div>
 	</div>
 </div>
-<div id="add-modalMask" class="modal-mask" style="display:none" onclick="loginModal();editTaskModal()"></div>
+<div id="add-modalMask" class="modal-mask" style="display:none" onclick="loginModal()"></div>
 <!-- login end -->
 
 <!-- Menu Start -->
-<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display: none;" onclick="menuClose();">
+<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display: none;" onclick="menuClose();" />
 	
 	<div class="absolute container ">
-		<div><img src="static/images/menu/ic-close_menu.svg" class="close pointer"  onclick="menuClose();" /></div>
+		<div onclick="menuClose();" ><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
 		<div class="menu-r-list">
 
 			<div class="menu-r-item"><a href="index.html">首頁 <span>HOME PAGE</span></a></div>
@@ -145,6 +146,7 @@
 </div>
 <!-- Menu end -->
 
+
 <!-- HEADER start -->
 <header>
 	<div class="mask-header">
@@ -172,10 +174,8 @@
 						<div class="absolute dot-cart active"></div>
 						<img src="static/images/ic-cart_header.svg" id="ic-cart" class="pointer" />
 					</div>
-					<div id="ic-menu" onclick="menuClick()">
-					  <span></span>
-					  <span></span>
-					  <span></span>
+					<div>
+						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuShow();" />	
 					</div>
 					
 				</div>
@@ -185,142 +185,131 @@
 </header>
 <!-- header end -->
 
-<div class="page-index">
-	<section class="carousel-full ad-carousel bg-position-x-33 ad-r relative">
-		<div class="absolute description text-r">
-			<h3 class="white">夏日風格探險系列</h1>
-			<p class="white">文案範例，為彼此訂製最合適的手環</p>
-			<a href=""><span class="btn btn-round-w">客製此系列手環</span></a>
+<!-- banner -->
+<div class="page-newseason relative">
+	<div class="banner"></div>
+	<div class="bg-under"></div>
+	<div class="absolute discount text-r">
+		<h3>秋季新品上市</h3>
+		<div class="description">指定商品滿8000享有9折優惠</div>
+		<button class="col-xs-100 btn modal-btn-comfirm" onclick="" />前往選購</button>
+	</div>
+	<div class="absolute leaf-r">
+		<img src="static/images/newseason/leaf-r.png" />
+	</div>
+	<div class="absolute leaf-l">
+		<img src="static/images/newseason/leaf-l.png" />
+	</div>
+</div>
+<!-- banner end -->
+
+<div class="page-newseason relative">
+	<div class="bg-stone absolute"></div>
+	<div class="relative new">
+		<div class="inline text-r intro1">
+			<h3 class="title">璀璨秋季</h3>
+			<p class="description">
+				每一件mine秋季商品都可<br>
+				進行疊加佩戴。無論是與<br>
+				服飾，或是與時尚飾品。<br>
+				秋季商品都可<br>
+				進行疊加佩戴。<br>
+			</p>
+			<button class="btn btn-outline-orange">前往選購</button>
 		</div>
-	</section>	
+		<div class="square"></div>
+	</div>
+
+	<div class="relative new">
+		<div class="circle"></div>
+		<div class="inline text-r intro2">
+			<h3 class="title">全新系列</h3>
+			<p class="description">
+				每一件mine秋季商品<br>
+				都可進行疊加佩戴。<br>
+				無論是與服飾，<br>
+				或是與時尚飾品。<br>
+				秋季商品都可<br>
+				進行疊加佩戴。<br>
+			</p>
+			<button class="btn btn-outline-orange">前往選購</button>
+		</div>	
+	</div>
 </div>
 
-<div class="page-index">
-	<section id="story">
-		<div class="container">
-			<div class="inline col-50 col-xs-100 st1">
+<div class="page-newseason bg-under-2">
+	<div class="absolute series">
+		<h3 class="inline">花蝴蝶系列</h3>
+		<button class="col-xs-100 btn modal-btn-comfirm" onclick="" />前往選購</button>
+		<div class="description">秋天的時尚語言，勾勒著浪漫的輪廓與盛夏後的回憶</div>
+	</div>
+</div>
 
-				<div></div> <!-- 預留 -->
 
-				<div>
-					<div></div> <!-- 預留 -->
-					<!--
-					<img src="static/images/index/img-1_home.jpg" class="story-img-1" />
-					-->
 
-					<!-- 左圖 -->
-					<div class="recommend-l"></div>
-					<!-- 左圖 end -->
-
-				</div>
-
-				<div></div> <!-- 預留 -->
-
-				<div class="container-fluid info">
-					<div class="row relative">
-						<h3 class="pd-0 col-xs-100">今年夏天，最充實的故事，最能代表此時此刻的信物。</h1>
-						<div class="absolute col-100 pd-0 col-xs-100 text-r alink">
-							<a href=""><span class="btn-text-b">前往瀏覽</span><img class="arrow-b" src="static/images/index/arrow-b.svg" /></a>
-						</div>		
+<div class="page-newseason">
+	<div class="bg-stone-2">
+		<div id="newseasonCarousel" class="page-newseason container blank">
+			<div id="albumPage">
+				<div id="albumContainer">
+					<div id="album">
+				
+						<div class="hideLeft">
+							<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg" />
+						</div>
+				
+						<div class="prevLeftSecond">
+							<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg" />
+						</div>
+				
+						<div class="prev">
+							<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg" />
+						</div>
+				
+						<div class="selected">
+							<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg" />
+						</div>
+				
+						<div class="next">
+							<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg" />
+						</div>
+				
+						<div class="nextRightSecond">
+							<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg" />
+						</div>
+				
+						<div class="hideRight">
+							<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg" />
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="float-r col-35 col-xs-100 text-r st2">
-
-				<div></div><!-- 預留 -->
-
-				<div>
-					<div></div> <!-- 預留 -->
-
-					<!--
-					<img src="static/images/index/img-2_home.jpg" class="story-img-2" />
-					-->
-
-					<!-- 右圖 -->
-					<div class="recommend-r"></div>
-					<!-- 右圖 end -->
-
-				</div>
-
-				<div></div><!-- 預留 -->
-
-				<div class="container-fluid info">
-					<div class="row relative text-l st2-short">
-						<h3 class="pd-0 col-xs-100">文案二欄位，今年夏天，最充實的故事，最能代表此時此刻的信物。</h1>
-						<div class="absolute col-100 pd-0 col-xs-100 text-r alink">
-							<a href=""><span class="btn-text-b">前往瀏覽</span><img class="arrow-b" src="static/images/index/arrow-b.svg" /></a>
-						</div>		
+			 
+					<div class="buttons" >
+						<div>
+							<img src="static/images/material/btn_select.svg" id="prevBtn" />
+						</div>
+						<div>
+							<img src="static/images/material/btn_select.svg" id="nextBtn" />
+						</div>
 					</div>
-				</div>
-			</div>	
-		</div>
-		
-		<div class="clearfix"></div>
-	</section>	
-</div>
 
-<div class="page-index">
-	<section class="relative ad-full bg-position-x-c ad-1">
-		<div class="l-orange-bar"></div>
-		<div class="absolute description text-r">
-			<h3>文案範例，最好的我們</h1>
-			<p>在難忘的節日，為彼此訂製最合適的手環</p>
-			<a href=""><span class="btn-text-b">前往訂製</span><img class="arrow-b" src="static/images/index/arrow-b.svg" /></a>
-		</div>
-	</section>	
-</div>
-
-<div class="page-index">
-	<section class="container pd-5">
-		<div class="row">
-			<div class="col-33 col-xs-100 mt-5 pd-5">
-				<div>
-					<div></div> <!-- 預留 -->
-					<img src="static/images/index/img-5_home.jpg" />
-					<div></div> <!-- 預留 -->
-				</div>
-				
-				<div class="mt-6 text-c alink">
-					<a href=""><span class="btn-text-b">前往瀏覽</span><img class="arrow-b" src="static/images/index/arrow-b.svg" /></a>
-				</div>
-			</div>
-			<div class="col-33 col-xs-100 mt-5 pd-5">
-				<div>
-					<div></div> <!-- 預留 -->
-					<img src="static/images/index/img-6_home.jpg" />
-					<div></div> <!-- 預留 -->
-				</div>
-				
-				<div class="mt-6 text-c alink">
-					<a href=""><span class="btn-text-b">前往瀏覽</span><img class="arrow-b" src="static/images/index/arrow-b.svg" /></a>
-				</div>
-			</div>
-			<div class="col-33 col-xs-100 mt-5 pd-5">
-				<div>
-					<div></div> <!-- 預留 -->
-					<img src="static/images/index/img-7_home.jpg" />
-					<div></div> <!-- 預留 -->
-				</div>
-				
-				<div class="mt-6 text-c alink">
-					<a href=""><span class="btn-text-b">前往瀏覽</span><img class="arrow-b" src="static/images/index/arrow-b.svg" /></a>
+					<script src="js/album.js"></script>
 				</div>
 			</div>
 		</div>
-	</section>	
+		<div id="newseasonCarouselDot">
+			
+		</div>	
+	</div>
 </div>
 
-<div class="page-index">
-	<section id="ad-full" class="relative ad-full bg-position-x-c ad-2">
-		<div class="absolute description text-l">
-			<h3 class="white">文案範例，最好的我們</h1>
-			<p class="white">在難忘的節日，為彼此訂製最合適的手環</p>
-			<a href=""><span class="btn-text-w">前往訂製</span><img class="arrow-b" src="static/images/index/arrow-w.svg" /></a>
-		</div>
-	</section>	
-</div>
 
-<!-- FOOTER start -->
+<!--
+
+-->
+
+
+
+<!-- 
 <div id="footer" class="relative ">
 	<div class="container">
 		<div class="row">
@@ -350,10 +339,12 @@
 		</div>
 	</div>
 </div>
-<!-- FOOTER end -->
+ -->
 
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
+
+<script src="js/material.js"></script>
 
 </body>
 </html>
