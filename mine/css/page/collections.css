@@ -20,7 +20,7 @@
 	background:url(../../static/images/collections/bgStone.png) no-repeat left top;
 	background-size:cover;
 	margin-top:100px;
-	padding-bottom:120px;
+	padding-bottom:20vh;
 }
 
 /* main promo */
@@ -73,26 +73,29 @@
 
 .page-collections .modal-btn-comfirm {margin-right:0;}
 
+.page-collections.series1 {width:100%;transform:translateY(-10%);}
 
-
-.page-collections.bg-under-2 {
+.page-collections .bg-under-2 {
 	width:100%;
 	height:1000px;
 	background:url(../../static/images/collections/bgBracelet.jpg) no-repeat center;
 	background-size:cover;
-	-webkit-clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 88%);
-    clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 88%);
+	-webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 88%);
+    clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 88%);
 }
 
 .page-collections .bg-stone-2 {
+	/*position:absolute;*/
 	width:100%;
 	height:1000px;
 	background:url(../../static/images/collections/bgStone2.png) no-repeat bottom;
 	background-size:cover;
-	/*-webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
-	clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);*/
+	padding-top:40px;
+	transform: translateY(-22%);
+	-webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 88%);
+    clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 88%);
 }
-.page-collections .container.blank {padding:0;transform: translateY(35%);}
+
 .page-collections #album div img {border-radius:100rem;}
 
 .page-collections .series {bottom:30%;left:5%;}
@@ -100,13 +103,23 @@
 .page-collections .series .description {color:#fff}
 
 .page-collections .bg-earing-bottom {
+	position:absolute;
+	width:100%;
 	height:1264px;
 	background:url(../../static/images/collections/bgEaring.jpg) no-repeat bottom;
-	background-size:cover
+	background-size:cover;
+	z-index:-2;
+	transform: translateY(45%);
 }
 
-.page-collections .subtitle {margin-bottom:40px;font-size:33px;font-weight:600} 
+.page-collections .subtitle {margin-bottom:40px;font-size:33px;font-weight:700} 
 .page-collections .intro3 {transform: translate(40%, 100%);}
+
+.page-collections.rock-bottom {}
+
+#footer.page-collections {transform: translateY(230%);}
+
+
 /* Responseve */
 
 @media only screen and (max-width:1680px) {
@@ -120,28 +133,21 @@
 	.page-collections .discount .description,.page-collections p.description,.page-collections .series .description {margin-bottom:30px;font-size:20px;}
 	.page-collections p.description {margin-top:20px;margin-bottom:50px}
 
-
-
-	.page-collections .bg-stone {height:1840px;}
-
-
 	.page-collections .square {
 		float:right;
 		width:750px;
 		height:750px;
 		background-position:left;
 		background-size:cover;
-		transform:translateY(13%);
 	}
-
 	.page-collections .intro1 {position:absolute;transform: translate(-150%, 80%);}
 
-	.page-collections .new2 {transform: translateY(25%);}
+
 	.page-collections .circle {width:780px;height:780px;}
 	.page-collections .intro2 {transform:translate(180%, 50%);}
 	
 
-	.page-collections.bg-under-2 {height:760px;}
+	.page-collections .bg-under-2 {height:640px;}
 	.page-collections .bg-stone-2 {height:768px;}
 
 	.page-collections .intro3 {transform: translate(30%, 55%);}
@@ -150,33 +156,83 @@
 
 @media only screen and (max-width:1440px) {
 	.page-collections .bg-under {height:780px;transform: translateY(-40%);}
-	.page-collections .bg-earing-bottom {height:830px}
+	.page-collections .bg-earing-bottom {height:960px}
+	#footer.page-collections {transform: translateY(210%);}
 }
 
 @media only screen and (max-width:480px) {
 
-	.page-collections .banner {clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 70%);}
-	.page-collections .bg-under {height:350px;transform: translateY(-100%);}
+	.page-collections .banner {
+		height:30vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+	}
 
+	.page-collections .bg-under {height:350px;transform: translateY(-30%);}
 
-	.page-collections .discount {transform: translate(-58%, -160%);text-align:center;}
+	.page-collections .leaf-r {width:30%;top:0;right:0}
+	.page-collections .leaf-l {width:45%;left: -15%;}
+	.page-collections .discount {right:0;left:0;bottom:0;text-align:center;transform:translateY(90%);}
+
+	
 	.page-collections .discount h3, .page-collections h3.title, .page-collections .series h3 {
     	margin-bottom:10px;
-    	font-size:26px;
+    	font-size:18px;
 
 	}
 
 	.page-collections .discount .description, .page-collections p.description, .page-collections .series .description {
 	    margin-bottom:20px;
-	    font-size:13px;
+	    font-size:9px;
+	}
+
+	.page-collections.rock-top {margin-top:40%;}
+	.page-collections .square {
+		width: 210px;
+		height: 298px;
+		background: url(../../static/images/collections/bg_new1_square_m.jpg) no-repeat center right;
+	}
+	.page-collections .space.l {margin:40px 0;}
+
+	.page-collections .circle {width:204px;height:204px}
+
+	.page-collections .intro1 {left:4%;transform: translateY(30%);}
+	.page-collections .intro2 {transform: translate(110%,0);}
+
+	.page-collections .bg-stone {padding-bottom: 15vh;}
+	.page-collections .bg-under-2 {
+	    height: 400px;
+		-webkit-clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 88%);
+	    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 88%);
+	}
+	.page-collections .bg-stone-2 {
+		height: 400px;
+	    padding-top: 60px;
+	    -webkit-clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 88%);
+	    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 88%);
+	}
+
+	.page-collections .container.blank {padding:0}
+	.page-collections #album {height: calc(100vh * 0.55);}
+	.page-collections .intro3 {
+    	transform: translate(25%, 40%);
+	}
+
+	.page-collections .bg-earing-bottom {
+		height: 400px;
+		transform: translateY(65%);
+		background-position-x: left;
+	}
+
+	.page-collections .subtitle {
+	    margin-bottom:25px;
+	    font-size:10px;
 	}
 
 
-	.page-collections .square, .page-collections .circle {width:375px;height:375px}
-	.page-collections .intro1,.page-collections .intro2 {transform:none;}
 
+	#footer.page-collections {
+	    transform: translateY(90%);
+	}
 
-
-	.page-collections #album {height: calc(100vh * 0.55);}
-	.page-collections .intro3 {transform:none;}
 }
