@@ -857,9 +857,17 @@ button:focus {
 .btn-round-w {background:#fff;border-radius:100rem;font-size:24px;padding:8px 24px}
 .btn-round-w:active,.btn-outline-orange:active {box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.09);}
 
-.btn-outline-orange {border:1px solid #ff9933;color:#ff9933;background:transparent;border-radius:100rem;font-weight:bold;font-size:20px;padding:6px 32px}
+.btn-outline-orange {border:1px solid #ff9933;color:#ff9933;background:transparent;border-radius:100rem;font-weight:700;font-size:20px;padding:6px 32px}
 
 
+.btn-round-fill-orange {padding: 10px 50px;font-weight:700;background:url(../static/images/btn-bg.jpg) no-repeat center 95%;border-radius:20rem;color:#fff;}
+.btn-round-fill-orange:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
+
+.btn-round-outline-darkbrown {padding: 10px 50px;font-weight:700;background:transparent;border-radius:20rem;border:3px solid #574C45;color:#574C45;}
+.btn-round-outline-darkbrown:active {box-shadow:0 0 0 0.2rem rgba(139, 108, 87, 0.2);}
+
+.btn-round-outline-white {padding: 10px 50px;font-weight:700;background:transparent;border-radius:20rem;border:3px solid #fff;color:#fff;}
+.btn-round-outline-white:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
 /* --- */
 
 
@@ -906,5 +914,7 @@ button:focus {
   .form-group {margin-bottom:15px}
   .col-form-label {padding-top:0;padding-bottom:0;font-size:16px;}
 
+  .btn-round-fill-orange {padding:6px 30px}
+  .btn-round-outline-darkbrown,.btn-round-outline-white {padding:6px 30px;}
 
 }
