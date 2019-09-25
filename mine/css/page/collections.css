@@ -218,6 +218,15 @@
 	.page-collections .bg-earing-bottom {transform: translateY(67%);}
 }
 
+@media only screen and (max-width:1280px) {
+	.page-collections .banner {	    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 95%);
+	    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 95%);}
+
+	.page-collections .bg-stone-2 {height:768px;padding-top:80px;}
+	.page-collections .bg-earing-bottom {transform: translateY(67%);}
+	.page-collections .bg-earing-bottom {height:960px;transform:translateY(50%);}
+}
+
 @media only screen and (max-width:1024px) {
 	.page-collections .banner {height:95vh;}
 
