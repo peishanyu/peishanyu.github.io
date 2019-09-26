@@ -98,14 +98,17 @@
 	height:1000px;
 	background:url(../../static/images/collections/bgStone2.png) no-repeat bottom;
 	background-size:cover;
-	padding-top:40px;
+	padding-top: 100px;
 	transform: translateY(-22%);
 	-webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
 }
 
-
-.page-collections #album div img {border-radius:100rem;box-shadow:0 4px 14px rgba(0, 0, 0, 0.7);}
+.page-collections #album {
+    padding-top:5px;
+	height: calc(100vh * 0.57);
+}
+.page-collections #album div img {border-radius:100rem;box-shadow:0 2px 6px rgba(0, 0, 0, 0.7);}
 
 
 
@@ -291,7 +294,7 @@
 	.page-collections .intro3 {transform:translate(26%, 40%);}
 	#footer.page-collections {transform:translateY(105%);}
 
-	.page-collections #album {padding:0;height: calc(100vh * 0.27);}
+	.page-collections #album {padding:0;padding-top: 5px;height: calc(100vh * 0.28);}
 
 
 }
@@ -356,7 +359,7 @@
 
 	.page-collections .bg-stone {padding-bottom: 15vh;}
 	.page-collections .bg-under-2 {
-	    height:360px;
+	    height:480px;
 		-webkit-clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 88%);
 	    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 88%);
 	}
@@ -364,14 +367,15 @@
 		height:440px;
 	    -webkit-clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 100%);
 	    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 100%);
+		padding-top: 60px;
 	}
-	.page-collections .series {bottom:25%;left:8%;}
+	.page-collections .series {bottom:20%;left:8%;}
 
 	.page-collections .container.blank {margin-top:20px;padding:0;}
 
 
 	.page-collections .intro3 {
-    	transform: translate(25%, 43%);
+    	transform: translate(25%, 50%);
 	}
 
 	.page-collections .bg-earing-bottom {
@@ -399,4 +403,17 @@
 
 @media only screen and (max-width:375px) {
 	.page-collections .circle {width:210px;height:210px;}
+}
+
+@media only screen and (max-width:320px) {
+		.page-collections .leaf-r {top:8%;}
+		.page-collections .discount {transform: translateY(105%);}
+		.page-collections .bg-stone {margin-top:50%;padding-bottom:25vh;}
+		.page-collections .square {width:160px;background-size:cover}
+		.page-collections .space.l {margin:70px 0;}
+		.page-collections .circle {width:168px;height:168px;}
+
+		.page-collections #album {height: calc(100vh * 0.3);}
+		.page-collections .bg-stone-2 {height:360px;padding-top:40px;}
+		.page-collections .bg-earing-bottom {transform:translateY(40%);}
 }
