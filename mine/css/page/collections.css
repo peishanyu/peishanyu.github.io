@@ -193,8 +193,8 @@
 @media only screen and (max-width:1440px) {
 
 	.page-collections .banner {
-	    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 95%);
-	    clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 95%);
+	    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 95%);
+	    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 95%);
 	}
 
 	.page-collections #albumContainer{width:100%}
@@ -204,30 +204,35 @@
 	.page-collections .leaf-r {top:20%;right:20%;}
 	.page-collections .leaf-l {width:50%;top:50%;}
 
-	.page-collections .bg-stone-2 {height:768px;}
+	.page-collections .bg-stone-2 {height:900px;}
 
 	.page-collections .bg-earing-bottom {height:960px;transform:translateY(50%);}
-	#footer.page-collections {transform: translateY(210%);}
+	#footer.page-collections {transform: translateY(59vh);}
 
 	.page-collections .discount h3, .page-collections h3.title, .page-collections .series h3 {font-size:36px;}
 	.page-collections .subtitle {font-size:24px;}
 	.page-collections .discount .description, .page-collections p.description, .page-collections .series .description {font-size:18px;}
 
 	.page-collections .btn-round-fill-orange, .page-collections .btn-round-outline-darkbrown, .page-collections .btn-round-outline-white {font-size:24px;}
+	.page-collections .intro3 {transform: translate(40%, 85%);}
+
 }
 
 @media only screen and (max-width:1366px) {
 	.page-collections .bg-stone-2 {height: 1000px;}
 	.page-collections .bg-earing-bottom {transform: translateY(67%);}
+	#footer.page-collections {transform: translateY(57vh);}
+	.page-collections .intro3 {transform: translate(43%, 43%);}
+
 }
 
 @media only screen and (max-width:1280px) {
 	.page-collections .banner {	    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 95%);
 	    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 95%);}
 
-	.page-collections .bg-stone-2 {height:768px;padding-top:80px;}
-	.page-collections .bg-earing-bottom {transform: translateY(67%);}
-	.page-collections .bg-earing-bottom {height:960px;transform:translateY(50%);}
+	.page-collections .bg-stone-2 {height:880px;padding-top:80px;}
+	.page-collections .bg-earing-bottom {height:940px;transform:translateY(50%);}
+	.page-collections .intro3 {transform: translate(43%, 60%);}
 }
 
 @media only screen and (max-width:1024px) {
