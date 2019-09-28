@@ -1,0 +1,172 @@
+.page-campaigns.under-banner,.page-campaigns.campaignsZone1,.page-campaigns.videoZone {background-color:#f5e9dc}
+.page-campaigns .banner {
+	height:90vh;
+	background:url(../../static/images/campaigns/bgCover.jpg) no-repeat center;
+	background-size:cover;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 95%);
+}
+.page-campaigns .mainProduct {position:absolute;top:15%;left:7%;}
+.page-campaigns .mainProduct img {width:90%}
+.page-campaigns .bg-under {
+	position:absolute;
+	transform: translateY(-45%);
+	width:100%;
+	height: 880px;
+	background:url(../../static/images/collections/bgSand.jpg) no-repeat center;
+	background-size:cover;
+	z-index:-1;
+
+}
+.page-campaigns .bg-bevel {
+	width:100%;
+	height:1000px;
+	background-color:#cfc4b9;
+	-webkit-clip-path: polygon(0 32%, 100% 0, 100% 44%, 0% 85%);
+	clip-path: polygon(0 32%, 100% 0, 100% 44%, 0% 85%);
+}
+
+/* main promo */
+.page-campaigns .discount {position:absolute;right:2%;bottom:4%;;text-align:right;}
+/* main promo end */
+
+/* slider1*/
+.page-campaigns .sliderZone {position:absolute;width:100%;top:10%;padding:5%;}
+
+.page-campaigns .sliderContainer {position:relative;}
+
+.page-campaigns .sliderImg.up {position:absolute;width:50%;margin-left:2%;margin-top:3%;}
+.page-campaigns .sliderImg.under {position:absolute;width:50%;left:14%;margin-top:13%;}
+
+.page-campaigns .sliderImg img {box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.8);}
+
+.page-campaigns .sliderDescription {
+	position:absolute;
+	background-image:linear-gradient(to right, #564B44 , #3A312C);
+	width:630px;height:830px;right:10%;margin-top:5%;
+}
+.page-campaigns .descriptionContainer {position:relative;height:100%;padding:9rem 5rem;padding-bottom:5rem;}
+.page-campaigns .descriptionContainer h3 {color:#fff;margin-bottom:4rem;font-size:48px}
+.page-campaigns .descriptionContainer p {line-height:2;color:#fff;font-size:24px}
+.page-campaigns .descriptionContainer button {position:absolute;right:5rem;bottom:5rem;}
+
+.page-campaigns #prevBtn, .page-campaigns #nextBtn {position:absolute;}
+.page-campaigns #prevBtn {top:50%;left:-5.5%;}
+.page-campaigns #nextBtn {top:50%;right:-5.5%;}
+/* slider1 end */
+
+/* videoZone */
+.page-campaigns.videoZone {padding-top:15%}
+/* videoZone end */
+
+
+.page-campaigns.campaignsZone2 {background-color:#574c45;padding:3rem 0;}
+
+
+/* text style */
+.page-campaigns .discount h3,
+.page-campaigns .discount .description {color:#574c45;}
+
+.page-campaigns .discount h3 {margin-bottom:10px;font-size:53px;font-weight:700;}
+
+.page-campaigns .discount .description {margin-bottom:30px;font-size:27px;line-height:2;font-weight:500; /*medium*/}
+
+.page-campaigns p.description {margin:20px 0 140px;font-weight:500; /*medium*/}
+/* text style end */
+
+
+/* btn style */
+.page-campaigns .btn-round-fill-orange {font-size:34px;}
+
+.page-campaigns .btn-round-outline-darkbrown,
+.page-campaigns .btn-round-outline-white {font-size:34px;vertical-align:unset;}
+/* btn style end */
+
+
+
+/* Responseve */
+
+@media only screen and (max-width:1680px) {
+ d
+
+}
+
+@media only screen and (max-width:1440px) {
+
+
+
+}
+
+@media only screen and (max-width:1366px) {
+
+
+}
+
+@media only screen and (max-width:1280px) {
+
+
+}
+
+@media only screen and (max-width:1024px) {
+	.page-campaigns .banner {height:95vh;}
+
+	.page-campaigns .discount {bottom:0;}
+
+
+}
+
+@media only screen and (max-width:768px) {
+
+	.page-campaigns .banner {
+		height:50vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 95%);
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 95%);
+	}
+
+	.page-campaigns .discount {
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    text-align: center;
+	    transform: translateY(90%);
+	}
+
+
+}
+
+@media only screen and (max-width:480px) {
+
+	.page-campaigns .banner {
+		height:35vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+	}
+
+	/* btn style */
+	.page-campaigns .btn-round-fill-orange {font-size:14px;}
+	.page-campaigns .btn-round-outline-darkbrown,.page-campaigns .btn-round-outline-white {border-width:2px;font-size:14px;}
+	/* btn style end */
+
+
+	/* text style */
+
+	.page-campaigns .discount .description{
+	    margin-top:10px;
+	    margin-bottom:20px;
+	    font-size:9px;
+	}
+
+
+	.page-campaigns .discount h3 {margin-bottom:10px;font-size:26px;}
+	.page-campaigns .discount .description {font-size:13px;}
+	/* text style end */
+
+}
+
+@media only screen and (max-width:375px) {
+
+}
+
+@media only screen and (max-width:320px) {
+
+}
