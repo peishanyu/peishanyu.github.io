@@ -277,23 +277,26 @@
 
 	.page-campaigns.under-banner {padding-bottom:20%;}
 
-	.page-campaigns .mainProduct {top:40%}
+	.page-campaigns .mainProduct {top:35%}
 
 	.page-campaigns.campaignsZone1 .descriptionContainer {padding:1rem 1.75rem;padding-bottom:4rem;}
 	.page-campaigns.campaignsZone1 #prevBtn {width:40px;left:-8%;transform:translateY(-20px);}
 	.page-campaigns.campaignsZone1 #nextBtn {width:40px;right:-8%;transform:translateY(-20px);}
 
-	.page-campaigns .bg-bevel {height:500px;}
+	.page-campaigns .bg-bevel {height:450px;}
 
 	.page-campaigns.videoZone {padding-top:0;}
 
-	.page-campaigns.campaignsZone2 .descriptionContainer {padding:1.5rem;}
+	.page-campaigns.campaignsZone2 .descriptionContainer {margin-top:10%;padding:1.5rem;}
+	.page-campaigns.campaignsZone2 .sliderImg.up {top:20%;}
+	.page-campaigns.campaignsZone2 .sliderImg.under {top:26%;}
+
 	.page-campaigns.campaignsZone2 .sliderDot .dot {width:10px;height:10px;margin:8px;}
 
 	.page-campaigns.campaignsZone2 #line-prevBtn {width:40px;transform:translateY(-20px);}
 	.page-campaigns.campaignsZone2 #line-nextBtn {width:40px;transform:translateY(-20px);}
 
-	.page-campaigns.campaignsZone2 .sliderContainer {height:360px;}
+	.page-campaigns.campaignsZone2 .sliderContainer {height:440px;}
 
 	.page-campaigns .banner2 {
 		height:35vh;
@@ -321,7 +324,7 @@
 	.page-campaigns .discount2 .subtitle {font-size:10px;}
 
 	.page-campaigns.under-banner2 .description {background-color:#473E38;padding:2% 5% 6%;}
-	.page-campaigns.under-banner2 .description p {margin-bottom:2%;color:#fff;font-size:9px;line-height:2;}
+	.page-campaigns.under-banner2 .description p {margin-bottom:5%;color:#fff;font-size:9px;line-height:2;}
 	.page-campaigns.under-banner2 .description .btn-round-outline-white {border-width:2px;font-size:11px;}
 	/* text style end */
 
