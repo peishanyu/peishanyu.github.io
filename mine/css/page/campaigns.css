@@ -212,7 +212,7 @@
 }
 
 .page-campaigns.campaignsZone1 .sliderImg img {width: 100%;}
-.page-campaigns.campaignsZone1 .sliderDescription {height:60vh;}
+.page-campaigns.campaignsZone1 .sliderDescription {height:80vh;}
 
 
 }
@@ -377,7 +377,7 @@
     -webkit-clip-path: polygon(0 30%, 100% 0%, 100% 45%, 0% 75%);
     clip-path: polygon(0 30%, 100% 0%, 100% 45%, 0% 75%);
 }
-
+.page-campaigns.campaignsZone1 .sliderDescription {height:60vh;}
 .page-campaigns .banner2 {height:60vh;}
 
 .page-campaigns.under-banner2 .description {padding:4% 5%;}
