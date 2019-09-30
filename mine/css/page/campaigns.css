@@ -227,6 +227,10 @@
 }
 
 .page-campaigns.campaignsZone1 .sliderDescription {height:80vh;}
+
+.page-campaigns.campaignsZone1 #prevBtn {width:50px;transform:translateY(-25px);}
+.page-campaigns.campaignsZone1 #nextBtn {width:50px;transform:translateY(-25px);}
+
 .page-campaigns .discount2 {margin-top:-14%;}
 }
 
