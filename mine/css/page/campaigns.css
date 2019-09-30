@@ -318,6 +318,10 @@
 	.page-campaigns.campaignsZone1 #prevBtn {width:40px;left:-8%;transform:translateY(-20px);}
 	.page-campaigns.campaignsZone1 #nextBtn {width:40px;right:-8%;transform:translateY(-20px);}
 
+	.page-campaigns.campaignsZone1 .sliderImg.under {margin-top: 12%;}
+	.page-campaigns.campaignsZone1 .sliderImg img {width: 75vw;}
+
+
 	.page-campaigns .bg-bevel {height:450px;}
 
 	.page-campaigns.videoZone {padding-top:0;}
