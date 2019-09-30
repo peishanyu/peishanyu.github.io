@@ -1,4 +1,6 @@
 .page-campaigns.under-banner,.page-campaigns.campaignsZone1,.page-campaigns.videoZone {background-color:#f5e9dc}
+
+.page-campaigns.under-banner {z-index:5;}
 .page-campaigns .banner {
 	height:92vh;
 	background:url(../../static/images/campaigns/bgCover.jpg) no-repeat center;
