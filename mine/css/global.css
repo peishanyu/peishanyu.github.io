@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section,c
   display: block;
 }
 
-header {position:fixed;z-index:1}
+header {position:fixed;z-index:75}
 
 body {
   margin: 0;

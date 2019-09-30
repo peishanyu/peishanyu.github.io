@@ -23,7 +23,7 @@
 /* ------ */
 
 /* menu */
-.page-all.menu-r {position:fixed;right:0;z-index:5;width:100%;height:100vh;background:rgba(0, 0, 0, 0.3);}
+.page-all.menu-r {position:fixed;right:0;z-index:85;width:100%;height:100vh;background:rgba(0, 0, 0, 0.3);}
 .page-all.menu-r .container {overflow:auto;height:100vh;padding: 20px 40px 40px 25px;background:#fff;top:0;right:0;z-index:2}
 
 .page-all.menu-r .container .close {position:absolute;right:70px;top:50px}

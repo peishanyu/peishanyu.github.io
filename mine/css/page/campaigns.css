@@ -7,20 +7,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 95%);
 }
 .page-campaigns .mainProduct {z-index:5;position:absolute;top:15%;left:2%;}
+.page-campaigns .mainProduct img {width:40vw;}
 
-.page-campaigns .bg-under {
-	position:absolute;
-	transform: translateY(-45%);
-	width:100%;
-	height: 880px;
-	background:url(../../static/images/collections/bgSand.jpg) no-repeat center;
-	background-size:cover;
-	z-index:-1;
-
-}
 .page-campaigns .bg-bevel {
 	width:100%;
-	height:1200px;
+	height:125vh;
 	background-color:#cfc4b9;
 	-webkit-clip-path: polygon(0 30%, 110% 0%, 100% 45%, 0% 75%);
     clip-path: polygon(0 28%, 110% 0%, 100% 45%, 0% 75%);
@@ -38,7 +29,7 @@
 .page-campaigns.campaignsZone1 .sliderImg.up {z-index:5;display:inline-block;position:absolute;margin-left:4%;}
 .page-campaigns.campaignsZone1 .sliderImg.under {z-index:0;display:inline-block;margin-top:10%;margin-left:12%;}
 
-.page-campaigns.campaignsZone1 .sliderImg img {box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.8);}
+.page-campaigns.campaignsZone1 .sliderImg img {box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.8);width:50vw;}
 
 .page-campaigns.campaignsZone1 .sliderDescription {
 	z-index:15;
@@ -49,28 +40,31 @@
 .page-campaigns.campaignsZone1 .descriptionContainer {position:relative;height:100%;padding:5rem 4rem;}
 
 
-.page-campaigns.campaignsZone1 #prevBtn, .page-campaigns #nextBtn {position:absolute;}
-.page-campaigns.campaignsZone1 #prevBtn {left:-6%;top:50%;transform:translateY(-37px);}
-.page-campaigns.campaignsZone1 #nextBtn {right:-6%;top:50%;transform:translateY(-37px);}
+.page-campaigns.campaignsZone1 #prevBtn, .page-campaigns #nextBtn {position:absolute;top:50%;width:4vw;transform:translateY(-2vw);}
+.page-campaigns.campaignsZone1 #prevBtn {left:-6%;}
+.page-campaigns.campaignsZone1 #nextBtn {right:-6%;}
 /* slider1 end */
 
 
 /* slider2 */
 .page-campaigns.campaignsZone2 {background-color:#574c45;}
 .page-campaigns.campaignsZone2 .descriptionContainer {z-index:5;position:absolute;width:45%;margin-top:8%;padding:4rem;background-image:linear-gradient(to right, rgba(29, 23, 20, 0.7) , #1d171400);}
-.page-campaigns.campaignsZone2 .sliderContainer {position:relative;height:1210px;}
-.page-campaigns.campaignsZone2 .sliderImg.under, .page-campaigns.campaignsZone2 .sliderImg.up {position:absolute;}
+.page-campaigns.campaignsZone2 .sliderContainer {position:relative;height:125vh;}
+
+
+.page-campaigns.campaignsZone2 .sliderImg.under, 
+.page-campaigns.campaignsZone2 .sliderImg.up {position:absolute;}
 
 .page-campaigns.campaignsZone2 .sliderImg.up {z-index:5;top:10%;right:10%;}
 .page-campaigns.campaignsZone2 .sliderImg.under {z-index:0;top:18%;right:20%;}
 
 .page-campaigns.campaignsZone2 #line-prevBtn,
-.page-campaigns.campaignsZone2 #line-nextBtn {position:absolute;}
+.page-campaigns.campaignsZone2 #line-nextBtn {position:absolute;width:4vw;}
 
-.page-campaigns.campaignsZone2 #line-prevBtn {left:2%;top:50%;transform:translateY(-37px);}
-.page-campaigns.campaignsZone2 #line-nextBtn {right:2%;top:50%;transform:translateY(-37px);}
+.page-campaigns.campaignsZone2 #line-prevBtn {left:2%;top:50%;transform:translateY(-2vw);}
+.page-campaigns.campaignsZone2 #line-nextBtn {right:2%;top:50%;transform:translateY(-2vw);}
 
-.page-campaigns.campaignsZone2 .sliderDot {position:absolute;top:50%;left:-3.25%;}
+.page-campaigns.campaignsZone2 .sliderDot {position:absolute;top:50%;left:-4%;}
 .page-campaigns.campaignsZone2 .sliderDot .dot {width:18px;height:18px;margin:24px;border-radius:10rem;background:#fff;border:2px solid transparent;}
 .page-campaigns.campaignsZone2 .sliderDot .dot.active {background:transparent;border:2px solid #fff;}
 
@@ -95,8 +89,9 @@
     padding-bottom:2%;
     box-sizing:border-box;
 }
+.page-campaigns.campaignsZone2 .sliderImg {width:53vw;}
 
-
+.page-campaigns.campaignsZone2 img.imgUp, .page-campaigns.campaignsZone2 img.imgUnder {width:100%;}
 
 /* text style */
 .page-campaigns .discount h3, .page-campaigns .discount .description {color:#574c45;}
@@ -132,7 +127,6 @@
 
 @media only screen and (max-width:1680px) {
 .page-campaigns .banner {height:85vh;}
-.page-campaigns .mainProduct img {width:90%;}
 
 .page-campaigns .bg-bevel {
     -webkit-clip-path: polygon(0 24%, 108% 0%, 100% 45%, 0% 75%);
@@ -155,7 +149,7 @@
 
 
 .page-campaigns .bg-bevel {
-	height:900px;
+	height:100vh;
 	-webkit-clip-path: polygon(0 30%, 100% 0%, 100% 45%, 0% 75%);
     clip-path: polygon(0 30%, 100% 0%, 100% 45%, 0% 75%);
 }
@@ -169,8 +163,8 @@
 
 .page-campaigns.videoZone {padding-top:0;}
 
-.page-campaigns.campaignsZone2 .sliderContainer {height:860px;}
-.page-campaigns.campaignsZone2 .sliderImg {width:50%;}
+.page-campaigns.campaignsZone2 .sliderContainer {height:100vh;}
+.page-campaigns.campaignsZone2 .sliderImg {width:50vw;}
 .page-campaigns.campaignsZone2 .sliderImg.up {right:8%;}
 .page-campaigns.campaignsZone2 .sliderImg.under {top:18%;right:17%;}
 .page-campaigns.campaignsZone2 .sliderDot {left:-4.5%;}
@@ -207,8 +201,6 @@
 @media only screen and (max-width:1366px) {
 
 
-.page-campaigns .mainProduct img {width:80%;}
-
 .page-campaigns .bg-bevel {
 	-webkit-clip-path: polygon(0 25%, 100% 0%, 100% 45%, 0% 75%);
     clip-path: polygon(0 25%, 100% 0%, 100% 45%, 0% 75%);
@@ -222,11 +214,12 @@
 
 @media only screen and (max-width:1280px) {
 .page-campaigns .discount {padding-top:1%;margin-top:-14%;}
-.page-campaigns .mainProduct img {width:65%;}
+.page-campaigns .mainProduct img {width:50vw;}
 
 .page-campaigns .bg-bevel {
-	webkit-clip-path: polygon(0 23%, 107% 0%, 100% 45%, 0% 70%);
+	-webkit-clip-path: polygon(0 23%, 107% 0%, 100% 45%, 0% 70%);
 	clip-path: polygon(0 23%, 107% 0%, 100% 45%, 0% 70%);
+	height:125vh;
 }
 
 .page-campaigns.campaignsZone1 .sliderDescription {height:80vh;}
@@ -234,7 +227,9 @@
 .page-campaigns.campaignsZone1 #prevBtn {width:50px;transform:translateY(-25px);}
 .page-campaigns.campaignsZone1 #nextBtn {width:50px;transform:translateY(-25px);}
 
-.page-campaigns.campaignsZone2 .sliderDot {left:-5%;}
+.page-campaigns.campaignsZone2 .sliderContainer {height:115vh;}
+
+.page-campaigns.campaignsZone2 .sliderDot .dot {margin:1.5rem;}
 
 .page-campaigns .discount2 {margin-top:-14%;}
 
@@ -249,7 +244,7 @@
 	.page-campaigns.under-banner {padding-bottom:10%;}
 
 	.page-campaigns .mainProduct {top:20%;left:0;}
-	.page-campaigns .mainProduct img {width:60%;}
+
 
 	.page-campaigns .bg-bevel {background:transparent;}
 
@@ -266,8 +261,10 @@
     	margin-top:40%;
     }
     .page-campaigns.campaignsZone2 .descriptionContainer {width:100%;}
-    .page-campaigns.campaignsZone2 .sliderImg.up {width:80%;right:0;top:15%;}
+
+    .page-campaigns.campaignsZone2 .sliderImg.up {width:80vw;right:0;top:15%;}
     .page-campaigns.campaignsZone2 .sliderImg.under {width:80%;right:0;left:10%;top:20%;}
+
     .page-campaigns.campaignsZone2 .sliderDot {left:-4%;}
     .page-campaigns.campaignsZone1 .descriptionContainer {padding:4rem;padding-bottom:10rem;}
     .page-campaigns.campaignsZone1 .descriptionContainer button {bottom:3rem;}
@@ -317,6 +314,7 @@
 	.page-campaigns.under-banner {padding-bottom:20%;}
 
 	.page-campaigns .mainProduct {top:35%}
+	.page-campaigns .mainProduct img {width:60vw;}
 
 	.page-campaigns.campaignsZone1 .descriptionContainer {padding:1rem 1.75rem;padding-bottom:4rem;}
 	.page-campaigns.campaignsZone1 #prevBtn {width:40px;left:-8%;transform:translateY(-20px);}
@@ -375,6 +373,8 @@
 .page-campaigns .mainProduct {top:25%;left:5%;}
 .page-campaigns .mainProduct img {width:80%;}
 
+.page-campaigns .bg-bevel {height:70vh;}
+
 .page-campaigns .discount2 {margin-top:-22%;padding-bottom:5%;}
 .page-campaigns.under-banner2 .description {padding:4% 5%;}
 .page-campaigns.under-banner2 .description p {margin-bottom:4%;}
@@ -388,6 +388,7 @@
 .page-campaigns .bg-bevel {
     -webkit-clip-path: polygon(0 30%, 100% 0%, 100% 45%, 0% 75%);
     clip-path: polygon(0 30%, 100% 0%, 100% 45%, 0% 75%);
+	height: 85vh;
 }
 .page-campaigns.campaignsZone1 .sliderDescription {height:60vh;}
 .page-campaigns .banner2 {height:60vh;}
@@ -396,14 +397,17 @@
 
 .page-campaigns.under-banner2 .description {padding:4% 5%;}
 .page-campaigns.under-banner2 .description p {margin-bottom:4%;}
+
+.page-campaigns.campaignsZone2 .sliderContainer {height:82vh;}
+
+
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+.page-campaigns .mainProduct img {width:70vw;}
+.page-campaigns .bg-bevel {height:85vh;}
 }
 
 
-@media only screen and (max-width:375px) {
 
-}
-
-@media only screen and (max-width:320px) {
-
-}
 
