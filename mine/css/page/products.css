@@ -1,0 +1,13 @@
+.page-products.banner {
+	height:40vh;
+	background:url(../../static/images/products/bg-top.jpg) no-repeat center center;
+	background-size:cover;
+}
+
+.page-products .cate,
+.page-products .cate .cate-item,
+.page-products .viewMode,
+.page-products .itemNum,
+.page-products .sort {display:inline-block;}
+
+.dropdown-menu {}
