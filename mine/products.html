@@ -24,6 +24,8 @@
 
 <body id="page-all">
 
+<div class="page-products bg-tape"></div>
+
 <!-- LOGIN popup start-->
 <div class="modal_all" style="position:fixed;z-index:99;width:100%">
 	<div id="modal_login" class="elementToFadeIn modal modal-m" style="display:none;">
@@ -202,10 +204,34 @@
 
 			<h2 class="popupTitle vertical-m">篩選條件</h2>
 
+			<!-- price -->
+			<div id="priceRange" class="searchOption">
+				<div class="col-15 col-xs-100 pl-0"><span>價錢: </span></div>
+
+				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
+					<div id="priceRangeZoneArrow" class="inline zoneArrow">
+						<img src="static/images/material/img-arrowL.svg" class="zoneArrowClose" />
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<div id="priceRangeOptions" class="optionZone unfoldSelectionZone">
+				<div class="priceRangeLabel">Under-NT.500</div>
+				<div class="priceRangeLabel">NT.500-1000</div>
+				<div class="priceRangeLabel">NT1000-1500</div>
+				<div class="priceRangeLabel">NT.1500-2000</div>
+				<div class="priceRangeLabel">NT.2000-3000</div>
+				<div class="priceRangeLabel">NT.3000 Above</div>
+			</div>
+			<!-- end price -->
+
 			<!-- color Filter -->
 			<div class="searchOption">
 
 				<div class="col-15 col-xs-100 pl-0"><span>顏色: </span></div>
+
 				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
 					<div class="inline choosen color">已選擇: </div>
 				
@@ -497,21 +523,19 @@
 
 	<div class="sort">
 		<span>排序方式：</span>
-		<div class="dropdown">
-			<button class="btn" id="dropdownMenuButton">
-    			Dropdown button
-  			</button>
-
-  			<!--
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
+		<div class="dropDown-wrapper">
+			<input type="checkbox" id="dropDown-toggle">
+			<label for="dropDown-toggle" class="dropDown-toggle-label">價格由低至高</label>
+			<div class="dropDown">
+				<input type="radio" id="option-1" name="options">
+				    <label for="option-1">Option 1</label>
+				    <input type="radio" id="option-2" name="options">
+				    <label for="option-2">Option 2</label>
+				    <input type="radio" id="option-3" name="options">
+				    <label for="option-3">Option 3</label>
 			</div>
-			-->
 		</div>
 	</div>
-
 </div>
 
 <div class="page-products container">

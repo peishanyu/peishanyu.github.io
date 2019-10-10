@@ -1,3 +1,11 @@
+.page-products.bg-tape {
+	position:absolute;
+	width:100%;
+	height:1473px;
+	background:url(../../static/images/products/bg-tape.svg);
+	background-position: top;
+}
+
 .page-products.banner {
 	height:40vh;
 	background:url(../../static/images/products/bg-top.jpg) no-repeat center center;
@@ -33,9 +41,130 @@
 .page-products .productSubtitle,
 .page-products .stoneDescription p {font-weight:500;color:#574c45;font-size:16px;}
 
+.page-products .stoneDescription {margin:.5rem 0;}
+
 .page-products .price {font-weight:500;color:#3b342f;font-size:22px;}
 
 
 /* Filter Popup */
-#filterPopup.page-material .container {background:#fff7f2;}
+#filterPopup.page-material .container {width:50%;background:#fff7f2;}
+
+.page-products .dropDown-wrapper{
+    position: relative;
+    display: inline-block;
+    z-index:1;
+}
+
+/* the style for the label */
+.page-products .dropDown-toggle-label {
+    position: relative;
+    padding: .5rem 2rem .5rem 1rem;
+    background-color:#fff7f2;
+    color: #3b342f;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid #604c3f;
+    font-family: sans-serif;
+    font-size: 12px;
+    transition: opacity .2s ease;
+    letter-spacing: .2px;
+    margin-bottom: 0;
+    /* force parent to wrap around the label tag */
+    float: left;
+}
+
+.page-products .dropDown-toggle-label:active {
+    transform: scale(.98);
+}
+
+/* arrow indicator on the button */
+.page-products .dropDown-toggle-label:after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    /* this makes the square appear as a white triangle */
+    background: linear-gradient(45deg, #5f4c3f 50%, transparent 0);
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    transform: rotate(-45deg);
+}
+
+/* hide all input fields since the labels are connected to them by the id */
+.page-products .dropDown-wrapper input{display: none;}
+
+/* rotate the button arrow upwards */
+.page-products .dropDown-wrapper > input:checked + label:after{
+    top: 45%;
+    transform: rotate(135deg);
+}
+
+/* this will show dropDown when input is checked */
+.page-products .dropDown-wrapper > input:checked + label + .dropDown{
+    display: inline-block;
+}
+
+/* the drop-down style*/
+.page-products .dropDown{
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    border-radius: 4px 0 4px 4px;
+    min-width: 150px;
+    display: none;
+    background: #fff7f2;
+}
+
+/* the drop-down options style*/
+.page-products .dropDown label {
+    display: block;
+    padding: 12px 20px;
+    border-left: 0 solid transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: #474e5d;
+    opacity: .8;
+    transition:
+            border .3s ease,
+            padding-left .3s ease,
+            background-color .3s ease;
+}
+
+/* option item on hover */
+.page-products .dropDown label:hover{
+    border-left: 10px solid #474e5d;
+    background-color: rgba(180,180,180,.1);
+    opacity: .9;
+    font-weight: 700;
+}
+
+/* this shows that the list item was selected */
+.page-products .dropDown input:checked + label{
+    font-weight: 700;
+    opacity: 1;
+    background-color: rgba(180,180,180,.1);
+}
+
+
+
 /* --- */
+
+
+#filterPopup.page-material .optionZone {background:#b3aaa4;}
+
+.priceRangeLabel {padding:.5rem 0;font-size:1rem;}
+
+
+@media only screen and (max-width: 1440px) {
+	.page-products .cate-item {margin: 0 1rem;font-size:18px;}
+	.page-products .viewMode img {width:22%;}
+	.page-products .maskDescription {height:27vh;padding:1rem;}
+	.page-products .productTitle {font-size:18px;}
+	.page-products .productSubtitle, .page-products .stoneDescription p {font-size:12px;}
+	.page-products .price {font-size:18px;}
+}
