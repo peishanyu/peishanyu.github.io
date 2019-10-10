@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	
 	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/page/material.css">
 	<link rel="stylesheet" type="text/css" href="css/page/products.css">
 
 	<title>MINE | 全部商品</title>
@@ -199,11 +200,7 @@
 
 			<div class="closePopup" onclick="filterModal()"><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
 
-			<h2 class="popupTitle vertical-m">材質展示</h2>
-			<div class="searchBar">
-				<div class="inline col-xs-100">文字搜尋: </div>
-				<input type="text" class="col-xs-100" placeholder="請輸入關鍵字" />
-			</div>
+			<h2 class="popupTitle vertical-m">篩選條件</h2>
 
 			<!-- color Filter -->
 			<div class="searchOption">
@@ -455,6 +452,11 @@
 			</div>
 			<!-- end meaning Filter -->
 
+			<div class="searchBar">
+				<div class="inline col-xs-100">文字搜尋: </div>
+				<input type="text" class="col-xs-100" placeholder="請輸入關鍵字" />
+			</div>
+
 			<div id="meterialFilterSubmitBtn" class="filterSubmit">
 				<button class="col-xs-50 btn modal-btn-comfirm">搜尋</button>
 			</div>
@@ -468,11 +470,11 @@
 
 <div class="page-products container search">
 
-	<button class="col-xs-100 btn modal-btn-comfirm" onclick="">進階搜尋</button>
+	<button class="col-xs-100 btn modal-btn-comfirm" onclick="filterModal()">進階搜尋</button>
 
 	<div class="cate">
 		<div class="cate-item">手鍊</div>
-		<div class="cate-item">耳環</div>
+		<div class="cate-item active">耳環</div>
 		<div class="cate-item">項鍊</div>
 		<div class="cate-item">戒指</div>
 		<div class="cate-item">腳鍊</div>
@@ -496,16 +498,17 @@
 	<div class="sort">
 		<span>排序方式：</span>
 		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton">
+			<button class="btn" id="dropdownMenuButton">
     			Dropdown button
   			</button>
 
+  			<!--
 			<div class="dropdown-menu">
 				<a class="dropdown-item" href="#">Action</a>
 				<a class="dropdown-item" href="#">Another action</a>
 				<a class="dropdown-item" href="#">Something else here</a>
 			</div>
-
+			-->
 		</div>
 	</div>
 
@@ -526,8 +529,8 @@
 					<div class="stoneDescription">
 						<div class="stoneName">– 拉長石 Labradorite –</div>
 						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
-						<div class="price"> <span class="USD">$</span>1980</div>
 					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
 				</div>
 			</div>
 		</div>
@@ -544,8 +547,8 @@
 					<div class="stoneDescription">
 						<div class="stoneName">– 拉長石 Labradorite –</div>
 						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
-						<div class="price"> <span class="USD">$</span>1980</div>
 					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
 				</div>
 			</div>
 		</div>
@@ -562,16 +565,87 @@
 					<div class="stoneDescription">
 						<div class="stoneName">– 拉長石 Labradorite –</div>
 						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
-						<div class="price"> <span class="USD">$</span>1980</div>
 					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 
+	<div class="row">
+		<div class="col-25">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<span class="productTitle">狂歡百老匯</span>
+						<span class="productSubtitle">拉長石黃銅手環</span>
+						<img src="static/images/products/ic-custom.svg" />
+					</div>
+					<div class="stoneDescription">
+						<div class="stoneName">– 拉長石 Labradorite –</div>
+						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-25">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<span class="productTitle">狂歡百老匯</span>
+						<span class="productSubtitle">拉長石黃銅手環</span>
+						<img src="static/images/products/ic-custom.svg" />
+					</div>
+					<div class="stoneDescription">
+						<div class="stoneName">– 拉長石 Labradorite –</div>
+						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-25">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<span class="productTitle">狂歡百老匯</span>
+						<span class="productSubtitle">拉長石黃銅手環</span>
+						<img src="static/images/products/ic-custom.svg" />
+					</div>
+					<div class="stoneDescription">
+						<div class="stoneName">– 拉長石 Labradorite –</div>
+						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-25">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<span class="productTitle">狂歡百老匯</span>
+						<span class="productSubtitle">拉長石黃銅手環</span>
+						<img src="static/images/products/ic-custom.svg" />
+					</div>
+					<div class="stoneDescription">
+						<div class="stoneName">– 拉長石 Labradorite –</div>
+						<p>可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+					</div>
+					<div class="price"> <span class="USD">$</span>1980</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-
-
 	<div class="clearfix"></div>
 </div>
 
