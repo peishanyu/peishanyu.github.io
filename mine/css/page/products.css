@@ -158,13 +158,24 @@
 #filterPopup.page-material .optionZone {background:#b3aaa4;}
 
 .priceRangeLabel {padding:.5rem 0;font-size:1rem;}
-
+.modal-btn-comfirm.showMobile {display:none;}
 
 @media only screen and (max-width: 1440px) {
 	.page-products .cate-item {margin: 0 1rem;font-size:18px;}
-	.page-products .viewMode img {width:22%;}
+
 	.page-products .maskDescription {height:27vh;padding:1rem;}
 	.page-products .productTitle {font-size:18px;}
 	.page-products .productSubtitle, .page-products .stoneDescription p {font-size:12px;}
 	.page-products .price {font-size:18px;}
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+	.modal-btn-comfirm.showPC,
+	.page-products .viewMode.pc {display:none;}
+
+	.modal-btn-comfirm.showMobile,
+	.page-products .viewMode.m {display:block;}
 }
