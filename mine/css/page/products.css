@@ -34,7 +34,9 @@
 	padding:2rem 1.5rem;
 	background:rgba(255,255,255,.7);
 	bottom:0;
-	height:20vh;
+    height:20vh;
+    min-height: 150px;
+    overflow: hidden;
 }
 
 .page-products .productTitle {font-weight:700;color:#3b342f;font-size:20px;}
