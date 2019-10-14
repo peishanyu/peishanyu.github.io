@@ -26,27 +26,36 @@
 .page-products .cate-item {margin:0 2rem;font-weight:700;color:#57514e;cursor:pointer;font-size:24px;}
 .page-products .cate-item.active {border-bottom:4px solid #57514e;}
 
-.page-products .productContainer {position:relative;margin:1rem 0}
+.page-products .productContainer {position:relative;margin:1rem 0;cursor:pointer;overflow:hidden;}
+.page-products .productContainer:hover .maskDescription {bottom:0;}
 .page-products .maskDescription {
 	position:absolute;
 	width:100%;
 	padding:1.5rem;
 	background:rgba(255,255,255,.7);
-	bottom:0;
+	bottom:-50%;
+  transition: bottom 0.3s ease-in-out;
+  -moz-transition: bottom 0.3s ease-in-out;
+  -webkit-transition: bottom 0.3s ease-in-out;
+  -o-transition: bottom 0.3s ease-in-out;
 }
 
 .page-products .col-25 .maskDescription {padding:1rem;}
 
 .page-products .col-50 .maskDescription,
-.page-products .col-100 .maskDescription {position:unset;background:transparent;padding:1rem 0;}
+.page-products .col-100 .maskDescription {position:unset;transition:unset;background:transparent;padding:1rem 0;}
 
-.page-products .productTitle {font-weight:700;color:#3b342f;margin-right:.5rem;font-size:20px;}
+.page-products .productTitle {display:inline-block;font-weight:700;color:#3b342f;margin-right:.25rem;margin-bottom:.5rem;font-size:22px;}
+
 .page-products .productSubtitle,
-.page-products .stoneDescription p {font-weight:500;color:#574c45;font-size:16px;}
+.page-products .stoneDescription p {font-weight:700;color:#574c45;font-size:15px;}
+
+.page-products .stoneDescription p {font-weight:500;}
 
 .page-products .stoneDescription {margin:.5rem 0;}
 
-.page-products .price {font-weight:500;color:#3b342f;font-size:22px;}
+.page-products .price {font-weight:500;color:#3b342f;font-size:23px;}
+
 .modal-btn-comfirm.showMobile {display:none;}
 
 /* Filter Popup */
@@ -158,7 +167,7 @@
 
 
 /* popover */
-.qs {position:relative;display:inline-block;cursor:pointer;margin-left:.25rem;}
+.qs {position:relative;display:inline-block;vertical-align:super;cursor:pointer;}
 .qs .popover {
   position: absolute;
   width: 154px;
