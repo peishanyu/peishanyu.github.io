@@ -27,23 +27,28 @@
 .page-products .cate-item.active {border-bottom:4px solid #57514e;}
 
 .page-products .productContainer {position:relative;margin:1rem 0;cursor:pointer;overflow:hidden;}
-.page-products .productContainer:hover .maskDescription {bottom:0;}
+.page-products .productContainer:hover .maskDescription {bottom:0;opacity:100;}
 .page-products .maskDescription {
 	position:absolute;
 	width:100%;
 	padding:1.5rem;
 	background:rgba(255,255,255,.7);
 	bottom:-50%;
-  transition: bottom 0.3s ease-in-out;
-  -moz-transition: bottom 0.3s ease-in-out;
-  -webkit-transition: bottom 0.3s ease-in-out;
-  -o-transition: bottom 0.3s ease-in-out;
+  opacity:0;
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -moz-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .page-products .col-25 .maskDescription {padding:1rem;}
 
 .page-products .col-50 .maskDescription,
-.page-products .col-100 .maskDescription {position:unset;transition:unset;background:transparent;padding:1rem 0;}
+.page-products .col-100 .maskDescription {position:unset;transition:unset;background:transparent;padding:1rem 0;opacity:100;}
+
+.page-products .col-50 .productContainer, 
+.page-products .col-100 .productContainer{overflow:unset;}
+
 
 .page-products .productTitle {display:inline-block;font-weight:700;color:#3b342f;margin-right:.25rem;margin-bottom:.5rem;font-size:22px;}
 
@@ -167,13 +172,13 @@
 
 
 /* popover */
-.qs {position:relative;display:inline-block;vertical-align:super;cursor:pointer;}
+.qs {position:relative;display:inline-block;vertical-align:text-bottom;cursor:pointer;}
 .qs .popover {
   position: absolute;
-  width: 154px;
+  width:105px;
   background-color: #ff9733;
   border-radius: 5px;
-  left:-4.25rem;
+  left:-2.65rem;
   bottom:2.5rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -261,7 +266,7 @@
 @media only screen and (max-width: 1440px) {
 	.page-products .cate-item {margin: 0 1rem;font-size:18px;}
 
-	.page-products .maskDescription {height:25vh;padding:1rem;}
+	.page-products .maskDescription {padding:1rem;}
 	.page-products .productTitle {font-size:18px;}
 	.page-products .productSubtitle, .page-products .stoneDescription p {font-size:12px;}
 	.page-products .price {font-size:18px;}
@@ -273,8 +278,10 @@
 .page-products .col-25,.page-products .col-33 {display:none;}
 .modal-btn-comfirm.showMobile {display:block;}
 .modal-btn-comfirm.showPC {display:none;}
+.page-products .sort {display:none;}
 }
 
 @media only screen and (max-width: 480px) {
-
+.page-products .productTitle {font-size:14px;}
+.qs img {width:16px;}
 }
