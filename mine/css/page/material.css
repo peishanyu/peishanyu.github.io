@@ -53,14 +53,21 @@
 /* album end */
 
 /* filter Popup */
+.modal_all .page-material.filterToFadeIn { display:none;position:fixed;z-index:99;width:100% }
+		.modal_all .page-material .searchBar .keyword { margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto; }
+		.modal_all .page-material .searchOption .choosen { vertical-align:-webkit-baseline-middle; }
+		.modal_all .page-material #colorZoneArrow { margin-left:15px;vertical-align:middle; }
+		.modal_all .page-material #mineTypeZoneArrow { margin-left:15px; }
+		.modal_all .page-material #meaningZoneArrow { margin-left:15px; }
+		
 #filterPopup.page-material {top:5%;position:fixed;z-index:99;width:100%}
-#filterPopup.page-material .closePopup {position:absolute;right:0;display:inline-block;text-align:right;padding:30px}
+#filterPopup.page-material .closePopup {position:absolute;right:0;display:inline-block;text-align:right;padding:30px;}
 #filterPopup.page-material .container {position:absolute;right:0;left:0;width:80%;max-height:90vh;overflow-y:scroll;overflow-x:hidden;padding:0;background:#fff;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);}
 #filterPopup.page-material h2.popupTitle {padding:10px 50px;padding-top:40px;font-size:29px;font-weight:700;color:#6a3906;}
 #filterPopup.page-material .searchBar {margin-bottom:8px;padding:10px 50px;font-size:20px;font-weight:700;color:#6a3906;}
 	#filterPopup.page-material .searchBar input {margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto}
 
-#filterPopup.page-material .searchOption {padding:10px 50px;padding-right:20px;font-size:18px;font-weight:700;color:#6a3906;}
+#filterPopup.page-material .searchOption {padding:10px 50px;padding-right:20px;font-size:18px;font-weight:700;color:#6a3906;min-height:55px;}
 	#filterPopup.page-material .searchOption .choosen {font-size:16px;}
 	#filterPopup.page-material .searchOption .choosen.color {vertical-align:-webkit-baseline-middle;}
 	
@@ -68,14 +75,19 @@
 
 #filterPopup.page-material .unfoldSelectionZone {
 	border-top: none;
-	padding: 40px 50px;
+	padding: 20px 35px;
 	max-height: 350px;
 	height: 100%;
-	transition-property: height, max-height, opacity, padding-top ; 
+	min-height: 100px;
+	transition-property: height, max-height, opacity, padding ; 
 	transition-duration: 0.25s;
 	transition-timing-function: ease-out;
 	opacity: 1;
 	box-sizing: content-box;
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	backface-visibility: hidden;
+  	perspective:1000;
 }
 
 #filterPopup.page-material .foldSelectionZone {
@@ -83,12 +95,16 @@
 	padding: 0px 50px;
 	max-height: 0;
 	height: 0%;
-	transition-property: height, max-height,opacity, padding-top ; 
+	transition-property: height, max-height,opacity, padding ; 
 	transition-duration: 0.25s;
 	transition-timing-function: ease-out;
 	opacity: 0.3;
 	line-height:0;
 	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	backface-visibility: hidden;
+  	perspective:1000;
 }
 
 
@@ -96,11 +112,15 @@
 
 .filterToFadeIn {
 	opacity: 1;
-	animation: filterfade .5s ease-in-out;
+	animation: filterfade .3s ease-out;
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	backface-visibility: hidden;
+  	perspective:1000;
 }
 	@keyframes filterfade {
-  		0% { opacity:0;top:8% }
-  		50%,100% { opacity:1;top:5% }
+  		0% { opacity:0;transform: translate3d(0, 8vh, 0);}
+  		100% { opacity:1;transform: translate3d(0, 0vh, 0);}
 	}
 
 /* filter Popup end */
@@ -251,10 +271,11 @@
 
 	/* filter Popup */
 	#filterPopup.page-material .closePopup {padding-bottom:10px;}
+	#filterPopup.page-material .closePopup img{width:38px;}
 	#filterPopup.page-material h2.popupTitle {padding:10px 40px;padding-top:40px;font-size:24px;}
 	#filterPopup.page-material .searchBar {margin-bottom:8px;padding:10px 40px;font-size:18px;}
 
-	#filterPopup.page-material .searchOption {padding:10px 40px;font-size:18px}
+	#filterPopup.page-material .searchOption {padding:10px 40px;font-size:18px;min-height:52px;}
 		#filterPopup.page-material .searchOption .choosen {font-size:15px}
 	#filterPopup.page-material .unfoldSelectionZone  {padding:30px 40px;}
 	#filterPopup.page-material .foldSelectionZone  {padding: 0px 40px;}
@@ -291,6 +312,7 @@
 @media only screen and (max-width: 1024px) {
 	.page-material.banner {height:45vh;}
 	.page-material h2.subTitle {margin-right:15px;font-size:20px;}
+	#filterPopup.page-material .closePopup img{width:36px;}
 
 	/* album 
 	.page-material #albumContainer {width:100%;}
@@ -389,11 +411,12 @@
 	/* filter Popup */
 	#filterPopup.page-material .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );}
 	#filterPopup.page-material .closePopup {padding-right:20px;}
+	#filterPopup.page-material .closePopup img{width:32px;}
 
 	#filterPopup.page-material h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:18px;}
 	#filterPopup.page-material .searchBar {margin-bottom:8px;padding:10px 20px;font-size:15px;}
 
-	#filterPopup.page-material .searchOption {padding:10px 20px;font-size:16px}
+	#filterPopup.page-material .searchOption {padding:10px 20px;font-size:15px;min-height: 75px;}
 		#filterPopup.page-material .searchOption .choosen {font-size:13px}
 		#filterPopup.page-material .searchOption .colorSquare.active {width:20px;height:20px;}
 	#filterPopup.page-material .unfoldSelectionZone  {padding:30px 20px;}
