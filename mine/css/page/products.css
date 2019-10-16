@@ -27,24 +27,26 @@
 .page-products .cate-item.active {border-bottom:4px solid #57514e;}
 
 .page-products .productContainer {position:relative;margin:1rem 0;cursor:pointer;overflow:hidden;}
-.page-products .productContainer:hover .maskDescription {bottom:0;opacity:100;}
+.page-products .productContainer:hover .maskDescription {transform:translate3d(0,0,0);bottom:0;opacity:100;}
 .page-products .maskDescription {
 	position:absolute;
 	width:100%;
 	padding:1.5rem;
 	background:rgba(255,255,255,.7);
-	bottom:-50%;
-  opacity:0;
-  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -moz-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -o-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+	bottom:0;
+	transform:translate3d(0,100%,0);
+    opacity:0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .page-products .col-25 .maskDescription {padding:1rem;}
 
 .page-products .col-50 .maskDescription,
-.page-products .col-100 .maskDescription {position:unset;transition:unset;background:transparent;padding:1rem 0;opacity:100;}
+.page-products .col-100 .maskDescription {transform:unset;position:unset;transition:unset;background:transparent;padding:1rem 0;opacity:100;}
 
 .page-products .col-50 .productContainer, 
 .page-products .col-100 .productContainer{overflow:unset;}
