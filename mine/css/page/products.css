@@ -1,7 +1,10 @@
-html {background:url(../../static/images/products/bg-tape.png);background-position-y:17rem;}
+html {}
 
 body {background:transparent;}
 
+.page-products.outer.background{
+	background:url(../../static/images/products/bg-tape.png);background-position-y:6rem;
+}
 
 .page-products.banner {
 	height:40vh;
