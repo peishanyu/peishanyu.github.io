@@ -487,6 +487,7 @@
 <!-- filterPopup end -->
 
 
+<div class="page-products outer background">
 <div class="page-products container search">
 
 	<button class="btn modal-btn-comfirm showPC" onclick="filterModal()">進階搜尋</button>
@@ -502,14 +503,14 @@
 		<button class="btn modal-btn-comfirm showMobile" onclick="filterModal()">進階搜尋</button>
 	</div>
 
-	<div class="viewMode pc">
-		<img src="static/images/products/ic-row3_active.svg" />
-		<img src="static/images/products/ic-row4.svg" />
+	<div id="pcViewCtrl" class="viewMode pc">
+		<img id="imageRow3" name="3" src="static/images/products/ic-row3_active.svg" onclick="setProductsToRow(this)" />
+		<img id="imageRow4" name="4" src="static/images/products/ic-row4.svg" onclick="setProductsToRow(this)"  />
 	</div>
 
-	<div class="viewMode m">
-		<img src="static/images/products/ic-row1_active.svg" />
-		<img src="static/images/products/ic-row2.svg" />
+	<div id="mbViewCtrl" class="viewMode m">
+		<img id="imageRow3" name="1" src="static/images/products/ic-row1_active.svg" onclick="setProductsToRow(this)" />
+		<img id="imageRow4" name="2" src="static/images/products/ic-row2.svg" onclick="setProductsToRow(this)"/>
 	</div>
 
 	
@@ -542,7 +543,8 @@
 <div class="page-products container gallery">
 
 	<div class="row">
-		<div class="col-33">
+	<!-- ************************************ test data start ************************************ -->
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -568,7 +570,7 @@
 			</div>
 		</div>
 
-		<div class="col-33">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -594,7 +596,7 @@
 			</div>
 		</div>
 
-		<div class="col-33">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -619,10 +621,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-25">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -647,8 +646,7 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="col-25">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -673,8 +671,7 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="col-25">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -699,8 +696,7 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="col-25">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -725,10 +721,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-50">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
@@ -753,46 +746,19 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="col-50">
+		<div class="productRowCtrlDiv col-33">
 			<div class="productContainer">
 				<img src="static/images/products/earing.jpg" />
 				<div class="maskDescription">
 					<div>
 						<div class="productTitle">
-							<span>BALLON BLEU DE CARTIER WATCH</span>
+							<span>狂歡百老匯</span>
 							<div class="qs">
 								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
 								<span class="popover above">點擊進行客製化</span>	
 							</div>
 						</div>
 						
-						<div class="productSubtitle">
-							YELLOW GOLD
-						</div>
-
-						<div class="stoneDescription">
-							<p>Cartier always seeks to perfect the harmony of each one of its creations.</p>
-						</div>
-						<div class="price"> <span class="USD">$</span>1980</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-100">
-			<div class="productContainer">
-				<img src="static/images/products/earing.jpg" />
-				<div class="maskDescription">
-					<div>
-						<div class="productTitle">狂歡百老匯</div>
-						<div class="qs">
-							<img src="static/images/products/ic-custom.svg" class="ic-custom" />
-							<span class="popover above">點擊進行客製化</span>	
-						</div>
-
 						<div class="productSubtitle">
 							拉長石黃銅手環
 						</div>
@@ -805,9 +771,336 @@
 				</div>
 			</div>
 		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productRowCtrlDiv col-33">
+			<div class="productContainer">
+				<img src="static/images/products/earing.jpg" />
+				<div class="maskDescription">
+					<div>
+						<div class="productTitle">
+							<span>狂歡百老匯</span>
+							<div class="qs">
+								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+								<span class="popover above">點擊進行客製化</span>	
+							</div>
+						</div>
+						
+						<div class="productSubtitle">
+							拉長石黃銅手環
+						</div>
+
+						<div class="stoneDescription">
+							<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+						</div>
+						<div class="price"> <span class="USD">$</span>1980</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ************************************ test data end ************************************ -->
 	</div>
 	
 	<div class="clearfix"></div>
+</div>
 </div>
 
 
@@ -847,6 +1140,7 @@
 <script src="js/menu_header.js"></script>
 
 <script src="js/material.js"></script>
+<script src="js/products.js"></script>
 
 </body>
 </html>
