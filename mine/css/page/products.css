@@ -1,4 +1,4 @@
-html {background:url(../../static/images/products/bg-tape.svg);background-position-y:17rem;}
+html {background:url(../../static/images/products/bg-tape.png);background-position-y:17rem;}
 
 body {background:transparent;}
 
@@ -316,7 +316,7 @@ body {background:transparent;}
 
 @media only screen and (max-width: 768px) {
 
-	html {background-position-y:46rem;}
+	html {background-position-y:45rem;}
 	
 	#filterPopup.page-material .container {width:90%;}
 	
