@@ -1,0 +1,308 @@
+/* filter Popup */
+/* Filter Popup */
+
+.modal_all .general.filterToFadeIn { display:none;position:fixed;z-index:99;width:100% }
+		.modal_all .general#filterPopup .searchBar .keyword { margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto; }
+		.modal_all .general#filterPopup .searchOption .choosen { vertical-align:-webkit-baseline-middle; }
+		.modal_all .general#filterPopup #priceRangeZoneArrow { margin-left:15px;vertical-align:middle; }
+		.modal_all .general#filterPopup #colorZoneArrow { margin-left:15px;vertical-align:middle; }
+		.modal_all .general#filterPopup #mineTypeZoneArrow { margin-left:15px; }
+		.modal_all .general#filterPopup #meaningZoneArrow { margin-left:15px; }
+		
+.modal_all .general#filterPopup {top:5%;position:fixed;z-index:99;width:100%}
+.modal_all .general#filterPopup .closePopup {position:absolute;right:0;display:inline-block;text-align:right;padding:30px;}
+.modal_all .general#filterPopup .container {position:absolute;right:0;left:0;width:75%;max-height:90vh;max-width:65vw;min-width:500px;overflow-y:scroll;overflow-x:hidden;padding:0;background:#fff;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);background:#fff7f2;}
+.modal_all .general#filterPopup h2.popupTitle {padding:10px 50px;padding-top:40px;font-size:29px;font-weight:700;color:#6a3906;}
+.modal_all .general#filterPopup .searchBar {margin-bottom:8px;padding:10px 50px;font-size:20px;font-weight:700;color:#6a3906;}
+	.modal_all .general#filterPopup .searchBar input {margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto}
+
+.modal_all .general#filterPopup .searchOption {padding:10px 50px;padding-right:20px;font-size:18px;font-weight:700;color:#6a3906;min-height:55px;}
+	.modal_all .general#filterPopup .searchOption .choosen {font-size:16px;}
+	.modal_all .general#filterPopup .searchOption .choosen.color {vertical-align:-webkit-baseline-middle;}
+	
+.modal_all .general#filterPopup .optionZone {font-size:0;background:#c2c2c2;}
+.modal_all .general#filterPopup .optionZone {background:#b3aaa4;}
+
+.modal_all .general#filterPopup .unfoldSelectionZone {
+	border-top: none;
+	padding: 20px 35px;
+	max-height: 350px;
+	height: 100%;
+	min-height: 100px;
+	transition-property: height, max-height, opacity, padding ; 
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier(0.42, -0.28, 0, 1.29);
+	opacity: 1;
+	box-sizing: content-box;
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	backface-visibility: hidden;
+  	perspective:1000;
+}
+
+.modal_all .general#filterPopup .foldSelectionZone {
+	border-top: 1px #231815 solid;
+	padding: 0px 50px;
+	max-height: 0;
+	height: 0%;
+	transition-property: height, max-height,opacity, padding ;  
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier(0.42, -0.28, 0, 1.29);
+	opacity: 0.15;
+	line-height:0;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	backface-visibility: hidden;
+  	perspective:1000;
+}
+
+
+
+
+.filterToFadeIn {
+	opacity: 1;
+	animation: filterfade .3s ease-out;
+	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	backface-visibility: hidden;
+  	perspective:1000;
+}
+	@keyframes filterfade {
+  		0% { opacity:0;transform: translate3d(0, 8vh, 0);}
+  		100% { opacity:1;transform: translate3d(0, 0vh, 0);}
+	}
+
+/* filter Popup end */
+
+
+/* Color Square */
+
+.modal_all .general#filterPopup .colorSquare>img {display:none;cursor:pointer;}
+.modal_all .general#filterPopup .colorSquare {
+	display:inline-block;
+	position:relative;
+	vertical-align:-webkit-baseline-middle;
+	width:40px;height:40px;
+	border-radius: 50%;
+	margin:1% 0.5%;
+	border:2px solid rgba(255, 255, 255, 0.8);
+	cursor:pointer;
+}
+.modal_all .general#filterPopup .colorSquare.active {width:40px;height:40px;border:3px solid #fff;margin-right:unset;margin:1% 0.5%;}
+.modal_all .general#filterPopup .colorSquare.last {border-right-width:3px;}
+
+.modal_all .general#filterPopup .colorSquare.active>img {
+    display: block;
+    position: absolute;
+    top: unset;
+    right: unset;
+    transform: translate3d(175%,-75%,0);
+    z-index: 2;
+    width:15px;height:15px;
+}
+
+.modal_all .general#filterPopup .colorSquare.color-1 {background:#87121A}
+.modal_all .general#filterPopup .colorSquare.color-2 {background:#D32424}
+.modal_all .general#filterPopup .colorSquare.color-3 {background:#E0402B}
+.modal_all .general#filterPopup .colorSquare.color-4 {background:#E87E1F}
+.modal_all .general#filterPopup .colorSquare.color-5 {background:#EDB026}
+.modal_all .general#filterPopup .colorSquare.color-6 {background:#EFDE89}
+.modal_all .general#filterPopup .colorSquare.color-7 {background:#A3D8BA}
+.modal_all .general#filterPopup .colorSquare.color-8 {background:#5CBA45}
+.modal_all .general#filterPopup .colorSquare.color-9 {background:#036D05}
+.modal_all .general#filterPopup .colorSquare.color-10 {background:#063814}
+.modal_all .general#filterPopup .colorSquare.color-11 {background:#2BAFBC}
+.modal_all .general#filterPopup .colorSquare.color-12 {background:#0A9ACC}
+.modal_all .general#filterPopup .colorSquare.color-13 {background:#1357A8}
+.modal_all .general#filterPopup .colorSquare.color-14 {background:#043182}
+.modal_all .general#filterPopup .colorSquare.color-15 {background:#9BC6EA}
+.modal_all .general#filterPopup .colorSquare.color-16 {background:#BD9DCE}
+.modal_all .general#filterPopup .colorSquare.color-17 {background:#7C4B96}
+.modal_all .general#filterPopup .colorSquare.color-18 {background:#42210B}
+.modal_all .general#filterPopup .colorSquare.color-19 {background:#754C24}
+.modal_all .general#filterPopup .colorSquare.color-20 {background:#C69C6D}
+.modal_all .general#filterPopup .colorSquare.color-21 {background:#E0D3C6}
+.modal_all .general#filterPopup .colorSquare.color-22 {background:#F29797}
+.modal_all .general#filterPopup .colorSquare.color-23 {background:#EFCACA}
+.modal_all .general#filterPopup .colorSquare.color-24 {background:#F7F8F8}
+.modal_all .general#filterPopup .colorSquare.color-25 {background:#808080}
+.modal_all .general#filterPopup .colorSquare.color-26 {background:#000000}
+.modal_all .general#filterPopup .colorSquare.color-27 {background:url(../../static/images/material/empty.svg) center no-repeat;background-size:cover}
+.modal_all .general#filterPopup .colorSquare.color-28 {background:url(../../static/images/material/empty.svg) center no-repeat;background-size:cover}
+.modal_all .general#filterPopup .colorSquare.over {background:url(../../static/images/material/img-over8.svg) center no-repeat;background-size:cover;}
+
+.modal_all .general#filterPopup #resultColor .colorSquare {
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	width:24px;height:24px;
+	margin:2px;
+	border:0;
+}
+
+.modal_all .general#filterPopup #resultColor .colorSquare.color-24 {
+	border:1px solid #ddd;
+}
+
+.modal_all .general#filterPopup .searchOption .colorSquare.active {margin: 0 2px;width:28px;height:28px;border:1px solid #fff;}
+
+/* mineType */
+.modal_all .general#filterPopup .mineType>img {display:none;cursor:pointer;}
+.modal_all .general#filterPopup .mineType.active>img {display:block;position:absolute;top:-12px;right:-10px;z-index:2}
+
+.modal_all .general#filterPopup .mineType {display:inline-block;margin:8px 20px;padding:8px 25px;font-size:18px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
+.modal_all .general#filterPopup .mineType.active {border-color:#fff}
+
+/* meanType */
+.modal_all .general#filterPopup .meanType>img {display:none;cursor:pointer;}
+.modal_all .general#filterPopup .meanType.active>img {display:block;position:absolute;top:-12px;right:-10px;z-index:2}
+.modal_all .general#filterPopup .meanType {display:inline-block;margin:8px 20px;padding:12px 25px;font-size:18px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
+.modal_all .general#filterPopup .meanType.active {border-color:#fff}
+
+.modal_all .general#filterPopup .mean {text-align:center;}
+.modal_all .general#filterPopup .mean>img {width:64px;margin-bottom:10px}
+
+
+
+.modal_all .general#filterPopup .filterSubmit {text-align:center;margin:30px 15px;}
+
+/*zone arrow*/
+.modal_all .general#filterPopup .zoneArrow {margin-left:15px;vertical-align:middle;}
+
+.modal_all .general#filterPopup .zoneArrow img {
+	transition-duration: .35s;
+	
+}
+
+.modal_all .general#filterPopup .zoneArrowClose {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+/* Responseve */
+
+@media only screen and (max-width: 1680px) {
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+
+	.zoneArrow >img {width:24px;}
+
+	/* filter Popup */
+	.modal_all .general#filterPopup .closePopup {padding-bottom:10px;}
+	.modal_all .general#filterPopup .closePopup img{width:38px;}
+	.modal_all .general#filterPopup h2.popupTitle {padding:10px 40px;padding-top:40px;font-size:24px;}
+	.modal_all .general#filterPopup .searchBar {margin-bottom:8px;padding:10px 40px;font-size:18px;}
+
+	.modal_all .general#filterPopup .searchOption {padding:10px 40px;font-size:18px;min-height:52px;}
+	.modal_all .general#filterPopup .searchOption .choosen {font-size:15px}
+	.modal_all .general#filterPopup .unfoldSelectionZone  {padding:30px 40px;}
+	.modal_all .general#filterPopup .foldSelectionZone  {padding: 0px 40px;}
+
+	/* Color Square */
+	.modal_all .general#filterPopup .searchOption .colorSquare.active {width:24px;height:24px;}
+
+	.modal_all .general#filterPopup .colorSquare {
+		width:38px;height:38px;
+		border:2px solid #fff;
+	}
+	.modal_all .general#filterPopup .colorSquare.active {width:38px;height:38px;}
+	.modal_all .general#filterPopup .colorSquare.last {border-right-width:2px;}
+
+	
+	.modal_all .general#filterPopup .mineType.active>img, 
+	.modal_all .general#filterPopup .meanType.active>img {width:18px;top:-10px;right:-8px;}
+	
+	.page-material .colorSquare.active>img {
+	    width:14px;height:14px;
+	}
+
+	/* mineType */
+	.modal_all .general#filterPopup .mineType {display:inline-block;margin:8px 12px;padding:8px 20px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
+
+
+	/* meanType */
+	.modal_all .general#filterPopup .meanType {display:inline-block;margin:8px 12px;padding:12px 18px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
+	.modal_all .general#filterPopup .mean {font-size:16px}
+	.modal_all .general#filterPopup .mean>img {width:48px;margin-bottom:10px}
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.modal_all .general#filterPopup .container {width:80%;}
+	.modal_all .general#filterPopup .closePopup img{width:36px;}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.modal_all .general#filterPopup .container {width:85%;}
+	
+	.modal_all .general#filterPopup .colorSquare {width:35px;height:35px;}
+	.modal_all .general#filterPopup .colorSquare.active {width:35px;height:35px;}
+	
+	.modal_all .general#filterPopup .colorSquare.active>img {
+		    width:13px;height:13px;
+	}
+
+}
+
+/* ==============================
+   Phone
+   ============================== */
+  
+@media only screen and (max-width: 480px) {
+
+
+	/* filter Popup */
+	.modal_all .general#filterPopup .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );max-width:99vw;min-width:300px;}
+	.modal_all .general#filterPopup .closePopup {padding-right:20px;}
+	.modal_all .general#filterPopup .closePopup img{width:32px;}
+
+	.modal_all .general#filterPopup h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:18px;}
+	.modal_all .general#filterPopup .searchBar {margin-bottom:8px;padding:10px 20px;font-size:15px;}
+
+	.modal_all .general#filterPopup .searchOption {padding:10px 20px;font-size:15px;min-height: 75px;}
+	.modal_all .general#filterPopup .searchOption .choosen {font-size:13px;}
+	.modal_all .general#filterPopup .searchOption .colorSquare.active {width:20px;height:20px;}
+	.modal_all .general#filterPopup .unfoldSelectionZone  {padding:30px 20px;}
+	.modal_all .general#filterPopup .foldSelectionZone  {padding:0px 20px;}
+
+	.modal_all .general#filterPopup .zoneArrow >img {width:18px}
+
+	/* Color Square */
+
+	.modal_all .general#filterPopup .colorSquare {
+		display:inline-block;
+		position:relative;
+		vertical-align:-webkit-baseline-middle;
+		width:32px;height:32px; 
+		margin:3% 1.5%;
+		border:1.5px solid #fff;
+	}
+	.modal_all .general#filterPopup .colorSquare.active {width:32px;height:32px;border:2.5px solid #fff;margin:3% 1.5%;}
+	.modal_all .general#filterPopup .colorSquare.last {border-right-width:2px;}
+	.modal_all .general#filterPopup .colorSquare.active>img {
+		    width:12px;height:12px;
+	}
+
+
+	/* mineType */
+	.modal_all .general#filterPopup .mineType {display:inline-block;margin:8px 10px;padding:8px 15px;font-size:14px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer; width: 65px;}
+
+
+	/* meanType */
+	.modal_all .general#filterPopup .meanType {display:inline-block;margin:10px 12px;padding: 8px 10px;font-size:14px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
+	.modal_all .general#filterPopup .mean {font-size:14px}
+	.modal_all .general#filterPopup .mean>img {width:28px;}
+
+}
+
+@media only screen and (height: 812px) {
+
+}
