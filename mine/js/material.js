@@ -196,6 +196,23 @@ if (document.getElementById("materialColorOptions") != null) {
 
 	});
 
+	document.getElementById("priceRangeZoneArrow").addEventListener('click', function (e) {
+		//e.preventDefault();
+		var element = event.target;
+		var foldZone = document.getElementById("priceRangeOptions");
+
+		if (element.classList.contains("zoneArrowClose")) {
+			element.classList.remove("zoneArrowClose");
+
+			foldZone.classList.remove("foldSelectionZone");
+			foldZone.classList.add("unfoldSelectionZone");
+		} else {
+			element.classList.add("zoneArrowClose");
+
+			foldZone.classList.remove("unfoldSelectionZone");
+			foldZone.classList.add("foldSelectionZone");
+		}
+	});
 
 
 	document.getElementById("mineTypeZoneArrow").addEventListener('click', function (e) {
