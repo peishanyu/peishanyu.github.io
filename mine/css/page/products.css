@@ -3,7 +3,9 @@ html {}
 body {background:transparent;}
 
 .page-products.outer.background{
-	background:url(../../static/images/products/bg-tape.png);background-position-y:6rem;
+	background:url(../../static/images/products/bg-tape.png) no-repeat;
+  background-position-y:17rem;
+  background-attachment:fixed;
 }
 
 .page-products.banner {
@@ -21,7 +23,7 @@ body {background:transparent;}
 .page-products .sort,
 .page-products .dropdown {display:inline-block;}
 
-.page-products .viewMode img {margin:0 .5rem;}
+.page-products .viewMode img {margin:0 .5rem;cursor:pointer;}
 
 .page-products .cate-item {margin:2rem;font-weight:700;color:#57514e;cursor:pointer;line-height:2;font-size:24px;}
 .page-products .cate-item.active {border-bottom:4px solid #57514e;}
@@ -77,15 +79,13 @@ body {background:transparent;}
 /* the style for the label */
 .page-products .dropDown-toggle-label {
     position: relative;
-    padding: .5rem 2rem .5rem 1rem;
+    padding: .5rem 4rem .5rem 1rem;
     background-color:#fff7f2;
     color: #3b342f;
     cursor: pointer;
     text-transform: uppercase;
-    border-radius: 3px;
     border: 1px solid #604c3f;
-    font-family: sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     transition: opacity .2s ease;
     letter-spacing: .2px;
     margin-bottom: 0;
@@ -93,22 +93,19 @@ body {background:transparent;}
     float: left;
 }
 
-.page-products .dropDown-toggle-label:active {
-    transform: scale(.98);
-}
 
 /* arrow indicator on the button */
 .page-products .dropDown-toggle-label:after{
     content: "";
     display: inline-block;
-    width: 6px;
-    height: 6px;
+    width:18px;
+    height:10px;
     /* this makes the square appear as a white triangle */
-    background: linear-gradient(45deg, #5f4c3f 50%, transparent 0);
+    background: url(../../static/images/products/arrow_dropdown.svg);
+    background-size: cover;
     position: absolute;
     right: 15px;
     top: 35%;
-    transform: rotate(-45deg);
 }
 
 /* hide all input fields since the labels are connected to them by the id */
@@ -116,8 +113,7 @@ body {background:transparent;}
 
 /* rotate the button arrow upwards */
 .page-products .dropDown-wrapper > input:checked + label:after{
-    top: 45%;
-    transform: rotate(135deg);
+    transform: rotate(180deg);
 }
 
 /* this will show dropDown when input is checked */
@@ -129,44 +125,37 @@ body {background:transparent;}
 .page-products .dropDown{
     position: absolute;
     right: 0;
-    top: calc(100% + 10px);
-    padding: 10px 0;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
-    border-radius: 4px 0 4px 4px;
-    min-width: 150px;
+    top: calc(100% - 1px);
+    width: 100%;
     display: none;
     background: #fff7f2;
+    border:1px solid #604c3f;
 }
 
 /* the drop-down options style*/
 .page-products .dropDown label {
     display: block;
-    padding: 12px 20px;
-    border-left: 0 solid transparent;
-    font-family: sans-serif;
+    margin:15px 20px;
+    border-bottom: 2px solid transparent;
     font-size: 14px;
     cursor: pointer;
-    color: #474e5d;
+    font-weight:500;
+    color: #786a60;
     opacity: .8;
     transition:
-            border .3s ease,
-            padding-left .3s ease,
-            background-color .3s ease;
+            border .1s ease;
 }
 
 /* option item on hover */
 .page-products .dropDown label:hover{
-    border-left: 10px solid #474e5d;
-    background-color: rgba(180,180,180,.1);
+    border-bottom: 2px solid #474e5d;
     opacity: .9;
-    font-weight: 700;
+    color: #3b342f;
 }
 
 /* this shows that the list item was selected */
 .page-products .dropDown input:checked + label{
-    font-weight: 700;
     opacity: 1;
-    background-color: rgba(180,180,180,.1);
 }
 
 
@@ -272,6 +261,9 @@ body {background:transparent;}
 
 
 @media only screen and (max-width: 1440px) {
+
+  .page-products.outer.background{background-position-y:15rem;}
+
 	.page-products .cate-item {margin:2rem 1rem;font-size:18px;}
 
 	.page-products .maskDescription {padding:1rem;}
