@@ -4,8 +4,10 @@ body {background:transparent;}
 
 .page-products.outer.background{
 	background:url(../../static/images/products/bg-tape.png) no-repeat;
-  background-position-y:17rem;
-  background-attachment:fixed;
+	background-size: 100vw auto;
+  	background-position-y:0rem;
+  	background-attachment:fixed;
+  	overflow:hidden;
 }
 
 .page-products.banner {
@@ -262,7 +264,7 @@ body {background:transparent;}
 
 @media only screen and (max-width: 1440px) {
 
-  .page-products.outer.background{background-position-y:15rem;}
+	.page-products.outer.background{background-position-y:0rem;background-size: 120vw auto;}
 
 	.page-products .cate-item {margin:2rem 1rem;font-size:18px;}
 
@@ -276,7 +278,7 @@ body {background:transparent;}
 
 @media only screen and (max-width: 768px) {
 
-	html {background-position-y:45rem;}
+	.page-products.outer.background{background-position-y:0rem;background-size: 150vw auto;}
 	
 	
 	.page-products .cate {display:block;margin-bottom:1rem;}
@@ -299,7 +301,7 @@ body {background:transparent;}
 }
 
 @media only screen and (max-width: 480px) {
-	.page-products .productTitle {font-size:14px;}
+	.page-products.outer.background{background-position-y:20rem;background-size: 150vh auto;}
 	.qs img {width:16px;}
 	
 }
