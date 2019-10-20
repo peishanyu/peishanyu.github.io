@@ -286,6 +286,8 @@ body {background:transparent;}
 
 /* end filter */
 
+@media only screen and (max-width: 1920px) {
+}
 
 
 @media only screen and (max-width: 1440px) {
@@ -323,12 +325,15 @@ body {background:transparent;}
 	.modal-btn-comfirm.showMobile {display:inline-block;width:auto;padding:0 2rem;}
 	.page-products .itemNum {margin: 0 1rem;}
 	
+  .modal_all .general#filterPopup .container {width:90%;right:0}
 	
 }
 
 @media only screen and (max-width: 480px) {
 	.page-products.outer.background{background-position-y:20rem;background-size: 150vh auto;}
 	.qs img {width:16px;}
+
+  .modal_all .general#filterPopup .meanType {margin: 8px 10px;padding: 12px 10px;}
 	
 }
 
@@ -345,4 +350,6 @@ body {background:transparent;}
 
   .modal-btn-comfirm.showMobile {display:inline-block;width:auto;padding:0 2rem;}
   .page-products .itemNum {margin: 0 1rem;}
+
+  .modal_all .general#filterPopup .container {width:90%;right:0}
 }
