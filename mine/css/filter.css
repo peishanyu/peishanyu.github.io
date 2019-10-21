@@ -247,19 +247,26 @@
 	    width:14px;height:14px;
 	}
 
-	/* mineType */
-	.modal_all .general#filterPopup .mineType {display:inline-block;margin:8px 12px;padding:8px 20px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
-
 
 	/* meanType */
-	.modal_all .general#filterPopup .meanType {display:inline-block;margin:8px 12px;padding:12px 18px;font-size:16px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer;}
+	.modal_all .general#filterPopup .meanType {
+		display:inline-block;
+		margin:8px 12px;
+		padding:12px 14px;
+		font-size:16px;
+		position:relative;
+		border:2px solid transparent;
+		color:#6A3906;
+		cursor:pointer;
+	}
+	
 	.modal_all .general#filterPopup .mean {font-size:16px}
 	.modal_all .general#filterPopup .mean>img {width:48px;margin-bottom:10px}
 
 }
 
 @media only screen and (max-width: 1024px) {
-	.modal_all .general#filterPopup .container {width:80%;}
+	.modal_all .general#filterPopup .container {width:50%;}
 	.modal_all .general#filterPopup .closePopup img{width:32px;}
 }
 
@@ -317,13 +324,12 @@
 	}
 
 
-	/* mineType */
-	.modal_all .general#filterPopup .mineType {display:inline-block;margin:8px 10px;padding:8px 15px;font-size:14px;position:relative;border:2px solid transparent;color:#6A3906;cursor:pointer; width: 65px;}
-
-
 	/* meanType */
-	.modal_all .general#filterPopup .meanType {display:inline-block;margin:10px 12px;padding: 8px 10px;font-size:14px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
-	.modal_all .general#filterPopup .meanType {margin: 8px 10px;padding: 12px 10px;}
+	.modal_all .general#filterPopup .meanType {
+		margin:8px 10px;
+		padding:12px;
+	}
+	
 	
 	.modal_all .general#filterPopup .mean {font-size:14px;}
 	.modal_all .general#filterPopup .mean>img {width:28px;}
