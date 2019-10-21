@@ -91,7 +91,11 @@
   padding-left: 50px;
   border-bottom: 1px solid #231815;
 }
-
+.modal_all .general#filterPopup .priceRangeLabel span {cursor:pointer;}
+.modal_all .general#filterPopup .priceRangeLabel span.active,
+.modal_all .general#filterPopup .priceRangeLabel span:hover {
+    border-bottom: 2px solid #57514e;
+}
 
 /* Color Square */
 
