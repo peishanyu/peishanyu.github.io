@@ -259,32 +259,7 @@ body {background:transparent;}
 .page-products .col-50,.page-products .col-100 {display:none;}
 /* end hide show */
 
-/* filter */
-.modal_all .general#filterPopup .container {width:30%;right:unset;}
-.modal_all .general#filterPopup h2.popupTitle {border-bottom: 1px solid #231815;padding-bottom: 20px;}
-.modal_all .general#filterPopup #priceRangeOptions {
-  background: none;
-  padding-top: 0;
-  padding-left: 50px;
-  border-bottom: 1px solid #231815;
-}
-.modal_all .general#filterPopup .meanType {margin:8px 10px;padding:12px 14px;}
 
-
-.modal_all .general.filterToFadeIn {
-  opacity: 1;
-  animation: filterfade .2s ease-out;
-  -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    backface-visibility: hidden;
-    perspective:1000;
-}
-  @keyframes filterfade {
-      0% { opacity:0;transform: translate(-8vh, 0);}
-      100% { opacity:1;transform: translate(0, 0);}
-  }
-
-/* end filter */
 
 @media only screen and (max-width: 1920px) {
 }
@@ -325,15 +300,13 @@ body {background:transparent;}
 	.modal-btn-comfirm.showMobile {display:inline-block;width:auto;padding:0 2rem;}
 	.page-products .itemNum {margin: 0 1rem;}
 	
-  .modal_all .general#filterPopup .container {width:90%;right:0}
-	
 }
 
 @media only screen and (max-width: 480px) {
 	.page-products.outer.background{background-position-y:20rem;background-size: 150vh auto;}
 	.qs img {width:16px;}
 
-  .modal_all .general#filterPopup .meanType {margin: 8px 10px;padding: 12px 10px;}
+  
 	
 }
 
@@ -351,5 +324,5 @@ body {background:transparent;}
   .modal-btn-comfirm.showMobile {display:inline-block;width:auto;padding:0 2rem;}
   .page-products .itemNum {margin: 0 1rem;}
 
-  .modal_all .general#filterPopup .container {width:90%;right:0}
+  
 }
