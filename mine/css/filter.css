@@ -179,8 +179,8 @@
 .modal_all .general#filterPopup .meanType>img {display:none;cursor:pointer;}
 .modal_all .general#filterPopup .meanType.active>img {display:block;position:absolute;top:-12px;right:-10px;z-index:2}
 
-.modal_all .general#filterPopup .meanType {display:inline-block;margin:8px 20px;padding:12px 25px;font-size:18px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
-.modal_all .general#filterPopup .meanType {margin:8px 10px;padding:12px 14px;}
+.modal_all .general#filterPopup .meanType {display:inline-block;margin:12px 10px;padding:12px 25px;font-size:18px;position:relative;border:3px solid transparent;color:#6A3906;cursor:pointer;}
+
 
 .modal_all .general#filterPopup .meanType.active {border-color:#fff}
 
@@ -251,8 +251,8 @@
 	/* meanType */
 	.modal_all .general#filterPopup .meanType {
 		display:inline-block;
-		margin:8px 12px;
-		padding:12px 14px;
+		margin:8px 10px;
+		padding:12px;
 		font-size:16px;
 		position:relative;
 		border:2px solid transparent;
@@ -326,8 +326,8 @@
 
 	/* meanType */
 	.modal_all .general#filterPopup .meanType {
-		margin:8px 10px;
-		padding:12px;
+		margin:8px;
+		padding:10px;
 	}
 	
 	
@@ -340,8 +340,14 @@
 
 }
 
+@media only screen and (max-width:375px) {
+	/* meanType */
+	.modal_all .general#filterPopup .meanType {
+		margin:6px;
+		padding:6px;
+	}
+}
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) { 
-	  .modal_all .general#filterPopup .container {width:90%;right:0;}
-	  
+	.modal_all .general#filterPopup .container {width:90%;right:0;}  
 }
