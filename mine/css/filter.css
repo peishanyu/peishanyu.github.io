@@ -1,15 +1,16 @@
 /* filter Popup */
 
-.modal_all .general.filterToFadeIn { display:none;position:fixed;z-index:99;width:100% }
-		.modal_all .general#filterPopup .searchBar .keyword { margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto; }
-		.modal_all .general#filterPopup .searchOption .choosen { vertical-align:-webkit-baseline-middle; }
-		.modal_all .general#filterPopup #priceRangeZoneArrow { margin-left:15px;vertical-align:middle; }
-		.modal_all .general#filterPopup #colorZoneArrow { margin-left:15px;vertical-align:middle; }
-		.modal_all .general#filterPopup #mineTypeZoneArrow { margin-left:15px; }
-		.modal_all .general#filterPopup #meaningZoneArrow { margin-left:15px; }
+
+.modal_all .general#filterPopup .searchBar .keyword { margin:4px 0;padding:3px 8px;border-radius:4px;border:1px solid #919191;height:auto; }
+.modal_all .general#filterPopup .searchOption .choosen { vertical-align:-webkit-baseline-middle; }
+.modal_all .general#filterPopup #priceRangeZoneArrow { margin-left:15px;vertical-align:middle; }
+.modal_all .general#filterPopup #colorZoneArrow { margin-left:15px;vertical-align:middle; }
+.modal_all .general#filterPopup #mineTypeZoneArrow { margin-left:15px; }
+.modal_all .general#filterPopup #meaningZoneArrow { margin-left:15px; }
 		
 .modal_all .general#filterPopup {top:5%;position:fixed;z-index:99;width:100%}
-.modal_all .general#filterPopup .closePopup {position:absolute;right:0;display:inline-block;text-align:right;padding:30px;}
+.modal_all .general#filterPopup .closePopup {position:absolute;right:0;display:inline-block;text-align:right;padding:4%;padding-right:5%;}
+.modal_all .general#filterPopup .closePopup img{width:35px;}
 
 .modal_all .general#filterPopup .container {position:absolute;right:0;left:0;width:75%;max-height:90vh;max-width:65vw;min-width:500px;overflow-y:scroll;overflow-x:hidden;padding:0;background:#fff;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);background:#fff7f2;}
 .modal_all .general#filterPopup .container {width:30%;right:unset;}
@@ -26,8 +27,6 @@
 	
 .modal_all .general#filterPopup .optionZone {font-size:0;background:#c2c2c2;}
 .modal_all .general#filterPopup .optionZone {background:#b3aaa4;}
-
-
 
 
 .modal_all .general#filterPopup .unfoldSelectionZone {
@@ -68,7 +67,7 @@
 	display: none;
 }
 
-
+.modal_all .general.filterToFadeIn { display:none;position:fixed;z-index:99;width:100%;}
 .filterToFadeIn {
 	opacity: 1;
 	animation: filterfade .2s ease-out;
@@ -216,8 +215,8 @@
 	.zoneArrow >img {width:24px;}
 
 	/* filter Popup */
-	.modal_all .general#filterPopup .closePopup {padding-bottom:10px;}
-	.modal_all .general#filterPopup .closePopup img{width:38px;}
+	/*.modal_all .general#filterPopup .closePopup {padding-bottom:10px;}*/
+	.modal_all .general#filterPopup .closePopup img{width:33px;}
 	.modal_all .general#filterPopup h2.popupTitle {padding:10px 40px;padding-top:40px;font-size:24px;}
 	.modal_all .general#filterPopup .searchBar {margin-bottom:8px;padding:10px 40px;font-size:18px;}
 
@@ -257,13 +256,13 @@
 
 @media only screen and (max-width: 1024px) {
 	.modal_all .general#filterPopup .container {width:80%;}
-	.modal_all .general#filterPopup .closePopup img{width:36px;}
+	.modal_all .general#filterPopup .closePopup img{width:32px;}
 }
 
 @media only screen and (max-width: 768px) {
 	
 	.modal_all .general#filterPopup .container {width:90%;right:0;}
-	
+	.modal_all .general#filterPopup .closePopup img{width:30px;}
 	.modal_all .general#filterPopup .colorSquare {width:35px;height:35px;}
 	.modal_all .general#filterPopup .colorSquare.active {width:35px;height:35px;}
 	
@@ -282,9 +281,9 @@
 
 
 	/* filter Popup */
-	.modal_all .general#filterPopup .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );max-width:99vw;min-width:300px;}
-	.modal_all .general#filterPopup .closePopup {padding-right:20px;}
-	.modal_all .general#filterPopup .closePopup img{width:32px;}
+	.modal_all .general#filterPopup .container {width:90%;max-height:calc( calc(100vh * 0.9) + -10px );max-width:99vw;min-width:300px;border-radius: 1rem;}
+	/*.modal_all .general#filterPopup .closePopup {padding-right:20px;}*/
+	.modal_all .general#filterPopup .closePopup img{width:28px;}
 
 	.modal_all .general#filterPopup h2.popupTitle {padding:10px 20px;padding-top:40px;font-size:18px;}
 	.modal_all .general#filterPopup .searchBar {margin-bottom:8px;padding:10px 20px;font-size:15px;}
