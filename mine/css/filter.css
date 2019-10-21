@@ -123,33 +123,34 @@
     width:15px;height:15px;
 }
 
-.modal_all .general#filterPopup .colorSquare.color-1 {background:#87121A}
-.modal_all .general#filterPopup .colorSquare.color-2 {background:#D32424}
-.modal_all .general#filterPopup .colorSquare.color-3 {background:#E0402B}
-.modal_all .general#filterPopup .colorSquare.color-4 {background:#E87E1F}
-.modal_all .general#filterPopup .colorSquare.color-5 {background:#EDB026}
-.modal_all .general#filterPopup .colorSquare.color-6 {background:#EFDE89}
-.modal_all .general#filterPopup .colorSquare.color-7 {background:#A3D8BA}
-.modal_all .general#filterPopup .colorSquare.color-8 {background:#5CBA45}
-.modal_all .general#filterPopup .colorSquare.color-9 {background:#036D05}
-.modal_all .general#filterPopup .colorSquare.color-10 {background:#063814}
-.modal_all .general#filterPopup .colorSquare.color-11 {background:#2BAFBC}
-.modal_all .general#filterPopup .colorSquare.color-12 {background:#0A9ACC}
-.modal_all .general#filterPopup .colorSquare.color-13 {background:#1357A8}
-.modal_all .general#filterPopup .colorSquare.color-14 {background:#043182}
-.modal_all .general#filterPopup .colorSquare.color-15 {background:#9BC6EA}
-.modal_all .general#filterPopup .colorSquare.color-16 {background:#BD9DCE}
-.modal_all .general#filterPopup .colorSquare.color-17 {background:#7C4B96}
-.modal_all .general#filterPopup .colorSquare.color-18 {background:#42210B}
-.modal_all .general#filterPopup .colorSquare.color-19 {background:#754C24}
-.modal_all .general#filterPopup .colorSquare.color-20 {background:#C69C6D}
-.modal_all .general#filterPopup .colorSquare.color-21 {background:#E0D3C6}
-.modal_all .general#filterPopup .colorSquare.color-22 {background:#F29797}
-.modal_all .general#filterPopup .colorSquare.color-23 {background:#EFCACA}
-.modal_all .general#filterPopup .colorSquare.color-24 {background:#F7F8F8}
-.modal_all .general#filterPopup .colorSquare.color-25 {background:#808080}
-.modal_all .general#filterPopup .colorSquare.color-26 {background:#000000}
-.modal_all .general#filterPopup .colorSquare.color-27 {background:url(../../static/images/material/empty.svg) center no-repeat;background-size:cover}
+.modal_all .general#filterPopup .colorSquare.color-1 {background:#87121A;}
+.modal_all .general#filterPopup .colorSquare.color-2 {background:#e60b66;}
+.modal_all .general#filterPopup .colorSquare.color-3 {background:#D32424;}
+.modal_all .general#filterPopup .colorSquare.color-4 {background:#E0402B;}
+.modal_all .general#filterPopup .colorSquare.color-5 {background:#E87E1F;}
+.modal_all .general#filterPopup .colorSquare.color-6 {background:#EDB026;}
+.modal_all .general#filterPopup .colorSquare.color-7 {background:#EFDE89;}
+.modal_all .general#filterPopup .colorSquare.color-8 {background:#A3D8BA;}
+.modal_all .general#filterPopup .colorSquare.color-9 {background:#5CBA45;}
+.modal_all .general#filterPopup .colorSquare.color-10 {background:#036D05;}
+.modal_all .general#filterPopup .colorSquare.color-11 {background:#063814;}
+.modal_all .general#filterPopup .colorSquare.color-12 {background:#2BAFBC;}
+.modal_all .general#filterPopup .colorSquare.color-13 {background:#0A9ACC;}
+.modal_all .general#filterPopup .colorSquare.color-14 {background:#1357A8;}
+.modal_all .general#filterPopup .colorSquare.color-15 {background:#043182;}
+.modal_all .general#filterPopup .colorSquare.color-16 {background:#9BC6EA;}
+.modal_all .general#filterPopup .colorSquare.color-17 {background:#BD9DCE;}
+.modal_all .general#filterPopup .colorSquare.color-18 {background:#7C4B96;}
+.modal_all .general#filterPopup .colorSquare.color-19 {background:#42210B;}
+.modal_all .general#filterPopup .colorSquare.color-20 {background:#754C24;}
+.modal_all .general#filterPopup .colorSquare.color-21 {background:#C69C6D;}
+.modal_all .general#filterPopup .colorSquare.color-22 {background:#E0D3C6;}
+.modal_all .general#filterPopup .colorSquare.color-23 {background:#F29797;}
+.modal_all .general#filterPopup .colorSquare.color-24 {background:#EFCACA;}
+.modal_all .general#filterPopup .colorSquare.color-25 {background:#F7F8F8;}
+.modal_all .general#filterPopup .colorSquare.color-26 {background:#808080;}
+.modal_all .general#filterPopup .colorSquare.color-27 {background:#000000;}
+
 .modal_all .general#filterPopup .colorSquare.color-28 {background:url(../../static/images/material/empty.svg) center no-repeat;background-size:cover}
 .modal_all .general#filterPopup .colorSquare.over {background:url(../../static/images/material/img-over8.svg) center no-repeat;background-size:cover;}
 
