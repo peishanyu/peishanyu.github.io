@@ -13,11 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	
+	<link rel="stylesheet" type="text/css" href="css/filter.css">
 	<!-- custom -->
-	<link rel="stylesheet" type="text/css" href="css/album.css">
-	<link rel="stylesheet" type="text/css" href="css/page/collections.css">
+	<link rel="stylesheet" type="text/css" href="css/page/product.css">
 
-	<title>MINE | 本季新品</title>
+	<title>狂歡百老匯 | 商品詳情</title>
 	<link rel="icon" href="static/favicon.ico" class="next-head">
 
 </head>
@@ -111,7 +111,7 @@
 <!-- login end -->
 
 <!-- Menu Start -->
-<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display: none;" onclick="menuClose();" />
+<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display:none;" onclick="menuClose();" />
 	
 	<div class="absolute container ">
 		<div onclick="menuClose();" ><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
@@ -188,156 +188,90 @@
 </header>
 <!-- header end -->
 
-<div class="page-collections relative">
-	<div class="banner"></div>
-	<div class="discount">
-			<h3>秋季新品上市</h3>
-			<div class="description">
-				指定商品滿8000享有9折優惠
-			</div>
-			<button class="btn btn-round-fill-orange">前往選購</button>
-	</div>
-	<div class="bg-under">
-		<div class="leaf-r">
-			<img src="static/images/collections/leaf-r.png" />
-		</div>
-		<div class="leaf-l">
-			<img src="static/images/collections/leaf-l.png" />
-		</div>
-	</div>
-</div>
+<!-- banner -->
+<div class="page-product banner relative"></div>
+<!-- banner end -->
 
-<div class="page-collections rock-top relative">
-	<div class="bg-stone">
-		<div class="new1">
-			<div class="relative">
-				<div class="square">
-					<div class="inline text-r intro1">
-						<h3 class="title">璀璨秋季</h3>
-						<p class="description">
-							每一件mine秋季商品都可<br>
-							進行疊加佩戴。無論是與<br>
-							服飾，或是與時尚飾品。<br>
-							秋季商品都可<br>
-							進行疊加佩戴。<br>
-						</p>
-						<button class="btn btn-round-outline-darkbrown">前往選購</button>
+<div class="page-product outer background">
+	<div class="page-product subMenu">
+		<div class="row cate vertical-m">
+			<div class="col-xs-20 cate-item">手鍊</div>
+			<div class="col-xs-20 cate-item">耳環</div>
+			<div class="col-xs-20 cate-item">項鍊</div>
+			<div class="col-xs-20 cate-item">戒指</div>
+			<div class="col-xs-20 cate-item">腳鍊</div>
+			<div class="col-xs-20 cate-item">全部商品</div>
+		</div>
+	</div>
+
+	<div class="page-product container">
+
+		<div class="row">
+
+			<div class="productCarousel col-50 col-s-100">
+				<div class="productContainer row">
+					<div class="productThumbnail col-16">
+
+						<div id="thumbnail-1"><img src="static/images/product/earing.jpg" /></div>
+						<div id="thumbnail-2" class="active"><img src="static/images/product/earing.jpg" /></div>
+						<div id="thumbnail-3"><img src="static/images/product/earing.jpg" /></div>
+						<div id="thumbnail-4"><img src="static/images/product/earing.jpg" /></div>
+						<div id="thumbnail-5"><img src="static/images/product/earing.jpg" /></div>
+
 					</div>
-				</div>	
-			</div>
-			
-		</div>
-		<div class="clearfix"></div>
-		<div class="space l"></div>
-		<div class="relative new2">
-			<div class="circle">
-				<div class="inline text-r intro2">
-					<h3 class="title">全新系列</h3>
-					<p class="description">
-						每一件mine秋季商品<br>
-						都可進行疊加佩戴。<br>
-						無論是與服飾，<br>
-						或是與時尚飾品。<br>
-						秋季商品都可<br>
-						進行疊加佩戴。<br>
-					</p>
-					<button class="btn btn-round-outline-darkbrown">前往選購</button>
-				</div>	
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="page-collections series1">
-	<div class="bg-under-2"></div>
-	<div class="absolute series">
-		<h3 class="inline">花蝴蝶系列</h3>
-		<button class="btn btn-round-outline-white">前往選購</button>
-		<p class="description">秋天的時尚語言，勾勒著浪漫的輪廓與盛夏後的回憶</p>
-	</div>
-</div>
-
-<div class="page-collections">
-	<div class="bg-earing-bottom">
-		<div class="inline intro3">
-			<h3 class="title white">蜻蜓造雨</h3>
-			<h4 class="subtitle white">雙色項鍊 - 三款上市</h4>
-			<p class="description white">
-				望盡換日線的距離<br>
-				是只差一步的成熟<br>
-				需要極度忙碌才能<br>
-				無視邊際下降的球<br>
-			</p>
-			<button class="btn btn-round-outline-white">前往選購</button>
-		</div>
-	</div>
-	<div class="clearfix"></div>
-</div>
-
-<div class="page-collections rock-bottom">
-	<div class="bg-stone-2">
-		<div id="collectionsCarousel" class="page-collections container blank">
-			<div id="albumPage">
-				<div id="albumContainer">
-					<div id="album">
-				
-						<div class="hideLeft">
-							<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg" />
-						</div>
-				
-						<div class="prevLeftSecond">
-							<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg" />
-						</div>
-				
-						<div class="prev">
-							<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg" />
-						</div>
-				
-						<div class="selected">
-							<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg" />
-						</div>
-				
-						<div class="next">
-							<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg" />
-						</div>
-				
-						<div class="nextRightSecond">
-							<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg" />
-						</div>
-				
-						<div class="hideRight">
-							<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg" />
-						</div>
+					<div class="productThumbnail col-84">
+						<img src="static/images/products/earing.jpg" />
 					</div>
-			 
-					<div class="buttons" >
-						<div>
-							<img src="static/images/material/btn_select.svg" id="prevBtn" />
-						</div>
-						<div>
-							<img src="static/images/material/btn_select.svg" id="nextBtn" />
-						</div>
-					</div>
-
-					<script src="js/album.js"></script>
 				</div>
 			</div>
+
+			<div class="productIntro col-50 col-s-100">
+				<div class="productContainer">
+					<div class="maskDescription">
+						<div>
+							<div class="productTitle">
+								<span>狂歡百老匯</span>
+								<div class="qs">
+									<img src="static/images/products/ic-custom.svg" class="ic-custom" />
+									<span class="popover above">點擊進行客製化</span>	
+								</div>
+							</div>
+							
+							<div class="productSubtitle">
+								拉長石黃銅手環
+							</div>
+
+							<div class="stoneDescription">
+								<p>拉長石 (Labradorite) 可幫助分辨是非，且保護配戴者不受負面能量的侵襲</p>
+							</div>
+							<div class="price"> <span class="USD">$</span>1980</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-		<div class="slider-dot-control">
-			<label for="slide1"></label>
-			<label for="slide2"></label>
-			<label for="slide3" class="active"></label>
-			<label for="slide4"></label>
-			<label for="slide5"></label>
+
+		<div id="toTheTop">
+			<button id="back-to-top" type="button" aria-label="top" aria-hidden="false" name="back to top" class="aria-restricted back-to-top">
+				<div>
+					<i aria-hidden="true" class="icon-arrow-up"></i>
+					<span>TOP</span>
+				</div>
+			</button>
 		</div>
+		<div class="clearfix"></div>
 	</div>
+</div>
+
+<div class="page-product container imgIntroZone">
+	<img src="static/images/product/introIMG.jpg" />
 </div>
 
 
 
-<div class="clearfix"></div>
-<div id="footer" class="relative page-collections">
+<!-- FOOTER start -->
+<div id="footer" class="relative">
 	<div class="container">
 		<div class="row">
 			<div class="col-60 col-xs-50">
@@ -366,13 +300,13 @@
 		</div>
 	</div>
 </div>
-
-
+<!-- FOOTER end -->
 
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
 
 <script src="js/material.js"></script>
+<script src="js/products.js"></script>
 
 </body>
 </html>

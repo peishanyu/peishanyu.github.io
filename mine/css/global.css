@@ -895,12 +895,15 @@ button:focus {
 }
 
 @media only screen and (max-width: 768px) {
-
+  .col-s-100 {width:100%!important}
+  .col-s-50 {width:50%!important}
+  .col-s-20 {width:20%!important}
 }
 
 @media only screen and (max-width: 480px) {
   .col-xs-100 {width:100%!important}
   .col-xs-50 {width:50%!important}
+  .col-xs-20 {width:20%!important}
 
   .bg-position-x-l {background-position:left!important;}
   .bg-position-x-33 {background-position-x:33%!important;}
