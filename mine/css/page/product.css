@@ -36,14 +36,106 @@ body {background:transparent;}
 
 .page-product .cate-item:hover {border-bottom:4px solid #57514e;}
 
-
-
 .page-product.container {padding:3rem;}
+
+
+/* dropdown */
+
+.page-product .dropDown-wrapper{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index:1;
+}
+
+/* the style for the label */
+.page-product .dropDown-toggle-label {
+    position: relative;
+    padding: .5rem 4rem .5rem 1rem;
+    background-color:#fff7f2;
+    color: #3b342f;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #604c3f;
+    font-size: 13px;
+    transition: opacity .2s ease;
+    letter-spacing: .2px;
+    margin-bottom: 0;
+    /* force parent to wrap around the label tag */
+    float: left;
+}
+
+
+/* arrow indicator on the button */
+.page-product .dropDown-toggle-label:after{
+    content: "";
+    display: inline-block;
+    width:18px;
+    height:10px;
+    /* this makes the square appear as a white triangle */
+    background: url(../../static/images/products/arrow_dropdown.svg);
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 35%;
+}
+
+/* hide all input fields since the labels are connected to them by the id */
+.page-product .dropDown-wrapper input{display: none;}
+
+/* rotate the button arrow upwards */
+.page-product .dropDown-wrapper > input:checked + label:after{
+    transform: rotate(180deg);
+}
+
+/* this will show dropDown when input is checked */
+.page-product .dropDown-wrapper > input:checked + label + .dropDown{
+    display: inline-block;
+}
+
+/* the drop-down style*/
+.page-product .dropDown{
+    position: absolute;
+    right: 0;
+    top: calc(100% - 1px);
+    width: 100%;
+    display: none;
+    background: #fff7f2;
+    border:1px solid #604c3f;
+}
+
+/* the drop-down options style*/
+.page-product .dropDown label {
+    display: block;
+    margin:15px 20px;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight:500;
+    color: #786a60;
+    opacity: .8;
+    transition:
+            border .1s ease;
+}
+
+/* option item on hover */
+.page-product .dropDown label:hover{
+    border-bottom: 2px solid #474e5d;
+    opacity: .9;
+    color: #3b342f;
+}
+
+/* this shows that the list item was selected */
+.page-product .dropDown input:checked + label{
+    opacity: 1;
+}
+
+/* dropdown end */
+
 
 
 
 /*back to top*/
-
 .page-product #toTheTop {
     position: fixed;
     width: 3vw;
@@ -80,7 +172,6 @@ body {background:transparent;}
     text-transform: uppercase;
     font-family: Gotham Medium;
 }
-
 /*back to top end*/
 
 
