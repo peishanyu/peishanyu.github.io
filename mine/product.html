@@ -191,8 +191,9 @@
 <!-- banner -->
 <div class="page-product banner relative"></div>
 <!-- banner end -->
+
 <div class="page-product subMenu">
-	<div class="row cate vertical-m">
+	<div class="cate vertical-m">
 		<div class="col-xs-20 cate-item">手鍊</div>
 		<div class="col-xs-20 cate-item">耳環</div>
 		<div class="col-xs-20 cate-item">項鍊</div>
@@ -210,16 +211,25 @@
 			<div class="productCarousel col-50 col-s-100">
 				<div class="productContainer row">
 					<div class="productThumbnail col-16">
+						<div class="relative">
+							<div id="thumbnail-1" class="thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+							<div id="thumbnail-2" class="thumbnail active"><img src="static/images/product/earing.jpg" /></div>
+							<div id="thumbnail-3" class="thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+							<div id="thumbnail-4" class="thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+							<div id="thumbnail-5" class="thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
 
-						<div id="thumbnail-1"><img src="static/images/product/earing.jpg" /></div>
-						<div id="thumbnail-2" class="active"><img src="static/images/product/earing.jpg" /></div>
-						<div id="thumbnail-3"><img src="static/images/product/earing.jpg" /></div>
-						<div id="thumbnail-4"><img src="static/images/product/earing.jpg" /></div>
-						<div id="thumbnail-5"><img src="static/images/product/earing.jpg" /></div>
+							<div class="absolute mask"></div>
+						</div>
+						
+						<div>
+							<div><img src="static/images/product/productCarousel_arrowTop.svg" /></div>
+							<div><img src="static/images/product/productCarousel_arrowDown.svg" /></div>
+						</div>
 
 					</div>
+
 					<div class="productThumbnail col-84">
-						<img src="static/images/products/earing.jpg" />
+						<img src="static/images/product/earing.jpg" />
 					</div>
 				</div>
 			</div>
@@ -235,60 +245,86 @@
 								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
 								<span class="">個人化客製服務</span>	
 							</div>
-							<div class="price"> <span class="NTD">NT.</span>1380</div>
 
-							<div class="stoneMaterial">
-								<span>材質: </span>
-								<span>包14k金為鑲鋯石滾鑽、拉長石、淡水珍珠、黃銅</span>
+							<div class="price">
+								<span class="NTD">NT.</span>1380
 							</div>
 
-							<div class="stoneMean">
-								<span>代表意義: </span>
-								<span class="hashtag">#事業</span>
-								<span class="hashtag">#人際</span>
-								<span class="hashtag">#健康</span>
-							</div>
+							<div class="productAttributes">
 
-							<div class="productColor">
-								<span>顏色</span>
-								<span class="colorCircle gold active"></span>
-								<span class="colorCircle silver"></span>
-							</div>
-							
-							<div class="row">
-								<div class="col-50">
-									<span>規格</span>
-									<div class="dropDown-wrapper">
-										<input type="checkbox" id="dropDown-toggle">
-										<label for="dropDown-toggle" class="dropDown-toggle-label">價格由低至高</label>
-										<div class="dropDown">
-											<input type="radio" id="option-1" name="options">
-											    <label for="option-1">價格由低至高</label>
-											    <input type="radio" id="option-2" name="options">
-											    <label for="option-2">價格由高至低</label>
-											    <input type="radio" id="option-3" name="options">
-											    <label for="option-3">新品優先</label>
-											    <input type="radio" id="option-4" name="options">
-											    <label for="option-4">熱銷款優先</label>
-											    <input type="radio" id="option-5" name="options">
-											    <label for="option-5">名人推薦優先</label>
+								<div class="material">
+									<span class="label">材質: </span>
+									<span>包14k金為鑲鋯石滾鑽、拉長石、淡水珍珠、黃銅</span>
+								</div>
+
+								<div class="meaning">
+									<span class="label">代表意義: </span>
+									<span class="hashtag">#事業</span>
+									<span class="hashtag">#人際</span>
+									<span class="hashtag">#健康</span>
+								</div>
+
+								<div class="color">
+									<span class="label">顏色</span>
+									<span class="colorCircle gold active"></span>
+									<span class="colorCircle silver"></span>
+								</div>
+								
+								<div class="row">
+									<div class="col-50">
+										<span class="label">規格</span>
+										<div class="dropDown-wrapper">
+											<input type="checkbox" id="dropDown-toggle">
+											<label for="dropDown-toggle" class="dropDown-toggle-label">價格由低至高</label>
+											<div class="dropDown">
+												<input type="radio" id="option-1" name="options">
+												    <label for="option-1">價格由低至高</label>
+												    <input type="radio" id="option-2" name="options">
+												    <label for="option-2">價格由高至低</label>
+												    <input type="radio" id="option-3" name="options">
+												    <label for="option-3">新品優先</label>
+												    <input type="radio" id="option-4" name="options">
+												    <label for="option-4">熱銷款優先</label>
+												    <input type="radio" id="option-5" name="options">
+												    <label for="option-5">名人推薦優先</label>
+											</div>
 										</div>
 									</div>
+
+									<div class="col-50">
+										<span class="label">商品數量</span>
+										<div id="quantitySelect" class="inline">
+											<form>
+											  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+											  <input type="number" id="number" value="0" />
+											  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+											</form>
+										</div>
+									</div>
+									
 								</div>
-								<div class="col-50">
-									<span>商品數量</span>
+								<div>
+									<p class="js--quantity-error"></p>	
 								</div>
 							</div>
-							<button class="col-xs-100 btn modal-btn-comfirm">加入購物車</button>
-
 						</div>
+
+						<div class="row">
+							<div class="col-100">
+								<button class="col-xs-100 btn modal-btn-comfirm">加入購物車</button>
+							</div>
+						</div>
+
 					</div>
+
 					<div class="line"></div>
+
 					<div class="row">
 						<div class="col-33 introTab">商品介紹</div>
 						<div class="col-33 introTab">商品說明</div>
 						<div class="col-33 introTab">購物須知</div>
 					</div>
+
 					<div class="introTab1">
 						<p>
 							夜晚光芒萬丈時分<br>
@@ -317,35 +353,52 @@
 			</div>
 
 		</div>
-
-		<div id="toTheTop">
-			<button id="back-to-top" type="button" aria-label="top" aria-hidden="false" name="back to top" class="aria-restricted back-to-top">
-				<div>
-					<i aria-hidden="true" class="icon-arrow-up"></i>
-					<span>TOP</span>
-				</div>
-			</button>
-		</div>
 		<div class="clearfix"></div>
 	</div>
 </div>
 
 <div class="page-product container imgIntroZone">
-	<img src="static/images/product/introIMG.jpg" />
-</div>
-
-<div class="page-product moreProductCarousel">
-	<div class="title">更多推薦商品</div>
-
-	<div id="" class="">
-		<div class="row">
-			<div class="col-20"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20"><img src="static/images/product/introIMG.jpg" /></div>
+	<div class="row">
+		<div class="col-50">
+			<div class="row">
+				<div class="col-16"></div>
+				<div class="col-84">
+					<img src="static/images/product/introIMG.jpg" />
+					<img src="static/images/product/introIMG2.jpg" />
+					<img src="static/images/product/introIMG3.jpg" />
+				</div>	
+			</div>
+			
 		</div>
 	</div>
+</div>
+
+
+<div class="page-product moreProductCarousel">
+	<div class="title text-c">
+		<div>更多推薦商品</div>
+		<div><img src=""></div>
+	</div>
+
+	<div id="" class="container-fluid">
+		<div class="row">
+			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
+			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
+			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
+			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
+			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
+		</div>
+	</div>
+
+</div>
+
+<div id="toTheTop">
+	<button id="back-to-top" type="button" aria-label="top" aria-hidden="false" name="back to top" class="aria-restricted back-to-top">
+		<div>
+			<i aria-hidden="true" class="icon-arrow-up"></i>
+			<span>TOP</span>
+		</div>
+	</button>
 </div>
 
 
@@ -384,8 +437,24 @@
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
 
-<script src="js/material.js"></script>
-<script src="js/products.js"></script>
+<script type="text/javascript">
+	function increaseValue() {
+	  var value = parseInt(document.getElementById("number").value, 10);
+	  value = isNaN(value) ? 0 : value;
+	  value++;
+	  document.getElementById("number").value = value;
+	}
+
+	function decreaseValue() {
+	  var value = parseInt(document.getElementById("number").value, 10);
+	  value = isNaN(value) ? 0 : value;
+	  value < 1 ? (value = 1) : "";
+	  value--;
+	  document.getElementById("number").value = value;
+	}
+
+</script>
+
 
 </body>
 </html>

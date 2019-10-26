@@ -897,6 +897,7 @@ button:focus {
 @media only screen and (max-width: 768px) {
   .col-s-100 {width:100%!important}
   .col-s-50 {width:50%!important}
+  .col-s-33 {width:33%!important}
   .col-s-20 {width:20%!important}
 }
 
