@@ -208,9 +208,9 @@
 
 		<div class="row">
 
-			<div class="productCarousel col-50 col-s-100">
+			<div class="productCarousel col-55 col-s-100">
 				<div class="productContainer row">
-					<div class="productThumbnail col-16">
+					<div class="productThumbnail left text-c col-16">
 						<div class="relative">
 							<div id="thumbnail-1" class="thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
 							<div id="thumbnail-2" class="thumbnail active"><img src="static/images/product/earing.jpg" /></div>
@@ -225,23 +225,51 @@
 							<div><img src="static/images/product/productCarousel_arrowTop.svg" /></div>
 							<div><img src="static/images/product/productCarousel_arrowDown.svg" /></div>
 						</div>
-
 					</div>
 
-					<div class="productThumbnail col-84">
+					<div class="productThumbnail col-84 col-s-100">
 						<img src="static/images/product/earing.jpg" />
+					</div>
+
+					<div class="productThumbnail bottom col-s-100">
+						<div class="relative container">
+							<div class="row">
+								<div class="col-80 pr-0">
+									<div id="thumbnail-1" class="col-20 thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+									<div id="thumbnail-2" class="col-20 thumbnail active"><img src="static/images/product/earing.jpg" /></div>
+									<div id="thumbnail-3" class="col-20 thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+									<div id="thumbnail-4" class="col-20 thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+									<div id="thumbnail-5" class="col-20 thumbnail"><img src="static/images/product/thumb-1.jpg" /></div>
+									<!--
+									<div class="absolute mask"></div>
+									-->
+								</div>
+								
+								<div class="col-20 pl-0">
+									<div class="">
+										<div class="col-50 prev">
+											<img src="static/images/product/productCarousel_arrowLeft.svg" />
+										</div>
+										<div class="col-50 next">
+											<img src="static/images/product/productCarousel_arrowRight.svg" />
+										</div>	
+									</div>
+								</div>
+							</div>
+							
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="productIntro col-50 col-s-100">
+			<div class="productIntro col-45 col-s-100">
 				<div class="productContainer">
 					<div class="">
 						<div>
 							<span class="productTitle">狂歡百老匯</span>
 							<span class="productSubtitle">拉長石黃銅手環</span>
 
-							<div class="inline">
+							<div class="inline productCustom pointer">
 								<img src="static/images/products/ic-custom.svg" class="ic-custom" />
 								<span class="">個人化客製服務</span>	
 							</div>
@@ -265,14 +293,14 @@
 								</div>
 
 								<div class="color">
-									<span class="label">顏色</span>
+									<span class="label">顏色: </span>
 									<span class="colorCircle gold active"></span>
 									<span class="colorCircle silver"></span>
 								</div>
 								
 								<div class="row">
-									<div class="col-50">
-										<span class="label">規格</span>
+									<div class="col-50 pl-0">
+										<span class="label">規格: </span>
 										<div class="dropDown-wrapper">
 											<input type="checkbox" id="dropDown-toggle">
 											<label for="dropDown-toggle" class="dropDown-toggle-label">價格由低至高</label>
@@ -291,8 +319,8 @@
 										</div>
 									</div>
 
-									<div class="col-50">
-										<span class="label">商品數量</span>
+									<div class="col-50 pr-0">
+										<span class="label">商品數量: </span>
 										<div id="quantitySelect" class="inline">
 											<form>
 											  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
@@ -319,7 +347,7 @@
 
 					<div class="line"></div>
 
-					<div class="row">
+					<div class="row tab">
 						<div class="col-33 introTab">商品介紹</div>
 						<div class="col-33 introTab">商品說明</div>
 						<div class="col-33 introTab">購物須知</div>
@@ -359,10 +387,10 @@
 
 <div class="page-product container imgIntroZone">
 	<div class="row">
-		<div class="col-50">
+		<div class="col-50 col-s-100">
 			<div class="row">
 				<div class="col-16"></div>
-				<div class="col-84">
+				<div class="col-84 col-s-100">
 					<img src="static/images/product/introIMG.jpg" />
 					<img src="static/images/product/introIMG2.jpg" />
 					<img src="static/images/product/introIMG3.jpg" />

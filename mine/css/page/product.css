@@ -38,9 +38,36 @@ body {background:transparent;}
 
 .page-product.container {padding:3rem;}
 
+/* text style */
+.page-product .productTitle {font-weight:700;color:#ff9833;margin-right:1rem;font-size:24px;}
+.page-product .productSubtitle {font-weight:500;color:#574c45;margin-right:3rem;font-size:15px;}
+.page-product .productCustom img {margin-right:.375rem;vertical-align:text-bottom;}
+.page-product .productCustom span{font-weight:500;text-decoration:underline;color:#ff9833;font-size:15px;}
+.page-product .price {font-weight:500;color:#574c45;margin:1rem 0;font-size:20px;}
+
+.colorCircle {
+    display:inline-block;
+    width:24px;height:24px;
+    padding:4px;
+    border-radius:100rem;
+    border:2px solid transparent;
+}
+.colorCircle.active {border:2px solid #c2c2c2;}
+
+.colorCircle.gold {background:url(../../static/images/product/color-gold.svg) no-repeat;}
+.colorCircle.silver {background:url(../../static/images/product/color-silver.svg) no-repeat;}
+
+.page-product .productAttributes>div {margin:2rem 0;}
+.page-product .line {width:100%;border-top:1px solid #000;margin:3rem 0 2rem;}
+
+.page-product .tab {margin-bottom:2rem;}
+/* text style end */
+
+
 /* productCarousel */
-.page-product .productThumbnail .thumbnail {margin-bottom:.75rem;border-width:4px;}
-.page-product .productThumbnail .thumbnail.active {border:4px solid #574c45;}
+.page-product .productThumbnail .thumbnail {margin-bottom:.75rem;padding:.5rem;}
+.page-product .productThumbnail .thumbnail>img {border-width:4px;}
+.page-product .productThumbnail .thumbnail.active>img {border:4px solid #574c45;}
 .page-product .productThumbnail .mask {
     width:100%;
     bottom:0;
@@ -48,7 +75,7 @@ body {background:transparent;}
     background-size:cover;
     height:20vh;
 }
-
+.productThumbnail.bottom {display:none;}
 /* productCarousel end */
 
 /* dropdown */
@@ -126,8 +153,7 @@ body {background:transparent;}
     font-weight:500;
     color: #786a60;
     opacity: .8;
-    transition:
-            border .1s ease;
+    transition:border .1s ease;
 }
 
 /* option item on hover */
@@ -138,17 +164,13 @@ body {background:transparent;}
 }
 
 /* this shows that the list item was selected */
-.page-product .dropDown input:checked + label{
-    opacity: 1;
-}
+.page-product .dropDown input:checked + label{opacity: 1;}
 
 /* dropdown end */
 
 
 /* -- quantity -- */
-.page-product form {
-    border: 1px solid #baae9d;
-}
+.page-product form {border: 1px solid #baae9d;}
 
 .page-product .value-button {
   display: inline-block;
@@ -165,20 +187,13 @@ body {background:transparent;}
     box-sizing: border-box;
 }
 
-.page-product .value-button:hover {
-  cursor: pointer;
-}
+.page-product .value-button:hover {cursor:pointer;}
 
-.page-product form #decrease {
-}
+.page-product form #decrease {}
 
-.page-product form #increase {
-}
+.page-product form #increase {}
 
-.page-product form #input-wrap {
-  margin: 0px;
-  padding: 0px;
-}
+.page-product form #input-wrap {margin:0px;padding:0px;}
 
 .page-product input#number {
   text-align: center;
@@ -194,15 +209,12 @@ body {background:transparent;}
     -webkit-appearance: none;
     margin: 0;
 }
-
 /* -------------- */
 
 
 /* imgIntroZone */
 
-.page-product.imgIntroZone>div img {
-    margin-bottom:2rem;
-}
+.page-product.imgIntroZone>div img {margin-bottom:2rem;}
 
 /* imgIntroZone end */
 
@@ -252,22 +264,26 @@ body {background:transparent;}
 
 
 @media only screen and (max-width: 1440px) {
-
-
 	.page-product .cate-item {margin:1rem 2rem;font-size:18px;}
-
 }
 
 @media only screen and (max-width: 768px) {
-
 	.page-product .cate {display:block;margin-bottom:1rem;}
 	.page-product .cate-item {margin:1rem;}
 	
-	
+    .page-product.banner {height:20vh;}
+
+	.page-product.subMenu {display:none;}
+
+    .page-product.container {padding:0;}
+
+    .productThumbnail.left {display:none;}
+    .productThumbnail.bottom {display:block;}
+    .page-product .productThumbnail .thumbnail {margin-bottom:0;padding:.375rem;}
+    .page-product .productThumbnail .prev, .page-product .productThumbnail .next {padding:.375rem;}
 }
 
 @media only screen and (max-width: 480px) {
-
   .page-product .cate-item {font-size:16px;}
 }
 
