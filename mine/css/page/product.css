@@ -241,7 +241,6 @@ body {background:transparent;}
   width: 40px;
   background:transparent;
   line-height: 2;
-  color:red;
 }
 
 .page-product input[type=number]::-webkit-inner-spin-button,
