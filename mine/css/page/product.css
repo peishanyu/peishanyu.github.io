@@ -142,6 +142,7 @@ body {background:transparent;}
     margin-bottom: 0;
     /* force parent to wrap around the label tag */
     float: left;
+    height: 37px;
 }
 
 
@@ -487,7 +488,7 @@ body {background:transparent;}
   .page-product.recommand .title {font-size:24px;}
   .page-product #quantitySelect {}
   .page-product .value-button {width:28%;}
-  .page-product input#number {width:35%;color:red;}
+  .page-product input#number {width:35%;}
 
   .page-product .productCustom {display:none;}
   .page-product .qs {display:inline-block;}
