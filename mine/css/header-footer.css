@@ -1,4 +1,4 @@
-.container.menu {max-width:95vw;padding-top:40px}
+.container.menu {max-width:95vw;padding-top:40px;box-sizing:border-box;}
 .mask-header {position:fixed;width:100%;/*height:17%*/;background:url(../static/images/mask-header.svg) repeat-x bottom;z-index:3}
 .mask-header>img {height:8px}
 .logo-header {width:20%;margin-bottom:-10px;}

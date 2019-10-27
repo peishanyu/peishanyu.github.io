@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.001" height="20.001" viewBox="0 0 20.001 20.001">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.002" height="24.002" viewBox="0 0 24.002 24.002">
   <defs>
     <linearGradient id="linear-gradient" x1="0.048" y1="0.048" x2="0.907" y2="0.907" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#fff"/>
@@ -7,5 +7,8 @@
       <stop offset="1" stop-color="#787878"/>
     </linearGradient>
   </defs>
-  <circle id="color-silver" cx="10.001" cy="10.001" r="10.001" fill="url(#linear-gradient)"/>
+  <g id="color-silver" transform="translate(2 2)" stroke="#fff" stroke-width="2" fill="url(#linear-gradient)">
+    <circle cx="10.001" cy="10.001" r="10.001" stroke="none"/>
+    <circle cx="10.001" cy="10.001" r="11.001" fill="none"/>
+  </g>
 </svg>
