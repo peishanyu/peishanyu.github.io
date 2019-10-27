@@ -211,14 +211,13 @@ body {background:transparent;}
 
 
 /* -- quantity -- */
-.page-product form {border: 1px solid #baae9d;text-align: center;}
+.page-product form {border:1px solid #baae9d;text-align:center;height:37px;}
 
 .page-product .value-button {
   display: inline-block;
   margin: 0px;
   width: 40px;
   text-align: center;
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -226,7 +225,6 @@ body {background:transparent;}
   -ms-user-select: none;
   user-select: none;
   box-sizing: border-box;
-  font-size: 21px;
   color: #ea5514;
 }
 
@@ -243,6 +241,7 @@ body {background:transparent;}
   width: 40px;
   background:transparent;
   line-height: 2;
+  color:red;
 }
 
 .page-product input[type=number]::-webkit-inner-spin-button,
