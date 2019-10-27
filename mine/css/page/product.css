@@ -79,6 +79,8 @@ body {background:transparent;}
 .page-product .productCustom span{font-weight:500;text-decoration:underline;color:#ff9833;font-size:15px;}
 .page-product .price {font-weight:500;color:#574c45;margin:1rem 0;font-size:20px;}
 
+.productAttributes .label {display:inline-block;margin-right:1rem;font-weight:700;}
+.productAttributes .hashtag {display:inline-block;margin-right:.75rem;text-decoration:underline;}
 .colorCircle {
     display:inline-block;
     width:28px;height:28px;
@@ -97,7 +99,7 @@ body {background:transparent;}
 
 
 .page-product .tab {margin-bottom:2rem;}
-.page-product .introTab{font-weight:500;color:#574c45;cursor:pointer;font-size:19px;}
+.page-product .introTab{font-weight:700;color:#574c45;cursor:pointer;font-size:19px;}
 .page-product .introTab span.active {border-bottom:3px solid #574c45;}
 .page-product .introText p {line-height:2}
 
@@ -299,12 +301,16 @@ body {background:transparent;}
 
 @media only screen and (max-width: 1440px) {
 	.page-product .cate-item {margin:1rem 2rem;font-size:18px;}
+  .page-product.recommand .sepline img {width:80%;}
 }
 
 @media only screen and (max-width: 1024px) {
   .page-product .grid4 {display:block;}
   .page-product .grid3,.page-product .grid5 {display:none;}
 }
+
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -344,6 +350,7 @@ body {background:transparent;}
   .page-product .recommandMask .productTitle {font-size:16px;}
   .page-product .recommandMask .productSubtitle {font-size:12px;}
   .page-product .recommandMask .price {font-size:16px;}
+  .page-product.recommand .title {font-size:30px;}
   /* text style end */
 
   .page-product .grid3 {display:block;}
@@ -351,11 +358,16 @@ body {background:transparent;}
 
 }
 
+
+
 @media only screen and (max-width: 480px) {
   .page-product .cate-item {font-size:16px;}
 
   .page-product .productThumbnail.bottom {margin:.5rem 0;padding-right:.25rem;padding-left:.25rem;}
   .page-product .productThumbnail .thumbnail {padding-right:.25rem;padding-left:.25rem;}
+
+  .page-product.recommand .title {font-size:24px;}
+
 }
 
 
