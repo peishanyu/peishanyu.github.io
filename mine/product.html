@@ -19,7 +19,6 @@
 
 	<title>狂歡百老匯 | 商品詳情</title>
 	<link rel="icon" href="static/favicon.ico" class="next-head">
-
 </head>
 
 <body id="page-all">
@@ -187,6 +186,9 @@
 	</div>
 </header>
 <!-- header end -->
+
+
+
 
 <!-- banner -->
 <div class="page-product banner relative"></div>
@@ -358,12 +360,14 @@
 
 						<div class="row row-no-gutters tab">
 							<div class="col-33 introTab">
-								<span class="active">商品介紹</span>
+								<span id="productIntro" class="active">商品介紹</span>
 							</div>
 							<div class="col-33 introTab">
-								<span>商品說明</span>
+								<span id="productDesciption" onclick="changeToproductDesciption()">商品說明</span>
 							</div>
-							<div class="col-33 introTab"><span>購物須知</span></div>
+							<div class="col-33 introTab">
+								<span id="shoppingNote">購物須知</span>
+							</div>
 						</div>
 
 						<div id="introTab1" class="introText">
@@ -380,13 +384,13 @@
 							</p>
 						</div>
 
-						<div id="introTab2" class="introText">
+						<div id="introTab2" class="introText" style="display:none;">
 							<p>
 								選用切面水滴的天然半寶石做成許願項鍊，簡單俏皮地點綴日常生活。自然折射出的色彩斑斕，能帶來不同能量，結合抗過敏、不易褪色的14K金，可天天配戴。
 							</p>
 						</div>
 
-						<div id="introTab3" class="introText">
+						<div id="introTab3" class="introText" style="display:none;">
 							<p>
 								使用及保養方式｜和所有金屬一樣，接觸化學藥品有機會加速氧化，使得表面失去原本的光亮。請盡量避免接觸清潔劑等溶液，如需清潔請以清水沾濕棉布擦拭即可。在正常配戴情況下，我們提供商品終身的維修保養服務。<br>
 								每一款首飾皆為手工訂製，須等待3-5個工作天，完成後將依下單順序出貨，若有現貨將即時出貨，感謝您的耐心等候。
@@ -439,22 +443,119 @@
 	</div>	
 </div>
 
-<div id="" class="page-product">
-	<div class="title text-c">
-		<div>更多推薦商品</div>
-		<div><img src=""></div>
+<div id="" class="page-product recommand">
+	<div class="text-c">
+		<div class="title">更多推薦商品</div>
+		<div><img src="static/images/product/sepline.svg"></div>
 	</div>
 
-	<div id="" class="container-fluid">
-		<div class="">
-			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
-			<div class="col-20 col-s-33"><img src="static/images/product/introIMG.jpg" /></div>
+	<div id="" class="container-fluid recommandCarousel">
+		<div class="grid5">
+			<div class="col-20">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-20">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-20">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-20">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-20 col-s-33">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid4">
+
+			<div class="col-25">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-25">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-25">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-25">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid3">
+
+			<div class="col-15"></div>
+
+			<div class="col-20 col-s-70">
+				<img src="static/images/product/earing.jpg" class="relative" />
+				<div class="recommandMask">
+					<div class="productTitle">凱旋門下的加冕典禮</div>
+					<div class="productSubtitle">粉晶珍珠手鍊</div>
+					<div class="price"> <span class="USD">$</span>1380</div>
+				</div>
+			</div>
+
+			<div class="col-15"></div>
 		</div>
 	</div>
 </div>
+
+
+
 
 <!-- FOOTER start -->
 <div id="footer" class="relative">
@@ -488,6 +589,8 @@
 </div>
 <!-- FOOTER end -->
 
+
+
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
 
@@ -508,6 +611,7 @@
 	}
 
 </script>
+
 
 </body>
 </html>
