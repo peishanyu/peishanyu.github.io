@@ -38,12 +38,12 @@ body {background:transparent;}
 .page-product .container .inner {padding:3rem;}
 .page-product .container .inner-s {padding-left:1rem;padding-right:.5rem;}
 .page-product .line {width:100%;border-top:1px solid #574c45;margin:2.5rem 0 2rem;}
-.page-product.recommand {margin:5rem 0;}
-.page-product .recommandCarousel {margin:2rem 0;}
+.page-product.recommand {margin:3rem 0;}
+.page-product .recommandCarousel {margin:1.5rem 0;padding-top:1rem;padding-bottom: 1rem;}
 .page-product .dropDown-wrapper, .page-product #quantitySelect {margin:.5rem 0;}
 .page-product .container-fluid.recommandCarousel {overflow:hidden;}
 .page-product .wild-container {width:9999vw;}
-.page-product #recommandCarousel .grid {position:relative;display:inline-block;width:20vw;margin:0 1rem;}
+.page-product #recommandCarousel .grid {position:relative;display:inline-block;width:20vw;margin:0 1rem;box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.15);}
 /* space end */
 
 
