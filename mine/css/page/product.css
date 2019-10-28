@@ -34,13 +34,16 @@ body {background:transparent;}
 
 
 /* space */
-.page-product  .modal-btn-comfirm {margin:0;}
+.page-product .modal-btn-comfirm {margin:0;}
 .page-product .container .inner {padding:3rem;}
 .page-product .container .inner-s {padding-left:1rem;padding-right:.5rem;}
 .page-product .line {width:100%;border-top:1px solid #574c45;margin:2.5rem 0 2rem;}
 .page-product.recommand {margin:5rem 0;}
 .page-product .recommandCarousel {margin:2rem 0;}
 .page-product .dropDown-wrapper, .page-product #quantitySelect {margin:.5rem 0;}
+.page-product .container-fluid.recommandCarousel {overflow:hidden;}
+.page-product .wild-container {width:9999vw;}
+.page-product #recommandCarousel .grid {position:relative;display:inline-block;width:20vw;margin:0 1rem;}
 /* space end */
 
 
@@ -107,7 +110,7 @@ body {background:transparent;}
 
 .page-product.recommand .title {font-weight:700;color:#574c45;font-size:38px;}
 
-.page-product .recommandMask {position:absolute;width:calc(100% - 30px);bottom:0;background-image: linear-gradient(to left, #57514e , #57514e00);padding:.75rem;}
+.page-product .recommandMask {position:absolute;width:100%;bottom:0;background-image: linear-gradient(to left, #57514e , #57514e00);padding:.75rem;}
 .page-product .recommandMask .productTitle {font-weight:700;color:#fff;margin:0;margin:.5rem 0;font-size:19px;}
 .page-product .recommandMask .productSubtitle {font-weight:500;color:#fff;margin:0;margin:.5rem 0;font-size:15px;}
 .page-product .recommandMask .price {margin:0;margin:.5rem 0;color:#fff;font-size:19px;}
@@ -399,6 +402,7 @@ body {background:transparent;}
   .page-product .dropDown-wrapper {width:auto;}
   .page-product .dropDown-toggle-label {width:auto;}
   .page-product.recommand .title {font-size:34px;}
+  .page-product #recommandCarousel .grid {width:25vw;}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -472,6 +476,7 @@ body {background:transparent;}
   .page-product .grid3 {display:block;}
   .page-product .grid4,.page-product .grid5 {display:none;}
 
+  .page-product #recommandCarousel .grid {width:33.333vw;}
 
 }
 
@@ -504,6 +509,7 @@ body {background:transparent;}
   /* space */
   .page-product .thumbnail.arrow {padding-top:0;}
   .page-product .container .inner-s {padding:1rem;}
+  .page-product #recommandCarousel .grid {width:70vw;}
   /* space end */
 }
 
