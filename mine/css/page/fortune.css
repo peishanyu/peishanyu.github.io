@@ -5,80 +5,251 @@
 	background-size:cover;
 }
 
-.page-fortune h1.mainTitle {position:absolute;font-weight:700;left:4rem;bottom:4rem;font-size:38px;}
-
-.page-fortune .zodiac {cursor:pointer;}
-.page-fortune .zodiac-img {height:25vh;background-position:center;background-repeat:no-repeat;background-size:contain;}
-.page-fortune .zodiac-name {margin-bottom:4rem;text-align:center;font-weight:700;color:#574c45;font-size:28px;}
-.page-fortune .zodiac:hover .zodiac-name {color:#ff9933}
-
-.page-fortune .aquarius .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aquarius.svg);}
-.page-fortune .aquarius:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aquarius_h.svg);}
-
-.page-fortune .aries .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aries.svg);}
-.page-fortune .aries:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aries_h.svg);}
-
-.page-fortune .cancer .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-cancer.svg);}
-.page-fortune .cancer:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-cancer_h.svg);}
-
-.page-fortune .capricorn .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-capricorn.svg);}
-.page-fortune .capricorn:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-capricorn_h.svg);}
-
-.page-fortune .gemini .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-gemini.svg);}
-.page-fortune .gemini:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-gemini_h.svg);}
-
-.page-fortune .leo .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-leo.svg);}
-.page-fortune .leo:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-leo_h.svg);}
-
-.page-fortune .libra .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-libra.svg);}
-.page-fortune .libra:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-libra_h.svg);}
-
-.page-fortune .pisces .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-pisces.svg);}
-.page-fortune .pisces:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-pisces_h.svg);}
-
-.page-fortune .sagittarius .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-sagittarius.svg);}
-.page-fortune .sagittarius:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-sagittarius_h.svg);}
-
-.page-fortune .scorpio .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-scorpio.svg);}
-.page-fortune .scorpio:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-scorpio_h.svg);}
-
-.page-fortune .taurus .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-taurus.svg);}
-.page-fortune .taurus:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-taurus_h.svg);}
-
-.page-fortune .virgo .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-virgo.svg);}
-.page-fortune .virgo:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-virgo_h.svg);}
+.page-fortune h1.mainTitle {position:absolute;font-weight:700;left:4rem;bottom:4rem;font-size:53px;color:#fff;}
 
 
-@media only screen and (max-width: 1920px) {
+.page-fortune .zoneTitle .title {display:inline-block;margin-right:1.5rem;padding-left:1rem;border-left:3rem solid #574c45;font-weight:700;font-size:43px;}
+.page-fortune .zoneTitle .subtitle {display:inline-block;font-weight:500;font-size:27px;}
+.page-fortune .note p {padding:2rem 5rem 1rem;color:#574c45;line-height:2;font-size:27px;}
+.page-fortune .resultTitle .title {display:inline-block;vertical-align:middle;font-weight:700;color:#574c45;font-size:38px;}
+.page-fortune .resultDescription {margin:1rem 0;font-weight:500;color:#574c45;line-height:2;font-size:27px;}
+
+/* ========== typeA ========== */
+
+.page-fortune #typeA .zoneTitle {padding:2rem;padding-left:0;background-color:#fff1e8;color:#574c45;}
+
+.page-fortune #typeA .zodiac {margin:2rem 0;cursor:pointer;}
+.page-fortune #typeA .zodiac-img {height:15vh;background-position:center;background-repeat:no-repeat;background-size:contain;}
+.page-fortune #typeA .zodiac-name {text-align:center;font-weight:700;color:#574c45;font-size:28px;}
+.page-fortune #typeA .zodiac:hover .zodiac-name {color:#ff9933}
+.page-fortune #typeA .zoneZodiac {margin-bottom:2rem;}
+
+	/* 12 zodiac icon */
+	.page-fortune #typeA .aquarius .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aquarius.svg);}
+	.page-fortune #typeA .aquarius:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aquarius_h.svg);}
+
+	.page-fortune #typeA .aries .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aries.svg);}
+	.page-fortune #typeA .aries:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-aries_h.svg);}
+
+	.page-fortune #typeA .cancer .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-cancer.svg);}
+	.page-fortune #typeA .cancer:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-cancer_h.svg);}
+
+	.page-fortune #typeA .capricorn .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-capricorn.svg);}
+	.page-fortune #typeA .capricorn:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-capricorn_h.svg);}
+
+	.page-fortune #typeA .gemini .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-gemini.svg);}
+	.page-fortune #typeA .gemini:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-gemini_h.svg);}
+
+	.page-fortune #typeA .leo .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-leo.svg);}
+	.page-fortune #typeA .leo:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-leo_h.svg);}
+
+	.page-fortune #typeA .libra .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-libra.svg);}
+	.page-fortune #typeA .libra:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-libra_h.svg);}
+
+	.page-fortune #typeA .pisces .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-pisces.svg);}
+	.page-fortune #typeA .pisces:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-pisces_h.svg);}
+
+	.page-fortune #typeA .sagittarius .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-sagittarius.svg);}
+	.page-fortune #typeA .sagittarius:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-sagittarius_h.svg);}
+
+	.page-fortune #typeA .scorpio .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-scorpio.svg);}
+	.page-fortune #typeA .scorpio:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-scorpio_h.svg);}
+
+	.page-fortune #typeA .taurus .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-taurus.svg);}
+	.page-fortune #typeA .taurus:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-taurus_h.svg);}
+
+	.page-fortune #typeA .virgo .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-virgo.svg);}
+	.page-fortune #typeA .virgo:hover .zodiac-img {background-image:url(../../static/images/fortune/icon-zodiac/img-virgo_h.svg);}
+	/* */
+
+.page-fortune #typeA .zodiacResult {border-top:2px solid #ffefe4;}
+.page-fortune .resultTitle {padding: 0 2rem;}
+.page-fortune #typeA img.zodiacIcon, .page-fortune .resultTitle .arrowTop, .page-fortune .resultTitle img.forHeight {height:120px;}
+
+.page-fortune #typeA .zoneResult {padding:4rem 5.5rem 3rem;background-color:#fff1e8;}
+.page-fortune #typeA .star {display:inline-block;width:140px;height:40px;vertical-align:bottom;background-repeat:no-repeat;background-size:contain;background-image:url(../../static/images/fortune/star-empty.svg);}
+.page-fortune #typeA .star5 {background-image:url(../../static/images/fortune/star5.svg);}
+.page-fortune #typeA .star4 {background-image:url(../../static/images/fortune/star4.svg);}
+.page-fortune #typeA .star3 {background-image:url(../../static/images/fortune/star3.svg);}
+.page-fortune #typeA .star2 {background-image:url(../../static/images/fortune/star2.svg);}
+.page-fortune #typeA .star1 {background-image:url(../../static/images/fortune/star1.svg);}
+
+	/* text style */
+	.page-fortune #typeA .luckTitle {font-weight:700;color:#574c45;font-size:27px;}
+	.page-fortune #typeA .luckDescription {margin:.5rem 0 2rem;font-weight:500;color:#574c45;font-size:27px;}
+	/* text style end */
+
+.zodiacResult:after {
+	content: "";
+	position: absolute;
+	width:100%;
+	height:20vh;
+	background-color:#fff1e8;
+	z-index:-1;
 }
+
+/* ========== typeA end ========== */
+
+
+/* ========== typeB ========== */
+.page-fortune #typeB {background-image:url(../../static/images/fortune/typeB/bg-typeb.svg);background-repeat:no-repeat;background-position:top center;background-size:contain;}
+.page-fortune #typeB .zoneTitle {padding-top:12vh;}
+.page-fortune #typeB .note {margin-top:10vh;}
+.page-fortune #typeB .test-4card {padding:2rem 4rem;}
+.page-fortune #typeB .zone4Card {margin-bottom:2rem;}
+.page-fortune #typeB .zone4Card .note {margin-top:0;}
+.page-fortune .cardbase {margin: 1rem 0;background-color:#ffefe4;box-shadow:0 2px 8px rgba(206, 146, 104, 0.5);}
+.page-fortune .cardbase img {width:100%;}
+.page-fortune .cardbase.not-selected img {opacity:.35;}
+.page-fortune .cardbase.select img {opacity:1;}
+.page-fortune #typeB .resultTitle {background-color:#ffefe4;}
+.page-fortune #typeB .zoneResult {margin:2rem 0;padding: 0 2rem;}
+.page-fortune #typeB .zoneDescription .title {margin-top:1rem;font-weight:700;color:#574c45;}
+	/* text style */
+	.page-fortune #typeB .zoneDescription .title {font-size:38px;}
+	/* text style end */
+
+/* ========== typeB end ========== */
+
+
 
 
 @media only screen and (max-width: 1440px) {
 
-.page-fortune h1.mainTitle {left:5rem;bottom:1.5rem;font-size:32px;}
+.page-fortune h1.mainTitle {left:4rem;bottom:1.5rem;font-size:36px;}
 
-.page-fortune .zodiac-img {height:27vh;}
-.page-fortune .zodiac-name {margin-bottom:2rem;font-size:22px;}
+/* text style */
+	.page-fortune .zoneTitle .title {margin-right:1rem;padding-left:1rem;font-size:28px;}
+	.page-fortune .zoneTitle .subtitle, .page-fortune .note p {font-size:20px;}
+	.page-fortune .resultTitle .title {font-size:26px;}
+	.page-fortune .resultDescription {font-size:20px;}
+/* text style end */
 
+/* ========== typeA ========== */
+.page-fortune #typeA .zoneZodiac {padding:0 6rem;}
+.page-fortune #typeA .zoneTitle {padding:1.5rem;padding-left:0;}
+.page-fortune #typeA .zodiac {margin: 1rem 0;}
+.page-fortune #typeA .zodiac-img {height:15vh;}
+
+.page-fortune #typeA img.zodiacIcon, .page-fortune .resultTitle .arrowTop, .page-fortune .resultTitle img.forHeight {height:84px;}
+.page-fortune #typeA .zoneResult {padding: 2rem 4.5rem 1rem;}
+.page-fortune #typeA .star {width:115px;height:32px;}
+
+.page-fortune .note p {padding:2rem 4rem 1rem;}
+	/* text style */
+	.page-fortune #typeA .zodiac-name, 
+	.page-fortune #typeA .luckTitle, 
+	.page-fortune #typeA .luckDescription {font-size:20px;}
+	/* text style end */
+/* ========== typeA end ========== */
+
+/* ========== typeB ========== */
+.page-fortune #typeB .zoneDescription .title {font-size:26px;}
+
+/* ========== typeB end ========== */
+
+}
+
+@media only screen and (max-width: 1366px) {
+	.page-fortune #typeB .zoneTitle {padding-top:8vh;}
+}
+
+@media only screen and (max-width: 1280px) {
+	.page-fortune #typeB .zoneTitle {padding-top:11vh;}
 }
 
 @media only screen and (max-width: 1024px) {
 
-  .page-fortune .zodiac-name {margin-bottom:2rem;font-size:18px;}
+  .page-fortune .zodiac-name {font-size:18px;}
   .page-fortune .zodiac-img {height:20vh;}
+
+.page-fortune #typeB .zoneTitle {padding-top:7vh;}
+.page-fortune #typeB .note {margin-top: 4vh;}
+
 }
 
 @media only screen and (max-width: 768px) {
-
+.page-fortune.banner {height:25vh;}
+.page-fortune #typeB {background-image:url(../../static/images/fortune/typeB/bg-typeb-m.svg);}
+.page-fortune #typeB .zoneTitle {padding-top:10vh;}
+.page-fortune #typeB .note {
+    margin-top: 10vh;
+}
+.page-fortune #typeB .zoneResult .cardbase {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
 }
 
 @media only screen and (max-width: 480px) {
+.page-fortune h1.mainTitle {left:2.5rem;bottom:1rem;font-size:28px;}
+
+.page-fortune #typeA .zoneTitle {padding:1rem;padding-left:0;}
+.page-fortune .zoneTitle .title {margin-right:.5rem;padding-left:.5rem;border-left: 2rem solid #574c45;}
+
+.page-fortune #typeA .note {background-color:#fff1e8;}
+.page-fortune .note p {padding: 0 2.5rem 1rem;}
+
+.page-fortune #typeA .zoneZodiac {padding:0;}
+.page-fortune #typeA .zodiac-img {height:8vh;}
+
+.page-fortune #typeA .zodiacResult .resultTitle {padding:0;}
+.page-fortune #typeA img.zodiacIcon, .page-fortune .resultTitle .arrowTop, .page-fortune .resultTitle img.forHeight {height:50px;}
+
+.page-fortune #typeA .zoneResult {padding:1.5rem;}
+.page-fortune #typeA .star {width:86px;height:24px;}
+
+/* text style */
+.page-fortune .zoneTitle .title,
+.page-fortune #typeB .zoneDescription .title {font-size:20px;}
+
+.page-fortune .resultTitle .title {font-size:18px;}
+.page-fortune .zoneTitle .subtitle, .page-fortune .note p {font-size:14px;}
+.page-fortune #typeA .zodiac-name, 
+.page-fortune #typeA .luckTitle, 
+.page-fortune #typeA .luckDescription {font-size:15px;}
+.page-fortune #typeA .zodiac-name,.page-fortune .resultDescription {font-size:13px;}
+/* text style end */
+
+
+.page-fortune #typeB .zoneTitle {padding-top:7vh;}
+.page-fortune #typeB .note p {padding:0 2.5rem;}
+.page-fortune #typeB .test-4card {padding:1.5rem;}
+.page-fortune #typeB .resultTitle {padding:0;}
+.page-fortune #typeB .zoneResult {margin:0;padding:1.5rem 1rem;}
+.page-fortune #typeB .zoneDescription .title {margin-top:0;}
+.page-fortune #typeB .zoneResult .cardbase {width:50%;margin: auto;margin-bottom:2rem;}
 
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) { 
-
+@media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
+.page-fortune.banner {height:20vh;}
+.page-fortune #typeB .zoneTitle {padding-top: 4vh;}
 }
 
 
+@media screen and (min-device-width : 320px) and (max-device-width : 812px) and (orientation : landscape) { 
+.page-fortune.banner {height:60vh;}
+.page-fortune #typeB .zoneTitle {padding-top:25vh;}
+.page-fortune #typeB .note {
+    margin-top:10vh;
+}
+.page-fortune #typeB .zoneResult .cardbase {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+}
+
+@media screen and (device-width : 812px) and (device-height : 375px) and (orientation : landscape) { 
+.page-fortune #typeB .zoneTitle {padding-top:10vh;}
+.page-fortune #typeB .zoneResult .cardbase {
+    width:auto;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+}
 
