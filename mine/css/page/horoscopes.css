@@ -112,6 +112,15 @@
 /* ========== typeB end ========== */
 
 
+/* ========== typeC ========== */
+.page-horoscopes #typeC {background-color:#574c45;}
+.page-horoscopes #typeC .zoneTitle {padding:2rem;padding-left:0;}
+.page-horoscopes #typeC .zoneTitle .title {border-left-color:#fff;}
+.page-horoscopes #typeC .note p {padding:2rem;}
+.page-horoscopes #typeC .resultTitle {margin-top:4rem;background-color:#473e39;}
+.page-horoscopes #typeC .zoneResult p {padding: 6rem 3.25rem;font-weight:500;color:#fff;line-height:2;font-size:20px;}
+/* ========== typeC ========== */
+
 
 
 @media only screen and (max-width: 1440px) {
@@ -221,6 +230,10 @@
 .page-horoscopes #typeB .zoneDescription .title {margin-top:0;}
 .page-horoscopes #typeB .zoneResult .cardbase {width:50%;margin: auto;margin-bottom:2rem;}
 
+.page-horoscopes #typeC .zoneTitle {padding:1rem;padding-left: 0;}
+.page-horoscopes #typeC .resultTitle {margin-top:0;}
+
+.page-horoscopes #typeC .note p {padding: 1.5rem;}
 }
 
 @media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
