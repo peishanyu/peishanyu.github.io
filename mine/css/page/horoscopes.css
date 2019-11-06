@@ -1,4 +1,10 @@
 
+div.forOrder .page-horoscopes:first-child {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(218,203,194,1) 90%, rgba(218,203,194,1) 100%);}
+
+/*
+li:nth-child(2) {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(218,203,194,1) 90%, rgba(218,203,194,1) 100%);}
+*/
+
 .page-horoscopes.banner {
 	height:40vh;
 	background:url(../../static/images/horoscopes/banner-fortune.jpg) no-repeat right center;
@@ -8,15 +14,19 @@
 .page-horoscopes h1.mainTitle {position:absolute;font-weight:700;left:4rem;bottom:4rem;font-size:53px;color:#fff;}
 
 
-.page-horoscopes .zoneTitle .title {display:inline-block;margin-right:1.5rem;padding-left:1rem;border-left:3rem solid #574c45;font-weight:700;font-size:43px;}
-.page-horoscopes .zoneTitle .subtitle {display:inline-block;font-weight:500;font-size:27px;}
+.page-horoscopes .zoneTitle .title {display:inline-block;margin-right:1.5rem;padding-left:2rem;border-left:3rem solid #574c45;font-weight:700;color:#574c45;font-size:43px;}
+.page-horoscopes .zoneTitle .subtitle {display:inline-block;font-weight:500;color:#574c45;font-size:27px;}
 .page-horoscopes .note p {padding:2rem 5rem 1rem;color:#574c45;line-height:2;font-size:27px;}
+.page-horoscopes .resultTitle {padding: 0 2rem;}
 .page-horoscopes .resultTitle .title {display:inline-block;vertical-align:middle;font-weight:700;color:#574c45;font-size:38px;}
 .page-horoscopes .resultDescription {margin:1rem 0;font-weight:500;color:#574c45;line-height:2;font-size:27px;}
+.page-horoscopes .resultTitle img.forHeight {width:1px;}
+
 
 /* ========== typeA ========== */
-
-.page-horoscopes #typeA .zoneTitle {padding:2rem;padding-left:0;background-color:#fff1e8;color:#574c45;}
+.page-horoscopes #typeA {background-color:#fff;}
+.page-horoscopes #typeA .zoneTitle,
+.page-horoscopes #typeD .zoneTitle {padding:2rem;padding-left:0;background-color:#fff1e8;color:#574c45;}
 
 .page-horoscopes #typeA .zodiac {margin:2rem 0;cursor:pointer;}
 .page-horoscopes #typeA .zodiac-img {height:15vh;background-position:center;background-repeat:no-repeat;background-size:contain;}
@@ -63,8 +73,10 @@
 	/* */
 
 .page-horoscopes #typeA .zodiacResult {border-top:2px solid #ffefe4;}
-.page-horoscopes .resultTitle {padding: 0 2rem;}
+
+.page-horoscopes #typeA .resultTitle {background-color:#ffffff;}
 .page-horoscopes #typeA img.zodiacIcon, .page-horoscopes .resultTitle .arrowTop, .page-horoscopes .resultTitle img.forHeight {height:120px;}
+
 
 .page-horoscopes #typeA .zoneResult {padding:4rem 5.5rem 3rem;background-color:#fff1e8;}
 .page-horoscopes #typeA .star {display:inline-block;width:140px;height:40px;vertical-align:bottom;background-repeat:no-repeat;background-size:contain;background-image:url(../../static/images/horoscopes/star-empty.svg);}
@@ -98,6 +110,7 @@
 .page-horoscopes #typeB .test-4card {padding:2rem 4rem;}
 .page-horoscopes #typeB .zone4Card {margin-bottom:2rem;}
 .page-horoscopes #typeB .zone4Card .note {margin-top:0;}
+.page-horoscopes #typeB #card3 {background-color:#fff;}
 .page-horoscopes .cardbase {margin: 1rem 0;background-color:#ffefe4;box-shadow:0 2px 8px rgba(206, 146, 104, 0.5);}
 .page-horoscopes .cardbase img {width:100%;}
 .page-horoscopes .cardbase.not-selected img {opacity:.35;}
@@ -108,7 +121,6 @@
 	/* text style */
 	.page-horoscopes #typeB .zoneDescription .title {font-size:38px;}
 	/* text style end */
-
 /* ========== typeB end ========== */
 
 
@@ -119,8 +131,40 @@
 .page-horoscopes #typeC .note p {padding:2rem;}
 .page-horoscopes #typeC .resultTitle {margin-top:4rem;background-color:#473e39;}
 .page-horoscopes #typeC .zoneResult p {padding: 6rem 3.25rem;font-weight:500;color:#fff;line-height:2;font-size:20px;}
-/* ========== typeC ========== */
 
+.flexContainer {display:flex;align-items:center;}
+/* Safari 6.1+ */
+.page-horoscopes div#typeCard   {-webkit-order: 1;}
+.page-horoscopes div#typeIntro  {-webkit-order: 2;}
+/* Standard syntax */
+.page-horoscopes div#typeCard   {order: 1;}
+.page-horoscopes div#typeIntro  {order: 2;}
+
+.page-horoscopes #typeC .zoneResult::after {
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color:#574c45;
+    z-index: -1;
+}
+
+
+/* ========== typeC end ========== */
+
+
+/* ========== typeD ========== */
+.page-horoscopes #typeD .note,
+.page-horoscopes #typeD #nameFortune {background-color:#fff1e8;}
+.page-horoscopes #typeD #nameFortune {padding:4rem 0;}
+.page-horoscopes #typeD #nameFortune .container {padding-top:2rem;padding-bottom:2rem;}
+.page-horoscopes #typeD #nameFortune .title {margin-bottom:1rem;text-align:left;font-weight:500;color:#574C45;font-size:27px;}
+.page-horoscopes #typeD .nameInput {height:40px;margin-top:1rem;margin-bottom:1rem;margin-right:1rem;border:2px solid transparent;border-radius:4px;padding:6px 8px;outline:0;}
+.page-horoscopes #typeD .nameInput:focus {border:2px solid rgba(255, 153, 51, 0.5);}
+.page-horoscopes #typeD .modal-btn-comfirm {margin:0;}
+.page-horoscopes #typeD .resultTitle {background-color:#F0E3DA;}
+.zoneDescription {padding:4rem 3.25rem;line-height:2;color:#574C45;background-color:#fff;font-size:20px;}
+/* ========== typeD end ========== */
 
 
 @media only screen and (max-width: 1440px) {
@@ -131,7 +175,8 @@
 	.page-horoscopes .zoneTitle .title {margin-right:1rem;padding-left:1rem;font-size:28px;}
 	.page-horoscopes .zoneTitle .subtitle, .page-horoscopes .note p {font-size:20px;}
 	.page-horoscopes .resultTitle .title {font-size:26px;}
-	.page-horoscopes .resultDescription {font-size:20px;}
+	.page-horoscopes .resultDescription,
+	.page-horoscopes #typeD #nameFortune .title {font-size:20px;}
 /* text style end */
 
 /* ========== typeA ========== */
@@ -181,14 +226,19 @@
 .page-horoscopes.banner {height:25vh;}
 .page-horoscopes #typeB {background-image:url(../../static/images/horoscopes/typeB/bg-typeb-m.svg);}
 .page-horoscopes #typeB .zoneTitle {padding-top:10vh;}
-.page-horoscopes #typeB .note {
-    margin-top: 10vh;
-}
-.page-horoscopes #typeB .zoneResult .cardbase {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 2rem;
-}
+.page-horoscopes #typeB .note {margin-top: 10vh;}
+.page-horoscopes #typeB .zoneResult .cardbase {width: 50%;margin: auto;margin-bottom: 2rem;}
+
+
+.flexContainer {flex-direction:column;}
+/* Safari 6.1+ */
+div#typeCard   {-webkit-order: 2;}
+div#typeIntro  {-webkit-order: 1;}
+
+/* Standard syntax */
+div#typeCard   {order: 2;}
+div#typeIntro  {order: 1;}
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -213,7 +263,8 @@
 .page-horoscopes .zoneTitle .title,
 .page-horoscopes #typeB .zoneDescription .title {font-size:20px;}
 
-.page-horoscopes .resultTitle .title {font-size:18px;}
+.page-horoscopes .resultTitle .title,
+.page-horoscopes #typeD #nameFortune .title {font-size:18px;}
 .page-horoscopes .zoneTitle .subtitle, .page-horoscopes .note p {font-size:14px;}
 .page-horoscopes #typeA .zodiac-name, 
 .page-horoscopes #typeA .luckTitle, 
@@ -226,14 +277,15 @@
 .page-horoscopes #typeB .note p {padding:0 2.5rem;}
 .page-horoscopes #typeB .test-4card {padding:1.5rem;}
 .page-horoscopes #typeB .resultTitle {padding:0;}
-.page-horoscopes #typeB .zoneResult {margin:0;padding:1.5rem 1rem;}
+.page-horoscopes #typeB .zoneResult {margin:0;padding:1.5rem .25rem;}
 .page-horoscopes #typeB .zoneDescription .title {margin-top:0;}
 .page-horoscopes #typeB .zoneResult .cardbase {width:50%;margin: auto;margin-bottom:2rem;}
 
 .page-horoscopes #typeC .zoneTitle {padding:1rem;padding-left: 0;}
-.page-horoscopes #typeC .resultTitle {margin-top:0;}
+.page-horoscopes #typeC .resultTitle {margin-top:0;padding:0;}
+.page-horoscopes #typeC .note p {padding: 2rem 0.25rem;}
+.page-horoscopes #typeC .zoneResult p {padding:2rem 1.25rem;font-size:13px;}
 
-.page-horoscopes #typeC .note p {padding: 1.5rem;}
 }
 
 @media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
