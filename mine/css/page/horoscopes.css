@@ -1,9 +1,4 @@
 
-div.forOrder .page-horoscopes:first-child {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(218,203,194,1) 90%, rgba(218,203,194,1) 100%);}
-
-/*
-li:nth-child(2) {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(218,203,194,1) 90%, rgba(218,203,194,1) 100%);}
-*/
 
 .page-horoscopes.banner {
 	height:40vh;
@@ -104,6 +99,8 @@ li:nth-child(2) {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(
 
 
 /* ========== typeB ========== */
+div.forOrder .page-horoscopes:first-child {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(218,203,194,1) 90%, rgba(218,203,194,1) 100%);}
+
 .page-horoscopes #typeB {background-image:url(../../static/images/horoscopes/typeB/bg-typeb.svg);background-repeat:no-repeat;background-position:top center;background-size:contain;}
 .page-horoscopes #typeB .zoneTitle {padding-top:12vh;}
 .page-horoscopes #typeB .note {margin-top:10vh;}
@@ -157,13 +154,14 @@ li:nth-child(2) {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(
 .page-horoscopes #typeD .note,
 .page-horoscopes #typeD #nameFortune {background-color:#fff1e8;}
 .page-horoscopes #typeD #nameFortune {padding:4rem 0;}
-.page-horoscopes #typeD #nameFortune .container {padding-top:2rem;padding-bottom:2rem;}
+.page-horoscopes #typeD #nameFortune .container {padding-top:2rem;padding-right:0;padding-left:0;}
 .page-horoscopes #typeD #nameFortune .title {margin-bottom:1rem;text-align:left;font-weight:500;color:#574C45;font-size:27px;}
 .page-horoscopes #typeD .nameInput {height:40px;margin-top:1rem;margin-bottom:1rem;margin-right:1rem;border:2px solid transparent;border-radius:4px;padding:6px 8px;outline:0;}
 .page-horoscopes #typeD .nameInput:focus {border:2px solid rgba(255, 153, 51, 0.5);}
 .page-horoscopes #typeD .modal-btn-comfirm {margin:0;}
 .page-horoscopes #typeD .resultTitle {background-color:#F0E3DA;}
 .zoneDescription {padding:4rem 3.25rem;line-height:2;color:#574C45;background-color:#fff;font-size:20px;}
+
 /* ========== typeD end ========== */
 
 
@@ -239,10 +237,20 @@ div#typeIntro  {-webkit-order: 1;}
 div#typeCard   {order: 2;}
 div#typeIntro  {order: 1;}
 
+
+.page-horoscopes #typeD #nameFortune .container,.page-horoscopes #typeD #nameFortune .title {text-align:center;}
+
 }
 
 @media only screen and (max-width: 480px) {
+
+.page-horoscopes.banner {height:30vh;}
+
 .page-horoscopes h1.mainTitle {left:2.5rem;bottom:1rem;font-size:28px;}
+
+.page-horoscopes .resultTitle {padding:0;}
+.page-horoscopes .zoneDescription {padding:.25rem;}
+
 
 .page-horoscopes #typeA .zoneTitle {padding:1rem;padding-left:0;}
 .page-horoscopes .zoneTitle .title {margin-right:.5rem;padding-left:.5rem;border-left: 2rem solid #574c45;}
@@ -286,6 +294,10 @@ div#typeIntro  {order: 1;}
 .page-horoscopes #typeC .note p {padding: 2rem 0.25rem;}
 .page-horoscopes #typeC .zoneResult p {padding:2rem 1.25rem;font-size:13px;}
 
+.page-horoscopes #typeD #nameFortune {padding: 2rem 0;}
+
+.page-horoscopes #typeD .zoneDescription {padding:1.25rem;font-size:13px;}
+.page-horoscopes #typeD .nameInput,.page-horoscopes #typeD .modal-btn-comfirm {width:45%!important;}
 }
 
 @media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
