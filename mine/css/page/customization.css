@@ -7,22 +7,42 @@
 
 /* itemChoose */
 .page-customization .itemChoose {height:80vh;background:url(../../static/images/customization/bg_itemChoose.jpg) no-repeat;background-size:cover;}
+.page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
 .page-customization #zoneGuide {position:absolute;bottom:0;width:100%;box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);}
 .page-customization #zoneGuide .ic-lookbook,.page-customization #zoneGuide .ic-question {padding:.5rem;background-color:#e3ded6;}
 .page-customization #zoneGuide .ic-search {padding:.5rem;background-color:#f0ede6;}
-
+.page-customization .itemTabInner .tab:nth-child(odd) {background-color:#ded9d5;}
+.page-customization .itemTabInner .tab:nth-child(even) {background-color:#f0ece6;}
 /* itemChoose end */
 
+/* itemSelect */
+.page-customization #itemSelect {position:relative;white-space:nowrap;transform:translateY(2vh);box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
+.page-customization #itemTabCtrl {position:absolute;bottom:0;width:100%;height:100%;}
+.page-customization #itemTab .tab {display:inline-block;color:#574c45;font-weight:500;padding:1rem 3rem;font-size:19px;}
+.page-customization #itemTabCtrl .prev, 
+.page-customization #itemTabCtrl .next {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
+.page-customization #itemTabCtrl .prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+.page-customization #itemTabCtrl .next {position:absolute;right:0;text-align:right;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+
+/* itemSelect end */
 
 @media only screen and (max-width: 1440px) {
-.btn-shadow img {width:48px;}
+.page-customization .btn-shadow img {width:48px;}
+.page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:36px;}
+
+/* itemSelect */
+.page-customization #itemTab .tab {padding:1rem;}
+/* itemSelect end */
+
 }
 
 
 @media only screen and (max-width: 768px) {
 .page-customization.banner {height:15vh;}
-.page-customization .workbench {height:50vh;}
+.page-customization .workbench {height:45vh;}
+.page-customization .itemChoose {height:40vh;}
 
 .page-customization #zoneControl {padding:1.5rem;}
-.btn-shadow img {width:40px;}
+.page-customization .btn-shadow img {width:40px;}
+.page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:30px;}
 }
