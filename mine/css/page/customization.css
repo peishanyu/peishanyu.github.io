@@ -1,0 +1,28 @@
+.page-customization.banner {height:20vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;}
+.page-customization .workbench {position:relative;height:80vh;}
+.page-customization .wood {background:url(../../static/images/customization/bg_wood.jpg) no-repeat;background-size:cover;}
+.page-customization #zoneControl {position:absolute;bottom:0;width:100%;padding:2rem;}
+.page-customization #zoneControl .btn-shadow {display:inline-block;margin:0 1rem;border-radius:100rem;box-shadow:0 2px 10px rgba(0, 0, 0, 0.5);}
+.page-customization #zoneControl .btn-shadow.disabled {opacity:.5;}
+
+/* itemChoose */
+.page-customization .itemChoose {height:80vh;background:url(../../static/images/customization/bg_itemChoose.jpg) no-repeat;background-size:cover;}
+.page-customization #zoneGuide {position:absolute;bottom:0;width:100%;box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);}
+.page-customization #zoneGuide .ic-lookbook,.page-customization #zoneGuide .ic-question {padding:.5rem;background-color:#e3ded6;}
+.page-customization #zoneGuide .ic-search {padding:.5rem;background-color:#f0ede6;}
+
+/* itemChoose end */
+
+
+@media only screen and (max-width: 1440px) {
+.btn-shadow img {width:48px;}
+}
+
+
+@media only screen and (max-width: 768px) {
+.page-customization.banner {height:15vh;}
+.page-customization .workbench {height:50vh;}
+
+.page-customization #zoneControl {padding:1.5rem;}
+.btn-shadow img {width:40px;}
+}

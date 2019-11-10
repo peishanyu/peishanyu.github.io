@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="ic-lookbook" transform="translate(-1662 -395)">
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="50" height="50" transform="translate(1662 395)" fill="rgba(255,255,255,0)"/>
+    <g id="Group_13" data-name="Group 13" transform="translate(5 -50)">
+      <path id="Path_15" data-name="Path 15" d="M1.9,40.2s13.8-5.2,21.2.7V8.9C15.7,3.1,1.9,8.2,1.9,8.2Z" transform="translate(1659.1 447)" fill="none" stroke="#7a756f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.752"/>
+      <path id="Path_16" data-name="Path 16" d="M44.3,40.2s-13.8-5.2-21.2.7V8.9c7.4-5.9,21.2-.7,21.2-.7Z" transform="translate(1659.1 447)" fill="none" stroke="#7a756f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.752"/>
+    </g>
+  </g>
+</svg>
