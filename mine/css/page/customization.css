@@ -6,7 +6,7 @@
 .page-customization #zoneControl .btn-shadow.disabled {opacity:.5;}
 
 /* itemChoose */
-.page-customization .itemChoose {height:80vh;background:url(../../static/images/customization/bg_itemChoose.jpg) no-repeat;background-size:cover;}
+.page-customization .itemChoose {height:80vh;background:url(../../static/images/customization/bg_itemChoose.jpg) no-repeat;background-size:cover;background-position-y:-5vh;}
 .page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
 .page-customization #zoneGuide {position:absolute;bottom:0;width:100%;box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);}
 .page-customization #zoneGuide .ic-lookbook,.page-customization #zoneGuide .ic-question {padding:.5rem;background-color:#e3ded6;}
@@ -26,13 +26,18 @@
 
 /* itemSelect end */
 
+.itemName {text-align:center;margin-top:3rem;}
+
+
 @media only screen and (max-width: 1440px) {
 .page-customization .btn-shadow img {width:48px;}
 .page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:36px;}
 
 /* itemSelect */
-.page-customization #itemTab .tab {padding:1rem;}
+.page-customization #itemTab .tab {padding: .5rem 1.5rem;}
 /* itemSelect end */
+
+.page-customization .itemChoose {    background-position-y: 0vh;}
 
 }
 
@@ -44,5 +49,12 @@
 
 .page-customization #zoneControl {padding:1.5rem;}
 .page-customization .btn-shadow img {width:40px;}
+.page-customization #zoneControl .btn-shadow {margin: 0 .5rem;}
 .page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:30px;}
+
+.page-customization .itemChoose {background-position-y:0vh;}
+
+.page-customization #itemTab .tab {font-size:16px;}
+.page-customization .itemName {margin-top:2rem;}
+
 }
