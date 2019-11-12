@@ -6,7 +6,10 @@
 .page-customization #zoneControl .btn-shadow.disabled {opacity:.5;}
 
 /* itemChoose */
-.page-customization .itemChoose {height:80vh;background:url(../../static/images/customization/bg_itemChoose.jpg) no-repeat;background-size:cover;background-position-y:-5vh;}
+.page-customization .itemChoose {height:80vh;}
+.page-customization .itemChooseTop {background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;background-size:cover;}
+.page-customization .itemChooseBottom {overflow:hidden;height:60vh;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
+
 .page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
 .page-customization #zoneGuide {position:absolute;bottom:0;width:100%;box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);}
 .page-customization #zoneGuide .ic-lookbook,.page-customization #zoneGuide .ic-question {padding:.5rem;background-color:#e3ded6;}
@@ -23,11 +26,12 @@
 .page-customization #itemTabCtrl .next {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
 .page-customization #itemTabCtrl .prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
 .page-customization #itemTabCtrl .next {position:absolute;right:0;text-align:right;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
-
 /* itemSelect end */
 
-.itemName {text-align:center;margin-top:3rem;}
+.page-customization .itemName {text-align:center;padding-top:2rem;padding-bottom:1rem;}
 
+
+.page-customization .flexbox {display:inline-flex;flex-wrap:wrap;flex-direction:column;height:60vh;max-width:100vw;}
 
 @media only screen and (max-width: 1440px) {
 .page-customization .btn-shadow img {width:48px;}
@@ -55,6 +59,5 @@
 .page-customization .itemChoose {background-position-y:0vh;}
 
 .page-customization #itemTab .tab {font-size:16px;}
-.page-customization .itemName {margin-top:2rem;}
 
 }
