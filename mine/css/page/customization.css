@@ -35,23 +35,41 @@
 .page-customization .flexbox>div {display:inline-block;}
 .page-customization .flexbox>div>img {height:18vh;}
 
+.page-customization .nextCate {display:-webkit-box;margin:0 2rem;}
+
+.page-customization .cateName {transform: translateY(calc(50% - 15px));}
+
+.page-customization .nextCate img {transform: translateY(calc(50%));}
+
 @media only screen and (max-width: 1440px) {
+
 .page-customization .btn-shadow img {width:48px;}
-.page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:36px;}
+
+.page-customization .ic-lookbook img,
+.page-customization .ic-question img,
+.page-customization .ic-search img {width:36px;}
 
 /* itemSelect */
 .page-customization #itemTab .tab {padding: .5rem 1.5rem;}
 /* itemSelect end */
 
 .page-customization .itemChoose {background-position-y:0vh;}
-
+.page-customization .flexContainer {height:50vh;}
+.page-customization .inline-flex {transform:translateY(15%);}
+.page-customization .nextCate img {transform: translateY(0);}
 }
 
 
 @media only screen and (max-width: 768px) {
+
+#footer {display:none;}
+
 .page-customization.banner {height:15vh;}
-.page-customization .workbench {height:40vh;}
-.page-customization .itemChoose {height:45vh;}
+.page-customization .workbench {height:45vh;}
+
+.page-customization #itemSelect {transform:translateY(0);}
+
+.page-customization .itemChoose {height:40vh;}
 
 .page-customization #zoneControl {padding:1.5rem;}
 .page-customization .btn-shadow img {width:40px;}
@@ -59,10 +77,32 @@
 .page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:30px;}
 
 .page-customization .itemChoose {background-position-y:0vh;}
+.page-customization .itemChooseBottom {height:30vh;}
 
-.page-customization #itemTab .tab {font-size:16px;}
+.page-customization .itemName {padding-top:.5rem;padding-bottom: .5rem;}
 
-.page-customization .flexContainer {height:22vh;}
+.page-customization #itemTab .tab {font-size:16px;padding:0 1.5rem;}
+
+.page-customization #itemTabCtrl .prev, .page-customization #itemTabCtrl .next {display:none;}
+
+.page-customization .flexContainer {height:30vh;}
 .page-customization .flexbox>div>img {height:10vh;}
+.page-customization .inline-flex {transform: translateY(20%);}
+
+.page-customization .nextCate img {height:20vh;}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+.page-customization .flexContainer {height:25vh;}
+.page-customization .itemChooseBottom {height:25vh;}
+.page-customization .inline-flex {transform: translateY(10%);}
+
+}
+
+@media only screen and (max-width:375px) {
+
 
 }
