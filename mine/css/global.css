@@ -628,15 +628,12 @@ button:focus {
 .float-l {float:left !important;}
 .float-r {float:right !important;}
 
-
-.block-table-row {display: table-row;}
-.block-table-cell {display: table-cell;}
-.block-table-cell.last {width:900px}
-
 .block {display:block !important;}
 .inline {display:inline-block !important;}
 .block-none {display:none !important;}
 .block-box {display:-webkit-box !important;} /* admin side body */
+
+.inline-flex {display:inline-flex;}
 
 .hidden {overflow:hidden !important;}
 

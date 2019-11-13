@@ -33,7 +33,7 @@
 .page-customization .flexContainer {overflow-y:hidden;height:55vh;}
 .page-customization .flexbox {/*display:inline-flex;flex-wrap:wrap;flex-direction:column;height:60vh;overflow:scroll;*/width:1000px;}
 .page-customization .flexbox>div {display:inline-block;}
-
+.page-customization .flexbox>div>img {height:18vh;}
 
 @media only screen and (max-width: 1440px) {
 .page-customization .btn-shadow img {width:48px;}
@@ -50,8 +50,8 @@
 
 @media only screen and (max-width: 768px) {
 .page-customization.banner {height:15vh;}
-.page-customization .workbench {height:45vh;}
-.page-customization .itemChoose {height:40vh;}
+.page-customization .workbench {height:40vh;}
+.page-customization .itemChoose {height:45vh;}
 
 .page-customization #zoneControl {padding:1.5rem;}
 .page-customization .btn-shadow img {width:40px;}
@@ -62,7 +62,7 @@
 
 .page-customization #itemTab .tab {font-size:16px;}
 
-.page-customization .flexContainer {height:20vh;}
-
+.page-customization .flexContainer {height:22vh;}
+.page-customization .flexbox>div>img {height:10vh;}
 
 }
