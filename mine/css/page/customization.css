@@ -31,9 +31,17 @@
 .page-customization .itemName {text-align:center;padding-top:2rem;padding-bottom:1rem;}
 
 .page-customization .flexContainer {overflow-y:hidden;height:55vh;}
-.page-customization .flexbox {/*display:inline-flex;flex-wrap:wrap;flex-direction:column;height:60vh;overflow:scroll;*/width:1000px;}
+.page-customization .flexbox {/*display:inline-flex;flex-wrap:wrap;flex-direction:column;height:60vh;overflow:scroll;*/ width:1000px;
+	/*position: relative;
+    display: flex;
+    flex-flow: wrap row; 
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: left;*/
+}
 .page-customization .flexbox>div {display:inline-block;}
-.page-customization .flexbox>div>img {height:18vh;}
+.page-customization .flexbox>div>img {max-height:100px;height:18vh;margin: 0 0.5rem 0.5rem 0.5rem;}
 
 .page-customization .nextCate {display:-webkit-box;margin:0 2rem;}
 
@@ -86,7 +94,7 @@
 .page-customization #itemTabCtrl .prev, .page-customization #itemTabCtrl .next {display:none;}
 
 .page-customization .flexContainer {height:30vh;}
-.page-customization .flexbox>div>img {height:10vh;}
+.page-customization .flexbox>div>img {height:10vh;margin: 0 0.3rem 0.3rem 0.3rem;}
 .page-customization .inline-flex {transform: translateY(20%);}
 
 .page-customization .nextCate img {height:20vh;}
