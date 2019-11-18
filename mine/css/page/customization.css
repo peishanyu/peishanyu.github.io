@@ -8,7 +8,7 @@
 /* itemChoose */
 .page-customization .itemChoose {height:80vh;}
 .page-customization .itemChooseTop {background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;background-size:cover;}
-.page-customization .itemChooseBottom {height:60vh;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
+.page-customization .itemChooseBottom {overflow:auto;height:70vh;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
 
 .page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
 .page-customization #zoneGuide {position:absolute;bottom:0;width:100%;box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);}
@@ -30,16 +30,8 @@
 
 .page-customization .itemName {text-align:center;padding-top:2rem;padding-bottom:1rem;}
 
-.page-customization .flexContainer {overflow-y:hidden;height:55vh;}
-.page-customization .flexbox {/*display:inline-flex;flex-wrap:wrap;flex-direction:column;height:60vh;overflow:scroll;*/ width:1000px;
-	/*position: relative;
-    display: flex;
-    flex-flow: wrap row; 
-    flex-wrap: wrap;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: left;*/
-}
+.page-customization .flexContainer {}
+.page-customization .flexbox {}
 .page-customization .flexbox>div {display:inline-block;}
 .page-customization .flexbox>div>img {max-height:100px;height:18vh;margin: 0 0.5rem 0.5rem 0.5rem;}
 
@@ -62,7 +54,7 @@
 /* itemSelect end */
 
 .page-customization .itemChoose {background-position-y:0vh;}
-.page-customization .flexContainer {height:50vh;}
+
 .page-customization .inline-flex {transform:translateY(15%);}
 .page-customization .nextCate img {transform: translateY(0);}
 }
@@ -72,8 +64,8 @@
 
 #footer {display:none;}
 
-.page-customization.banner {height:15vh;}
-.page-customization .workbench {height:45vh;}
+
+.page-customization .workbench {height:55vh;}
 
 .page-customization #itemSelect {transform:translateY(0);}
 
@@ -91,9 +83,10 @@
 
 .page-customization #itemTab .tab {font-size:16px;padding:0 1.5rem;}
 
-.page-customization #itemTabCtrl .prev, .page-customization #itemTabCtrl .next {display:none;}
+.page-customization #itemTabCtrl .prev, 
+.page-customization #itemTabCtrl .next {display:none;}
 
-.page-customization .flexContainer {height:30vh;}
+
 .page-customization .flexbox>div>img {height:10vh;margin: 0 0.3rem 0.3rem 0.3rem;}
 .page-customization .inline-flex {transform: translateY(20%);}
 
@@ -104,8 +97,7 @@
 
 @media only screen and (max-width: 480px) {
 
-.page-customization .flexContainer {height:25vh;}
-.page-customization .itemChooseBottom {height:25vh;}
+
 .page-customization .inline-flex {transform: translateY(10%);}
 
 }
