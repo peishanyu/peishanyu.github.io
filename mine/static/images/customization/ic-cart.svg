@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="ic-cart" transform="translate(-291 -246)">
+    <g id="cart" transform="translate(299 249)">
+      <g id="Group_2" data-name="Group 2">
+        <path id="Path_1" data-name="Path 1" d="M34.7,44.2H0L1.9,12.3H32.8Z" fill="#7a6f62"/>
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_2" data-name="Path 2" d="M27.8,16.8H24.4v-6a7.4,7.4,0,1,0-14.8,0v6H6.1v-6a10.85,10.85,0,0,1,21.7,0Z" fill="#7a6f62"/>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="50" height="50" transform="translate(291 246)" fill="rgba(141,88,88,0)"/>
+  </g>
+</svg>

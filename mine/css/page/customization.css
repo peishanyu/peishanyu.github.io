@@ -11,9 +11,24 @@
 .page-customization .itemChooseBottom {overflow:auto;height:70vh;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
 
 .page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
-.page-customization #zoneGuide {position:absolute;bottom:0;width:100%;box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);}
-.page-customization #zoneGuide .ic-lookbook,.page-customization #zoneGuide .ic-question {padding:.5rem;background-color:#e3ded6;}
-.page-customization #zoneGuide .ic-search {padding:.5rem;background-color:#f0ede6;}
+
+.page-customization #zoneGuide {
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:40%;
+	box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+	cursor:pointer;
+}
+
+.page-customization #zoneGuide .ic-lookbook,
+.page-customization #zoneGuide .ic-question {padding:.25rem;background-color:#e3ded6;}
+
+.page-customization #zoneGuide .ic-search,
+.page-customization #zoneGuide .ic-cart {padding:.25rem;background-color:#f0ede6;}
+
+.page-customization #zoneGuide .ic-cart.disabled img {opacity:.35;}
+
 .page-customization .itemTabInner .tab:nth-child(odd) {background-color:#ded9d5;}
 .page-customization .itemTabInner .tab:nth-child(even) {background-color:#f0ece6;}
 /* itemChoose end */
@@ -47,7 +62,8 @@
 
 .page-customization .ic-lookbook img,
 .page-customization .ic-question img,
-.page-customization .ic-search img {width:36px;}
+.page-customization .ic-search img,
+.page-customization .ic-cart img {width:36px;}
 
 /* itemSelect */
 .page-customization #itemTab .tab {padding: .5rem 1.5rem;}
@@ -74,7 +90,10 @@
 .page-customization #zoneControl {padding:1.5rem;}
 .page-customization .btn-shadow img {width:40px;}
 .page-customization #zoneControl .btn-shadow {margin: 0 .5rem;}
-.page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img {width:30px;}
+
+.page-customization #zoneGuide {width:100%;}
+
+.page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img,.page-customization .ic-cart img {width:30px;}
 
 .page-customization .itemChoose {background-position-y:0vh;}
 .page-customization .itemChooseBottom {height:30vh;}
@@ -97,7 +116,7 @@
 
 @media only screen and (max-width: 480px) {
 
-
+.page-customization.banner {display:none;}
 .page-customization .inline-flex {transform: translateY(10%);}
 
 }
