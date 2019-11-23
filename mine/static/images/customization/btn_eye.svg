@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
-  <g id="btn_eye" transform="translate(-1764 -552)">
-    <path id="Path_6" data-name="Path 6" d="M0,36A36,36,0,1,0,36,0,35.991,35.991,0,0,0,0,36" transform="translate(1764 552)" fill="#fff"/>
-    <g id="Group_9" data-name="Group 9" transform="translate(-1.5 -0.1)">
-      <path id="Exclusion_1" data-name="Exclusion 1" d="M25.7,28.4h0a29.526,29.526,0,0,1-8.951-1.53,41.267,41.267,0,0,1-8.286-3.733C3.322,20.095,0,16.586,0,14.2c0-1.026.82-2.406,2.37-3.991A31.845,31.845,0,0,1,8.463,5.525C14.223,2.014,20.506,0,25.7,0S37.178,2.014,42.938,5.525a31.843,31.843,0,0,1,6.092,4.684c1.551,1.585,2.37,2.965,2.37,3.991,0,2.386-3.322,5.894-8.462,8.937a41.265,41.265,0,0,1-8.286,3.733A29.525,29.525,0,0,1,25.7,28.4Z" transform="translate(1775.5 574.1)" fill="none" stroke="#7a6f62" stroke-miterlimit="10" stroke-width="3.681"/>
-      <path id="Subtraction_1" data-name="Subtraction 1" d="M11.7,23.4A11.667,11.667,0,1,1,23.4,11.7,11.713,11.713,0,0,1,11.7,23.4ZM15.6,3.7a4.093,4.093,0,1,0,4.1,4.1A4.082,4.082,0,0,0,15.6,3.7Z" transform="translate(1789.5 575.4)" fill="#7a6f62"/>
-    </g>
-  </g>
-</svg>

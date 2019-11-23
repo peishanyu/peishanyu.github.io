@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="ic-eye-w" transform="translate(-478 -293)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="54" height="54" transform="translate(478 293)" fill="rgba(255,255,255,0)"/>
+    <g id="Group_10" data-name="Group 10" transform="translate(487.964 310.908)">
+      <path id="Union_1" data-name="Union 1" d="M16.831,18.86h-.2v-.005C8.989,18.654,0,12.65,0,9.431,0,6.727,8.989.225,16.635.006V0h.393V.006c7.646.219,16.635,6.721,16.635,9.425,0,3.219-8.989,9.223-16.635,9.426v.005Z" fill="none" stroke="#fff7ef" stroke-miterlimit="10" stroke-width="2.5"/>
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M7.727,15.457a7.729,7.729,0,1,1,7.729-7.729A7.737,7.737,0,0,1,7.727,15.457Zm2.489-13.1a2.751,2.751,0,1,0,2.751,2.751A2.754,2.754,0,0,0,10.216,2.358Z" transform="translate(9.3 0.917)" fill="#fff7ef"/>
+    </g>
+  </g>
+</svg>
