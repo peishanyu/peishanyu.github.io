@@ -1,7 +1,9 @@
 .page-customization.banner {height:15vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;}
 .page-customization .workbench {position:relative;height:85vh;}
 .page-customization .wood {background:url(../../static/images/customization/bg_wood.jpg) no-repeat;background-size:cover;}
-.page-customization #zoneControl {position:absolute;bottom:0;width:100%;padding:2rem;}
+
+
+.page-customization #zoneControl {position:absolute;bottom:0;padding:2rem;}
 .page-customization #zoneControl .btn-shadow {
 	display:table;
 	margin: 1rem .5rem;
@@ -18,59 +20,105 @@
     transform: scale(1.2, 1.2) translate3d(0, 0, 0);
 }
 
-.page-customization #obj-scale-1 {height:100%;}
+/* bg item prepare */
+.page-customization #bg-zonePrepare, .page-customization #obj-prepared {position:absolute;bottom:0;right:0;}
+.page-customization .bg-circle {width:35%;text-align:right;}
+
+/* bg item prepare end */
+
+
+/* scale object */
+.page-customization .obj-scale {height:100%;}
+
+.page-customization #obj-scale-1 {}
+.page-customization #obj-scale-2 {}
+.page-customization #obj-scale-3 {}
+.page-customization #obj-scale-4 {}
+.page-customization #obj-scale-5 {}
+
+.page-customization #obj-prepared {
+	z-index:2;
+	width: 28%;
+    height: 40%;
+    padding: .5rem;
+}
+.page-customization #obj-prepared .obj-center {}
+.page-customization .space-circle {width:35%;}
+
+	/* scale obj center */
+	.page-customization #obg-center {
+		position: absolute;
+		display:flex;
+		justify-content: center;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	    padding: 2rem;
+	}
+	.page-customization #obg-center img {max-height:100%;}
+
+	/* scale obj center  end */
+
+/* scale object end */
+
 
 /* itemChoose */
 .page-customization .itemChoose {height:80vh;}
 .page-customization .itemChooseTop {background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;background-size:cover;}
 .page-customization .itemChooseBottom {overflow:auto;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
 
-.page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
+	/* cate tab */
+	.page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
+	.page-customization .itemTabInner a:nth-child(1) {background-color:#ded9d5;}
+	.page-customization .itemTabInner a:nth-child(2) {background-color:#f0ece6;}
+	.page-customization .itemTabInner a:nth-child(3) {background-color:#fff;}
 
-.page-customization #zoneGuide {
-	position:absolute;
-	bottom:0;
-	right:0;
-	width:40%;
-	box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
-	cursor:pointer;
-}
+		/* itemSelect */
+		.page-customization #itemSelect {position:relative;white-space:nowrap;transform:translateY(2vh);box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
+		.page-customization #itemTabCtrl {position:absolute;bottom:0;width:100%;height:100%;}
+		.page-customization #itemTab .tab {display:inline-block;color:#574c45;font-weight:500;padding:1rem 3rem;font-size:19px;}
+		.page-customization #itemTabCtrl .prev, 
+		.page-customization #itemTabCtrl .next {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
+		.page-customization #itemTabCtrl .prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+		.page-customization #itemTabCtrl .next {position:absolute;right:0;text-align:right;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+		/* itemSelect end */
 
-.page-customization #zoneGuide .ic-lookbook,
-.page-customization #zoneGuide .ic-question {padding:.25rem;background-color:#e3ded6;}
+	/* cate tab end */
 
-.page-customization #zoneGuide .ic-search,
-.page-customization #zoneGuide .ic-cart {padding:.25rem;background-color:#f0ede6;}
 
-.page-customization #zoneGuide .ic-cart.disabled img {opacity:.35;}
+	.page-customization #zoneGuide {
+		position:absolute;
+		bottom:0;
+		right:0;
+		width:40%;
+		box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+		cursor:pointer;
+	}
 
-.page-customization .itemTabInner a:nth-child(1) {background-color:#ded9d5;}
-.page-customization .itemTabInner a:nth-child(2) {background-color:#f0ece6;}
-.page-customization .itemTabInner a:nth-child(3) {background-color:#fff;}
+	.page-customization #zoneGuide .ic-lookbook,
+	.page-customization #zoneGuide .ic-question {padding:.25rem;background-color:#e3ded6;}
+
+	.page-customization #zoneGuide .ic-search,
+	.page-customization #zoneGuide .ic-cart {padding:.25rem;background-color:#f0ede6;}
+
+	.page-customization #zoneGuide .ic-cart.disabled img {opacity:.35;}
+
 /* itemChoose end */
 
-/* itemSelect */
-.page-customization #itemSelect {position:relative;white-space:nowrap;transform:translateY(2vh);box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
-.page-customization #itemTabCtrl {position:absolute;bottom:0;width:100%;height:100%;}
-.page-customization #itemTab .tab {display:inline-block;color:#574c45;font-weight:500;padding:1rem 3rem;font-size:19px;}
-.page-customization #itemTabCtrl .prev, 
-.page-customization #itemTabCtrl .next {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
-.page-customization #itemTabCtrl .prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
-.page-customization #itemTabCtrl .next {position:absolute;right:0;text-align:right;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
-/* itemSelect end */
+
+
 
 .page-customization .itemName {text-align:center;padding-top:2rem;padding-bottom:1rem;}
 
 .page-customization .flexContainer {overflow:auto;height:70vh;padding:.25rem;padding-bottom:3rem;}
 
-.page-customization .flexbox {}
+
 .page-customization .flexbox>div {display:inline-block;}
 .page-customization .flexbox>div>img {max-height:10vh;height:18vh;margin: 0 0.5rem 0.5rem 0.5rem;}
 
 .page-customization .nextCate {display:-webkit-box;margin:0 2rem;}
 
-.page-customization .cateName {transform: translateY(calc(50% - 15px));}
-.page-customization .nextCate img {transform: translateY(calc(50%));}
 
 
 
@@ -257,8 +305,7 @@
 
 .page-customization .itemChoose {background-position-y:0vh;}
 
-.page-customization .inline-flex {transform:translateY(15%);}
-.page-customization .nextCate img {transform: translateY(0);}
+
 }
 
 
@@ -279,10 +326,12 @@
 
 .page-customization #zoneGuide {width:100%;}
 
-.page-customization .ic-lookbook img,.page-customization .ic-question img,.page-customization .ic-search img,.page-customization .ic-cart img {width:30px;}
+.page-customization .ic-lookbook img,
+.page-customization .ic-question img,
+.page-customization .ic-search img,
+.page-customization .ic-cart img {width:30px;}
 
 .page-customization .itemChoose {background-position-y:0vh;}
-.page-customization .itemChooseBottom {}
 
 .page-customization .itemName {padding-top:.5rem;padding-bottom: .5rem;}
 
@@ -294,15 +343,21 @@
 
 .page-customization .flexContainer {overflow:auto;height:20vh;}
 
-.page-customization .flexbox>div>img {}
-
 .page-customization .inline-flex {transform: translateY(20%);}
 
 .page-customization .nextCate img {height:20vh;}
 
-/* workmenuuuuuuu */
+/* scale object */
+.page-customization #obj-scale-1 {}
+.page-customization #obj-scale-2 {}
+.page-customization #obj-scale-3 {}
+.page-customization #obj-scale-4 {}
+.page-customization #obj-scale-5 {}
 
-/* workmenuuuuuuu end */
+.page-customization #obj-prepared {width:35%;height:40%;}
+/* scale object end */
+
+
 
 }
 
@@ -332,12 +387,12 @@
           transform: translate3d(10px, 0, 0);
 }
 .workmenu .triangle {margin-bottom:35px;}
-.triangle-top {
-  width:30px;
-  height:20px;
-  border-bottom:solid 15px #7A6F62;
-  border-left:solid 15px transparent;
-  border-right:solid 15px transparent;
+.workmenu .triangle-top {
+	width: 24px;
+    height: 20px;
+    border-bottom: solid 13px #7A6F62;
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
 }
 
 
@@ -373,6 +428,15 @@
           transform:translate3d(0, 40vh, 0);
 }
 
+/* scale object */
+.page-customization #obj-scale-1 {}
+.page-customization #obj-scale-2 {}
+.page-customization #obj-scale-3 {}
+.page-customization #obj-scale-4 {}
+.page-customization #obj-scale-5 {}
+
+.page-customization #obj-prepared {width:35%;height:30%;}
+/* scale object end */
 
 
 }
