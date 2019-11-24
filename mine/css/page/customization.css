@@ -1,5 +1,5 @@
 .page-customization.banner {height:15vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;}
-.page-customization .workbench {position:relative;height:85vh;}
+.page-customization .workbench {position:relative;height:85vh;overflow: hidden;}
 .page-customization .wood {background:url(../../static/images/customization/bg_wood.jpg) no-repeat;background-size:cover;}
 
 
@@ -30,11 +30,14 @@
 /* scale object */
 .page-customization .obj-scale {height:100%;}
 
-.page-customization #obg-center img,
+
+
+
+.page-customization #obg-center .item-container,
 .page-customization #obj-prepared img {max-width: none;}
 
 
-.page-customization #obj-scale-1 {}
+.page-customization #obj-scale-1 {overflow: scroll;}
 .page-customization #obj-scale-2 {}
 .page-customization #obj-scale-3 {}
 .page-customization #obj-scale-4 {}
@@ -50,30 +53,66 @@
   align-items: center;
   overflow: hidden;
 }
-.page-customization #obg-center>div {overflow:scroll;}
-.page-customization #obg-center>div::-webkit-scrollbar { width: 0 !important }
 
-.page-customization #obj-prepared .obj-center {}
+.page-customization #obj-scale-1::-webkit-scrollbar { width: 0 !important }
+
 
 .page-customization .space-circle {width:35%;}
 
 	/* scale obj center */
 	.page-customization #obg-center {
-		position: absolute;
     display: flex;
     justify-content: center;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
 	}
 	
+
+.page-customization #obg-center .item-container {position:relative;border:4px solid #75efff;margin:2rem;}
+
+  .page-customization #obg-center .item-container .node {
+    position:absolute;
+    width:12px;
+    height:12px;
+    background-color:#fff;
+    border-radius:10rem;
+  }
+
+  .page-customization #obg-center .item-container .node.top-r {
+    top:-8px;right:-8px;
+  }
+
+  .page-customization #obg-center .item-container .node.top-l {
+    top:-8px;left:-8px;
+  }
+
+  .page-customization #obg-center .item-container .node.bottom-r {
+    bottom:-8px;right:-8px;
+  }
+
+  .page-customization #obg-center .item-container .btn-item-setting {
+    position:absolute;
+    bottom:-24px;
+    left:-24px;
+    width:3rem;height:3rem;
+    background:url(../../static/images/customization/ic-item-setting.svg) no-repeat center #fff;
+    box-shadow:0 0 6px rgba(0,0,0,.3);
+    border-radius:100rem;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+  }
+
+  .page-customization #obg-center .item-container .btn-item-setting:hover {
+    -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  }
+
+
 
 	/* scale obj center  end */
 
 
 /* 項鍊在pc時縮小倍率 */
-.page-customization #obj-scale-1 #obg-center img,
+.page-customization #obg-center .item-container,
 .page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.8);}
 /* 項鍊在pc時縮小倍率 */
 
@@ -382,8 +421,8 @@
 
 
 /* 項鍊在手機時縮小倍率 */
-.page-customization #obj-scale-1 #obg-center img,
-.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.65);}
+.page-customization #obg-center .item-container,
+.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.7);}
 /* 項鍊在手機時縮小倍率 */
 
 }
@@ -469,5 +508,34 @@
 }
 
 @media only screen and (max-width:320px) {
-.page-customization .workmenu {top:3.5rem;}
+.page-customization .workmenu {top:4rem;}
+
+.page-customization .workmenu-item, .workmenu-open-button {
+    width:1.75rem;
+    height:1.75rem;
+}
+.workmenu .ellipsis {width:4px;height:4px;}
+
+.workmenu .ellipsis-2 {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0px, 0);
+}
+.workmenu .ellipsis-1 {
+    -webkit-transform: translate3d(-6px, 0, 0);
+    transform: translate3d(-6px, 0, 0);
+}
+
+
+.workmenu .triangle-top {
+    width: 18px;
+    height: 15px;
+    border-bottom: solid 10px #7A6F62;
+    border-left: solid 9px transparent;
+    border-right: solid 9px transparent;
+}
+
+.page-customization #obg-center .item-container, .page-customization #obj-scale-1 #obj-prepared img {
+    transform: scale(0.5);
+}
+
 }
