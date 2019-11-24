@@ -6,7 +6,7 @@
 .page-customization #zoneControl {position:absolute;bottom:0;padding:2rem;}
 .page-customization #zoneControl .btn-shadow {
 	display:table;
-	margin: 1rem .5rem;
+	margin: 1rem 0;
 	border-radius:100rem;
 	box-shadow:0 2px 10px rgba(0, 0, 0, 0.5);
 	background-color:#fff;
@@ -30,35 +30,53 @@
 /* scale object */
 .page-customization .obj-scale {height:100%;}
 
+.page-customization #obg-center img,
+.page-customization #obj-prepared img {max-width: none;}
+
+
 .page-customization #obj-scale-1 {}
 .page-customization #obj-scale-2 {}
 .page-customization #obj-scale-3 {}
 .page-customization #obj-scale-4 {}
 .page-customization #obj-scale-5 {}
 
+
 .page-customization #obj-prepared {
 	z-index:2;
 	width: 28%;
-    height: 40%;
-    padding: .5rem;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+.page-customization #obg-center>div {overflow:scroll;}
+.page-customization #obg-center>div::-webkit-scrollbar { width: 0 !important }
+
 .page-customization #obj-prepared .obj-center {}
+
 .page-customization .space-circle {width:35%;}
 
 	/* scale obj center */
 	.page-customization #obg-center {
 		position: absolute;
-		display:flex;
-		justify-content: center;
+    display: flex;
+    justify-content: center;
 		top: 0;
 		bottom: 0;
 		right: 0;
 		left: 0;
-	    padding: 2rem;
 	}
-	.page-customization #obg-center img {max-height:100%;}
+	
 
 	/* scale obj center  end */
+
+
+/* 項鍊在pc時縮小倍率 */
+.page-customization #obj-scale-1 #obg-center img,
+.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.8);}
+/* 項鍊在pc時縮小倍率 */
+
 
 /* scale object end */
 
@@ -252,23 +270,23 @@
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(3) {
   transition-duration:190ms;
-  -webkit-transform:translate3d(0, 4rem, 0);
-          transform:translate3d(0, 4rem, 0);
+  -webkit-transform:translate3d(0, 3.5rem, 0);
+          transform:translate3d(0, 3.5rem, 0);
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(4) {
   transition-duration:290ms;
-  -webkit-transform:translate3d(0, 8rem, 0);
-          transform:translate3d(0, 8rem, 0);
+  -webkit-transform:translate3d(0, 7rem, 0);
+          transform:translate3d(0, 7rem, 0);
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(5) {
   transition-duration:390ms;
-  -webkit-transform:translate3d(0, 12rem, 0);
-          transform:translate3d(0, 12rem, 0);
+  -webkit-transform:translate3d(0, 10.5rem, 0);
+          transform:translate3d(0, 10.5rem, 0);
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(6) {
   transition-duration:490ms;
-  -webkit-transform:translate3d(0, 16rem, 0);
-          transform:translate3d(0, 16rem, 0);
+  -webkit-transform:translate3d(0, 14rem, 0);
+          transform:translate3d(0, 14rem, 0);
 }
 
 
@@ -318,10 +336,11 @@
 
 .page-customization #itemSelect {transform:translateY(0);}
 
-.page-customization .itemChoose {height:30vh;}
+.page-customization .itemChoose {height:35vh;}
 
 .page-customization #zoneControl {padding:1rem;}
-.page-customization .btn-shadow img {width:40px;}
+.page-customization #zoneControl .btn-shadow {margin:.75rem 0;}
+.page-customization .btn-shadow img {width:32px;}
 .page-customization #zoneControl .btn-shadow {}
 
 .page-customization #zoneGuide {width:100%;}
@@ -347,7 +366,11 @@
 
 .page-customization .nextCate img {height:20vh;}
 
+
+.page-customization .workmenu-item, .workmenu-open-button {right:.75rem;}
+
 /* scale object */
+.page-customization #obg-center {}
 .page-customization #obj-scale-1 {}
 .page-customization #obj-scale-2 {}
 .page-customization #obj-scale-3 {}
@@ -358,6 +381,10 @@
 /* scale object end */
 
 
+/* 項鍊在手機時縮小倍率 */
+.page-customization #obj-scale-1 #obg-center img,
+.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.65);}
+/* 項鍊在手機時縮小倍率 */
 
 }
 
@@ -369,7 +396,6 @@
 
 
 .page-customization .workmenu {
-  top:.5rem;
   top: 5rem;
   width: 20vw;
   height: 40vh;
@@ -379,24 +405,24 @@
 .workmenu .ellipsis {width:5px;height:5px;}
 
 .workmenu .ellipsis-1 {
-  -webkit-transform: translate3d(-10px, 0, 0);
-          transform: translate3d(-10px, 0, 0);
+  -webkit-transform: translate3d(-8px, 0, 0);
+          transform: translate3d(-8px, 0, 0);
 }
 .workmenu .ellipsis-3 {
-  -webkit-transform: translate3d(10px, 0, 0);
-          transform: translate3d(10px, 0, 0);
+  -webkit-transform: translate3d(8px, 0, 0);
+          transform: translate3d(8px, 0, 0);
 }
-.workmenu .triangle {margin-bottom:35px;}
+.workmenu .triangle {margin-bottom:45px;}
 .workmenu .triangle-top {
-	width: 24px;
-    height: 20px;
-    border-bottom: solid 13px #7A6F62;
-    border-left: solid 12px transparent;
-    border-right: solid 12px transparent;
+	width: 20px;
+  height: 20px;
+  border-bottom: solid 12px #7A6F62;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
 }
 
 
-.page-customization .workmenu-item, .workmenu-open-button {width:2.5rem;height:2.5rem;}
+.page-customization .workmenu-item, .workmenu-open-button {width:2rem;height:2rem;}
 
 .workmenu-open:checked ~ .workmenu-item {
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -404,29 +430,25 @@
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(3) {
   transition-duration:190ms;
-  -webkit-transform:translate3d(0, 8vh, 0);
-          transform:translate3d(0, 8vh, 0);
+  -webkit-transform:translate3d(0, 6vh, 0);
+          transform:translate3d(0, 6vh, 0);
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(4) {
   transition-duration:290ms;
-  -webkit-transform:translate3d(0, 16vh, 0);
-          transform:translate3d(0, 16vh, 0);
+  -webkit-transform:translate3d(0, 12vh, 0);
+          transform:translate3d(0, 12vh, 0);
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(5) {
   transition-duration:390ms;
-  -webkit-transform:translate3d(0, 24vh, 0);
-          transform:translate3d(0, 24vh, 0);
+  -webkit-transform:translate3d(0, 18vh, 0);
+          transform:translate3d(0, 18vh, 0);
 }
 .workmenu-open:checked ~ .workmenu-item:nth-child(6) {
   transition-duration:490ms;
-  -webkit-transform:translate3d(0, 32vh, 0);
-          transform:translate3d(0, 32vh, 0);
+  -webkit-transform:translate3d(0, 24vh, 0);
+          transform:translate3d(0, 24vh, 0);
 }
-.workmenu-open:checked ~ .workmenu-item:nth-child(7) {
-  transition-duration:590ms;
-  -webkit-transform:translate3d(0, 40vh, 0);
-          transform:translate3d(0, 40vh, 0);
-}
+
 
 /* scale object */
 .page-customization #obj-scale-1 {}
@@ -444,4 +466,8 @@
 @media only screen and (max-width:375px) {
 
 
+}
+
+@media only screen and (max-width:320px) {
+.page-customization .workmenu {top:3.5rem;}
 }
