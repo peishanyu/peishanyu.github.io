@@ -126,19 +126,29 @@
 .page-customization .itemChooseBottom {overflow:auto;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
 
 	/* cate tab */
-	.page-customization #itemTab {overflow:hidden;font-size:0;line-height: 2;}
+	.page-customization #itemTab {overflow:hidden;font-size:0;line-height:2;}
+
+  .page-customization #itemTab .itemTabInner {overflow:auto;}
+  .page-customization #itemTab .itemTabInner::-webkit-scrollbar {width:0!important;height:0!important;}
+
 	.page-customization .itemTabInner a:nth-child(1) {background-color:#ded9d5;}
 	.page-customization .itemTabInner a:nth-child(2) {background-color:#f0ece6;}
 	.page-customization .itemTabInner a:nth-child(3) {background-color:#fff;}
+  .page-customization .itemTabInner a:nth-child(4) {background-color:#ded9d5;}
+  .page-customization .itemTabInner a:nth-child(5) {background-color:#f0ece6;}
+  .page-customization .itemTabInner a:nth-child(6) {background-color:#fff;}
 
 		/* itemSelect */
 		.page-customization #itemSelect {position:relative;white-space:nowrap;transform:translateY(2vh);box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
-		.page-customization #itemTabCtrl {position:absolute;bottom:0;width:100%;height:100%;}
+		.page-customization .itemTabCtrl {position:absolute;bottom:0;height:100%;display:flex;align-items: center;}
+
 		.page-customization #itemTab .tab {display:inline-block;color:#574c45;font-weight:500;padding:1rem 3rem;font-size:19px;}
-		.page-customization #itemTabCtrl .prev, 
-		.page-customization #itemTabCtrl .next {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
-		.page-customization #itemTabCtrl .prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
-		.page-customization #itemTabCtrl .next {position:absolute;right:0;text-align:right;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+
+		.page-customization .itemTabCtrl {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
+
+    .page-customization .itemTabCtrl.prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+    .page-customization .itemTabCtrl.next {right:0;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
+
 		/* itemSelect end */
 
 	/* cate tab end */
@@ -169,10 +179,14 @@
 .page-customization .itemName {text-align:center;padding-top:2rem;padding-bottom:1rem;}
 
 .page-customization .flexContainer {overflow:auto;height:70vh;padding:.25rem;padding-bottom:3rem;}
+.page-customization .flexContainer::-webkit-scrollbar {width:0!important;height:0!important;}
+
+.page-customization .flexbox {margin-bottom:3rem;}
 
 
-.page-customization .flexbox>div {display:inline-block;}
-.page-customization .flexbox>div>img {max-height:10vh;height:18vh;margin: 0 0.5rem 0.5rem 0.5rem;}
+
+.page-customization .flexbox>div {display:inline-block;margin:.5rem;}
+.page-customization .flexbox>div>img {max-height:10vh;height:18vh;}
 
 .page-customization .nextCate {display:-webkit-box;margin:0 2rem;}
 
@@ -391,12 +405,12 @@
 
 .page-customization .itemChoose {background-position-y:0vh;}
 
-.page-customization .itemName {padding-top:.5rem;padding-bottom: .5rem;}
+.page-customization .itemName {padding: .5rem;}
 
 .page-customization #itemTab .tab {font-size:16px;padding:0 1.5rem;}
 
-.page-customization #itemTabCtrl .prev, 
-.page-customization #itemTabCtrl .next {display:none;}
+.page-customization .itemTabCtrl.prev, 
+.page-customization .itemTabCtrl.next {display:none;}
 
 
 .page-customization .flexContainer {overflow:auto;height:20vh;}
