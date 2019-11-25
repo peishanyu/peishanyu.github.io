@@ -400,7 +400,7 @@
 .page-customization .btn-shadow img {width:32px;}
 .page-customization #zoneControl .btn-shadow {}
 
-.page-customization #zoneGuide {width:100%;}
+.page-customization #zoneGuide {width:100%;position:fixed;}
 
 .page-customization .ic-lookbook img,
 .page-customization .ic-question img,
