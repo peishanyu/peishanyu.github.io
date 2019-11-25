@@ -424,7 +424,7 @@
 .page-customization .nextCate img {height:20vh;}
 
 
-.page-customization .workmenu-item, .workmenu-open-button {right:.75rem;}
+.page-customization .workmenu-item, .workmenu-open-button {right:1rem;}
 
 /* scale object */
 .page-customization #obg-center {}
@@ -437,11 +437,6 @@
 .page-customization #obj-prepared {width:35%;height:40%;}
 /* scale object end */
 
-
-/* 項鍊在手機時縮小倍率 */
-.page-customization #obg-center .item-container {transform: scale(0.5) translateY(-30%);}
-.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.5);}
-/* 項鍊在手機時縮小倍率 */
 
 }
 
@@ -513,6 +508,12 @@
 .page-customization #obj-prepared {width:35%;height:30%;}
 /* scale object end */
 
+/* 項鍊在手機時縮小倍率 */
+.page-customization #obg-center .item-container {transform: scale(0.5);}
+.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.5);}
+/* 項鍊在手機時縮小倍率 */
+
+
 
 }
 
@@ -549,7 +550,29 @@
   }
 
   .page-customization #obg-center .item-container, .page-customization #obj-scale-1 #obj-prepared img {
-    transform: scale(0.5);
+    transform: scale(0.4);
   }
 
 }
+
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  #footer, .page-customization.banner {display:none;}
+  .page-customization .fit-100vh .col-60 {width:100%;}
+  .page-customization .fit-100vh .col-40 {width:100%;}
+
+  .page-customization .workbench {height: 70vh;}
+  .page-customization .itemChoose {height:30vh;}
+
+  .page-customization .workmenu-item, .workmenu-open-button {top:12rem;}
+
+  .page-customization #itemSelect {transform: translateY(0);}
+  .page-customization .itemName {padding-top: 1rem;}
+
+
+  .page-customization #zoneGuide {position:fixed;width:100%;}
+
+}
+
+
