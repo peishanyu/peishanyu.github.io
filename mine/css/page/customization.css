@@ -1,3 +1,5 @@
+.page-customization .fit-100vh {min-height:-webkit-fill-available;overflow:hidden;}
+
 .page-customization.banner {height:15vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;}
 .page-customization .workbench {position:relative;height:85vh;overflow: hidden;}
 .page-customization .wood {background:url(../../static/images/customization/bg_wood.jpg) no-repeat;background-size:cover;}
@@ -405,7 +407,7 @@
 .page-customization .ic-search img,
 .page-customization .ic-cart img {width:30px;}
 
-.page-customization .itemChoose {background-position-y:0vh;}
+
 
 .page-customization .itemName {padding: .5rem;}
 
