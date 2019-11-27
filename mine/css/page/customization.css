@@ -24,6 +24,8 @@
 
 /* bg item prepare */
 .page-customization #bg-zonePrepare, .page-customization #obj-prepared {position:absolute;bottom:0;right:0;}
+.page-customization #bg-zonePrepare{transition: all ease-in 200ms;}
+
 .page-customization .bg-circle {width:35%;text-align:right;}
 
 /* bg item prepare end */
@@ -47,14 +49,16 @@
 
 
 .page-customization #obj-prepared {
-	z-index:2;
-	width: 28%;
+  z-index:2;
+  width: 28%;
   height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: all ease-in 200ms;
 }
+
 
 .page-customization #obj-scale-1::-webkit-scrollbar { width: 0 !important }
 
@@ -62,14 +66,27 @@
 .page-customization .space-circle {width:35%;}
 
 	/* scale obj center */
-	.page-customization #obg-center {
+.page-customization #obg-center {
     display: flex;
     justify-content: center;
-	}
+}
 
 .page-customization #obg-center .item-container img {max-width:unset;}	
 
-.page-customization #obg-center .item-container.active {position:relative;border:4px solid #75efff;margin:2rem;}
+.page-customization #obg-center .item-container{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  
+}
+
+.page-customization #obg-center .item-container.active .frame { 
+	position:absolute; 
+	border:4px solid #75efff;
+	width:100%;
+	height:100%; 
+	top:0px;
+	z-index : 30;
+  }
   
 
   .page-customization #obg-center .item-container.active .node {
@@ -78,18 +95,25 @@
     height:12px;
     background-color:#fff;
     border-radius:10rem;
+    z-index : 35;
   }
 
   .page-customization #obg-center .item-container.active .node.top-r {
-    top:-8px;right:-8px;
+    top:-5px;
+    right:-5px;
+    z-index : 35;
   }
 
   .page-customization #obg-center .item-container.active .node.top-l {
-    top:-8px;left:-8px;
+    top:-5px;
+    left:-8px;
+    z-index : 35;
   }
 
   .page-customization #obg-center .item-container.active .node.bottom-r {
-    bottom:-8px;right:-8px;
+    bottom:-8px;
+    right:-5px;
+    z-index : 35;
   }
 
   .page-customization #obg-center .item-container.active .btn-item-setting {
@@ -103,6 +127,7 @@
     cursor: pointer;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 400ms;
+    z-index : 35;
   }
 
   .page-customization #obg-center .item-container.active .btn-item-setting:hover {
@@ -125,6 +150,9 @@
 
 
 /* itemChoose */
+.page-customization .itemChoose-wrapper{overflow:hidden;transition: all ease-in 200ms;}
+.page-customization .itemChoose-wrapper.expand{transition: all ease-out 200ms;}
+
 .page-customization .itemChoose {height:80vh;}
 .page-customization .itemChooseTop {background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;background-size:cover;}
 .page-customization .itemChooseBottom {overflow:auto;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
@@ -182,14 +210,15 @@
 
 .page-customization .itemName {text-align:center;padding-top:2rem;padding-bottom:1rem;}
 
-.page-customization .flexContainer {overflow:auto;height:70vh;padding:.25rem;padding-bottom:3rem;}
+.page-customization .flexContainer {overflow:auto;height:70vh;padding:.25rem;padding-bottom:3rem;transition: all ease-in 200ms;}
+.page-customization .expand .flexContainer {transition: all ease-out 200ms;}
 .page-customization .flexContainer::-webkit-scrollbar {width:0!important;height:0!important;}
 
 .page-customization .flexbox {margin-bottom:3rem;}
 
 
 
-.page-customization .flexbox>div {display:inline-block;margin:.5rem;}
+.page-customization .flexbox>div {display:inline-block;margin:.25rem;}
 .page-customization .flexbox>div>img {max-height:10vh;height:18vh;}
 
 .page-customization .nextCate {display:-webkit-box;margin:0 2rem;}
@@ -393,9 +422,10 @@
 
 .page-customization #itemSelect {transform:translateY(0);}
 
-.page-customization .itemChoose {height:35vh;}
+.page-customization #itemChoose-wrapper {height:35vh;}
+.page-customization .itemChoose {height:auto;}
 
-.page-customization #zoneControl {padding:1rem;}
+.page-customization #zoneControl {padding:1rem;transition: all ease-in 200ms;}
 .page-customization #zoneControl .btn-shadow {margin:.75rem 0;}
 .page-customization .btn-shadow img {width:32px;}
 .page-customization #zoneControl .btn-shadow {}
