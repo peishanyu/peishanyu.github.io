@@ -597,7 +597,7 @@
 
 
 /* drag menu */
-.page-customization #itemSelect .item {padding: .5rem 1rem;}
+.page-customization #itemSelect .item {padding: .5rem 1rem;font-size:0.85rem;}
 .page-customization #itemSelect .item:first-child {padding-left:1rem;}
 .page-customization #itemSelect .item:last-child {padding-right:1rem;}
 /* drag menu end */
