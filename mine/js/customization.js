@@ -66,6 +66,7 @@ function itemChooseToggle() {
   var zoneControl = document.getElementById("zoneControl");
   var objPrepared = document.getElementById("obj-prepared");
   var bgZonePrepared = document.getElementById("bg-zonePrepare");
+  var workmenu = document.getElementById("workmenu");
   
   
   if (itemChoose.classList.contains(expandKey)) {
@@ -83,6 +84,10 @@ function itemChooseToggle() {
     
     bgZonePrepared.classList.remove(expandKey);
     bgZonePrepared.style.transform = null;
+    
+    workmenu.classList.remove(expandKey);
+    workmenu.style.transform = null;
+    
 
   } else {
     itemChoose.classList.add(expandKey);
@@ -102,6 +107,9 @@ function itemChooseToggle() {
     
     bgZonePrepared.classList.add(expandKey);
     bgZonePrepared.style.transform = "translateY(-"+adjustHeight+"px)";
+    
+    workmenu.classList.add(expandKey);
+    workmenu.style.transform = "translateY(-"+(adjustHeight/3)+"px)";
   }
 
 }
