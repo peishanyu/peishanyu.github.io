@@ -233,6 +233,7 @@
 									<div class="node top-l"></div>
 									<div class="node bottom-r"></div>
 									<div class="btn-item-setting"></div>
+									<div class="frame"></div>
 								</div>
 							</div>
 
@@ -247,10 +248,10 @@
 								<div class="btn-shadow">
 									<img src="static/images/customization/btn_text.svg" />
 								</div>
-								<div class="btn-shadow">
+								<div class="btn-shadow" onclick="toggleFullScreen()" >
 									<img src="static/images/customization/btn_zoomIn.svg" />
 								</div>
-								<div class="btn-shadow">
+								<div class="btn-shadow"  onclick="toggleFullScreen()" >
 									<img src="static/images/customization/btn_zoomOut.svg" />
 								</div>
 							</div>
@@ -265,9 +266,9 @@
 				</div>
 			</div>
 
-			<div class="col-40 col-s-100 pd-0">
+			<div id="itemChoose-wrapper" class="col-40 col-s-100 pd-0 itemChoose-wrapper" onclick="itemChooseToggle()" >
 
-				<div class="itemChoose">
+				<div id="itemChoose" class="itemChoose">
 
 
 					<div class="itemChooseTop">
@@ -278,19 +279,19 @@
 								<div class="itemTabInner">
 
 									<a href="#cateA" class="tab">
-										<div>天然石配件(雙頭吊墜)</div>	
+										<div>(CateAAAA)</div>	
 									</a>
 									<a href="#cateB" class="tab">
-										<div>天然石吊墜(單頭吊墜)</div>
+										<div>(CateBBBB)</div>
 									</a>
 									<a href="" class="tab active">
-										<div>金屬配件</div>	
+										<div>(CateCCCC)</div>	
 									</a>
 									<a href="" class="tab">
-										<div>金屬吊墜(單頭吊墜)</div>
+										<div>(CateDDDD)</div>
 									</a>
 									<a href="" class="tab">
-										<div>釦頭(蝦釦環</div>	
+										<div>(CateEEEE)</div>	
 									</a>
 								</div>
 							</div>
@@ -308,7 +309,7 @@
 							<span id="itemType">橘色瑪瑙</span>
 							<span> - </span>
 							<span id="itemShape">水滴狀</span>
-							<span id="itemLength">3mm</span>
+							<!-- <span id="itemLength">3mm</span> -->
 
 							<span>　代表意義: </span>
 							<span class="">招財</span>
@@ -319,7 +320,7 @@
 					</div>
 						
 					<div class="itemChooseBottom">
-						<div class="flexContainer">
+						<div id="itemsFlexContainer" class="flexContainer">
 							<div class="">
 
 								<div id="cateA" class="flexbox">
@@ -327,7 +328,7 @@
 									<div><img src="https://www.jennydeejewelry.com/wp-content/uploads/2018/10/jennydee_jewelry_pleiadee_andromeda_ring_blue_topaz_white_diamonds_yellow_gold_18kt_RI.AN1S.16Y.00.0204-510x510.png" /></div>
 									<div><img src="static/images/customization/g02.png" /></div>
 									<div><img src="static/images/customization/item-pre_01.png" /></div>
-									<div><img src="https://dominionjewelers.com/wp-content/uploads/2017/09/lehman-gordon-ears.png" /></div>
+									<div><img src="static/images/customization/item-pre_01.png" /></div>
 									<div><img src="https://www.cartier.com/content/dam/cartier_dam/catalogue_assets/Facelift-Update/Edito-View/1-Jewelry/landing/FC1/FC1_jewelry_landing_necklaces_B7224550.png.scale.250.high.png" /></div>
 									<div><img src="static/images/customization/g04.png" /></div>
 									<div><img src="static/images/customization/g02.png" /></div>
@@ -429,6 +430,7 @@
 
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
+<script src="js/customization.js"></script>
 
 
 
