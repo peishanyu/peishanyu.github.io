@@ -213,6 +213,7 @@
       will-change: transform;
       user-select: none;
       cursor: pointer;
+      font-size: 0;
     }
 
     .page-customization #itemSelect .items::-webkit-scrollbar {width:0!important;height:0!important;}
@@ -229,8 +230,10 @@
     .page-customization #itemSelect .item {
       display: inline-block;
       padding: 1rem 2rem;
+      font-size: 1rem;
     }
 
+    
     .page-customization #itemSelect .item:nth-child(1) {background-color:#ded9d5;}
     .page-customization #itemSelect .item:nth-child(2) {background-color:#f0ece6;}
     .page-customization #itemSelect .item:nth-child(3) {background-color:#fff;}
@@ -241,6 +244,8 @@
     .page-customization #itemSelect .item:nth-child(8) {background-color:#f0ece6;}
     .page-customization #itemSelect .item:nth-child(9) {background-color:#fff;}
 
+    .page-customization #itemSelect .item:first-child {padding-left:4rem;}
+    .page-customization #itemSelect .item:last-child {padding-right:4rem;}
     /* drag menu end */
 
 
@@ -592,9 +597,9 @@
 
 
 /* drag menu */
-.page-customization #itemSelect .item {
-    padding: .5rem 1rem;
-  }
+.page-customization #itemSelect .item {padding: .5rem 1rem;}
+.page-customization #itemSelect .item:first-child {padding-left:1rem;}
+.page-customization #itemSelect .item:last-child {padding-right:1rem;}
 /* drag menu end */
 
 
