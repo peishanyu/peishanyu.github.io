@@ -275,6 +275,7 @@
 
 						<div id="itemSelect">
 
+							<!--
 							<div id="itemTab">
 								<div class="itemTabInner">
 
@@ -294,6 +295,41 @@
 										<div>(CateEEEE)</div>	
 									</a>
 								</div>
+							</div>
+							-->
+
+							<div class="grid-item main itemTabInner">
+
+								<div class="items">
+									<div class="item item1">
+										<a href="#cateA">(CateAAAA)</a>
+									</div>
+
+									<div class="item item2">
+										<a href="#cateB">(CateBBBB)</a>
+									</div>
+
+									<div class="item item3">
+										<a href="#cateC">(CateCCCC)</a>
+									</div>
+
+									<div class="item item4">
+										<a href="#cateD">(CateDDDD)</a>
+									</div>
+
+									<div class="item item4">
+										<a href="#cateE">(CateEEEE)</a>
+									</div>
+
+									<div class="item item5">
+										<a href="#cateF">(CateFFFF)</a>
+									</div>
+
+									<div class="item item6">
+										<a href="#cateG">(CateGGGG)</a>
+									</div>
+								</div>
+
 							</div>
 
 							<div class="itemTabCtrl prev">
@@ -432,7 +468,35 @@
 <script src="js/menu_header.js"></script>
 <script src="js/customization.js"></script>
 
+<script type="text/javascript">
+	const slider = document.querySelector('.items');
+		let isDown = false;
+		let startX;
+		let scrollLeft;
 
+		slider.addEventListener('mousedown', (e) => {
+		  isDown = true;
+		  slider.classList.add('active');
+		  startX = e.pageX - slider.offsetLeft;
+		  scrollLeft = slider.scrollLeft;
+		});
+		slider.addEventListener('mouseleave', () => {
+		  isDown = false;
+		  slider.classList.remove('active');
+		});
+		slider.addEventListener('mouseup', () => {
+		  isDown = false;
+		  slider.classList.remove('active');
+		});
+		slider.addEventListener('mousemove', (e) => {
+		  if(!isDown) return;
+		  e.preventDefault();
+		  const x = e.pageX - slider.offsetLeft;
+		  const walk = (x - startX) * 3; //scroll-fast
+		  slider.scrollLeft = scrollLeft - walk;
+		  console.log(walk);
+	});
+</script>
 
 
 </body>
