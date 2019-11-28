@@ -45,17 +45,10 @@
 .page-customization #obj-prepared img {max-width: none;}
 
 
-.page-customization #obj-scale-1 {overflow: scroll;}
-.page-customization #obj-scale-2 {}
-.page-customization #obj-scale-3 {}
-.page-customization #obj-scale-4 {}
-.page-customization #obj-scale-5 {}
-
-
 .page-customization #obj-prepared {
   z-index:2;
   width: 28%;
-  height: 40%;
+  height: 38%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,15 +57,18 @@
 
 
 .page-customization #obj-scale-1::-webkit-scrollbar { width: 0 !important ; height: 0 !important; display: none; }
-.page-customization #obj-scale-1{
+.page-customization #obj-scale-1 {
 	-ms-overflow-style: none; /* IE 11 */
     scrollbar-width: none; /* Firefox 64 */
+    overflow: scroll;
+    padding: 2vh 2vh 2vh 2vh;
+    
 }
 
 
 .page-customization .space-circle {width:35%;}
 
-
+/* scale obj center */
 .page-customization #obj-center .item-container img {max-width:unset;}	
 
 .page-customization #obj-center .item-container{
@@ -82,6 +78,7 @@
 	position:absolute;
 	display: flex;
     justify-content: center;
+    margin:0px auto;
 }
 
 .page-customization #obj-center .item-container.active .frame { 
@@ -125,7 +122,8 @@
     position:absolute;
     bottom:-24px;
     left:-24px;
-    width:3rem;height:3rem;
+    width:3rem;
+    height:3rem;
     background:url(../../static/images/customization/ic-item-setting.svg) no-repeat center #fff;
     box-shadow:0 0 6px rgba(0,0,0,.3);
     border-radius:100rem;
@@ -140,32 +138,28 @@
     transform: scale(1.2, 1.2) translate3d(0, 0, 0);
   }
 
-
-
-	/* scale obj center  end */
-
-
 /* 項鍊在pc時縮小倍率 */
-/* .page-customization #obj-center .item-container,
-.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.6);}
- 
+/* 
  Here should be set from program dynamically
- */
+*/
 .page-customization #obj-scale-2 #obj-prepared img  ,
 .page-customization #obj-scale-1 #obj-center {transform:scale(0.83);}
 
-.page-customization #obj-scale-1 #obj-center { transform-origin: 200px 235px; }
-
+.page-customization #obj-center { 
+	transform-origin: center center; 
+	width:100%; 
+	height:165%; 
+	text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    margin:0px auto;
+} 
 
 /* 項鍊在pc時縮小倍率 */
 
-/* scale obj center */
-.page-customization #obj-center {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    vertical-align: middle;
-}
+
+/* scale obj center  end */
 
 
 /* scale object end */
@@ -179,38 +173,36 @@
 .page-customization .itemChooseTop {background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;background-size:cover;}
 .page-customization .itemChooseBottom {overflow:auto;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
 
-	/* cate tab */
-	.page-customization #itemTab {overflow:hidden;font-size:0;line-height:2;}
-
-  .page-customization #itemTab .itemTabInner {overflow:auto;}
-  .page-customization #itemTab .itemTabInner::-webkit-scrollbar {width:0!important;height:0!important;}
-  .page-customization #itemTab .itemTabInner{
+/* cate tab */
+.page-customization #itemTab {overflow:hidden;font-size:0;line-height:2;}
+.page-customization #itemTab .itemTabInner {overflow:auto;}
+.page-customization #itemTab .itemTabInner::-webkit-scrollbar {width:0!important;height:0!important;}
+.page-customization #itemTab .itemTabInner {
 	-ms-overflow-style: none; /* IE 11 */
-    scrollbar-width: none; /* Firefox 64 */
-  }
+	scrollbar-width: none; /* Firefox 64 */
+}
 
 
-  /*
+    /*
 	.page-customization .itemTabInner a:nth-child(1) {background-color:#ded9d5;}
 	.page-customization .itemTabInner a:nth-child(2) {background-color:#f0ece6;}
 	.page-customization .itemTabInner a:nth-child(3) {background-color:#fff;}
-  .page-customization .itemTabInner a:nth-child(4) {background-color:#ded9d5;}
-  .page-customization .itemTabInner a:nth-child(5) {background-color:#f0ece6;}
-  .page-customization .itemTabInner a:nth-child(6) {background-color:#fff;}
-  */
+    .page-customization .itemTabInner a:nth-child(4) {background-color:#ded9d5;}
+    .page-customization .itemTabInner a:nth-child(5) {background-color:#f0ece6;}
+    .page-customization .itemTabInner a:nth-child(6) {background-color:#fff;}
+    */
 
-		/* itemSelect */
-		.page-customization #itemSelect {position:relative;white-space:nowrap;transform:translateY(2vh);box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
-		.page-customization .itemTabCtrl {position:absolute;bottom:0;height:100%;display:flex;align-items: center;}
+	/* itemSelect */
+	.page-customization #itemSelect {position:relative;white-space:nowrap;transform:translateY(2vh);box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
+	.page-customization .itemTabCtrl {position:absolute;bottom:0;height:100%;display:flex;align-items: center;}
 
-		.page-customization #itemTab .tab {display:inline-block;color:#574c45;font-weight:500;padding:1rem 3rem;font-size:19px;}
+	.page-customization #itemTab .tab {display:inline-block;color:#574c45;font-weight:500;padding:1rem 3rem;font-size:19px;}
 
-		.page-customization .itemTabCtrl {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
+	.page-customization .itemTabCtrl {display:inline-flex;height:100%;width:5vw;align-items:center;justify-content:center;}
 
     .page-customization .itemTabCtrl.prev {background-image: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
     .page-customization .itemTabCtrl.next {right:0;background-image: linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0));}
-
-		/* itemSelect end */
+	/* itemSelect end */
 
 
     /* drag menu */
@@ -507,6 +499,8 @@
 @media only screen and (max-width: 1440px) {
 .page-customization .btn-shadow img {width:48px;}
 
+.page-customization .bg-circle {width:28%;text-align:right;}
+
 .page-customization .ic-lookbook img,
 .page-customization .ic-question img,
 .page-customization .ic-search img,
@@ -523,153 +517,153 @@
 
 
 @media only screen and (max-width: 768px) {
+		
 	
-#ic-menu {
-	display:none;
-}
-#footer {display:none;}
-
-
-.page-customization .workbench {height:75vh;}
-
-.page-customization #itemSelect {transform:translateY(0);}
-
-.page-customization #itemChoose-wrapper {height:35vh;}
-.page-customization .itemChoose {height:auto;}
-
-.page-customization #zoneControl {padding: 1.0rem;transition: all ease-in 200ms;}
-.page-customization #zoneControl .btn-shadow {margin:.5rem 0;}
-.page-customization .btn-shadow img {width:32px;}
-.page-customization #zoneControl .btn-shadow {}
-
-.page-customization #zoneGuide {width:100%;position:fixed;}
-
-.page-customization .ic-lookbook img,
-.page-customization .ic-question img,
-.page-customization .ic-search img,
-.page-customization .ic-cart img {width:26px;}
-
-
-
-.page-customization .itemName {padding:.35rem;font-size:12px;}
-
-.page-customization #itemTab .tab {font-size:16px;padding:0 1.5rem;}
-
-.page-customization .itemTabCtrl.prev, 
-.page-customization .itemTabCtrl.next {display:none;}
-
-
-.page-customization .flexContainer {overflow:auto;height:25vh;}
-
-.page-customization .inline-flex {transform: translateY(20%);}
-
-.page-customization .nextCate img {height:20vh;}
-
-
-.page-customization .workmenu-item, .workmenu-open-button {right:1rem;}
-
-/* scale object */
-.page-customization #obj-center {}
-.page-customization #obj-scale-1 {}
-.page-customization #obj-scale-2 {}
-.page-customization #obj-scale-3 {}
-.page-customization #obj-scale-4 {}
-.page-customization #obj-scale-5 {}
-
-.page-customization #obj-prepared {width:35%;height:40%;}
-/* scale object end */
+	#footer, #ic-menu {display:none;}
+	
+	
+	.page-customization .workbench {height:75vh;}
+	
+	.page-customization #itemSelect {transform:translateY(0);}
+	
+	.page-customization #itemChoose-wrapper {height:25vh;}
+	.page-customization .itemChoose {height:auto;}
+	
+	.page-customization #zoneControl {padding: 1.0rem;transition: all ease-in 200ms;}
+	.page-customization #zoneControl .btn-shadow {margin:.5rem 0;}
+	.page-customization .btn-shadow img {width:32px;}
+	.page-customization #zoneControl .btn-shadow {}
+	
+	.page-customization #zoneGuide {width:100%;position:fixed;transition: all ease-in 200ms;}
+	
+	.page-customization .ic-lookbook img,
+	.page-customization .ic-question img,
+	.page-customization .ic-search img,
+	.page-customization .ic-cart img {width:26px;}
+	
+	
+	
+	.page-customization .itemName {padding:.35rem;font-size:12px;}
+	
+	.page-customization #itemTab .tab {font-size:16px;padding:0 1.5rem;}
+	
+	.page-customization .itemTabCtrl.prev, 
+	.page-customization .itemTabCtrl.next {display:none;}
+	
+	
+	.page-customization .flexContainer {overflow:auto;height:25vh;} 
+	
+	
+/* 	old
+	.page-customization .inline-flex {transform: translateY(20%);}
+	
+	.page-customization .nextCate img {height:20vh;}
+	 */
+	
+	.page-customization .workmenu-item, .workmenu-open-button {right:1rem;}
+	
+	
+	/* scale object */
+	
+	.page-customization #obj-center { 
+		width:100%; 
+		height:133vh; 
+	} 
+	
+	.page-customization #obj-prepared {width:20%;height:25%;}
+	/* scale object end */
 
 
 }
 
 
 @media only screen and (max-width: 480px) {
-
-.page-customization .btn-shadow img {width:28px;}
-
-.page-customization.banner {display:none;}
-.page-customization .inline-flex {transform: translateY(10%);}
-
-
-.page-customization .workmenu {top:1.5rem;width:20vw;height:40vh;}
-
-
-.workmenu .ellipsis {width:5px;height:5px;}
-
-.workmenu .ellipsis-1 {
-  -webkit-transform: translate3d(-8px, 0, 0);
-          transform: translate3d(-8px, 0, 0);
-}
-.workmenu .ellipsis-3 {
-  -webkit-transform: translate3d(8px, 0, 0);
-          transform: translate3d(8px, 0, 0);
-}
-.workmenu .triangle {margin-bottom:45px;}
-.workmenu .triangle-top {
-  width: 20px;
-  height: 20px;
-  border-bottom: solid 12px #7A6F62;
-  border-left: solid 10px transparent;
-  border-right: solid 10px transparent;
-}
-
-
-.page-customization .workmenu-item, .workmenu-open-button {width:2rem;height:2rem;}
-
-.workmenu-open:checked ~ .workmenu-item {
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
-}
-.workmenu-open:checked ~ .workmenu-item:nth-child(3) {
-  transition-duration:190ms;
-  -webkit-transform:translate3d(0, 7vh, 0);
-          transform:translate3d(0, 7vh, 0);
-}
-.workmenu-open:checked ~ .workmenu-item:nth-child(4) {
-  transition-duration:290ms;
-  -webkit-transform:translate3d(0, 14vh, 0);
-          transform:translate3d(0, 14vh, 0);
-}
-.workmenu-open:checked ~ .workmenu-item:nth-child(5) {
-  transition-duration:390ms;
-  -webkit-transform:translate3d(0, 21vh, 0);
-          transform:translate3d(0, 21vh, 0);
-}
-.workmenu-open:checked ~ .workmenu-item:nth-child(6) {
-  transition-duration:490ms;
-  -webkit-transform:translate3d(0, 28vh, 0);
-          transform:translate3d(0, 28vh, 0);
-}
-
-
-/* drag menu */
-.page-customization #itemSelect .item {padding: .4rem .8rem;font-size:0.85rem;}
-.page-customization #itemSelect .item:first-child {padding-left:1rem;}
-.page-customization #itemSelect .item:last-child {padding-right:1rem;}
-/* drag menu end */
-
-
-/* scale object */
-.page-customization #obj-scale-1 {}
-.page-customization #obj-scale-2 {}
-.page-customization #obj-scale-3 {}
-.page-customization #obj-scale-4 {}
-.page-customization #obj-scale-5 {}
-
-.page-customization #obj-prepared {width:20%;height:15%;}
-/* scale object end */
-
-/* 項鍊在手機時縮小倍率 */
-/* .page-customization #obj-center .item-container {transform: scale(0.5);}
-.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.5);} 
-
- Here should be set from program dynamically
-*/
-.page-customization #obj-scale-2 #obj-prepared img  ,
-.page-customization #obj-scale-1 #obj-center {transform:scale(0.43);}
-/* 項鍊在手機時縮小倍率 */
-
-
+	
+	.page-customization .btn-shadow img {width:28px;}
+	
+	.page-customization.banner {display:none;}
+	.page-customization .inline-flex {transform: translateY(10%);}
+	
+	
+	.page-customization .workmenu {top:1.5rem;width:20vw;height:40vh;}
+	
+	
+	.workmenu .ellipsis {width:5px;height:5px;}
+	
+	.workmenu .ellipsis-1 {
+	  -webkit-transform: translate3d(-8px, 0, 0);
+	          transform: translate3d(-8px, 0, 0);
+	}
+	.workmenu .ellipsis-3 {
+	  -webkit-transform: translate3d(8px, 0, 0);
+	          transform: translate3d(8px, 0, 0);
+	}
+	.workmenu .triangle {margin-bottom:45px;}
+	.workmenu .triangle-top {
+	  width: 20px;
+	  height: 20px;
+	  border-bottom: solid 12px #7A6F62;
+	  border-left: solid 10px transparent;
+	  border-right: solid 10px transparent;
+	}
+	
+	
+	.page-customization .workmenu-item, .workmenu-open-button {width:2rem;height:2rem;}
+	
+	.workmenu-open:checked ~ .workmenu-item {
+	  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+	}
+	.workmenu-open:checked ~ .workmenu-item:nth-child(3) {
+	  transition-duration:190ms;
+	  -webkit-transform:translate3d(0, 7vh, 0);
+	          transform:translate3d(0, 7vh, 0);
+	}
+	.workmenu-open:checked ~ .workmenu-item:nth-child(4) {
+	  transition-duration:290ms;
+	  -webkit-transform:translate3d(0, 14vh, 0);
+	          transform:translate3d(0, 14vh, 0);
+	}
+	.workmenu-open:checked ~ .workmenu-item:nth-child(5) {
+	  transition-duration:390ms;
+	  -webkit-transform:translate3d(0, 21vh, 0);
+	          transform:translate3d(0, 21vh, 0);
+	}
+	.workmenu-open:checked ~ .workmenu-item:nth-child(6) {
+	  transition-duration:490ms;
+	  -webkit-transform:translate3d(0, 28vh, 0);
+	          transform:translate3d(0, 28vh, 0);
+	}
+	
+	
+	/* drag menu */
+	.page-customization #itemSelect .item {padding: .4rem .8rem;font-size:0.85rem;}
+	.page-customization #itemSelect .item:first-child {padding-left:1rem;}
+	.page-customization #itemSelect .item:last-child {padding-right:1rem;}
+	/* drag menu end */
+	
+	
+	/* scale object */
+	/* .page-customization #obj-scale-1 {}
+	.page-customization #obj-scale-2 {}
+	.page-customization #obj-scale-3 {}
+	.page-customization #obj-scale-4 {}
+	.page-customization #obj-scale-5 {}
+	 */
+	.page-customization #obj-prepared {width:20%;height:18%;}
+	/* scale object end */
+	
+	/* 項鍊在手機時縮小倍率 */
+	/* .page-customization #obj-center .item-container {transform: scale(0.5);}
+	.page-customization #obj-scale-1 #obj-prepared img {transform:scale(0.5);} 
+	
+	 Here should be set from program dynamically
+	*/
+	.page-customization #obj-scale-2 #obj-prepared img  ,
+	.page-customization #obj-scale-1 #obj-center {transform:scale(0.45);}
+	/* 項鍊在手機時縮小倍率 */
+	
+	
 
 }
 
@@ -709,7 +703,7 @@
     transform: scale(0.4);
   } */
   .page-customization #obj-scale-2 #obj-prepared img  ,
-  .page-customization #obj-scale-1 #obj-center {transform:scale(0.43);}
+  .page-customization #obj-scale-1 #obj-center {transform:scale(0.35);}
 }
 
 
