@@ -1,4 +1,5 @@
 var choseItemInitialHeight = null;
+var fullScreenHeight = null;
 var screenDefaultHeight = null;
 
 function toggleFullScreen() {
@@ -15,7 +16,7 @@ function toggleFullScreen() {
       document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
     }
     var itemChoose = document.getElementById("itemChoose-wrapper");
-    itemChoose.style.height = null;
+    itemChoose.style.height = null; // real vh
 
   } else {
     if (document.exitFullscreen) {
@@ -31,7 +32,19 @@ function toggleFullScreen() {
     itemChoose.style.height = choseItemInitialHeight + "px";
 
   }
+}
 
+function isOnFullScreen() {
+  var currentWH = getClientWidthHeight();
+  if (fullScreenHeight == null || fullScreenHeight <= 0) {
+    if (currentWH.height == screenDefaultHeight) {
+      return false;
+    } else {
+      fullScreenHeight = currentWH.height;
+    }
+    console.log(fullScreenHeight);
+  }
+  return currentWH.height == fullScreenHeight;
 }
 
 function getClientWidthHeight() {
@@ -67,49 +80,63 @@ function itemChooseToggle() {
   var objPrepared = document.getElementById("obj-prepared");
   var bgZonePrepared = document.getElementById("bg-zonePrepare");
   var workmenu = document.getElementById("workmenu");
-  
-  
+  var zoneGuide = document.getElementById("zoneGuide");
+
   if (itemChoose.classList.contains(expandKey)) {
     // reset
     itemChoose.classList.remove(expandKey);
     itemChoose.style.marginTop = null;
-    itemChoose.style.height = null;
+
+    if (isOnFullScreen()) {
+      itemChoose.style.height = null;
+
+    } else {
+      itemChoose.style.height = choseItemInitialHeight + "px";
+    }
+
     itemsFlexContainer.style.height = null;
-    
+
     zoneControl.classList.remove(expandKey);
     zoneControl.style.transform = null;
-    
+
     objPrepared.classList.remove(expandKey);
     objPrepared.style.transform = null;
-    
+
     bgZonePrepared.classList.remove(expandKey);
     bgZonePrepared.style.transform = null;
-    
+
     workmenu.classList.remove(expandKey);
     workmenu.style.transform = null;
-    
+
+    zoneGuide.classList.remove(expandKey);
+    zoneGuide.style.transform = null;
 
   } else {
     itemChoose.classList.add(expandKey);
 
-    
-    var adjustHeight = screenDefaultHeight / 10;
+    var adjustHeight = getClientWidthHeight().height / 10;
+    if (adjustHeight < 100) {
+      adjustHeight = 100;
+    }
+
     itemChoose.style.marginTop = "-" + adjustHeight + "px";
     itemChoose.style.height = (itemChoose.getBoundingClientRect().height + adjustHeight) + "px";
     itemsFlexContainer.style.height = (itemsFlexContainer.getBoundingClientRect().height + adjustHeight) + "px";
-    
-    
+
     zoneControl.classList.add(expandKey);
-    zoneControl.style.transform = "translateY(-"+adjustHeight+"px)";
-    
+    zoneControl.style.transform = "translateY(-" + adjustHeight + "px)";
+
     objPrepared.classList.add(expandKey);
-    objPrepared.style.transform = "translateY(-"+adjustHeight+"px)";
-    
+    objPrepared.style.transform = "translateY(-" + adjustHeight + "px)";
+
     bgZonePrepared.classList.add(expandKey);
-    bgZonePrepared.style.transform = "translateY(-"+adjustHeight+"px)";
-    
+    bgZonePrepared.style.transform = "translateY(-" + adjustHeight + "px)";
+
     workmenu.classList.add(expandKey);
-    workmenu.style.transform = "translateY(-"+(adjustHeight/3)+"px)";
+    workmenu.style.transform = "translateY(-" + (adjustHeight / 3) + "px)";
+
+    zoneGuide.classList.remove(expandKey);
+    zoneGuide.style.transform = "translateY(100%)";
   }
 
 }
@@ -131,7 +158,8 @@ function setItemChooseFill() {
     if (choseItemInitialHeight == null) {
       // only apply in first time
       choseItemInitialHeight = setHeight;
-      window.alert("set height choseItemInitialHeight" + choseItemInitialHeight);
+      // window.alert("set height choseItemInitialHeight" + choseItemInitialHeight);
+      console.log("set height choseItemInitialHeight " + choseItemInitialHeight);
     }
 
     itemChoose.style.height = setHeight + "px";
