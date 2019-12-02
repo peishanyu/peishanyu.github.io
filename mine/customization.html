@@ -13,7 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/filter.css">
 	
 	<!-- custom -->
 	<link rel="stylesheet" type="text/css" href="css/page/customization.css">
@@ -187,14 +188,320 @@
 </header>
 <!-- header end -->
 
+
+<!-- filterPopup -->
+<div class="page-customization modal_all">
+	<div id="filterPopup" class="general filterToFadeIn" style="display:none;">
+
+		<div class="container">
+
+			<div class="closePopup" onclick="filterModal()"><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
+
+			<h2 class="popupTitle vertical-m">篩選條件</h2>
+
+
+			<!-- color Filter -->
+			<div class="searchOption">
+
+				<div class="col-15 col-xs-100 pl-0"><span>顏色: </span></div>
+
+				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
+					<div class="inline choosen color">已選擇: </div>
+				
+					<div id="materialColorChoosen" class="inline text-nowrap">
+
+						<div class="colorSquare color-1 active"></div>
+						<div class="colorSquare color-2 active"></div>
+						<div class="colorSquare color-3 active"></div>
+
+						<div class="colorSquare color-4 active"></div>
+
+						<div class="colorSquare color-5 active"></div>
+						<div class="colorSquare color-6 active"></div>
+						<div class="colorSquare color-7 active"></div>
+
+						<div class="colorSquare color-8 active"></div>
+
+						<div class="colorSquare over active"></div>
+					</div>
+					<div  class="zoneArrow inline"><img id="colorZoneArrow" src="static/images/material/img-arrowL.svg" /></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div id="materialColorOptions" class="optionZone unfoldSelectionZone">
+				<div class="colorSquare color-1">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-2 " >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-3 active" >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-4 active" >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-5" >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-6" >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-7" >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-8" >
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-9 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-10 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-11 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-12 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-13 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-14 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-15 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-16 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-17 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-18 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-19 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-20 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-21">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-22 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-23 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-24 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-25 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-26 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="colorSquare color-27 ">
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+
+			</div>
+			<!-- end color Filter -->
+
+			<!-- mineType Filter -->
+			<div class="searchOption">
+
+				<div class="col-15 col-xs-100 pl-0"><span>材質: </span></div>
+				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
+					<div class="inline choosen">已選擇: </div>
+
+					<div id="materialMineTypeChoosen" class="inline text-nowrap choosen">
+
+						<span class="">水晶</span>
+						<span>、</span>
+						<span class="">玉</span>
+
+					</div>
+
+					<div class="inline zoneArrow"><img id="mineTypeZoneArrow"  src="static/images/material/img-arrowL.svg" /></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div id="materialMineTypeOptions" class="optionZone unfoldSelectionZone">
+			
+				<div class="row">
+					<div class="col-20 mineType">
+						<div>瑪瑙</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+					<div class="col-20 mineType active">
+						<div>水晶</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+					<div class="col-20 mineType">
+						<div>珍珠</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+					<div class="col-20 mineType active">
+						<div>玉</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-20 mineType">
+						<div>石</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+					<div class="col-20 mineType">
+						<div>銅</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+					<div class="col-20 mineType">
+						<div>金</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+					<div class="col-20 mineType">
+						<div>銀</div>
+						<img src="static/images/material/ic-close_colorSquare.svg" />
+					</div>
+				</div>
+			</div>
+			<!-- end mineType Filter -->
+
+			<!-- meaning Filter -->
+			<div class="searchOption">
+
+				<div class="col-15 col-xs-100 pl-0"><span>意義: </span></div>
+				<div class="col-auto col-md-auto col-xs-100 text-r pr-0">
+					<div class="inline choosen">已選擇: </div>
+					<div id="materialMeaningChoosen" class="inline text-nowrap choosen">
+
+						<span class="">金錢</span>
+						<span>、</span>
+						<span class="">健康</span>
+						
+					</div>
+					<div class="zoneArrow inline"><img id="meaningZoneArrow"  src="static/images/material/img-arrowL.svg" /></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div id="materialMeaningOptions" class="optionZone unfoldSelectionZone">
+
+			<div class="row">
+				<div class="col-20 meanType" name="material-meaning-love" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" class="meanImg" />
+						<div>愛情</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="col-20 meanType"  name="material-meaning-career" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" class="meanImg" />
+						<div>工作</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="col-20 meanType active"  name="material-meaning-money" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" class="meanImg" />
+						<div>金錢</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="col-20 meanType active"  name="material-meaning-health" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" class="meanImg"/>
+						<div>健康</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-20 meanType"  name="material-meaning-family" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" />
+						<div>家庭</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="col-20 meanType"  name="material-meaning-relationship" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" />
+						<div>人際</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="col-20 meanType"  name="material-meaning-learning" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" />
+						<div>學業</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+				<div class="col-20 meanType"  name="material-meaning-spirit" >
+					<div class="mean">
+						<img src="static/images/material/img-empty.svg" />
+						<div>心靈</div>	
+					</div>
+					<img src="static/images/material/ic-close_colorSquare.svg" />
+				</div>
+			</div>
+
+				
+
+			</div>
+			<!-- end meaning Filter -->
+
+			<div class="searchBar col-xs-100">
+				<div class="inline ">文字搜尋: </div>
+				<input id="materialTextSearchInput" type="text" placeholder="請輸入關鍵字" />
+			</div>
+
+			<div id="meterialFilterSubmitBtn" class="filterSubmit">
+				<button class="col-xs-50 btn modal-btn-comfirm">搜尋</button>
+			</div>
+
+		</div>
+	</div>	
+</div>
+<div id="add-filterMask" class="modal-mask" style="display:none" onclick="filterModal()"></div>
+<!-- filterPopup end -->
+
+
+<!-- gotoCart -->
+<div class="page-customization modal_all">
+	<div id="gotoCartPopup" class="filterToFadeIn" style="display:none;">
+		<div class="inner">
+			<div class="closePopup" onclick="gotoCartModal()">
+				<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div id="add-gotoCartMask" class="modal-mask" style="display:none" onclick="gotoCartModal()"></div>
+<!-- gotoCart end -->
+
+
+
+
 <div class="page-customization banner"></div>
 
 
 <div class="page-customization">
 	<div class="fit-100vh">
 		<div class="relative clearfix">
-
-
 
 			<div class="col-60 col-s-100 pd-0">
 				<div class="">
@@ -229,10 +536,28 @@
 							<div id="obj-center">
 								<div class="item-container active">
 									<img src="static/images/customization/item-center_01.png" class="obj-center"/>
-									<div class="node top-r"></div>
+									<div class="btn-item-close"></div>
 									<div class="node top-l"></div>
 									<div class="node bottom-r"></div>
-									<div class="btn-item-setting"></div>
+
+									<div class="btn-item-setting" onclick="">
+										<div class="popup-setting">
+											<div class="zone-option">
+												<div class="option">大尺寸</div>
+												<div class="option active">中尺寸</div>
+												<div class="option">小尺寸</div>	
+											</div>
+											<div class="zone-option">
+												<div class="option">金色</div>
+												<div class="option active">銀色</div>
+												<div class="option">玫瑰金</div>	
+											</div>
+											<div class="zone-option">
+												<button class="btn btn-round-fill-orange">確認</button>
+											</div>
+										</div>
+									</div>
+
 									<div class="frame"></div>
 								</div>
 							</div>
@@ -380,7 +705,7 @@
 					</div>
 				</div>
 				<div class="col-25 pd-0 text-c">
-					<div class="ic-search">
+					<div class="ic-search" onclick="filterModal()">
 						<img src="static/images/customization/ic-search.svg" />
 					</div>
 				</div>
@@ -390,7 +715,7 @@
 					</div>
 				</div>
 				<div class="col-25 pd-0 text-c">
-					<div class="ic-cart disabled">
+					<div class="ic-cart" onclick="gotoCartModal()">
 						<img src="static/images/customization/ic-cart.svg" />
 					</div>
 				</div>
@@ -399,7 +724,6 @@
 		</div>
 	</div>
 </div>
-
 
 
 <!-- FOOTER start -->
@@ -469,6 +793,8 @@
 	});
 </script>
 
+<script src="js/material.js"></script>
+<script src="js/popup-cart.js"></script>
 
 </body>
 </html>
