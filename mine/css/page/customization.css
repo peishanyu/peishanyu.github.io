@@ -5,6 +5,52 @@
 .page-customization .fit-100vh {min-height:-webkit-fill-available;overflow:hidden;}
 
 .page-customization.banner {height:15vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;pointer-events:none;}
+
+
+/* cus-menu */
+.page-customization.cus-menu .grid {
+  position:relative;
+  height:42.5vh;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.page-customization.cus-menu .cus-item {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-weight:700;
+  color:#574c45;
+  font-size: 28px;
+}
+.page-customization.cus-menu .cus-item div {display:inline-block;margin:0 .125rem;text-decoration:underline;cursor:pointer;}
+
+.page-customization.cus-menu #cus-wristband {
+  background-image: url(../../static/images/customization/bg-wristband_menu.jpg);
+}
+.page-customization.cus-menu #cus-bracelet {
+  background-image: url(../../static/images/customization/bg-bracelet_menu.jpg);
+}
+.page-customization.cus-menu #cus-earring {
+  background-image: url(../../static/images/customization/bg-earring_menu.jpg);
+}
+.page-customization.cus-menu #cus-necklace {
+  background-image: url(../../static/images/customization/bg-necklace_menu.jpg);
+}
+.page-customization.cus-menu #cus-ring {
+  background-image: url(../../static/images/customization/bg-ring_menu.jpg);
+}
+.page-customization.cus-menu #cus-anklet {
+  background-image: url(../../static/images/customization/bg-anklet_menu.jpg);
+}
+
+/* cus-menu end */
+
 .page-customization .workbench {position:relative;height:85vh;overflow: hidden;}
 .page-customization .wood {background:url(../../static/images/customization/bg_wood.jpg) no-repeat;background-size:cover;}
 
@@ -553,7 +599,7 @@
 }
 
 
-
+/* Lettering Item */
 .page-customization #letteringPopup .container {
   text-align:center;
 }
@@ -602,6 +648,13 @@
   background: #fff;
   outline:0;
 }
+/* Lettering Item end */
+
+
+
+
+
+
 /* ======== RWD ======== */
 
 
@@ -620,6 +673,9 @@
 /* itemSelect end */
 
 .page-customization .itemChoose {background-position-y:0vh;}
+
+/* cus-menu */
+.page-customization.cus-menu .cus-item {font-size:18px;}
 
 
 }
@@ -681,6 +737,11 @@
 	
 	.page-customization #obj-prepared {width:20%;height:25%;}
 	/* scale object end */
+
+
+  /* cus-menu */
+  .page-customization.cus-menu .grid {height:20vh;}
+  .page-customization.cus-menu .cus-item {font-size:18px;}
 
 
 }
