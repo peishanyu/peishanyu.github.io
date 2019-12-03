@@ -482,7 +482,7 @@
 <!-- gotoCart -->
 <div class="page-customization modal_all">
 	<div id="gotoCartPopup" class="filterToFadeIn" style="display:none;">
-		<div class="inner">
+		<div class="container inner">
 			<div class="closePopup" onclick="gotoCartModal()">
 				<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
 			</div>
@@ -494,6 +494,20 @@
 <!-- gotoCart end -->
 
 
+<!-- lettering -->
+<div class="page-customization modal_all">
+	<div id="letteringPopup" class="filterToFadeIn" style="display:none;">
+		<div class="container inner">
+			<div class="closePopup" onclick="letteringModal()">
+				<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<div id="add-letteringMask" class="modal-mask" style="display:none" onclick="letteringModal()"></div>
+<!-- lettering end -->
 
 
 <div class="page-customization banner"></div>
@@ -571,7 +585,7 @@
 
 						<div id="zoneControl" class="clearfix">
 							<div class="pd-0">
-								<div class="btn-shadow">
+								<div class="btn-shadow" onclick="letteringModal()" >
 									<img src="static/images/customization/btn_text.svg" />
 								</div>
 								<div class="btn-shadow" onclick="toggleFullScreen()" >
@@ -795,6 +809,7 @@
 
 <script src="js/material.js"></script>
 <script src="js/popup-cart.js"></script>
+<script src="js/popup-lettering.js"></script>
 
 </body>
 </html>

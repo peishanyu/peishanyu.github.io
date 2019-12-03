@@ -533,21 +533,21 @@
 
 .page-customization #gotoCartPopup {
   position:relative;
-  width:100%;
-  height:100vh;
 }
 
 .page-customization #gotoCartPopup .inner {
-  position: relative;
+  position: absolute;
   width: 347px;
   height: 546px;
   top: 50%;
-  margin: auto;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%,25%);
   padding: .5rem;
   background-color: #EBE3DF;
   box-shadow: 0 2px 20px rgba(0,0,0,.35);
 }
+
+
 
 
 /* ------ workmenuuuuuuu end ------ */
