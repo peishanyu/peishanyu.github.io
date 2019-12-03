@@ -497,12 +497,17 @@
 <!-- lettering -->
 <div class="page-customization modal_all">
 	<div id="letteringPopup" class="filterToFadeIn" style="display:none;">
-		<div class="container inner">
-			<div class="closePopup" onclick="letteringModal()">
-				<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
+		<div class="relative container">
+			<img src="static/images/customization/item-lettering.png" />
+			<div id="" class="lettering-sample">Happy</div>
+			<div class="lettering-input-container">
+				<div><input type="text" name="lettering-sample" value="Happy" placeholder="請輸入文字，最多六字" /></div>
+				<div class="btn-group">
+					<button type="button">完成</button>
+					<button type="button" onclick="letteringModal()">取消</button>	
+				</div>
 			</div>
 		</div>
-		
 	</div>
 </div>
 

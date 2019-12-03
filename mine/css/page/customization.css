@@ -508,6 +508,12 @@
 
 
 .page-customization .popup-setting {width:160px;position:absolute;right:40%;top:40%;background-color:#fff;z-index:-5;}
+
+
+
+/* ------ workmenuuuuuuu end ------ */
+
+.page-customization .popup-setting {width:160px;position:absolute;right:40%;top:40%;background-color:#fff;z-index:-5;}
 .page-customization .zone-option {padding:1rem;border-bottom:1px solid #796A55;}
 .page-customization .zone-option .option {margin-bottom:1rem;padding:.25rem .5rem;border-radius:100rem;background-color:#F5EBDC;font-size:16px;font-weight:500;}
 .page-customization .zone-option .option:last-child {margin-bottom:0;}
@@ -538,7 +544,6 @@
 .page-customization #gotoCartPopup .inner {
   position: absolute;
   width: 347px;
-  height: 546px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,25%);
@@ -549,10 +554,55 @@
 
 
 
+.page-customization #letteringPopup .container {
+  text-align:center;
+}
 
-/* ------ workmenuuuuuuu end ------ */
+.page-customization .lettering-sample {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+  max-width: 260px;
+}
 
+.page-customization #letteringPopup .lettering-input-container {
+  position: absolute;
+  width: 400px;
+  height: 174px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-200px, 174px);
+  padding: 3rem 2rem 2rem;
+  background: url(../../static/images/customization/bg-input-container.svg) no-repeat center;
+}
+.page-customization #letteringPopup .lettering-input-container input {
+  width: 100%;
+  padding: .5rem;
+  height: calc(2.5rem + 4px);
+  font-weight: 700;
+  outline: 0;
+  border: 0;
+}
 
+.page-customization #letteringPopup .lettering-input-container .btn-group {
+  margin:1rem 0;
+}
+.page-customization #letteringPopup .lettering-input-container .btn-group button {
+  width:40%;
+  border-radius:100rem;
+  margin:0 .25rem;
+  padding:.5rem 1rem;
+  font-size:16px;
+  font-weight:700;
+  color:#858380;
+  background: #fff;
+  outline:0;
+}
+/* ======== RWD ======== */
 
 
 @media only screen and (max-width: 1440px) {
@@ -722,11 +772,21 @@
 	.page-customization #obj-scale-1 #obj-center {transform:scale(0.45);}
 	/* 項鍊在手機時縮小倍率 */
 	
-	
+
+
+/* modal lettering */
+.page-customization #letteringPopup .lettering-input-container {
+  width: 300px;
+  padding:3rem 1rem 1rem;
+  transform: translate(-150px, 174px);
+}
+
+
 
 }
 
 @media only screen and (max-width:375px) {
+
 
 
 }
