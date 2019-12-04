@@ -564,6 +564,23 @@
 <!-- cus-menu end -->
 
 
+<!-- lookbook -->
+<div class="page-customization modal_all">
+	<div id="lookbookPopup" class="filterToFadeIn" style="display:none;">
+		<div class="outer">
+			<div class="container"></div>
+		</div>
+	</div>
+</div>
+
+<div id="add-lookbookMask" class="modal-mask" style="display:none" onclick="lookbookModal()"></div>
+<!-- lookbook end -->
+
+
+
+
+
+
 
 <div class="page-customization">
 	<div class="fit-100vh">
@@ -766,7 +783,7 @@
 
 			<div id="zoneGuide" class="clearfix">
 				<div class="col-25 pd-0 text-c">
-					<div class="ic-lookbook">
+					<div class="ic-lookbook" onclick="lookbookModal()">
 						<img src="static/images/customization/ic-lookbook.svg" />
 					</div>
 				</div>
@@ -862,6 +879,8 @@
 <script src="js/material.js"></script>
 <script src="js/popup-cart.js"></script>
 <script src="js/popup-lettering.js"></script>
+<script src="js/popup-lookbook.js"></script>
+
 <script src="js/cus-menu.js"></script>
 
 </body>

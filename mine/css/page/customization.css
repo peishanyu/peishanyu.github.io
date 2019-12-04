@@ -647,11 +647,23 @@
   color:#858380;
   background: #fff;
   outline:0;
+  border:0;
 }
 /* Lettering Item end */
 
 
+/* LookBook */
+.page-customization #lookbookPopup .outer {
+  position:absolute;
+  display:block;
+  left:50%;
+  transform: translate(-50%, 0px);
+}
 
+.page-customization .container {width:884px;height:734px;background-color:#ECE2E0;}
+
+
+/* LookBook Item */
 
 
 
