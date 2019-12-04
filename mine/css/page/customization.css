@@ -657,12 +657,17 @@
   position:absolute;
   display:block;
   left:50%;
-  transform: translate(-50%, 0px);
+  transform: translate(-50%, -10%);
 }
 
-.page-customization .container {width:884px;height:734px;background-color:#ECE2E0;}
+.page-customization .container {position:relative;width:720px;padding:4rem 1rem;background-color:#ECE2E0;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
+.page-customization #lookbookPopup .closePopup {position:absolute;top:1rem;right:1.5rem;}
 
-
+.page-customization #lookbookPopup .title {font-size:20px;font-weight:700;color:#554A44;margin-bottom:1rem;}
+.page-customization #lookbookPopup .item-name {margin:1rem;color:#554A44;font-weight:700;font-size:16px;}
+.outer-scroll {position:relative;height:456px;overflow:auto;margin:auto;text-align:center;background-color:#fff;}
+.page-customization #lookbookPopup .grid {display:inline-block;margin:.5rem;box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);border: 3px solid transparent;}
+.page-customization #lookbookPopup .grid.active {border: 3px solid #afafaf;}
 /* LookBook Item */
 
 
@@ -755,6 +760,14 @@
   .page-customization.cus-menu .grid {height:20vh;}
   .page-customization.cus-menu .cus-item {font-size:18px;}
 
+
+
+  /* LookBook */
+  .page-customization #lookbookPopup .outer {width: 100%;
+    transform: translate(-50%, 0%);}
+  .page-customization .container {width:90%;padding:3rem 1rem;}
+  .page-customization .outer-scroll {height:20vh;}
+  /* LookBook end */
 
 }
 
