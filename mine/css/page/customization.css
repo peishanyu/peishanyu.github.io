@@ -660,7 +660,7 @@
   transform: translate(-50%, -10%);
 }
 
-.page-customization .container {position:relative;width:720px;padding:4rem 1rem;background-color:#ECE2E0;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
+.page-customization #lookbookPopup .container {position:relative;width:720px;padding:4rem 1rem;background-color:#ECE2E0;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
 .page-customization #lookbookPopup .closePopup {position:absolute;top:1rem;right:1.5rem;}
 
 .page-customization #lookbookPopup .title {font-size:20px;font-weight:700;color:#554A44;margin-bottom:1rem;}
