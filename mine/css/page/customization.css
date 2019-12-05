@@ -654,17 +654,21 @@
 
 /* LookBook */
 .page-customization #lookbookPopup .outer {
+  /*
   position:absolute;
   display:block;
   left:50%;
   transform: translate(-50%, -10%);
+  */
 }
 
-.page-customization #lookbookPopup .container {position:relative;width:720px;padding:4rem 1rem;background-color:#ECE2E0;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
+.page-customization #lookbookPopup .container {position:relative;max-width:720px;padding:4rem 1rem;background-color:#ECE2E0;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
 .page-customization #lookbookPopup .closePopup {position:absolute;top:1rem;right:1.5rem;}
 
 .page-customization #lookbookPopup .title {font-size:20px;font-weight:700;color:#554A44;margin-bottom:1rem;}
 .page-customization #lookbookPopup .item-name {margin:1rem;color:#554A44;font-weight:700;font-size:16px;}
+.modal-btn-comfirm {margin:0;}
+
 .outer-scroll {position:relative;height:456px;overflow:auto;margin:auto;text-align:center;background-color:#fff;}
 .page-customization #lookbookPopup .grid {display:inline-block;margin:.5rem;box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);border: 3px solid transparent;}
 .page-customization #lookbookPopup .grid.active {border: 3px solid #afafaf;}
@@ -694,6 +698,11 @@
 /* cus-menu */
 .page-customization.cus-menu .cus-item {font-size:18px;}
 
+
+}
+
+
+@media only screen and (max-width:1024px) {
 
 }
 
@@ -763,10 +772,20 @@
 
 
   /* LookBook */
-  .page-customization #lookbookPopup .outer {width: 100%;
-    transform: translate(-50%, 0%);}
+
   .page-customization .container {width:90%;padding:3rem 1rem;}
   .page-customization .outer-scroll {height:20vh;}
+  .page-customization #lookbookPopup .outer {height:100vh;}
+  .page-customization #lookbookPopup .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 1rem auto;
+  }
+
+  .modal-btn-comfirm {margin-bottom:1rem;}
   /* LookBook end */
 
 }
@@ -909,6 +928,11 @@
   } */
   .page-customization #obj-scale-2 #obj-prepared img  ,
   .page-customization #obj-scale-1 #obj-center {transform:scale(0.35);}
+
+  .page-customization #lookbookPopup .closePopup {top:0.5rem;right:0.5rem;}
+  .page-customization #lookbookPopup .container {width:100%;height:100vh;margin:0;padding:1.5rem 1rem;}
+
+
 }
 
 
