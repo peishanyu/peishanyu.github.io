@@ -669,6 +669,7 @@
   position:relative;max-width:400px;padding:4rem 1rem;
   background:url(../../static/images/customization/bg-spenttime.svg) center bottom no-repeat;
   text-align:center;
+  background-size:cover;
   color:#574C45;
 }
 
