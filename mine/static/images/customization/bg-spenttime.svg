@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_16" data-name="矩形 16" width="400" height="600" transform="translate(1128 273)" fill="#cfcfcf"/>
+    </clipPath>
+    <filter id="矩形_15" x="6.78" y="-10.32" width="378.7" height="612.385" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3.87" dy="9.03" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.45" result="blur"/>
+      <feFlood flood-opacity="0.549"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="bg-spenttime" transform="translate(-1128 -273)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 1128, 273)" filter="url(#矩形_15)">
+      <rect id="矩形_15-2" data-name="矩形 15" width="340" height="573.684" transform="translate(30)" fill="#ebe3df"/>
+    </g>
+  </g>
+</svg>

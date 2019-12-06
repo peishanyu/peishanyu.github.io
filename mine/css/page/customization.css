@@ -583,9 +583,7 @@
       100% { opacity:1;transform: translate3d(0, 0, 0);}
   }
 
-.page-customization #gotoCartPopup {
-  position:relative;
-}
+.page-customization #gotoCartPopup {position:relative;}
 
 .page-customization #gotoCartPopup .inner {
   position: absolute;
@@ -600,9 +598,7 @@
 
 
 /* Lettering Item */
-.page-customization #letteringPopup .container {
-  text-align:center;
-}
+.page-customization #letteringPopup .container {text-align:center;}
 
 .page-customization .lettering-sample {
   position: absolute;
@@ -634,9 +630,7 @@
   border: 0;
 }
 
-.page-customization #letteringPopup .lettering-input-container .btn-group {
-  margin:1rem 0;
-}
+.page-customization #letteringPopup .lettering-input-container .btn-group {margin:1rem 0;}
 .page-customization #letteringPopup .lettering-input-container .btn-group button {
   width:40%;
   border-radius:100rem;
@@ -653,16 +647,7 @@
 
 
 /* LookBook */
-.page-customization #lookbookPopup .outer {
-  /*
-  position:absolute;
-  display:block;
-  left:50%;
-  transform: translate(-50%, -10%);
-  */
-}
-
-.page-customization #lookbookPopup .container {position:relative;max-width:720px;padding:4rem 1rem;background-color:#ECE2E0;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
+.page-customization #lookbookPopup .container {position:relative;max-width:720px;padding:4rem 1rem;background-color:#EBE3DF;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
 .page-customization #lookbookPopup .closePopup {position:absolute;top:1rem;right:1.5rem;}
 
 .page-customization #lookbookPopup .title {font-size:20px;font-weight:700;color:#554A44;margin-bottom:1rem;}
@@ -672,7 +657,27 @@
 .outer-scroll {position:relative;height:456px;overflow:auto;margin:auto;text-align:center;background-color:#fff;}
 .page-customization #lookbookPopup .grid {display:inline-block;margin:.5rem;box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);border: 3px solid transparent;}
 .page-customization #lookbookPopup .grid.active {border: 3px solid #afafaf;}
+
+.page-customization .img-display {box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);}
+.page-customization .sample-container {display:flex;flex-wrap:wrap;justify-content:center;}
+
 /* LookBook Item */
+
+
+/* finished message */
+.page-customization #cusFinishedPopup .container {
+  position:relative;max-width:400px;padding:4rem 1rem;
+  background:url(../../static/images/customization/bg-spenttime.svg) center bottom no-repeat;
+  text-align:center;
+  color:#574C45;
+}
+
+.page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:3rem;}
+.spent-time {padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
+.print-time {font-size:17px;font-weight:500;}
+.page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;}
+.sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
+/* finished message end */
 
 
 
