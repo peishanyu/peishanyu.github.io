@@ -645,6 +645,7 @@
 }
 /* Lettering Item end */
 
+.page-customization .modal_all {height:100vh;}
 
 /* LookBook */
 .page-customization #lookbookPopup .container {position:relative;max-width:720px;padding:4rem 1rem;background-color:#EBE3DF;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);}
@@ -665,6 +666,8 @@
 
 
 /* finished message */
+.page-customization .outer {}
+.page-customization #cusFinishedPopup {display:block;}
 .page-customization #cusFinishedPopup .container {
   position:relative;max-width:400px;padding:4rem 1rem;
   background:url(../../static/images/customization/bg-spenttime.svg) center bottom no-repeat;
@@ -674,10 +677,14 @@
 }
 
 .page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:3rem;}
-.spent-time {padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
-.print-time {font-size:17px;font-weight:500;}
+.page-customization .spent-time {margin-bottom: 2rem;padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
+.page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:17px;font-weight:500;}
 .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;}
-.sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
+.page-customization .sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
+.page-customization #cusFinishedPopup .text-area {margin-bottom:1rem;}
+.page-customization .checkbox {width:40px;height:32px;background:url(../../static/images/customization/checkbox.svg) no-repeat;cursor:pointer;}
+.page-customization .checkbox.active {background:url(../../static/images/customization/checkbox-check.svg) no-repeat;}
+
 /* finished message end */
 
 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+  <g id="checkbox" transform="translate(-342 -274)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="40" height="32" transform="translate(342 274)" fill="rgba(160,160,160,0)"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(344 275)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15" fill="#fff"/>
+      <g id="Group_1-2" data-name="Group 1">
+        <rect id="Rectangle_1" data-name="Rectangle 1" width="15" height="4.3" transform="translate(6.908 10.634) rotate(45)" fill="#574c45"/>
+        <rect id="Rectangle_2" data-name="Rectangle 2" width="29.9" height="4.3" transform="translate(11.489 21.167) rotate(-45)" fill="#574c45"/>
+      </g>
+    </g>
+  </g>
+</svg>
