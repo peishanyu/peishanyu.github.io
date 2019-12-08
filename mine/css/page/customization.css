@@ -668,7 +668,7 @@
     border: 0;
   }
 
-  .page-customization .lettering-input-container .btn-group {margin:1rem 0;}
+  .page-customization .lettering-input-container .btn-group {margin:1rem 0;text-align: center;}
   .page-customization .lettering-input-container .btn-group button {
     width:40%;
     border-radius:100rem;
@@ -713,24 +713,23 @@
 
 
 /* finished message */
-.page-customization #cusFinishedPopup {display:block;}
-.page-customization #cusFinishedPopup .container {
-  position:relative;max-width:400px;padding:4rem 1rem;
-  background:url(../../static/images/customization/bg-spenttime.svg) center bottom no-repeat;
-  text-align:center;
-  background-size:cover;
-  color:#574C45;
-}
+  .page-customization #cusFinishedPopup {display:block;position:absolute;left:calc(50% - 200px);top:calc(50% + 4vh);}
+  .page-customization #cusFinishedPopup .container {
+    position:relative;max-width:400px;padding:4rem 1rem;
+    background:url(../../static/images/customization/bg-spenttime.svg) center bottom no-repeat;
+    text-align:center;
+    background-size:cover;
+    color:#574C45;
+  }
 
-.page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:3rem;}
-.page-customization .spent-time {margin-bottom: 2rem;padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
-.page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:17px;font-weight:500;}
-.page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;}
-.page-customization .sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
-.page-customization #cusFinishedPopup .text-area {margin-bottom:1rem;}
-.page-customization .checkbox {width:40px;height:32px;background:url(../../static/images/customization/checkbox.svg) no-repeat;cursor:pointer;}
-.page-customization .checkbox.active {background:url(../../static/images/customization/checkbox-check.svg) no-repeat;}
-
+  .page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:2.5rem;width:32px;}
+  .page-customization .spent-time {margin-bottom: 2rem;padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
+  .page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:17px;font-weight:500;}
+  .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;}
+  .page-customization .sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
+  .page-customization #cusFinishedPopup .text-area {margin-bottom:1rem;}
+  .page-customization .checkbox {width:40px;height:32px;background:url(../../static/images/customization/checkbox.svg) no-repeat;cursor:pointer;}
+  .page-customization .checkbox.active {background:url(../../static/images/customization/checkbox-check.svg) no-repeat;}
 /* finished message end */
 
 .page-customizatio .filterToFadeIn {
@@ -961,11 +960,15 @@
   /* LookBook */
     .page-customization #lookbookPopup .container {max-width:320px;padding:2rem 1rem;left:calc(50% - 160px);top: calc(50% + 4vh);}
 
+  /* finished message */
+    .page-customization .print-time {max-width:85%;}
+    .page-customization #cusFinishedPopup textarea {width:85%;}
 }
 
 @media only screen and (max-width:375px) {
 
-
+  /* finished message */
+    .page-customization #cusFinishedPopup {left:auto;}
 
 }
 
@@ -1008,7 +1011,10 @@
   /* Item Size and Color Setting */
     .page-customization .zone-option .option {padding:.15rem .85rem;font-size:12px;}
 
-
+  /* finished message */
+    .page-customization .spent-time {padding: .5rem;font-size:16px;}
+    .page-customization .print-time {line-height:2;font-size:14px;}
+    .page-customization .sep-line {    margin: 1.5rem auto;}
 }
 
 

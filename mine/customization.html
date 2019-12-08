@@ -188,52 +188,6 @@
 </header>
 <!-- header end -->
 
-<!-- cus-menu -->
-<div id="cusMenu" class="page-customization cus-menu" onclick="cusMenuModal()">
-
-	<div id="cus-wristband" class="col-33 col-s-100 grid">
-		<div class="cus-item">
-			<div>訂製手環</div>
-		</div>
-	</div>
-	<div id="cus-bracelet" class="col-33 col-s-100 grid">
-		<div class="cus-item">
-			<div>訂製手鍊</div>
-		</div>
-	</div>
-	<div id="cus-earring" class="col-33 col-s-100 clearfix grid">
-		<div class="cus-item">
-			<span>訂製耳環：</span>
-			<div>使用耳針</div>
-			<div>使用耳夾</div>
-		</div>
-	</div>
-
-
-	<div id="cus-necklace" class="col-33 col-s-100 grid">
-		<div class="cus-item">
-			<span>訂製項鍊：</span>
-			<div>訂製頸鏈</div>
-			<div>訂製短鏈</div>
-			<div>訂製長鏈</div>	
-		</div>
-		
-	</div>
-
-	<div id="cus-ring" class="col-33 col-s-100 grid">
-		<div class="cus-item">
-			<div>訂製戒指</div>
-		</div>
-	</div>
-
-	<div id="cus-anklet" class="col-33 col-s-100 clearfix grid">
-		<div class="cus-item">
-			<div>訂製腳鏈</div>
-		</div>
-	</div>
-</div>
-<!-- cus-menu end -->
-
 
 <!-- filterPopup -->
 <div class="page-customization modal_all">
@@ -526,10 +480,8 @@
 
 
 <!-- finished message -->
-<div class="page-customization modal_all">
-	<div id="cusFinishedPopup" class="filterToFadeIn" style="display:none;">
-
-		<div class="outer">
+	<div class="page-customization popup-outer">
+		<div id="cusFinishedPopup" class="popup-center filterToFadeIn" style="display:none;">
 			<div class="container">
 
 				<div class="closePopup" onclick="cusFinishedModal()">
@@ -544,7 +496,7 @@
 
 				<div class="print-time">
 					<div class="checkbox active"></div>
-					<div>將設計時長記錄在包裝小卡片上</div>
+					<div class="text-l">將設計時長記錄在包裝小卡片上</div>
 				</div>
 
 				<div class="sep-line"></div>
@@ -557,10 +509,8 @@
 
 			</div>
 		</div>
-
 	</div>
-</div>
-<div id="add-cusFinishedMask" class="modal-mask" style="display:none" onclick="cusFinishedModal()"></div>
+	<div id="add-cusFinishedMask" class="modal-mask" style="display:none" onclick="cusFinishedModal()"></div>
 <!-- gotoCart end -->
 
 
@@ -626,9 +576,55 @@
 <!-- lookbook end -->
 
 
-
-
 <div class="page-customization banner"></div>
+
+<!-- cus-menu -->
+	<div id="cusMenu" class="page-customization cus-menu" onclick="cusMenuModal()">
+
+		<div id="cus-wristband" class="col-33 col-s-100 grid">
+			<div class="cus-item">
+				<div>訂製手環</div>
+			</div>
+		</div>
+		<div id="cus-bracelet" class="col-33 col-s-100 grid">
+			<div class="cus-item">
+				<div>訂製手鍊</div>
+			</div>
+		</div>
+		<div id="cus-earring" class="col-33 col-s-100 clearfix grid">
+			<div class="cus-item">
+				<span>訂製耳環：</span>
+				<div>使用耳針</div>
+				<div>使用耳夾</div>
+			</div>
+		</div>
+
+
+		<div id="cus-necklace" class="col-33 col-s-100 grid">
+			<div class="cus-item">
+				<span>訂製項鍊：</span>
+				<div>訂製頸鏈</div>
+				<div>訂製短鏈</div>
+				<div>訂製長鏈</div>	
+			</div>
+			
+		</div>
+
+		<div id="cus-ring" class="col-33 col-s-100 grid">
+			<div class="cus-item">
+				<div>訂製戒指</div>
+			</div>
+		</div>
+
+		<div id="cus-anklet" class="col-33 col-s-100 clearfix grid">
+			<div class="cus-item">
+				<div>訂製腳鏈</div>
+			</div>
+		</div>
+	</div>
+<!-- cus-menu end -->
+
+
 
 <div class="page-customization">
 	<div class="fit-100vh">
