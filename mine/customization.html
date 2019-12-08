@@ -188,7 +188,6 @@
 </header>
 <!-- header end -->
 
-
 <div class="page-customization banner"></div>
 
 <!-- cus-menu -->
@@ -563,7 +562,6 @@
 
 	</div>
 </div>
-
 <div id="add-cusFinishedMask" class="modal-mask" style="display:none" onclick="cusFinishedModal()"></div>
 <!-- gotoCart end -->
 
@@ -626,9 +624,11 @@
 		</div>
 	</div>
 </div>
-
 <div id="add-lookbookMask" class="modal-mask" style="display:none" onclick="lookbookModal()"></div>
 <!-- lookbook end -->
+
+
+
 
 
 <div class="page-customization">
@@ -663,34 +663,51 @@
 							</a>
 						</div>
 
+						<!-- Item Setting Popup -->
+						<div id="item-setting-outer" class="page-customization">
+							<div id="ItemSetting" class="popup-setting FadeIn" style="display:none">
+								<div class="line-option">請選擇尺寸與顏色</div>
+
+								<div class="zone-option">
+									<div class="option">大尺寸</div>
+									<div class="option active">中尺寸</div>
+									<div class="option">小尺寸</div>	
+								</div>
+								<div class="zone-color-img">
+									<div class="scroll-container">
+										<div class="img"><img src="static/images/customization/color-img01.png" /></div>
+										<div class="img"><img src="static/images/customization/color-img02.png" /></div>
+										<div class="img active"><img src="static/images/customization/color-img03.png" /></div>
+										<div class="img"><img src="static/images/customization/color-img04.png" /></div>
+										<div class="img"><img src="static/images/customization/color-img05.png" /></div>
+										<div class="img"><img src="static/images/customization/color-img06.png" /></div>
+									</div>
+								</div>
+								<div class="zone-option">
+									<button class="btn btn-round-fill-orange">確認</button>
+								</div>
+							</div>
+						</div>
+						<div id="add-ItemSettingMask" class="modal-mask" style="display:none" onclick="ItemSettingModal()"></div>
+						<!-- Item Setting Popup end -->
+
 						<!-- scale -->
+
 						<div id="obj-scale-1" class="obj-scale necklace">
 							<div id="obj-center">
 								<div class="item-container active">
 									<img src="static/images/customization/item-center_01.png" class="obj-center"/>
-									<div class="btn-item-close"></div>
+									<div class="btn-item-close ">
+										<!-- replace 'btn-item-close' to 'node top-r' -->
+									</div>
 									<div class="node top-l"></div>
 									<div class="node bottom-r"></div>
 
-									<div class="btn-item-setting" onclick="">
-										<div class="popup-setting">
-											<div class="zone-option">
-												<div class="option">大尺寸</div>
-												<div class="option active">中尺寸</div>
-												<div class="option">小尺寸</div>	
-											</div>
-											<div class="zone-option">
-												<div class="option">金色</div>
-												<div class="option active">銀色</div>
-												<div class="option">玫瑰金</div>	
-											</div>
-											<div class="zone-option">
-												<button class="btn btn-round-fill-orange">確認</button>
-											</div>
-										</div>
-									</div>
+									<div class="btn-item-setting" onclick="ItemSettingModal()"></div>
+									
 
-									<div class="frame" onclick="cusFinishedModal()"></div>
+
+									<div class="frame"></div>
 								</div>
 							</div>
 						</div>
@@ -930,7 +947,7 @@
 <script src="js/popup-cart.js"></script>
 <script src="js/popup-lettering.js"></script>
 <script src="js/popup-lookbook.js"></script>
-
+<script src="js/popup-itemsetting.js"></script>
 <script src="js/cus-menu.js"></script>
 
 </body>

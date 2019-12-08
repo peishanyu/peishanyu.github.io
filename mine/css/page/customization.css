@@ -552,49 +552,78 @@
 .workmenu-item .cus.ic-undo {background-image:url(../../static/images/customization/ic-undo.svg);}
 .workmenu-item .cus.ic-undo:hover {background-image:url(../../static/images/customization/ic-undo-w.svg);}
 
-
-.page-customization .popup-setting {width:160px;position:absolute;right:40%;top:40%;background-color:#fff;z-index:-5;}
-
-
-
 /* ------ workmenuuuuuuu end ------ */
-
-.page-customization .popup-setting {width:160px;position:absolute;right:40%;top:40%;background-color:#fff;z-index:-5;}
-.page-customization .zone-option {padding:1rem;border-bottom:1px solid #796A55;}
-.page-customization .zone-option .option {margin-bottom:1rem;padding:.25rem .5rem;border-radius:100rem;background-color:#F5EBDC;font-size:16px;font-weight:500;}
-.page-customization .zone-option .option:last-child {margin-bottom:0;}
-.page-customization .zone-option .option.active {border:4px solid #5F5853;}
-.page-customization .btn-round-fill-orange {width:100%;padding:10px 10px;line-height:1;}
-
 
 .modal-mask {z-index:80;}
 .modal_all .general#filterPopup .container {right: 0;}
 
-.page-customizatio .filterToFadeIn {
-  opacity: 1;
-  animation: filterfade .2s ease-out;
-  -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    backface-visibility: hidden;
-    perspective:1000;
-}
-  @keyframes filterfade {
-      0% { opacity:0;transform: translate3d(0, 50px, 0);}
-      100% { opacity:1;transform: translate3d(0, 0, 0);}
+.height-100 {height:100%}
+
+
+
+/* Item Size and Color Setting */
+  .page-customization .line-option {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(122, 106, 86, 0.25);
+    text-align: left;
+    font-weight:700;
+    color:#564B45;
+    font-size:20px;
   }
 
-.page-customization #gotoCartPopup {position:relative;}
+  .page-customization .popup-setting {
+    max-width:400px;
+    width:90%;
+    position:absolute;
+    left:50%;top:50%;
+    background-color:#EBE2DF;
+    z-index:85;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
+    transform: translate(-50%, -50%);
+  }
 
-.page-customization #gotoCartPopup .inner {
-  position: absolute;
-  width: 347px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,25%);
-  padding: .5rem;
-  background-color: #EBE3DF;
-  box-shadow: 0 2px 20px rgba(0,0,0,.35);
-}
+  .page-customization .zone-option {
+    display:flex;
+    justify-content:center;
+    padding:.65rem;
+    border-bottom: 1px solid rgba(122, 106, 86, 0.25);
+    cursor:pointer;
+  }
+
+  .page-customization .zone-option .option {
+    margin:.5rem;
+    padding:.215rem 1.25rem;
+    border-radius:100rem;
+    border:5px solid transparent;
+    background-color:#FFFFFF;
+    font-size:16px;font-weight:500;
+  }
+
+
+  .page-customization .zone-option .option.active {border:5px solid #5F5853;}
+  .zone-color-img {overflow:auto;margin:0 1rem;padding:1rem 0;}
+  .scroll-container {white-space: nowrap;}
+  .zone-color-img .img {display:inline-block;width:25%;border: 5px solid transparent;}
+  .zone-color-img .img.active {border: 5px solid #5F5853;}
+  .page-customization .popup-setting .btn-round-fill-orange {width:30%;margin: 1rem;padding:10px 10px;line-height:1;}
+
+
+  .page-customization #gotoCartPopup {position:relative;}
+
+  .page-customization #gotoCartPopup .inner {
+    position: absolute;
+    width: 347px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,25%);
+    padding: .5rem;
+    background-color: #EBE3DF;
+    box-shadow: 0 2px 20px rgba(0,0,0,.35);
+  }
+/* Item Size and Color Setting end */
+
+
+
 
 
 /* Lettering Item */
@@ -687,7 +716,18 @@
 
 /* finished message end */
 
-
+.page-customizatio .filterToFadeIn {
+  opacity: 1;
+  animation: filterfade .2s ease-out;
+  -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    backface-visibility: hidden;
+    perspective:1000;
+}
+  @keyframes filterfade {
+      0% { opacity:0;transform: translate(0, 50px);}
+      100% { opacity:1;transform: translate(0, 0);}
+  }
 
 /* ======== RWD ======== */
 
@@ -892,13 +932,21 @@
 	
 
 
-/* modal lettering */
-.page-customization #letteringPopup .lettering-input-container {
-  width: 300px;
-  padding:3rem 1rem 1rem;
-  transform: translate(-150px, 174px);
-}
+  /* modal lettering */
+    .page-customization #letteringPopup .lettering-input-container {
+      width: 300px;
+      padding:3rem 1rem 1rem;
+      transform: translate(-150px, 174px);
+    }
 
+  /* Item Size and Color Setting */
+    .zone-color-img .img {border-width:4px;}
+    .page-customization .zone-option .option {
+      padding: .15rem 1rem;
+      border-width:4px;
+    }
+    .zone-color-img .img.active,
+    .page-customization .zone-option .option.active {border-width:4px;}
 
 
 }
@@ -912,29 +960,29 @@
 @media only screen and (max-width:320px) {
   /* .page-customization .workmenu {top:2rem;} */
 
-  .page-customization .workmenu-item, .workmenu-open-button {
-    width:1.75rem;
-    height:1.75rem;
-  }
-  .workmenu .ellipsis {width:4px;height:4px;}
+    .page-customization .workmenu-item, .workmenu-open-button {
+      width:1.75rem;
+      height:1.75rem;
+    }
+    .workmenu .ellipsis {width:4px;height:4px;}
 
-  .workmenu .ellipsis-2 {
-    -webkit-transform: translate3d(1px, 0, 0);
-    transform: translate3d(1px, 0px, 0);
-  }
-  .workmenu .ellipsis-1 {
-    -webkit-transform: translate3d(-6px, 0, 0);
-    transform: translate3d(-6px, 0, 0);
-  }
+    .workmenu .ellipsis-2 {
+      -webkit-transform: translate3d(1px, 0, 0);
+      transform: translate3d(1px, 0px, 0);
+    }
+    .workmenu .ellipsis-1 {
+      -webkit-transform: translate3d(-6px, 0, 0);
+      transform: translate3d(-6px, 0, 0);
+    }
 
 
-  .workmenu .triangle-top {
-    width: 18px;
-    height: 15px;
-    border-bottom: solid 10px #7A6F62;
-    border-left: solid 9px transparent;
-    border-right: solid 9px transparent;
-  }
+    .workmenu .triangle-top {
+      width: 18px;
+      height: 15px;
+      border-bottom: solid 10px #7A6F62;
+      border-left: solid 9px transparent;
+      border-right: solid 9px transparent;
+    }
 
   /* .page-customization #obj-center .item-container, .page-customization #obj-scale-1 #obj-prepared img {
     transform: scale(0.4);
@@ -944,6 +992,9 @@
 
   .page-customization #lookbookPopup .closePopup {top:0.5rem;right:0.5rem;}
   .page-customization #lookbookPopup .container {width:100%;height:100vh;margin:0;padding:1.5rem 1rem;}
+
+  /* Item Size and Color Setting */
+    .page-customization .zone-option .option {padding:.15rem .85rem;font-size:12px;}
 
 
 }
