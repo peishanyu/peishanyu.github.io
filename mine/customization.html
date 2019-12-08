@@ -188,8 +188,6 @@
 </header>
 <!-- header end -->
 
-<div class="page-customization banner"></div>
-
 <!-- cus-menu -->
 <div id="cusMenu" class="page-customization cus-menu" onclick="cusMenuModal()">
 
@@ -567,23 +565,25 @@
 
 
 <!-- lettering -->
-<div class="page-customization modal_all">
-	<div id="letteringPopup" class="filterToFadeIn" style="display:none;">
-		<div class="relative container">
-			<img src="static/images/customization/item-lettering.png" />
-			<div id="" class="lettering-sample">Happy</div>
-			<div class="lettering-input-container">
-				<div><input type="text" name="lettering-sample" value="Happy" placeholder="請輸入文字，最多六字" /></div>
-				<div class="btn-group">
-					<button type="button">完成</button>
-					<button type="button" onclick="letteringModal()">取消</button>	
+	<div class="page-customization popup-outer">
+
+		<div id="letteringPopup" class="popup-center filterToFadeIn" style="display:none;">
+			<div class="relative container">
+				<img src="static/images/customization/item-lettering.png" />
+				<div id="" class="lettering-sample">Happy</div>
+				<div class="lettering-input-container">
+					<div><input type="text" name="lettering-sample" value="Happy" placeholder="請輸入文字，最多六字" /></div>
+					<div class="btn-group">
+						<button type="button">完成</button>
+						<button type="button" onclick="letteringModal()">取消</button>	
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
-<div id="add-letteringMask" class="modal-mask" style="display:none" onclick="letteringModal()"></div>
+	</div>
+
+	<div id="add-letteringMask" class="page-customization modal-mask" style="display:none" onclick="letteringModal()"></div>
 <!-- lettering end -->
 
 
@@ -630,6 +630,7 @@
 
 
 
+<div class="page-customization banner"></div>
 
 <div class="page-customization">
 	<div class="fit-100vh">

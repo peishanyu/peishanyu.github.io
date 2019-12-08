@@ -14,6 +14,7 @@ function letteringModal() {
 		letteringPopup.style.display = "none";
 	};
 
+
 };
 
 
