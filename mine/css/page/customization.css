@@ -591,6 +591,12 @@
   .page-customization .btn-item-close .qs .popover,
   .page-customization .btn-item-setting .qs .popover {width:85px;left:-1.25rem;bottom:4rem;font-size:16px;}
 
+  .qs .popover.right {width:118px;height:2rem;left:4rem;top:0.25rem;}
+  .qs .popover.right:before {transform: rotate(90deg);left: -18%;top: -15%;}
+  
+  .qs .popover.right.size-s {width:85px;}
+  .qs .popover.right.size-s:before
+
   @-webkit-keyframes fade-in {
     from {
       opacity: 0;
