@@ -552,6 +552,101 @@
 /* ------ workmenuuuuuuu end ------ */
 
 
+
+/* popover */
+
+  .qs {position:relative;display:block;height:100%;vertical-align:text-bottom;cursor:pointer;}
+  .qs .popover {
+    position: absolute;
+    width:105px;
+    background-color: #ff9733;
+    border-radius: 5px;
+    left:-2.65rem;
+    bottom:2.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    padding: 7px 10px;
+    z-index: 4;
+  }
+  .qs .popover:before {
+    border-top: 7px solid #ff9733;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    bottom: -7px;
+    content: '';
+    display: block;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+  }
+  .qs:hover .popover {
+    display: block;
+    -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
+  }
+
+  .page-customization .btn-item-close .qs .popover,
+  .page-customization .btn-item-setting .qs .popover {width:85px;left:-1.25rem;bottom:4rem;font-size:16px;}
+
+  @-webkit-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes move-up {
+    from {
+      bottom:2rem;
+    }
+    to {
+      bottom:4rem;
+    }
+  }
+  @-moz-keyframes move-up {
+    from {
+      bottom:2rem;
+    }
+    to {
+      bottom:4rem;
+    }
+  }
+  @-ms-keyframes move-up {
+    from {
+      bottom:2rem;
+    }
+    to {
+      bottom:4rem;
+    }
+  }
+
+
+/* popover end */
+
+
+
+
+
 .page-customization.popup-outer {
   position:relative;
   width:100%;
