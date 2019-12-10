@@ -834,6 +834,7 @@
 
   .page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:2.5rem;width:32px;}
   .page-customization .spent-time {margin-bottom: 2rem;padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
+  .page-customization .spent-time {clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);}
   .page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:17px;font-weight:500;}
   .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;}
   .page-customization .sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
