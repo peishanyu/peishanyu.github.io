@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" class="next-head">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	
+	<!-- css -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/pure.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+
+	<title>element</title>
+	<link rel="icon" href="static/favicon.ico" class="next-head">
+
+<style type="text/css">
+	/* popover */
+
+  .qs {position:relative;display:inline-block;height:100%;margin:.5rem;vertical-align:text-bottom;cursor:pointer;}
+  .qs .popover {
+  	display: inline-block;
+    background-color: #ff9733;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 14px;
+	text-align: center;
+    padding: 7px 10px;
+    z-index: 4;
+  }
+
+  .qs .popover.top-c:before {
+  	position: absolute;
+	top: -20%;
+    bottom: -7px;
+    left: calc(50% - 7px);
+    content: '';
+    display: block;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent #ff9733 transparent;
+  }
+
+  .qs .popover.bottom-c:before {
+  	position: absolute;
+	top: 100%;
+    bottom: -7px;
+    left: calc(50% - 7px);
+    content: '';
+    display: block;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #ff9733 transparent transparent transparent;
+  }
+
+  .qs .popover.left-c:before {
+  	position: absolute;
+	top: calc(50% - 7px);
+    bottom: -7px;
+    left:-14px;
+    content: '';
+    display: block;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #ff9733 transparent transparent transparent;
+	transform: rotateZ(90deg);
+  }
+
+  .qs .popover.right-c:before {
+  	position: absolute;
+	top: calc(50% - 7px);
+    bottom: -7px;
+    right:-14px;
+    content: '';
+    display: block;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #ff9733 transparent transparent transparent;
+	transform: rotateZ(-90deg);
+  }
+
+  .qs:hover .popover {
+    -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
+  }
+
+
+  @-webkit-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes move-up {
+    from {
+      bottom:2rem;
+    }
+    to {
+      bottom:4rem;
+    }
+  }
+  @-moz-keyframes move-up {
+    from {
+      bottom:2rem;
+    }
+    to {
+      bottom:4rem;
+    }
+  }
+  @-ms-keyframes move-up {
+    from {
+      bottom:2rem;
+    }
+    to {
+      bottom:4rem;
+    }
+  }
+
+
+/* popover end */
+</style>
+
+
+
+</head>
+<body id="page-all">
+
+<div class="page-customization text-c">
+
+	<div class="qs">
+		<span class="popover bottom-c">箭頭在下中</span>	
+	</div>
+
+	<div class="pb-3"></div>
+
+	<div class="qs">
+		<span class="popover top-c">箭頭在上中</span>	
+	</div>
+
+	<div class="pb-3"></div>
+
+	<div class="qs">
+		<span class="popover left-c">箭頭在左中</span>	
+	</div>
+
+	<div class="pb-3"></div>
+
+	<div class="qs">
+		<span class="popover right-c">箭頭在右中</span>	
+	</div>
+
+</div>
+
+</body>
+
+</html>
