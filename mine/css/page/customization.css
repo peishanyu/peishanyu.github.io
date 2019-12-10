@@ -977,11 +977,11 @@
   /* LookBook */
     .page-customization #lookbookPopup .container {max-width:500px;left:calc(50% - 250px);}
     .page-customization .outer-scroll {height:25vh;}
-    .page-customization .item-sample-block {margin-bottom: 7vh;}
     .page-customization #lookbookPopup .outer {height:100vh;}
     .page-customization .modal-btn-comfirm {margin-bottom: 1rem;}
     
-    .page-customization .modal-btn-comfirm {
+    /* .page-customization .item-sample-block {margin-bottom: 7vh;} */
+/*     .page-customization .modal-btn-comfirm {
 	    position: absolute;
 	    left: 0;
 	    right: 0;
@@ -989,6 +989,7 @@
 	    margin: 0px auto;
 	    margin-top: 55vh;
     }
+ */ 
   /* LookBook end */
   
   
@@ -1106,10 +1107,10 @@
   /* LookBook */
 	.page-customization #lookbookPopup .container {max-width:320px;padding:2rem 1rem;left:calc(50% - 160px);top: calc(50% + 4vh);}
 	.page-customization .outer-scroll {height:27vh;}
-    .page-customization .item-sample-block {margin-bottom: 8vh;}
+    /* .page-customization .item-sample-block {margin-bottom: 8vh;}
     .page-customization .modal-btn-comfirm {	   
-	    margin-top: 53vh;
-    }
+	    margin-top: 55vh;
+    } */
 
   /* finished message */
     .page-customization .print-time {max-width:85%;}
@@ -1120,10 +1121,10 @@
 
   /* finished message */
     .page-customization #cusFinishedPopup {left:auto;}
-    .page-customization .item-sample-block {margin-bottom: 10vh;}
+   /*  .page-customization .item-sample-block {margin-bottom: 10vh;}
     .page-customization .modal-btn-comfirm {	   
-	    margin-top: 58vh;
-    }
+	    margin-top: 56vh;
+    } */
 
 }
 
@@ -1173,10 +1174,10 @@
   
   /* look book*/  
   .page-customization .outer-scroll {height:29vh;}
-  .page-customization .item-sample-block {margin-bottom: 10vh;}
+  /* .page-customization .item-sample-block {margin-bottom: 10vh;}
   .page-customization .modal-btn-comfirm {	   
-	    margin-top:63vh;
-  }
+	    margin-top:58vh;
+  } */
 }
 
 
