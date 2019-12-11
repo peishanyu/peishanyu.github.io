@@ -487,22 +487,9 @@
 				<div class="closePopup" onclick="cusFinishedModal()">
 					<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
 				</div>
-
-				<div class="spent-time">
-					<div>您已花了</div>
-					<div><span id="">3</span>小時<span id="">25</span>分</div>
-					<div>製作此戒指</div>
-				</div>
-
-				<div class="print-time">
-					<div class="checkbox active"></div>
-					<div class="text-l">將設計時長記錄在包裝小卡片上</div>
-				</div>
-
-				<div class="sep-line"></div>
-
-				<div>
-					<span class="label">規格: </span>
+				
+				<div id="spec-select-dropdown">
+					<span class="label">尺寸: </span>
 					<div class="dropDown-wrapper">
 						<input type="checkbox" id="dropDown-toggle">
 						<label for="dropDown-toggle" class="dropDown-toggle-label">[M. 15 cm] </label>
@@ -518,9 +505,35 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="spec-note-label">
+					<div >
+						設計師您好，
+					</div>
+					<div >
+						我們將依您的設計圖製作，
+					</div>
+					<div >
+						但會針對所選尺寸進行微調。
+					</div>
+				</div>
+				
+				<div class="sep-line"></div>
+				<div class="spent-time">
+					<div>您使用了</div>
+					<div><span id="">3</span>小時<span id="">25</span>分</div>
+					<div>製作此戒指</div>
+				</div>
+
+				<div class="print-time">
+					<div class="checkbox active"></div>
+					<div class="text-l">將設計時長記錄在包裝小卡片上</div>
+				</div>
+
+
 				<div class="sep-line"></div>
 				<div class="text-area">
-					<textarea rows="4" cols="50" placeholder="寫上您希望於包裝小卡中留下的文字（最多15字）"></textarea>
+					<textarea rows="3" cols="50" placeholder="寫上您希望於包裝小卡中留下的文字（最多15字）"></textarea>
 				</div>
 
 				<button class="col-xs-50 btn modal-btn-comfirm">完成</button>
