@@ -809,8 +809,8 @@
   
   .page-customization #lookbookPopup .closePopup {position:absolute;top:1rem;right:1rem;z-index:10;}
   .page-customization #lookbookPopup .closePopup img {width:32px;}
-  .page-customization #lookbookPopup .title {font-size:20px;font-weight:700;color:#554A44;margin-bottom:1rem;}
-  .page-customization #lookbookPopup .item-name {margin:1rem;color:#554A44;font-weight:700;font-size:16px;}
+  .page-customization #lookbookPopup .title {font-size:20px;font-weight:700;color:#554A44;margin-bottom:0.8rem;}
+  .page-customization #lookbookPopup .item-name {margin:0.7rem;color:#554A44;font-weight:700;font-size:16px;}
   .modal-btn-comfirm {margin:0;}
 
   .outer-scroll {position:relative;height:456px;overflow:auto;margin:auto;text-align:center;background-color:#fff;}
@@ -831,14 +831,18 @@
     background-size:cover;
     color:#574C45;
   }
+  
+  .page-customization #spec-select-dropdown{}
 
-  .page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:2.5rem;width:32px;}
+  .page-customization #cusFinishedPopup .closePopup {position:absolute;top:1rem;right:2.5rem;width:30px;}
+  .page-customization .spec-note-label {font-size: 0.8rem;margin-top:0.6rem;}
   .page-customization .spent-time {margin-bottom: 2rem;padding:1rem;background:#fff;box-shadow: 0 0 8px rgba(0, 0, 0, .5);font-size:20px;font-weight:700;line-height:2;}
-  .page-customization .spent-time {clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);}
-  .page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:17px;font-weight:500;}
-  .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;}
+  /* .page-customization .spent-time {clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);} */
+  .page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:16px;font-weight:500;}
+  
+  .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;font-size:0.8rem; resize: none;}
   .page-customization .sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
-  .page-customization #cusFinishedPopup .text-area {margin-bottom:1rem;}
+  .page-customization #cusFinishedPopup .text-area {margin-bottom:0.8rem;}
   .page-customization .checkbox {width:40px;height:32px;background:url(../../static/images/customization/checkbox.svg) no-repeat;cursor:pointer;}
   .page-customization .checkbox.active {background:url(../../static/images/customization/checkbox-check.svg) no-repeat;}
 /* finished message end */
@@ -1071,10 +1075,11 @@
 
 
   /* LookBook */
+	.page-customization .img-display {width:90%;margin : 0 auto;}
     .page-customization #lookbookPopup .container {max-width:500px;left:calc(50% - 250px);}
     .page-customization .outer-scroll {height:25vh;}
     .page-customization #lookbookPopup .outer {height:100vh;}
-    .page-customization .modal-btn-comfirm {margin-bottom: 1rem;}
+    .page-customization .modal-btn-comfirm {margin-bottom: 0.85rem;}
     
     /* .page-customization .item-sample-block {margin-bottom: 7vh;} */
 /*     .page-customization .modal-btn-comfirm {
@@ -1201,8 +1206,15 @@
     #letteringPopup.popup-center {left:auto;}
 
   /* LookBook */
+	
 	.page-customization #lookbookPopup .container {max-width:320px;padding:2rem 1rem;left:calc(50% - 160px);top: calc(50% + 4vh);}
-	.page-customization .outer-scroll {height:20vh;}
+	.page-customization #lookbookPopup .title {font-size:18px;}
+	.page-customization #lookbookPopup .closePopup {
+		top: 0.8rem;
+	    right: 1.2rem;
+    	width: 25px;
+    }
+	/* .page-customization .outer-scroll {height:20vh;} */
     /* .page-customization .item-sample-block {margin-bottom: 8vh;}
     .page-customization .modal-btn-comfirm {	   
 	    margin-top: 55vh;
@@ -1211,24 +1223,33 @@
   /* finished message */
     .page-customization .print-time {max-width:85%;}
     .page-customization #cusFinishedPopup textarea {width:85%;}
+    .page-customization #cusFinishedPopup .container {padding-top:2.65rem;padding-bottom:1.35rem;}
+    .page-customization #cusFinishedPopup .closePopup {top:0.8rem;right:2.2rem;width:25px;}
+    .page-customization .spent-time {line-height:1.6; padding: .65rem;font-size:18px;}
+    .page-customization .print-time {line-height:2;font-size:16px;}
+    
+  /**/
 }
 
 @media only screen and (max-width:375px) {
 
   /* finished message */
     .page-customization #cusFinishedPopup {left:auto;}
-    .page-customization #cusFinishedPopup .container {padding-top:3rem;padding-bottom:1.5rem;}
-    .page-customization .sep-line {    margin: 1.5rem auto;}
+
+    .page-customization .sep-line {    margin: 1.55rem auto;}
+    
    /*  .page-customization .item-sample-block {margin-bottom: 10vh;}
     .page-customization .modal-btn-comfirm {	   
 	    margin-top: 56vh;
     } */
+    
+    .page-customization .modal-btn-comfirm {margin-bottom: 0.7rem;}
 
 }
 
 @media only screen and (max-width:320px) {
   /* .page-customization .workmenu {top:2rem;} */
-
+	.page-customization .img-display {width:80%;}
     .page-customization .workmenu-item, .workmenu-open-button {
       width:1.75rem;
       height:1.75rem;
@@ -1259,26 +1280,26 @@
   .page-customization #obj-scale-2 #obj-prepared img  ,
   .page-customization #obj-scale-1 #obj-center {transform:scale(0.35);}
 
-  .page-customization #lookbookPopup .closePopup {top:0.5rem;right:0.5rem;}
+  .page-customization #lookbookPopup .closePopup {top:0.5rem;right:0.5rem;width:22px;}
   .page-customization #lookbookPopup .container {width:100%;height:auto;margin:0;padding:1rem;left:auto;top:auto;}
 
   /* Item Size and Color Setting */
     .page-customization .zone-option .option {padding:.15rem .85rem;font-size:12px;}
 
   /* finished message */
-    .page-customization .spent-time {padding: .5rem;font-size:14px;}
+    .page-customization .spent-time {padding: .65rem;font-size:16px;}
     .page-customization .print-time {line-height:2;font-size:14px;}
-    .page-customization .sep-line { margin: 1.5rem auto;}
-  
-    .page-customization #cusFinishedPopup .closePopup {top:1rem;right:2rem;width:24px;}
+    .page-customization .sep-line { margin: 1.35rem auto;}
+  	.page-customization #cusFinishedPopup {top: calc(50% + 3vh);}
+    .page-customization #cusFinishedPopup .closePopup {width:22px;}
 
-    .page-customization #cusFinishedPopup .container {padding-top:3rem;padding-bottom:1rem;}
+    .page-customization #cusFinishedPopup .container {padding-top:2rem;padding-bottom:0.8rem;}
 
   /* look book*/  
-  .page-customization .outer-scroll {height:18vh;}
+  /* .page-customization .outer-scroll {height:18vh;} */
   .page-customization #lookbookPopup .grid {width:40%;}
-  .page-customization #lookbookPopup .container {width:300px;top:15px;left:calc(50% - 150px);height:95vh;}
-  .page-customization #lookbookPopup .title {font-size:18px;}
+  .page-customization #lookbookPopup .container {width:300px;top:15px;left:calc(50% - 150px);max-height:95vh;}
+  .page-customization #lookbookPopup .title {font-size:16px;}
   .page-customization #lookbookPopup .closePopup img {width:24px;}
   .page-customization .spent-time {    margin-bottom: 1rem;}
   /* .page-customization .item-sample-block {margin-bottom: 10vh;}
