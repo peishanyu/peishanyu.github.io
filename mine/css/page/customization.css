@@ -1232,10 +1232,10 @@
 }
 
 @media only screen and (max-width:375px) {
-
-  /* finished message */
+	.page-customization.cus-menu .grid {height:15vh;}
+	
+   /* finished message */
     .page-customization #cusFinishedPopup {left:auto;}
-
     .page-customization .sep-line {    margin: 1.55rem auto;}
     
    /*  .page-customization .item-sample-block {margin-bottom: 10vh;}
