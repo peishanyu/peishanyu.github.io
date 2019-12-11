@@ -843,7 +843,7 @@
   .page-customization .checkbox.active {background:url(../../static/images/customization/checkbox-check.svg) no-repeat;}
 /* finished message end */
 
-.page-customizatio .filterToFadeIn {
+.page-customization .filterToFadeIn {
   opacity: 1;
   animation: filterfade .2s ease-out;
   -webkit-backface-visibility: hidden;
@@ -855,6 +855,101 @@
       0% { opacity:0;transform: translate(0, 50px);}
       100% { opacity:1;transform: translate(0, 0);}
   }
+
+
+/* size label */
+.page-customization .dropDown-wrapper{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index:1;
+}
+/* the style for the label */
+.page-customization .dropDown-toggle-label {
+    position: relative;
+    padding: .5rem 4rem .5rem 1rem;
+    background-color:#fff7f2;
+    color: #3b342f;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #baae9d;
+    font-size: 13px;
+    transition: opacity .2s ease;
+    letter-spacing: .2px;
+    margin-bottom: 0;
+    /* force parent to wrap around the label tag */
+    float: left;
+    height: 37px;
+}
+
+
+/* arrow indicator on the button */
+.page-customization .dropDown-toggle-label:after{
+    content: "";
+    display: inline-block;
+    width:18px;
+    height:10px;
+    /* this makes the square appear as a white triangle */
+    background: url(../../static/images/products/arrow_dropdown.svg);
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 35%;
+}
+
+/* hide all input fields since the labels are connected to them by the id */
+.page-customization .dropDown-wrapper input{display: none;}
+
+/* rotate the button arrow upwards */
+.page-customization .dropDown-wrapper > input:checked + label:after{
+    transform: rotate(180deg);
+}
+
+/* this will show dropDown when input is checked */
+.page-customization .dropDown-wrapper > input:checked + label + .dropDown{
+    display: inline-block;
+}
+
+/* the drop-down style*/
+.page-customization .dropDown{
+    position: absolute;
+    right: 0;
+    top: calc(100% - 1px);
+    width: 100%;
+    display: none;
+    background: #fff7f2;
+    border:1px solid #baae9d;
+}
+
+/* the drop-down options style*/
+.page-customization .dropDown label {
+    display: block;
+    margin:15px 20px;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight:500;
+    color: #786a60;
+    opacity: .8;
+    transition:border .1s ease;
+}
+
+/* option item on hover */
+.page-customization .dropDown label:hover{
+    border-bottom: 2px solid #474e5d;
+    opacity: .9;
+    color: #3b342f;
+}
+
+/* this shows that the list item was selected */
+.page-customization .dropDown input:checked + label{opacity: 1;}
+
+/* dropdown end */
+
+
+
+
+
 
 /* ======== RWD ======== */
 
@@ -1107,7 +1202,7 @@
 
   /* LookBook */
 	.page-customization #lookbookPopup .container {max-width:320px;padding:2rem 1rem;left:calc(50% - 160px);top: calc(50% + 4vh);}
-	.page-customization .outer-scroll {height:27vh;}
+	.page-customization .outer-scroll {height:20vh;}
     /* .page-customization .item-sample-block {margin-bottom: 8vh;}
     .page-customization .modal-btn-comfirm {	   
 	    margin-top: 55vh;
@@ -1122,6 +1217,8 @@
 
   /* finished message */
     .page-customization #cusFinishedPopup {left:auto;}
+    .page-customization #cusFinishedPopup .container {padding-top:3rem;padding-bottom:1.5rem;}
+    .page-customization .sep-line {    margin: 1.5rem auto;}
    /*  .page-customization .item-sample-block {margin-bottom: 10vh;}
     .page-customization .modal-btn-comfirm {	   
 	    margin-top: 56vh;
@@ -1169,12 +1266,21 @@
     .page-customization .zone-option .option {padding:.15rem .85rem;font-size:12px;}
 
   /* finished message */
-    .page-customization .spent-time {padding: .5rem;font-size:16px;}
+    .page-customization .spent-time {padding: .5rem;font-size:14px;}
     .page-customization .print-time {line-height:2;font-size:14px;}
-    .page-customization .sep-line {    margin: 1.5rem auto;}
+    .page-customization .sep-line { margin: 1.5rem auto;}
   
+    .page-customization #cusFinishedPopup .closePopup {top:1rem;right:2rem;width:24px;}
+
+    .page-customization #cusFinishedPopup .container {padding-top:3rem;padding-bottom:1rem;}
+
   /* look book*/  
-  .page-customization .outer-scroll {height:29vh;}
+  .page-customization .outer-scroll {height:18vh;}
+  .page-customization #lookbookPopup .grid {width:40%;}
+  .page-customization #lookbookPopup .container {width:300px;top:15px;left:calc(50% - 150px);height:95vh;}
+  .page-customization #lookbookPopup .title {font-size:18px;}
+  .page-customization #lookbookPopup .closePopup img {width:24px;}
+  .page-customization .spent-time {    margin-bottom: 1rem;}
   /* .page-customization .item-sample-block {margin-bottom: 10vh;}
   .page-customization .modal-btn-comfirm {	   
 	    margin-top:58vh;
