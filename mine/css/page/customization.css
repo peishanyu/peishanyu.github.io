@@ -840,9 +840,9 @@
   /* .page-customization .spent-time {clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);} */
   .page-customization .print-time {display:flex;max-width:80%;margin:auto;font-size:16px;font-weight:500;}
   
-  .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;font-size:0.8rem; resize: none;}
+  .page-customization #cusFinishedPopup textarea {width:80%;margin:auto;padding:0.5rem;font-size:1rem; resize: none;}
   .page-customization .sep-line {width:93%;margin:2rem auto;border-bottom: 1px solid rgba(99, 81, 75, 0.17);}
-  .page-customization #cusFinishedPopup .text-area {margin-bottom:0.8rem;}
+  .page-customization #cusFinishedPopup .text-area {margin-bottom:1rem;}
   .page-customization .checkbox {width:40px;height:32px;background:url(../../static/images/customization/checkbox.svg) no-repeat;cursor:pointer;}
   .page-customization .checkbox.active {background:url(../../static/images/customization/checkbox-check.svg) no-repeat;}
 /* finished message end */
@@ -1207,11 +1207,11 @@
 
   /* LookBook */
 	
-	.page-customization #lookbookPopup .container {max-width:320px;padding:2rem 1rem;left:calc(50% - 160px);top: calc(50% + 4vh);}
+	.page-customization #lookbookPopup .container {max-width:320px;padding:1.5rem 1rem;left:calc(50% - 160px);top: calc(50% + 3vh);}
 	.page-customization #lookbookPopup .title {font-size:18px;}
 	.page-customization #lookbookPopup .closePopup {
 		top: 0.8rem;
-	    right: 1.2rem;
+	    right: 1rem;
     	width: 25px;
     }
 	/* .page-customization .outer-scroll {height:20vh;} */
@@ -1244,6 +1244,7 @@
     } */
     
     .page-customization .modal-btn-comfirm {margin-bottom: 0.7rem;}
+    .page-customization #cusFinishedPopup .text-area {margin-bottom: 0.7rem;}
 
 }
 
@@ -1281,7 +1282,7 @@
   .page-customization #obj-scale-1 #obj-center {transform:scale(0.35);}
 
   .page-customization #lookbookPopup .closePopup {top:0.5rem;right:0.5rem;width:22px;}
-  .page-customization #lookbookPopup .container {width:100%;height:auto;margin:0;padding:1rem;left:auto;top:auto;}
+  .page-customization #lookbookPopup .container {width:100%;height:auto;margin:0;padding:1rem;left:auto;top:auto;max-height:95vh;}
 
   /* Item Size and Color Setting */
     .page-customization .zone-option .option {padding:.15rem .85rem;font-size:12px;}
