@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_12" data-name="Path 12" d="M10.913-21.822A10.911,10.911,0,0,0,21.477-10.917h.693A10.912,10.912,0,0,0,32.73-21.508h0v-.628a10.914,10.914,0,0,0-10.907-10.6h0a10.912,10.912,0,0,0-10.91,10.913" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.274" y1="0.5" x2="0.704" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.1" stop-color="#d6d6d6"/>
+      <stop offset="0.2" stop-color="#adadad"/>
+      <stop offset="0.3" stop-color="#a5a5a5"/>
+      <stop offset="0.4" stop-color="#bebebe"/>
+      <stop offset="0.5" stop-color="#d7d7d7"/>
+      <stop offset="0.6" stop-color="#f0f0f0"/>
+      <stop offset="0.7" stop-color="#f2f2f2"/>
+      <stop offset="0.8" stop-color="#d4d4d4"/>
+      <stop offset="0.9" stop-color="#b6b6b6"/>
+      <stop offset="1" stop-color="#999"/>
+    </linearGradient>
+  </defs>
+  <g id="ic-color-gold" transform="translate(-432 -2.645)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="14.5" cy="14.5" r="14.5" transform="translate(433 3.645)" fill="#fff"/>
+    <path id="Path_9" data-name="Path 9" d="M0,0A10.912,10.912,0,0,1-10.911,10.911,10.911,10.911,0,0,1-21.822,0,10.911,10.911,0,0,1-10.911-10.911,10.912,10.912,0,0,1,0,0" transform="translate(458.734 18.467)" fill="#ecbc91"/>
+    <path id="Path_10" data-name="Path 10" d="M0,0A14.1,14.1,0,0,1-14.1,14.1,14.1,14.1,0,0,1-28.2,0,14.1,14.1,0,0,1-14.1-14.1,14.1,14.1,0,0,1,0,0Z" transform="translate(461.923 18.467)" fill="none" stroke="#c2c2c2" stroke-width="2.068"/>
+    <g id="Group_7" data-name="Group 7" transform="translate(426 40.29)" style="mix-blend-mode: luminosity;isolation: isolate">
+      <g id="Group_4" data-name="Group 4" clip-path="url(#clip-path)">
+        <path id="Path_11" data-name="Path 11" d="M-16.919,0,13.943-30.862,44.8,0,13.942,30.862Z" transform="translate(11.964 -31.681) rotate(45)" fill="url(#linear-gradient)"/>
+      </g>
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="32" height="32" transform="translate(6 -37.645)" fill="none"/>
+    </g>
+  </g>
+</svg>

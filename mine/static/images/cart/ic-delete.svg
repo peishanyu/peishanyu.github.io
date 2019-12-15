@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.7" height="54.8" viewBox="0 0 54.7 54.8">
+  <defs>
+    <filter id="Path_6" x="0" y="0" width="54.7" height="54.8" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.698"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="ic-delete" transform="translate(-356 37)">
+    <g transform="matrix(1, 0, 0, 1, 356, -37)" filter="url(#Path_6)">
+      <path id="Path_6-2" data-name="Path 6" d="M36.7,18.4A18.35,18.35,0,1,1,18.4,0,18.415,18.415,0,0,1,36.7,18.4" transform="translate(9 9)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="23.7" height="3" transform="matrix(0.707, -0.707, 0.707, 0.707, 373.872, -2.363)" fill="#5b5b5b"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="3" height="23.7" transform="matrix(0.707, -0.707, 0.707, 0.707, 373.872, -16.929)" fill="#5b5b5b"/>
+  </g>
+</svg>
