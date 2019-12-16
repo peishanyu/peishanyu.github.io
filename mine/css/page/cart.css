@@ -1,1 +1,95 @@
-.page-customization.banner {height:15vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;pointer-events:none;}
+.page-cart {background-color:#FDF8F2;}
+
+.page-cart .banner {height:20vh;background: url(../../static/images/cart/bg_header.jpg) no-repeat;background-size:cover;}
+
+
+.page-cart .zone-title {display:flex;margin:2rem 0;}
+.page-cart .deco-before-title {display:inline-block;background-color:#8B8380;width:166px;height:54px;}
+.page-cart h1.page-title {
+	display:inline-block;
+	margin:0 20px 0 10px;
+	color:#8B8380;
+	font-weight:700;
+	font-size:45px;
+}
+
+
+.page-cart .cart-container {max-width:1680px;margin:auto;}
+	.page-cart .prd-info {max-width:1400px;margin:auto;}
+
+.page-cart .div-title {color:#8B8380;font-weight:700;font-size:31px;}
+
+.page-cart .prd-list {max-width:1240px;margin:auto;}
+.page-cart .prd-list .prd-item {display:flex;position:relative;margin:2rem;padding:.5rem 3rem;border:3px solid transparent;cursor:pointer;}
+.page-cart .prd-list .prd-item.active {border:3px solid #FFA353;}
+
+.page-cart .prd-list .ic-delete {display:none;position:absolute;right:0;top:0;transform:translate(28px, -28px);}
+.page-cart .prd-list .prd-item.active .ic-delete {display:block;}
+
+.page-cart .prd-checkbox {width:5%;margin-right:1rem;}
+.page-cart .prd-checkbox>img {position:absolute;top:50%;transform:translate(25%, -100%);}
+
+.page-cart .prd-list .prd-img {width:15%;display:grid;}
+.page-cart .prd-list .prd-img img {margin:.5rem .5rem;}
+
+.page-cart .prd-name-number {width:45%;margin:0 1rem;color:#8B8380;font-weight:700;}
+.page-cart .prd-name-number .name {margin-bottom:.5rem;font-size:28px;}
+.page-cart .prd-name-number .number {font-size:20px;}
+
+.page-cart .prd-size-color {width:15%;margin:0 1rem;color:#8B8380;font-weight:700;}
+.page-cart .prd-size-color .size {margin-top:.75rem;margin-bottom:.5rem;font-size:20px;}
+
+.page-cart .prd-price-qty {width:15%;margin:0 1rem;color:#8B8380;font-weight:700;}
+.page-cart .prd-price-qty .price {margin-top:.75rem;margin-bottom:.5rem;font-size:20px;}
+
+.page-cart .prd-price-qty .qty {position:relative;width:118px;height:46px;background:url(../../static/images/cart/bg-qty.svg) no-repeat;}
+.page-cart .prd-price-qty .qty-num {display:inline-block;position:absolute;right:0;left:0;top:0;bottom:0;text-align:center;padding:.75rem 2rem;color:#fff;font-weight:700;}
+.page-cart .prd-price-qty .ic-min-qty {position:absolute;left:-10px;}
+.page-cart .prd-price-qty .ic-add-qty {position:absolute;right:-10px;}
+
+
+.page-cart .prd-note {max-width:1000px;margin:auto;padding:0 1rem;display:flex;align-items:center;}
+.page-cart .group-title {display:inline-block;color:#8B8380;font-weight:700;font-size:27px;}
+
+.page-cart .prd-amount {max-width:1000px;margin:auto;padding:0 1rem;text-align:right;font-weight:700;color:#8B8380;font-size:31px;}
+.page-cart .prd-amount .orang {color:#EB5614;}
+
+
+
+/* ====== RWD ====== */
+@media only screen and (max-width:1680px) {
+}
+
+@media only screen and (max-width:1366px) {
+}
+
+@media only screen and (max-width:1024px) {
+}
+
+@media only screen and (max-width:768px) {
+
+	.page-cart .deco-before-title {width:54px;height:45px;}
+	.page-cart h1.page-title {font-size:37px;}
+	.page-cart .zone-title .ic-cartbag {width:28px;}
+	.page-cart .prd-list .prd-item {/*display:block;*/}
+	.page-cart .m-hide {display:none;}
+}
+
+@media only screen and (max-width:480px) {
+
+	.page-cart .deco-before-title {width:36px;height:30px;}
+	.page-cart h1.page-title {font-size:24px;}
+	.page-cart .zone-title .ic-cartbag {width:16px;}
+
+	.page-cart .prd-list .prd-item {margin:1rem;}
+	.page-cart .prd-list .ic-delete {width:36px;transform: translate(18px, -18px);}
+
+	.page-cart .prd-list .prd-item {padding:.5rem;}
+
+	.page-cart .prd-name-number .name {font-size:16px;}
+	.page-cart .prd-name-number .number {font-size:13px;}
+}
+
+@media only screen and (max-width:320px) {
+
+}

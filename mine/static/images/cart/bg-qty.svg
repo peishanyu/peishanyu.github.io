@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.8" height="49.3" viewBox="0 0 103.8 49.3">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117.8" height="49.3" viewBox="0 0 117.8 49.3">
   <defs>
-    <filter id="bg-qty" x="0" y="0" width="103.8" height="49.3" filterUnits="userSpaceOnUse">
+    <filter id="bg-qty" x="7" y="0" width="103.8" height="49.3" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feFlood flood-opacity="0.698"/>
@@ -8,7 +8,11 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#bg-qty)">
-    <rect id="bg-qty-2" data-name="bg-qty" width="85.8" height="31.3" transform="translate(9 9)" fill="#8a837f"/>
+  <g id="bg-qty-2" data-name="bg-qty" transform="translate(-2116 77)">
+    <rect id="bg-qty-3" data-name="bg-qty" width="26.8" height="31.3" transform="translate(2116 -68)" fill="rgba(138,131,127,0)"/>
+    <rect id="bg-qty-4" data-name="bg-qty" width="26.8" height="31.3" transform="translate(2207 -68)" fill="rgba(138,131,127,0)"/>
+    <g transform="matrix(1, 0, 0, 1, 2116, -77)" filter="url(#bg-qty)">
+      <rect id="bg-qty-5" data-name="bg-qty" width="85.8" height="31.3" transform="translate(16 9)" fill="#8a837f"/>
+    </g>
   </g>
 </svg>
