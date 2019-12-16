@@ -286,9 +286,9 @@
 			<div class="invoice-type row">
 				<div class="col-15 group-title">發票類型:</div>
 
-				<div class="col-85 group-tab">
+				<div class="col-84 group-tab">
 
-					<ul class="nav nav-tabs" id="tabs-list">
+					<ul id="tabs-list-invoice-type" class="nav nav-tabs">
 
 						<li id="li-for-panel-1" class="nav-item active">
 							<a href="#">
@@ -327,11 +327,92 @@
 
 					</ul>
 
+					<div id="invoice-type-content" class="tab-container">
+						<ul class="nav nav-tabs">
+							<li id="panel-1-1" class="nav-item active">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									會員載具
+								</a>
+							</li>
+
+							<li id="panel-1-2" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+									手機條碼載具
+								</a>
+							</li>
+
+							<li id="panel-1-3" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									自然人憑證載具
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="invoice-type row">
+				<div class="col-15 group-title">發票寄送:</div>
+
+				<div class="col-84 group-tab">
+
+					<ul id="tabs-list-invoice-deliver" class="nav nav-tabs">
+
+						<li id="li-for-deliver-1" class="nav-item">
+							<a href="#">
+								<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+								同訂購人地址
+							</a>
+						</li>
+
+						<li id="li-for-deliver-2" class="nav-item">
+							<a href="#">
+								<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+								從最近的地址中挑選
+							</a>
+						</li>
+
+						<li id="li-for-deliver-3" class="nav-item">
+							<a href="#">
+								<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+								重新填寫
+							</a>
+						</li>
+
+					</ul>
+
+					<div id="invoice-deliver-content" class="tab-container">
+						桃園區某某路某楙街123號10樓
+					</div>
+
 				</div>
 
 			</div>
 		</div>
 
+		<div class="prd-sepline"></div>
+
+		<div class="info-recipient">
+			<div class="div-title">收件人資訊*</div>
+			<div class="info-recipient-container row">
+
+				<div class="group-title">收件人姓名: </div>
+				<div><input /></div>
+
+				<div class="group-title">收件人電話: </div>
+				<div><input /></div>
+
+				<div class="group-title">收件人e-mail: </div>
+				<div><input /></div>
+			</div>
+		</div>
+
+		<div class="prd-sepline"></div>
 
 	</div>
 
