@@ -72,7 +72,13 @@
 .page-cart .group-tab .nav {margin-bottom:0;padding:0;}
 .page-cart .tab-container {padding: 1rem 0;}
 
-.page-cart .info-recipient-container {max-width:1100px;margin:2rem auto;padding:0 1rem;}
+.page-cart .info-recipient-container,
+.page-cart .deliver-type {max-width:1100px;margin:2rem auto;padding:0 1rem;}
+
+.page-cart #tabs-list-deliver-way .img-2x {width:52px;}
+
+.page-cart .btn-select {display:inline-block;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
+
 
 /* ====== RWD ====== */
 @media only screen and (max-width:1680px) {
