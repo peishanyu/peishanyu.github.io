@@ -321,11 +321,11 @@
 			<div class="div-title">發票資料*</div>
 
 			<div class="invoice-type row">
-				<div class="col-15 group-title">發票類型:</div>
+				<div class="col-15 col-s-100 group-title">發票類型:</div>
 
-				<div class="col-84 group-tab">
+				<div class="col-84 col-s-100 group-tab">
 
-					<ul id="tabs-list-invoice-type" class="nav nav-tabs">
+					<ul id="tabs-list-invoice-type" class="nav nav-tabs m-hide">
 
 						<li id="li-for-panel-1" class="nav-item active">
 							<a href="#">
@@ -364,7 +364,7 @@
 
 					</ul>
 
-					<div id="invoice-type-content" class="tab-container">
+					<div id="invoice-type-content" class="tab-container m-hide">
 						<ul class="nav nav-tabs">
 							<li id="panel-1-1" class="nav-item active">
 								<a href="#">
@@ -387,6 +387,21 @@
 								</a>
 							</li>
 						</ul>
+
+						<div class="nav-tabs-inner m-hide">
+							<div id="content-for-panel-1-1"></div>
+							<div id="content-for-panel-1-2">
+								<input type="" name="" placeholder="請輸入" />
+							</div>
+							<div id="content-for-panel-1-3"></div>
+
+							<div class="invoice-agree">
+								<img src="static/images/cart/ic-checked.svg" />
+								我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+								<a href="">財政部電子發票流程說明</a>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
@@ -394,11 +409,11 @@
 			</div>
 
 			<div class="invoice-type row">
-				<div class="col-15 group-title">發票寄送:</div>
+				<div class="col-15 col-s-100 group-title">發票寄送:</div>
 
-				<div class="col-84 group-tab">
+				<div class="col-84 col-s-100 group-tab">
 
-					<ul id="tabs-list-invoice-deliver" class="nav nav-tabs">
+					<ul id="tabs-list-invoice-deliver" class="nav nav-tabs m-hide">
 
 						<li id="li-for-deliver-1" class="nav-item">
 							<a href="#">
@@ -423,8 +438,8 @@
 
 					</ul>
 
-					<div id="invoice-deliver-content" class="tab-container">
-						桃園區某某路某楙街123號10樓
+					<div id="invoice-deliver-content" class="tab-container m-hide">
+						<span class="text-inner">桃園區某某路某楙街123號10樓</span>
 					</div>
 
 				</div>
@@ -439,25 +454,26 @@
 			<div class="info-inner-container row">
 
 				<div class="group-title">收件人姓名: </div>
-				<div><input /></div>
+				<div><input type="text" class="col-100" placeholder="請輸入收件人姓名" /></div>
 
 				<div class="group-title">收件人電話: </div>
-				<div><input /></div>
+				<div><input type="text" class="col-100" placeholder="請輸入收件人電話" /></div>
 
 				<div class="group-title">收件人e-mail: </div>
-				<div><input /></div>
+				<div><input type="text" class="col-100" placeholder="請輸入收件人email" /></div>
 			</div>
 		</div>
 
 		<div class="prd-sepline"></div>
 
 		<div class="prd-deliver-way">
+
 			<div class="div-title">寄送方式*</div>
 
 			<div class="info-inner-container row">
-				<div class="col-15 group-title">店到店</div>
+				<div class="col-15 col-s-100 group-title">店到店</div>
 
-				<div class="col-84 group-tab">
+				<div class="col-84 col-s-100 group-tab pd-0">
 
 					<ul id="tabs-list-deliver-way" class="nav nav-tabs">
 
@@ -496,14 +512,16 @@
 					</ul>
 
 					<div class="tab-container">
+
 						<div id="content-for-deliver-way-1">
-							<div class="price"><span class="usd">$</span>60</div>
+							<div class="price text-inner"><span class="usd">$</span>60</div>
 							<div class="btn-select">
 								<span>選門市</span>
 								<img src="static/images/cart/ic-arrowdown-input.svg" />
 							</div>
-							<div class="">123興安門市-台北市松山區興安街168巷1號</div>
+							<div class="text-inner">123興安門市-台北市松山區興安街168巷1號</div>
 						</div>
+
 						<div id="content-for-deliver-way-2"></div>
 						<div id="content-for-deliver-way-3"></div>
 						<div id="content-for-deliver-way-4"></div>
@@ -514,9 +532,9 @@
 			</div>
 
 			<div class="info-inner-container row">
-				<div class="col-15 group-title">郵寄</div>
+				<div class="col-15 col-s-100 group-title">郵寄</div>
 
-				<div class="col-84 group-tab">
+				<div class="col-84 col-s-100 group-tab pd-0">
 
 					<ul id="tabs-list-mailbox-way" class="nav nav-tabs">
 
@@ -541,7 +559,7 @@
 					<div class="tab-container">
 						<div id="content-for-mailbox-way-1"></div>
 						<div id="content-for-mailbox-way-2">
-							<div class="price">
+							<div class="price text-inner">
 								<span class="usd">$</span>60
 								<img src="static/images/cart/ic-info.svg" class="pointer" />
 							</div>
@@ -558,11 +576,14 @@
 
 					<div class="group-title">地址</div>
 					<div>
-						<input type="text"/>
+						<div>台北市大安區</div>
+						<input type="text" class="col-100" placeholder="請輸入地址" />
 					</div>
 
 					<div class="group-title">寄送備註</div>
-					<div><input type="text"/></div>
+					<div class="textarea">
+						<textarea rows="4" cols="50" placeholder="請輸入快遞/寄送備註" class="width-100"></textarea>
+					</div>
 				</div>
 
 			</div>
@@ -576,7 +597,7 @@
 				<div class="group-title">折扣碼</div>
 
 				<div>
-					<input type="text" placeholder="請輸入折扣碼" />
+					<div><input type="text" class="col-100" placeholder="請輸入折扣碼" /></div>
 					<div class="tip-success">已成功輸入<span>「2週年慶，100元折抵活動」</span>折扣碼</div>
 				</div>
 
@@ -586,18 +607,18 @@
 					<span class="orang">5120</span>
 				</div>
 
-				<div>
-					<div class="text-r">
-						<span>登入累計消費，可享更多優惠　</span>
-						<a href="">前往登入</a>
-						<div class="inline">
-							<button class="col-xs-100 btn btn-secondary" class="mr-1" onclick=""/>繼續購物</button>
-							<button class="col-xs-100 btn btn-primary" class="mr-1" onclick=""/>前往結帳</button>	
-						</div>
-						
-					</div>
 
+				<div class="prd-total-check">
+					<span class="tip-for-login">登入累計消費，可享更多優惠　<a href="">前往登入</a></span>
+					
+					<div class="btn-group">
+						<button class="col-xs-50 btn btn-secondary" onclick=""/>繼續購物</button>
+						<button class="col-xs-50 btn btn-primary" onclick=""/>前往結帳</button>	
+					</div>
+					
 				</div>
+
+
 			</div>
 		</div>
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="33.542" height="33.542" viewBox="0 0 33.542 33.542">
   <g id="ic-checked" transform="translate(-0.029 -0.029)">
-    <rect id="Rectangle_2" data-name="Rectangle 2" width="29.2" height="29.2" transform="translate(2.2 2.2)" fill="none" stroke="#8a837f" stroke-miterlimit="10" stroke-width="4.342"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="29.2" height="29.2" transform="translate(2.2 2.2)" fill="#fff" stroke="#8a837f" stroke-width="4.342"/>
     <path id="Path_2" data-name="Path 2" d="M7,12.4l9.1,11.3L27.3,9.1" fill="none" stroke="#ffa150" stroke-miterlimit="10" stroke-width="5"/>
   </g>
 </svg>

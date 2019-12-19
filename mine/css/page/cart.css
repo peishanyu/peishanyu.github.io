@@ -58,7 +58,7 @@
 
 .page-cart .group-title {display:inline-block;padding:0;color:#8a837f;font-weight:700;font-size:27px;}
 
-.page-cart .prd-amount {text-align:right;font-weight:700;color:#8a837f;font-size:31px;}
+.page-cart .prd-amount {margin-top:3rem;text-align:right;font-weight:700;color:#8a837f;font-size:31px;}
 .page-cart .prd-amount .orang {color:#ea5514;}
 
 
@@ -69,19 +69,54 @@
 
 .page-cart .nav-item {display:inline-block;list-style:none;padding:.5rem;}
 .page-cart .nav-item.active, .page-cart #invoice-type-content {background-color:#f0eae4;}
-	.page-cart .nav-item a {text-decoration:none;color:#8a837f;font-weight:700;font-size:20px;}
+	.page-cart .nav-item a, 
+	.page-cart .text-inner, 
+	.page-cart .tip-success {text-decoration:none;color:#8a837f;font-weight:700;font-size:20px;}
 
 .page-cart .group-tab {display:inline-block;}
 .page-cart .group-tab .nav {margin-bottom:0;padding:0;}
 .page-cart .tab-container {padding: 1rem 0;}
+.page-cart .nav-tabs-inner {padding:0 1rem;}
+
+.page-cart .invoice-agree {color:#8a837f;font-size:14px;}
+.page-cart .invoice-agree img {width:20px;}
+.page-cart .invoice-agree a {text-decoration:underline;}
+
 
 .page-cart .info-inner-container {max-width:1100px;margin:2rem auto;padding:0 1rem;}
 
 .page-cart #tabs-list-deliver-way .img-2x {width:52px;}
 
-.page-cart .btn-select {display:inline-block;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
 
-.page-cart textarea {padding:.5rem;}
+.page-cart .btn-select {display:inline-block;margin:1rem 0;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
+.page-cart .btn-select span {display:inline-block;width:5rem;margin-right:1rem;}
+
+.page-cart textarea,.page-cart input {margin:.5rem 0 1.5rem;padding:.5rem;border:0;box-shadow:0 0 4px rgba(0, 0, 0, 0.5);}
+
+.page-cart textarea:focus,
+.page-cart input:focus {outline:none;box-shadow:0 0 3px 1px #ffa150;}
+
+
+
+.page-cart .prd-total-check {margin-top:2rem;margin-bottom:1rem;text-align:right;}
+.page-cart .btn-group {display:inline-block;margin-left:1rem;}
+.page-cart .tip-for-login {font-size:24px;color:#8a837f;font-weight:700;}
+.page-cart .tip-for-login a {text-decoration:underline;}
+
+.page-cart .btn {
+	padding:.5rem 2rem;
+	border-radius: 10rem;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 700;
+}
+.page-cart .btn.btn-primary {
+    background: url(../../static/images/btn-bg.jpg) no-repeat center 95%;
+}
+.page-cart .btn.btn-secondary {
+	background-color: #8a837f;
+}
+
 
 
 /* ====== RWD ====== */
@@ -135,13 +170,19 @@
 
 	.page-cart .m-show.prd-size-color {display:inline-block;width:50%;margin:0;}
 	.page-cart .m-show.prd-price-qty {display:inline-block;width:50%;margin:0;}
+
+	.page-cart .div-title {font-size:24px;}
 }
 
 @media only screen and (max-width:480px) {
+
+	.page-cart .banner {height:15vh;}
+
 	.page-cart .zone-title {margin:2rem 0;}
 
+	.page-cart .div-title {font-size:22px;}
 	.page-cart .group-title {font-size:18px;}
-
+	.page-cart .nav-item a, .page-cart .text-inner, .page-cart .tip-success {font-size:16px;}
 
 	.page-cart .deco-before-title {width:36px;height:30px;}
 	.page-cart h1.page-title {margin:0 10px 0 10px;font-size:24px;}
@@ -163,9 +204,26 @@
 	.page-cart .prd-price-qty .ic-min-qty,
 	.page-cart .prd-price-qty .ic-add-qty {width:36px;}
 
+	.page-cart .nav-item {margin-right:.5rem;padding:.5rem 0;}
+	.page-cart #tabs-list-deliver-way .img-2x {width:32px;}
+	.page-cart .ic-radio {width:32px;}
+
+	.page-cart .btn-select {padding:.25rem 1rem;}
+
+	.page-cart .price.text-inner img {width:20px;}
+
+
+	.page-cart .prd-amount {padding:0;}
+
+	.page-cart .prd-total-check {margin-top:1rem;}
+	.page-cart .tip-for-login {display:block;margin-bottom:1rem;font-size:16px;}
+
+	.page-cart .btn-group {display:flex;margin-left:0;}
+	.page-cart .btn-group button {margin:0 .5rem;margin-bottom:1rem;}
 
 }
 
 @media only screen and (max-width:320px) {
-
+	.page-cart .btn-group button {margin:0 .25rem;margin-bottom:1rem;}
+	.page-cart .btn-group button {font-size:15px;}
 }
