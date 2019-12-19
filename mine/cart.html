@@ -399,7 +399,7 @@
 
 		<div class="info-recipient">
 			<div class="div-title">收件人資訊*</div>
-			<div class="info-recipient-container row">
+			<div class="info-inner-container row">
 
 				<div class="group-title">收件人姓名: </div>
 				<div><input /></div>
@@ -417,7 +417,7 @@
 		<div class="prd-deliver-way">
 			<div class="div-title">寄送方式*</div>
 
-			<div class="deliver-type row">
+			<div class="info-inner-container row">
 				<div class="col-15 group-title">店到店</div>
 
 				<div class="col-84 group-tab">
@@ -476,7 +476,7 @@
 
 			</div>
 
-			<div class="deliver-type row">
+			<div class="info-inner-container row">
 				<div class="col-15 group-title">郵寄</div>
 
 				<div class="col-84 group-tab">
@@ -520,16 +520,50 @@
 					</div>
 
 					<div class="group-title">地址</div>
-					<div><input /></div>
+					<div>
+						<input type="text"/>
+					</div>
 
 					<div class="group-title">寄送備註</div>
-					<div><input /></div>
+					<div><input type="text"/></div>
 				</div>
 
 			</div>
-
-
 		</div>
+
+		<div class="prd-sepline"></div>
+
+		<div class="prd-final-checkout">
+			<div class="div-title">結帳資訊</div>
+			<div class="info-inner-container row">
+				<div class="group-title">折扣碼</div>
+
+				<div>
+					<input type="text" placeholder="請輸入折扣碼" />
+					<div class="tip-success">已成功輸入<span>「2週年慶，100元折抵活動」</span>折扣碼</div>
+				</div>
+
+				<div class="prd-amount">
+					總金額(含運費)
+					<span class="usd orang">$</span>
+					<span class="orang">5120</span>
+				</div>
+
+				<div>
+					<div class="text-r">
+						<span>登入累計消費，可享更多優惠　</span>
+						<a href="">前往登入</a>
+						<div class="inline">
+							<button class="col-xs-100 btn btn-comfirm" class="mr-1" onclick=""/>繼續購物</button>
+							<button class="col-xs-100 btn modal-btn-comfirm" class="mr-1" onclick=""/>前往結帳</button>	
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 

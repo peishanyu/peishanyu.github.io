@@ -2,7 +2,6 @@
 
 .page-cart .banner {height:20vh;background: url(../../static/images/cart/bg_header.jpg) no-repeat;background-size:cover;}
 
-
 .page-cart .zone-title {display:flex;margin-top:3rem;margin-bottom:4rem;}
 .page-cart .deco-before-title {display:inline-block;background-color:#8a837f;width:166px;height:54px;}
 .page-cart h1.page-title {
@@ -13,8 +12,8 @@
 	font-size:45px;
 }
 
-
 .page-cart .cart-container {max-width:1680px;margin:auto;}
+
 	.page-cart .prd-info,
 	.page-cart .info-invoice {max-width:1400px;margin:auto;}
 
@@ -72,8 +71,7 @@
 .page-cart .group-tab .nav {margin-bottom:0;padding:0;}
 .page-cart .tab-container {padding: 1rem 0;}
 
-.page-cart .info-recipient-container,
-.page-cart .deliver-type {max-width:1100px;margin:2rem auto;padding:0 1rem;}
+.page-cart .info-inner-container {max-width:1100px;margin:2rem auto;padding:0 1rem;}
 
 .page-cart #tabs-list-deliver-way .img-2x {width:52px;}
 
