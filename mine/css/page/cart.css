@@ -1,6 +1,6 @@
 .page-cart {background-color:#FDF8F2;}
 
-.page-cart .flex {display:flex;}
+.page-cart .flex {display:flex !important;}
 
 .page-cart .banner {height:20vh;background: url(../../static/images/cart/bg_header.jpg) no-repeat;background-size:cover;}
 
@@ -36,7 +36,7 @@
 .page-cart .prd-list .prd-img {width:15%;}
 .page-cart .prd-list .thumbnail {margin-bottom:1rem;}
 
-.page-cart .prd-name-number {width:45%;margin:0 1rem;color:#8a837f;font-weight:700;}
+.page-cart .prd-name-number {width:45%;margin:0 1rem;margin-right: .5rem;color:#8a837f;font-weight:700;}
 .page-cart .prd-name-number .name {margin-bottom:.5rem;font-size:28px;}
 .page-cart .prd-name-number .number {font-size:20px;}
 
@@ -54,7 +54,8 @@
 
 .page-cart .prd-note, .page-cart .prd-amount {max-width:1100px;margin:auto;padding:0 1rem;}
 
-.page-cart .prd-note {display:flex;align-items:center;}
+.page-cart .prd-note {display:flex;}
+.page-cart .prd-note .group-title {margin-top:.75rem;}
 
 .page-cart .group-title {display:inline-block;padding:0;color:#8a837f;font-weight:700;font-size:27px;}
 
@@ -62,7 +63,7 @@
 .page-cart .prd-amount .orang {color:#ea5514;}
 
 
-.page-cart .prd-sepline {width:100%;margin:4rem 0;border-bottom:6px solid #D3CCC6;}
+.page-cart .prd-sepline {width:95%;margin:4rem auto;border-bottom:6px solid #D3CCC6;}
 
 .page-cart .invoice-type {margin:2rem 0;padding: 0 1rem;}
 .page-cart .invoice-type .group-title {margin-top:.5rem;vertical-align:top;}
@@ -73,22 +74,24 @@
 	.page-cart .text-inner, 
 	.page-cart .tip-success {text-decoration:none;color:#8a837f;font-weight:700;font-size:20px;}
 
-.page-cart .group-tab {display:inline-block;}
+.page-cart .group-tab {display:inline-block;padding:0;}
 .page-cart .group-tab .nav {margin-bottom:0;padding:0;}
 .page-cart .tab-container {padding: 1rem 0;}
 .page-cart .nav-tabs-inner {padding:0 1rem;}
 
-.page-cart .invoice-agree {color:#8a837f;font-size:14px;}
+.page-cart .invoice-agree {position:relative;color:#8a837f;font-size:14px;}
 .page-cart .invoice-agree img {width:20px;}
 .page-cart .invoice-agree a {text-decoration:underline;}
 
+.page-cart .m-show.invoice-agree >div {margin-bottom:2.5rem;}
+.page-cart .m-show.invoice-agree p {    padding-left: 1.75rem;}
 
 .page-cart .info-inner-container {max-width:1100px;margin:2rem auto;padding:0 1rem;}
 
 .page-cart #tabs-list-deliver-way .img-2x {width:52px;}
 
 
-.page-cart .btn-select {display:inline-block;margin:1rem 0;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
+.page-cart .btn-select {display:inline-block;margin:1rem 0;margin-right: .5rem;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
 .page-cart .btn-select span {display:inline-block;width:5rem;margin-right:1rem;}
 
 .page-cart textarea,.page-cart input {margin:.5rem 0 1.5rem;padding:.5rem;border:0;box-shadow:0 0 4px rgba(0, 0, 0, 0.5);}
@@ -101,7 +104,7 @@
 .page-cart .prd-total-check {margin-top:2rem;margin-bottom:1rem;text-align:right;}
 .page-cart .btn-group {display:inline-block;margin-left:1rem;}
 .page-cart .tip-for-login {font-size:24px;color:#8a837f;font-weight:700;}
-.page-cart .tip-for-login a {text-decoration:underline;}
+.page-cart .tip-for-login span.text-link {text-decoration:underline;cursor:pointer;}
 
 .page-cart .btn {
 	padding:.5rem 2rem;
@@ -117,7 +120,9 @@
 	background-color: #8a837f;
 }
 
+.page-cart #zone-select {position:absolute;top:1rem;left:.5rem;z-index:5;}
 
+.page-cart input.zone-add {padding-left:7rem;}
 
 /* ====== RWD ====== */
 @media only screen and (max-width:1680px) {
@@ -172,6 +177,8 @@
 	.page-cart .m-show.prd-price-qty {display:inline-block;width:50%;margin:0;}
 
 	.page-cart .div-title {font-size:24px;}
+
+	.page-cart .btn-group {margin-top:2rem;}
 }
 
 @media only screen and (max-width:480px) {
@@ -199,6 +206,8 @@
 	.page-cart .prd-name-number .number,
 	.page-cart .prd-price-qty .price {font-size:13px;}
 
+	.page-cart .prd-checkbox>img {transform: translate(25%, -125%);}
+
 	.page-cart .prd-price-qty .qty {background-size:contain;width:85px;height:36px;}
 	.page-cart .prd-price-qty .qty-num {padding: .35rem 1rem;}
 	.page-cart .prd-price-qty .ic-min-qty,
@@ -212,8 +221,8 @@
 
 	.page-cart .price.text-inner img {width:20px;}
 
-
-	.page-cart .prd-amount {padding:0;}
+	.page-cart .prd-info .prd-amount {margin-top:0;}
+	.page-cart .prd-final-checkout .prd-amount {padding:0;}
 
 	.page-cart .prd-total-check {margin-top:1rem;}
 	.page-cart .tip-for-login {display:block;margin-bottom:1rem;font-size:16px;}
@@ -221,9 +230,16 @@
 	.page-cart .btn-group {display:flex;margin-left:0;}
 	.page-cart .btn-group button {margin:0 .5rem;margin-bottom:1rem;}
 
+	.invoice-type input {margin-bottom:.5rem;}
+	.page-cart .m-show.invoice-agree >div {margin-top:1rem;}
+
 }
 
 @media only screen and (max-width:320px) {
+
+	.page-cart .prd-checkbox>img {transform: translate(25%, -180%);}
+
+	.page-cart .btn-select span {width: 4rem;}
 	.page-cart .btn-group button {margin:0 .25rem;margin-bottom:1rem;}
 	.page-cart .btn-group button {font-size:15px;}
 }

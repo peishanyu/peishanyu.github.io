@@ -404,6 +404,58 @@
 
 					</div>
 
+					<div>
+
+						<div class="clearfix">
+							<div class="dropdown">
+								<div></div>
+								<div>公司用(線上列印)</div>
+							</div>
+							<input type="text" class="col-100 m-show" placeholder="請輸入" />
+							<input type="text" class="col-100 m-show" placeholder="請輸入" />
+						</div>
+						
+
+
+						<div class="invoice-agree m-show clearfix">
+						
+							<div class="relative">
+								<div class="absolute"><img src="static/images/cart/ic-checked.svg" /></div>
+								<p>
+									我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+									<a href="">財政部電子發票流程說明</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div>
+						<ul id="tabs-list-invoice-deliver" class="nav nav-tabs">
+							<li id="li-for-deliver-1" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+									雲端發票捐贈
+								</a>
+							</li>
+
+							<li id="li-for-deliver-2" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									個人紙本發票
+								</a>
+							</li>
+
+							<li id="li-for-deliver-3" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									公司用(郵寄)
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
 				</div>
 
 			</div>
@@ -413,7 +465,7 @@
 
 				<div class="col-84 col-s-100 group-tab">
 
-					<ul id="tabs-list-invoice-deliver" class="nav nav-tabs m-hide">
+					<ul id="tabs-list-invoice-deliver" class="nav nav-tabs">
 
 						<li id="li-for-deliver-1" class="nav-item">
 							<a href="#">
@@ -438,7 +490,7 @@
 
 					</ul>
 
-					<div id="invoice-deliver-content" class="tab-container m-hide">
+					<div id="invoice-deliver-content" class="tab-container">
 						<span class="text-inner">桃園區某某路某楙街123號10樓</span>
 					</div>
 
@@ -575,9 +627,9 @@
 					</div>
 
 					<div class="group-title">地址</div>
-					<div>
-						<div>台北市大安區</div>
-						<input type="text" class="col-100" placeholder="請輸入地址" />
+					<div class="relative">
+						<div id="zone-select">台北市大安區</div>
+						<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
 					</div>
 
 					<div class="group-title">寄送備註</div>
@@ -609,7 +661,7 @@
 
 
 				<div class="prd-total-check">
-					<span class="tip-for-login">登入累計消費，可享更多優惠　<a href="">前往登入</a></span>
+					<span class="tip-for-login">登入累計消費，可享更多優惠　<span class="text-link" onclick="loginModal()">前往登入</span></span>
 					
 					<div class="btn-group">
 						<button class="col-xs-50 btn btn-secondary" onclick=""/>繼續購物</button>
