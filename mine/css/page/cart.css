@@ -1,6 +1,10 @@
 .page-cart {background-color:#FDF8F2;}
 
+.page-cart .flex {display:flex;}
+
 .page-cart .banner {height:20vh;background: url(../../static/images/cart/bg_header.jpg) no-repeat;background-size:cover;}
+
+.page-cart .m-show {display:none;}
 
 .page-cart .zone-title {display:flex;margin-top:3rem;margin-bottom:4rem;}
 .page-cart .deco-before-title {display:inline-block;background-color:#8a837f;width:166px;height:54px;}
@@ -20,7 +24,7 @@
 .page-cart .div-title {padding: 0 1rem;color:#8a837f;font-weight:700;font-size:31px;}
 
 .page-cart .prd-list {max-width:1240px;margin:auto;}
-.page-cart .prd-list .prd-item {display:flex;position:relative;margin:2rem;padding:.5rem 3rem;border:3px solid transparent;cursor:pointer;}
+.page-cart .prd-list .prd-item {display:flex;position:relative;margin:2rem;padding:1rem 3rem;border:3px solid transparent;cursor:pointer;}
 .page-cart .prd-list .prd-item.active {border:3px solid #ffa150;}
 
 .page-cart .prd-list .ic-delete {display:none;position:absolute;right:0;top:0;transform:translate(28px, -28px);}
@@ -29,8 +33,8 @@
 .page-cart .prd-checkbox {width:5%;margin-right:1rem;}
 .page-cart .prd-checkbox>img {position:absolute;top:50%;transform:translate(25%, -100%);}
 
-.page-cart .prd-list .prd-img {/*width:15%;*/display:grid;}
-.page-cart .prd-list .prd-img img {margin:.5rem .5rem;}
+.page-cart .prd-list .prd-img {width:15%;}
+.page-cart .prd-list .thumbnail {margin-bottom:1rem;}
 
 .page-cart .prd-name-number {width:45%;margin:0 1rem;color:#8a837f;font-weight:700;}
 .page-cart .prd-name-number .name {margin-bottom:.5rem;font-size:28px;}
@@ -77,6 +81,8 @@
 
 .page-cart .btn-select {display:inline-block;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
 
+.page-cart textarea {padding:.5rem;}
+
 
 /* ====== RWD ====== */
 @media only screen and (max-width:1680px) {
@@ -105,25 +111,59 @@
 	.page-cart .deco-before-title {width:54px;height:45px;}
 	.page-cart h1.page-title {font-size:37px;}
 	.page-cart .zone-title .ic-cartbag {width:28px;}
-	.page-cart .prd-list .prd-item {/*display:block;*/}
+	.page-cart .prd-list .prd-item {padding:.5rem;}
 	.page-cart .m-hide {display:none;}
-}
+	.page-cart .m-show {display:unset;}
 
-@media only screen and (max-width:480px) {
+	.page-cart .prd-name-number {width:100%;}
 
-	.page-cart .deco-before-title {width:36px;height:30px;}
-	.page-cart h1.page-title {font-size:24px;}
-	.page-cart .zone-title .ic-cartbag {width:16px;}
-
-	.page-cart .prd-list .prd-item {margin:1rem;}
-	.page-cart .prd-list .ic-delete {width:36px;transform: translate(18px, -18px);}
+	.page-cart .prd-checkbox {width:10%;}
+	.page-cart .prd-checkbox>img {width:25px;}
+	.page-cart .prd-list .prd-img {width:35%;}
+	.page-cart .prd-list .thumbnail {margin-bottom:.5rem;}
 
 	.page-cart .prd-list .prd-item {padding:.5rem;}
 
-	.page-cart .prd-size-color .size, .page-cart .prd-name-number .name, .page-cart .prd-price-qty .price {font-size:16px;}
-	.page-cart .prd-name-number .number {font-size:13px;}
+	.page-cart .prd-name-number .name {font-size:24px;}
+	.page-cart .prd-size-color .size,
+	.page-cart .prd-name-number .number,
+	.page-cart .prd-price-qty .price {font-size:16px;}
 
 	.page-cart .prd-amount {font-size:20px;}
+
+	.page-cart .prd-sepline {width:90%;margin:2rem auto;border-width:2px;}
+
+	.page-cart .m-show.prd-size-color {display:inline-block;width:50%;margin:0;}
+	.page-cart .m-show.prd-price-qty {display:inline-block;width:50%;margin:0;}
+}
+
+@media only screen and (max-width:480px) {
+	.page-cart .zone-title {margin:2rem 0;}
+
+	.page-cart .group-title {font-size:18px;}
+
+
+	.page-cart .deco-before-title {width:36px;height:30px;}
+	.page-cart h1.page-title {margin:0 10px 0 10px;font-size:24px;}
+	.page-cart .zone-title .ic-cartbag {width:16px;}
+
+	.page-cart .prd-list .prd-img {width:50%;}
+	.page-cart .prd-list .prd-item {margin:.85rem;}
+	.page-cart .prd-list .ic-delete {width:32px;transform: translate(16px, -16px);}
+
+	.page-cart .prd-checkbox {width:15%;}
+
+	.page-cart .prd-name-number .name {font-size:15px;}
+	.page-cart .prd-size-color .size,
+	.page-cart .prd-name-number .number,
+	.page-cart .prd-price-qty .price {font-size:13px;}
+
+	.page-cart .prd-price-qty .qty {background-size:contain;width:85px;height:36px;}
+	.page-cart .prd-price-qty .qty-num {padding: .35rem 1rem;}
+	.page-cart .prd-price-qty .ic-min-qty,
+	.page-cart .prd-price-qty .ic-add-qty {width:36px;}
+
+
 }
 
 @media only screen and (max-width:320px) {
