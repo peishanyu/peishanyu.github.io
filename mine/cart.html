@@ -364,13 +364,11 @@
 
 					</ul>
 
-					<div id="invoice-type-content" class="tab-container m-hide">
+					<!-- 個人雲端發票 -->
+					<div id="invoice-type-content-for-panel-1" class="tab-container invoice-type-content m-hide">
 						<ul class="nav nav-tabs">
 							<li id="panel-1-1" class="nav-item active">
-								<a href="#">
-									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-									會員載具
-								</a>
+								<a href="#"><img src="static/images/cart/ic-radio.svg" class="ic-radio"/>會員載具</a>
 							</li>
 
 							<li id="panel-1-2" class="nav-item">
@@ -389,25 +387,119 @@
 						</ul>
 
 						<div class="nav-tabs-inner m-hide">
-							<div id="content-for-panel-1-1"></div>
-							<div id="content-for-panel-1-2">
-								<input type="" name="" placeholder="請輸入" />
+							<!-- 會員載具 -->
+							<div id="content-for-panel-1-1">
 							</div>
-							<div id="content-for-panel-1-3"></div>
 
-							<div class="invoice-agree">
-								<img src="static/images/cart/ic-checked.svg" />
-								我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
-								<a href="">財政部電子發票流程說明</a>
+							<!-- 手機條碼載具 -->
+							<div id="content-for-panel-1-2">
+								<input type="" name="" placeholder="請輸入開頭為 &quot;/&quot;之大寫英數字" />
+								<div class="invoice-agree mb-5">
+									<img src="static/images/cart/ic-checked.svg" class="mr-1" />我同意紀錄本次手機條碼為常用載具
+								</div>
 							</div>
+
+							<!-- 自然人憑證載具 -->
+							<div id="content-for-panel-1-3">
+								<input type="" name="" placeholder="請輸入共16碼大寫英數字" />
+								<div class="invoice-agree mb-5">
+									<img src="static/images/cart/ic-checked.svg" class="mr-1" />我同意紀錄本次自然人憑證為常用載具
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="invoice-agree pd-3">
+							<img src="static/images/cart/ic-checked.svg" />
+							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+							<a href="">財政部電子發票流程說明</a>
+						</div>
+					</div>
+
+					<!-- 公司用(線上列印) -->
+					<div id="invoice-type-content-for-panel-2" class="tab-container invoice-type-content m-hide">
+						<div class="nav-tabs-inner m-hide">
+							<div id="content-for-panel-2-2">
+								<div class="form-row-title">統一編號</div>
+								<input type="" name="" placeholder="" class="mr-3" />
+								<div class="form-row-title">公司名稱</div>
+								<input type="" name="" placeholder="" />
+								
+								<div class="invoice-agree mb-5">	
+									*開立發票後，至會員中心/訂單查詢，下載列印電子發票證明聯（報帳用），節省您等候發票郵寄時間。
+								</div>
+							</div>
+						</div>
+						<div class="invoice-agree pd-3">
+							<img src="static/images/cart/ic-checked.svg" />
+							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+							<a href="">財政部電子發票流程說明</a>
+						</div>
+					</div>
+
+					<!-- 雲端發票捐贈 -->
+					<div id="invoice-type-content-for-panel-3" class="tab-container invoice-type-content m-hide">
+						<ul class="nav nav-tabs">
+							<li id="panel-3-1" class="nav-item active">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									第一社會福利基金會
+								</a>
+							</li>
+
+							<li id="panel-3-2" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+									董氏基金會
+								</a>
+							</li>
+
+							<li id="panel-3-3" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									台北市脊髓損傷社會福利基金會
+								</a>
+							</li>
+
+							<li id="panel-3-4" class="nav-item">
+								<a href="#">
+									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+									關懷台灣文教基金會
+								</a>
+							</li>
+						</ul>
+						<div class="invoice-agree pd-3">
+							<img src="static/images/cart/ic-checked.svg" />
+							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+							<a href="">財政部電子發票流程說明</a>
+						</div>
+					</div>
+
+					<div id="invoice-type-content-for-panel-4" class="tab-container invoice-type-content m-hide"></div>
+
+					<!-- 公司用(郵寄) -->
+					<div id="invoice-type-content-for-panel-5" class="tab-container invoice-type-content m-hide">
+						<div class="nav-tabs-inner m-hide">
+							<div id="content-for-panel-4-1">
+								<div class="form-row-title">統一編號</div>
+								<input type="" name="" placeholder="" class="mr-3" />
+								<div class="form-row-title">公司名稱</div>
+								<input type="" name="" placeholder="" />
+							</div>
+						</div>
+
+						<div class="invoice-agree pd-3">
+							<img src="static/images/cart/ic-checked.svg" />
+							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+							<a href="">財政部電子發票流程說明</a>
 						</div>
 
 					</div>
 
+
 					<div>
-
 						<div class="m-show clearfix">
-
 							<div class="relative">
 								<ul>
 									<li class="dropdown">
@@ -423,8 +515,6 @@
 									</li>
 								</ul>
 							</div>
-
-
 
 							<input type="text" class="col-100 m-show" placeholder="請輸入" />
 							<input type="text" class="col-100 m-show" placeholder="請輸入" />
@@ -443,30 +533,6 @@
 
 					</div>
 
-					<div>
-						<ul id="tabs-list-invoice-deliver" class="nav nav-tabs">
-							<li id="li-for-deliver-1" class="nav-item">
-								<a href="#">
-									<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
-									雲端發票捐贈
-								</a>
-							</li>
-
-							<li id="li-for-deliver-2" class="nav-item">
-								<a href="#">
-									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-									個人紙本發票
-								</a>
-							</li>
-
-							<li id="li-for-deliver-3" class="nav-item">
-								<a href="#">
-									<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-									公司用(郵寄)
-								</a>
-							</li>
-						</ul>
-					</div>
 
 
 				</div>
@@ -482,7 +548,7 @@
 
 						<li id="li-for-deliver-1" class="nav-item">
 							<a href="#">
-								<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+								<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
 								同訂購人地址
 							</a>
 						</li>
@@ -496,7 +562,7 @@
 
 						<li id="li-for-deliver-3" class="nav-item">
 							<a href="#">
-								<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+								<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
 								重新填寫
 							</a>
 						</li>
@@ -510,6 +576,7 @@
 				</div>
 
 			</div>
+
 		</div>
 
 		<div class="prd-sepline"></div>
