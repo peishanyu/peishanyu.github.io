@@ -80,7 +80,7 @@
 .page-cart .tab-container {padding: 1rem 0;}
 .page-cart .nav-tabs-inner {padding:0 1rem;}
 
-.page-cart .invoice-agree {position:relative;color:#8a837f;font-size:14px;}
+.page-cart .invoice-agree {position:relative;align-items: flex-start;color:#8a837f;font-size:14px;}
 .page-cart .invoice-agree img {width:20px;}
 .page-cart .invoice-agree a {text-decoration:underline;}
 
@@ -104,6 +104,7 @@
 .page-cart textarea:focus,
 .page-cart input:focus {outline:none;box-shadow:0 0 3px 1px #ffa150;}
 
+.page-cart .double-input-first {margin-right:1rem;}
 
 
 .page-cart .prd-total-check {margin-top:2rem;margin-bottom:1rem;text-align:right;}
@@ -125,7 +126,7 @@
 	background-color: #8a837f;
 }
 
-.page-cart #zone-select {position:absolute;top:1rem;left:.5rem;z-index:5;}
+.page-cart .zone-select {position:absolute;top:1rem;left:.5rem;z-index:5;}
 
 .page-cart input.zone-add {padding-left:7rem;}
 
@@ -320,7 +321,9 @@
 	.page-cart .btn-group {margin-top:2rem;}
 
 	.page-cart textarea, .page-cart input {margin: .5rem 0 .5rem;}
-	.page-cart .m-show.invoice-agree p {    margin-top: 1rem;}
+	.page-cart .m-show.invoice-agree p {margin-top: 1rem;}
+
+	.page-cart .nav-tabs-inner {padding: 1rem;    background: #EFEAE4;}
 
 }
 

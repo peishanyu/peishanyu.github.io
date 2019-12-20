@@ -410,31 +410,25 @@
 
 						</div>
 
-						<div class="invoice-agree pd-3">
-							<img src="static/images/cart/ic-checked.svg" />
-							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
-							<a href="">財政部電子發票流程說明</a>
-						</div>
 					</div>
 
 					<!-- 公司用(線上列印) -->
 					<div id="invoice-type-content-for-panel-2" class="tab-container invoice-type-content m-hide">
 						<div class="nav-tabs-inner m-hide">
 							<div id="content-for-panel-2-2">
-								<div class="form-row-title">統一編號</div>
-								<input type="" name="" placeholder="" class="mr-3" />
-								<div class="form-row-title">公司名稱</div>
-								<input type="" name="" placeholder="" />
+								<div class="inline col-s-50">
+									<div class="form-row-title">統一編號</div>
+									<input type="" name="" placeholder="" class="mr-3" />	
+								</div>
+								<div class="inline col-s-50">
+									<div class="form-row-title">公司名稱</div>
+									<input type="" name="" placeholder="" />	
+								</div>
 								
 								<div class="invoice-agree mb-5">	
 									*開立發票後，至會員中心/訂單查詢，下載列印電子發票證明聯（報帳用），節省您等候發票郵寄時間。
 								</div>
 							</div>
-						</div>
-						<div class="invoice-agree pd-3">
-							<img src="static/images/cart/ic-checked.svg" />
-							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
-							<a href="">財政部電子發票流程說明</a>
 						</div>
 					</div>
 
@@ -469,34 +463,48 @@
 								</a>
 							</li>
 						</ul>
-						<div class="invoice-agree pd-3">
-							<img src="static/images/cart/ic-checked.svg" />
-							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
-							<a href="">財政部電子發票流程說明</a>
-						</div>
 					</div>
 
-					<div id="invoice-type-content-for-panel-4" class="tab-container invoice-type-content m-hide"></div>
+					<!-- 個人紙本發票 -->
+					<div id="invoice-type-content-for-panel-4" class="tab-container invoice-type-content m-hide">
+						<!-- *接發票寄送* -->
+					</div>
 
 					<!-- 公司用(郵寄) -->
 					<div id="invoice-type-content-for-panel-5" class="tab-container invoice-type-content m-hide">
 						<div class="nav-tabs-inner m-hide">
 							<div id="content-for-panel-4-1">
-								<div class="form-row-title">統一編號</div>
-								<input type="" name="" placeholder="" class="mr-3" />
-								<div class="form-row-title">公司名稱</div>
-								<input type="" name="" placeholder="" />
+								<div class="inline col-s-50">
+									<div class="form-row-title">統一編號</div>
+									<input type="" name="" placeholder="" class="mr-3" />	
+								</div>
+								<div class="inline col-s-50">
+									<div class="form-row-title">公司名稱</div>
+									<input type="" name="" placeholder="" />	
+								</div>
 							</div>
-						</div>
-
-						<div class="invoice-agree pd-3">
-							<img src="static/images/cart/ic-checked.svg" />
-							我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
-							<a href="">財政部電子發票流程說明</a>
 						</div>
 
 					</div>
 
+					<div class="mt-3 invoice-agree m-hide clearfix">
+						<div class="relative">
+							<div class="absolute"><img src="static/images/cart/ic-checked.svg" /></div>
+							<p class="ml-5">
+								我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+
+								<span id="personal-cloud-invoice-note" class="inline mt-1 mb-1">依統一發票使用辦法規定，個人發票一經開立，不得更改或改開公司戶發票。</span>
+
+								<span id="company-print-invoice-note" class="inline mt-1 mb-1">依統一發票使用辦法規定，發票一經開立，不得更改或改開其他統一編號發票。</span>
+
+								<span id="personal-invoice-note" class="inline mt-1 mb-1">發票於到貨後猶豫期+5個工作天以平信寄出。依統一發票使用辦法規定，個人發票一經開立，不得更改或改開公司戶發票。</span>
+
+								<span id="company-invoice-note" class="inline mt-1 mb-1">發票於到貨後猶豫期+5個工作天以平信寄出，若退貨需寄回銷貨折讓單(蓋公司大小章或統一發票章)。依統一發票使用辦法規定，發票一經開立，不得更改或改開其他統一編號發票。</span>
+
+								<a href="">財政部電子發票流程說明</a>
+							</p>
+						</div>
+					</div>
 
 					<div>
 						<div class="m-show clearfix">
@@ -506,32 +514,156 @@
 										<input type="checkbox" />
 										<a href="#" data-toggle="dropdown">公司用(線上列印)</a>
 										<ul class="dropdown-menu">
-											<li><a href="#">個人雲端發票</a></li>
-											<li><a href="#">公司用(線上列印)</a></li>
-											<li><a href="#">雲端發票捐贈</a></li>
-											<li><a href="#">個人紙本發票</a></li>
-											<li><a href="#">公司用(郵寄)</a></li>
+											<li id="invoice-type-m-panel-1"><a href="#">個人雲端發票</a></li>
+											<li id="invoice-type-m-panel-2"><a href="#">公司用(線上列印)</a></li>
+											<li id="invoice-type-m-panel-3"><a href="#">雲端發票捐贈</a></li>
+											<li id="invoice-type-m-panel-4"><a href="#">個人紙本發票</a></li>
+											<li id="invoice-type-m-panel-5"><a href="#">公司用(郵寄)</a></li>
 										</ul>
 									</li>
 								</ul>
-							</div>
 
+								<!-- 個人雲端發票 -->
+								<div id="invoice-type-m-content-for-panel-1">
+									<ul class="nav nav-tabs">
+										<li id="m-panel-1-1" class="nav-item">
+											<a href="#"><img src="static/images/cart/ic-radio.svg" class="ic-radio"/>會員載具</a>
+										</li>
+
+										<li id="m-panel-1-1" class="nav-item">
+											<a href="#">
+												<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+												手機條碼載具
+											</a>
+										</li>
+
+										<li id="m-panel-1-1" class="nav-item">
+											<a href="#">
+												<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+												自然人憑證載具
+											</a>
+										</li>
+									</ul>
+
+									<div class="nav-tabs-inner">
+										<!-- 會員載具 -->
+										<div id="content-for-m-panel-1-1">
+										</div>
+
+										<!-- 手機條碼載具 -->
+										<div id="content-for-m-panel-1-2">
+											<input type="" name="" placeholder="請輸入開頭為 &quot;/&quot;之大寫英數字" class="col-s-100" />
+											<div class="invoice-agree mb-5">
+												<img src="static/images/cart/ic-checked.svg" class="mr-1" />我同意紀錄本次手機條碼為常用載具
+											</div>
+										</div>
+
+										<!-- 自然人憑證載具 -->
+										<div id="content-for-m-panel-1-3">
+											<input type="" name="" placeholder="請輸入共16碼大寫英數字" class="col-s-100"/>
+											<div class="invoice-agree mb-5">
+												<img src="static/images/cart/ic-checked.svg" class="mr-1" />我同意紀錄本次自然人憑證為常用載具
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- 公司用(線上列印) -->
+								<div id="invoice-type-m-content-for-panel-2">
+									<div class="nav-tabs-inner">
+										<div class="form-row-title">統一編號</div>
+										<input type="" name="" placeholder="" class="double-input-first col-s-100" />
+
+										<div class="form-row-title">公司名稱</div>
+										<input type="" name="" placeholder="" class="col-s-100" />
+										
+										<div class="invoice-agree mb-5">	
+											*開立發票後，至會員中心/訂單查詢，下載列印電子發票證明聯（報帳用），節省您等候發票郵寄時間。
+										</div>	
+									</div>
+								</div>
+
+								<!-- 雲端發票捐贈 -->
+								<div id="invoice-type-m-content-for-panel-3">
+									<div class="nav-tabs-inner">
+										<ul class="nav nav-tabs">
+											<li id="panel-3-1" class="nav-item active">
+												<a href="#">
+													<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+													第一社會福利基金會
+												</a>
+											</li>
+
+											<li id="panel-3-2" class="nav-item">
+												<a href="#">
+													<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
+													董氏基金會
+												</a>
+											</li>
+
+											<li id="panel-3-3" class="nav-item">
+												<a href="#">
+													<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+													台北市脊髓損傷社會福利基金會
+												</a>
+											</li>
+
+											<li id="panel-3-4" class="nav-item">
+												<a href="#">
+													<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
+													關懷台灣文教基金會
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- 個人紙本發票 -->
+								<div id="invoice-type-m-content-for-panel-4">
+									<!-- *接發票寄送* -->
+								</div>
+
+								<!-- 公司用(郵寄) -->
+								<div id="invoice-type-m-content-for-panel-5">
+									<div class="nav-tabs-inner">
+										<div class="inline">
+											<div class="form-row-title">統一編號</div>
+											<input type="" name="" placeholder="" class="col-100" />	
+										</div>
+										<div class="inline">
+											<div class="form-row-title">公司名稱</div>
+											<input type="" name="" placeholder="" class="col-100" />	
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--
 							<input type="text" class="col-100 m-show" placeholder="請輸入" />
 							<input type="text" class="col-100 m-show" placeholder="請輸入" />
+							-->
 						</div>
 						
 						<div class="invoice-agree m-show clearfix">
-						
 							<div class="relative">
 								<div class="absolute"><img src="static/images/cart/ic-checked.svg" /></div>
 								<p>
 									我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
+
+									<span id="personal-cloud-invoice-note" class="inline mt-1 mb-1">依統一發票使用辦法規定，個人發票一經開立，不得更改或改開公司戶發票。</span>
+
+									<span id="company-print-invoice-note" class="inline mt-1 mb-1">依統一發票使用辦法規定，發票一經開立，不得更改或改開其他統一編號發票。</span>
+
+									<span id="personal-invoice-note" class="inline mt-1 mb-1">發票於到貨後猶豫期+5個工作天以平信寄出。依統一發票使用辦法規定，個人發票一經開立，不得更改或改開公司戶發票。</span>
+
+									<span id="company-invoice-note" class="inline mt-1 mb-1">發票於到貨後猶豫期+5個工作天以平信寄出，若退貨需寄回銷貨折讓單(蓋公司大小章或統一發票章)。依統一發票使用辦法規定，發票一經開立，不得更改或改開其他統一編號發票。</span>
+
 									<a href="">財政部電子發票流程說明</a>
 								</p>
 							</div>
 						</div>
-
 					</div>
+
 
 
 
@@ -570,7 +702,20 @@
 					</ul>
 
 					<div id="invoice-deliver-content" class="tab-container">
-						<span class="text-inner">桃園區某某路某楙街123號10樓</span>
+
+						<div class="btn-select">
+							<span>台北市</span>
+							<img src="static/images/cart/ic-arrowdown-input.svg">
+						</div>
+						<div class="btn-select">
+							<span>大安區</span>
+							<img src="static/images/cart/ic-arrowdown-input.svg">
+						</div>
+						<div class="relative">
+							<div class="zone-select">台北市大安區</div>
+							<input type="text" class="col-100 zone-add" placeholder="請輸入地址">
+						</div>
+
 					</div>
 
 				</div>
@@ -708,7 +853,7 @@
 
 					<div class="group-title">地址</div>
 					<div class="relative">
-						<div id="zone-select">台北市大安區</div>
+						<div class="zone-select">台北市大安區</div>
 						<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
 					</div>
 
@@ -765,7 +910,7 @@
 
 					<div class="group-title">地址</div>
 					<div class="relative">
-						<div id="zone-select">日本東京</div>
+						<div class="zone-select">日本東京</div>
 						<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
 					</div>
 
