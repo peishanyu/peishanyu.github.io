@@ -187,6 +187,131 @@
 <!-- header end -->
 
 
+<!-- List City -->
+<div class="page-cart modal_all" style="position:fixed;z-index:99;width:100%">
+	<div id="modalListCity" class="elementToFadeIn modal modal-m" style="display:none;">
+		<div class="list-city city">
+			<div class="list-scroll clearfix">
+
+				<div class="col-25 col-s-50">
+					<div class="btn-option">基隆市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option active">台北市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">新北市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">桃園市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">新竹市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">宜蘭縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">新竹縣</div>
+				</div>
+
+				<div class="col-25 col-s-50">
+					<div class="btn-option">臺中市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">苗栗縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">彰化縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">南投縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">雲林縣</div>
+				</div>
+
+				<div class="col-25 col-s-50">
+					<div class="btn-option">臺南市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">高雄市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">嘉義市</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">嘉義縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">屏東縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">澎湖縣</div>
+				</div>
+
+				<div class="col-25 col-s-50">
+					<div class="btn-option">臺東縣</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">花蓮縣</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div id="add-city-modalMask" class="modal-mask" style="display:none" onclick="modalListCity()"></div>
+<!-- List City end -->
+
+<!-- List Zone -->
+<div class="page-cart modal_all" style="position:fixed;z-index:99;width:100%">
+	<div id="modalListZone" class="elementToFadeIn modal modal-m" style="display:none;">
+		<div class="list-city zone">
+			<div class="list-scroll clearfix">
+
+				<div class="col-25 col-s-50">
+					<div class="btn-option">中正區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option active">大同區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">中山區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">松山區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">大安區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">萬華區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">信義區</div>
+				</div>
+
+				<div class="col-25 col-s-50">
+					<div class="btn-option">士林區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">北投區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">內湖區</div>
+				</div>
+				<div class="col-25 col-s-50">
+					<div class="btn-option">文山區</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="add-zone-modalMask" class="modal-mask" style="display:none" onclick="modalListZone()"></div>
+<!-- List Zone end -->
+
 <div class="page-cart clearfix">
 
 	<div class="banner"></div>
@@ -694,129 +819,17 @@
 
 					<div id="invoice-deliver-content" class="tab-container">
 
-
-						<div class="btn-select">
+						<div class="btn-select" onclick="modalListCity()">
 							<span>台北市</span>
 							<img src="static/images/cart/ic-arrowdown-input.svg">
 						</div>
 
-
-
-						<div class="btn-select">
+						<div class="btn-select" onclick="modalListZone()">
 							<span>大安區</span>
 							<img src="static/images/cart/ic-arrowdown-input.svg">
 						</div>
 
-						<div class="list-city">
-							<div class="list-scroll clearfix">
-
-								<div class="col-25 col-s-50">
-									<div class="btn-option">基隆市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option active">台北市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">新北市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">桃園市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">新竹市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">宜蘭縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">新竹縣</div>
-								</div>
-
-								<div class="col-25 col-s-50">
-									<div class="btn-option">臺中市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">苗栗縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">彰化縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">南投縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">雲林縣</div>
-								</div>
-
-								<div class="col-25 col-s-50">
-									<div class="btn-option">臺南市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">高雄市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">嘉義市</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">嘉義縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">屏東縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">澎湖縣</div>
-								</div>
-
-								<div class="col-25 col-s-50">
-									<div class="btn-option">臺東縣</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">花蓮縣</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="list-city">
-							<div class="list-scroll clearfix">
-
-								<div class="col-25 col-s-50">
-									<div class="btn-option">中正區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option active">大同區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">中山區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">松山區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">大安區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">萬華區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">信義區</div>
-								</div>
-
-								<div class="col-25 col-s-50">
-									<div class="btn-option">士林區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">北投區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">內湖區</div>
-								</div>
-								<div class="col-25 col-s-50">
-									<div class="btn-option">文山區</div>
-								</div>
-								
-							</div>
-						</div>
+					
 
 
 
@@ -824,9 +837,6 @@
 							<div class="zone-select">台北市大安區</div>
 							<input type="text" class="col-100 zone-add" placeholder="請輸入地址">
 						</div>
-
-						
-
 
 					</div>
 
@@ -952,11 +962,11 @@
 								<span class="usd">$</span>60
 								<img src="static/images/cart/ic-info.svg" class="pointer" />
 							</div>
-							<div class="btn-select">
+							<div class="btn-select" onclick="modalListCity()">
 								<span>台北市</span>
 								<img src="static/images/cart/ic-arrowdown-input.svg" />
 							</div>
-							<div class="btn-select">
+							<div class="btn-select" onclick="modalListZone()">
 								<span>大安區</span>
 								<img src="static/images/cart/ic-arrowdown-input.svg" />
 							</div>
@@ -1108,8 +1118,8 @@
 
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
-
-
+<script src="js/list-city.js"></script>
+<script src="js/list-zone.js"></script>
 
 </body>
 </html>
