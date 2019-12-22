@@ -325,7 +325,7 @@
 
 	<div class="cart-container">
 
-		<div class="prd-info">
+		<div class="invoice-outer-container prd-info">
 			<div class="div-title m-hide">商品資訊</div>
 
 			<div class="prd-list">
@@ -442,10 +442,10 @@
 
 		<div class="prd-sepline"></div>
 
-		<div class="info-invoice clearfix">
+		<div class="invoice-outer-container info-invoice clearfix">
 			<div class="div-title">發票資料*</div>
 
-			<div class="invoice-type row">
+			<div class="info-inner-container invoice-type row">
 				<div class="col-15 col-md-100 col-s-100 group-title">發票類型:</div>
 
 				<div class="col-84 col-md-100 col-s-100 group-tab">
@@ -904,7 +904,7 @@
 
 			
 
-			<div class="invoice-type row">
+			<div class="info-inner-container invoice-type row">
 				<div class="col-15 col-md-100 col-s-100 group-title">發票寄送:</div>
 
 				<div class="col-84 col-md-100 col-s-100 group-tab">
@@ -965,24 +965,31 @@
 
 
 
-		<div class="info-recipient">
+		<div class="invoice-outer-container info-recipient">
 			<div class="div-title">收件人資訊*</div>
 			<div class="info-inner-container row">
 
-				<div class="group-title">收件人姓名: </div>
-				<div><input type="text" class="col-100" placeholder="請輸入收件人姓名" /></div>
+				<div class="clearfix">
+					<div class="col-15 col-md-100 group-title">收件人姓名: </div>
+					<div class="col-84 col-md-100 pd-0"><input type="text" class="col-100" placeholder="請輸入收件人姓名" /></div>	
+				</div>
 
-				<div class="group-title">收件人電話: </div>
-				<div><input type="text" class="col-100" placeholder="請輸入收件人電話" /></div>
+				<div class="clearfix">
+					<div class="col-15 col-md-100 group-title">收件人電話: </div>
+					<div class="col-84 col-md-100 pd-0"><input type="text" class="col-100" placeholder="請輸入收件人電話" /></div>	
+				</div>
 
-				<div class="group-title">收件人e-mail: </div>
-				<div><input type="text" class="col-100" placeholder="請輸入收件人email" /></div>
+				<div class="clearfix">
+					<div class="col-15 col-md-100 group-title">收件人e-mail: </div>
+					<div class="col-84 col-md-100 pd-0"><input type="text" class="col-100" placeholder="請輸入收件人email" /></div>	
+				</div>
+
 			</div>
 		</div>
 
 		<div class="prd-sepline"></div>
 
-		<div class="prd-deliver-way">
+		<div class="invoice-outer-container prd-deliver-way">
 
 			<div class="div-title">寄送方式*</div>
 
@@ -1164,15 +1171,19 @@
 
 		<div class="prd-sepline"></div>
 
-		<div class="prd-final-checkout">
+		<div class="invoice-outer-container prd-final-checkout">
 			<div class="div-title">結帳資訊</div>
-			<div class="info-inner-container row">
-				<div class="group-title">折扣碼</div>
+			<div class="info-inner-container">
 
-				<div>
-					<div><input type="text" class="col-100" placeholder="請輸入折扣碼" /></div>
-					<div class="tip-success">已成功輸入<span>「2週年慶，100元折抵活動」</span>折扣碼</div>
+				<div class="clearfix">
+					<div class="col-15 col-md-100 group-title">折扣碼</div>
+
+					<div class="col-84 col-md-100 pd-0">
+						<div><input type="text" class="col-100" placeholder="請輸入折扣碼" /></div>
+						<div class="tip-success">已成功輸入<span>「2週年慶，100元折抵活動」</span>折扣碼</div>
+					</div>	
 				</div>
+				
 
 				<div class="prd-amount">
 					總金額(含運費)
@@ -1184,7 +1195,7 @@
 				<div class="prd-total-check">
 					<span class="tip-for-login">登入累計消費，可享更多優惠　<span class="text-link" onclick="loginModal()">前往登入</span></span>
 					
-					<div class="btn-group">
+					<div class="btn-group clearfix">
 						<button class="col-xs-50 btn btn-secondary" onclick=""/>繼續購物</button>
 						<button class="col-xs-50 btn btn-primary" onclick=""/>前往結帳</button>	
 					</div>

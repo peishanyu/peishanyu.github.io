@@ -18,10 +18,9 @@
 
 .page-cart .cart-container {max-width:1680px;margin:auto;}
 
-	.page-cart .prd-info,
-	.page-cart .info-invoice {max-width:1400px;margin:auto;}
+	.page-cart .invoice-outer-container {max-width:1400px;margin:auto;}
 
-.page-cart .div-title {padding: 0 1rem;color:#8a837f;font-weight:700;font-size:31px;}
+.page-cart .div-title {margin-bottom: 3rem;padding: 0 1rem;color:#8a837f;font-weight:700;font-size:31px;}
 
 .page-cart .prd-list {max-width:1240px;margin:auto;}
 .page-cart .prd-list .prd-item {display:flex;position:relative;margin:2rem;padding:1rem 3rem;border:3px solid transparent;cursor:pointer;}
@@ -57,7 +56,7 @@
 .page-cart .prd-note {display:flex;}
 .page-cart .prd-note .group-title {margin-top:.75rem;}
 
-.page-cart .group-title {display:inline-block;padding:0;color:#8a837f;font-weight:700;font-size:27px;}
+.page-cart .group-title {display:inline-block;margin-top: .5rem;padding:0;color:#8a837f;font-weight:700;font-size:24px;}
 
 .page-cart .prd-amount {margin-top:3rem;text-align:right;font-weight:700;color:#8a837f;font-size:31px;}
 .page-cart .prd-amount .orang {color:#ea5514;}
@@ -74,6 +73,9 @@
 	.page-cart .nav-item div, 
 	.page-cart .text-inner, 
 	.page-cart .tip-success {text-decoration:none;color:#8a837f;font-weight:700;font-size:16px;}
+
+	.page-cart .text-inner, 
+	.page-cart .tip-success {font-size:18px;}
 
 	.page-cart .nav-item div {cursor:pointer;}
 
@@ -92,7 +94,7 @@
 .page-cart .m-show.invoice-agree >div {margin-bottom:2.5rem;}
 .page-cart .m-show.invoice-agree p {    padding-left: 1.75rem;}
 
-.page-cart .info-inner-container {max-width:1100px;margin:2rem auto;padding:0 1rem;}
+.page-cart .info-inner-container {margin:2rem auto;padding:0 1rem;}
 
 .page-cart #tabs-list-deliver-way .img-2x {width:52px;}
 
@@ -109,7 +111,7 @@
 .page-cart .double-input-first {margin-right:1rem;}
 
 
-.page-cart .prd-total-check {margin-top:2rem;margin-bottom:1rem;text-align:right;}
+.page-cart .prd-total-check {margin-top:2rem;margin-bottom:4rem;text-align:right;}
 .page-cart .btn-group {display:inline-block;margin-left:1rem;}
 .page-cart .tip-for-login {font-size:24px;color:#8a837f;font-weight:700;}
 .page-cart .tip-for-login span.text-link {text-decoration:underline;cursor:pointer;}
@@ -338,9 +340,7 @@
 .page-cart .nav-item div, .page-cart .text-inner, .page-cart .tip-success {font-size:16px;}
 
 .page-cart .cart-container {max-width:1200px;margin:auto;}
-	.page-cart .prd-info,
-	.page-cart .info-invoice,
-	.page-cart .info-recipient {max-width:1120px;margin:auto;}
+	.page-cart .invoice-outer-container {max-width:1120px;margin:auto;}
 
 
 	/* Invoice Tab */
@@ -414,7 +414,7 @@
 
 	.page-cart .zone-title {margin:2rem 0;}
 
-	.page-cart .div-title {font-size:22px;}
+	.page-cart .div-title {    margin-bottom: 0;font-size:22px;}
 	.page-cart .group-title {font-size:18px;}
 	.page-cart .nav-item a, .page-cart .text-inner, .page-cart .tip-success {font-size:16px;}
 
