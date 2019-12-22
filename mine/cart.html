@@ -450,6 +450,7 @@
 
 				<div class="col-84 col-s-100 group-tab">
 
+					<!--
 					<ul id="tabs-list-invoice-type" class="nav nav-tabs m-hide">
 						<li id="li-for-panel-1" class="nav-item active">
 							<div class="active">
@@ -486,6 +487,75 @@
 							</div>
 						</li>
 					</ul>
+					-->
+
+					<div id="tabs-container">
+						<!--Pestaña 1 activa por defecto-->
+					    <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+					    <label for="tab-1" class="nav-item">
+					    	<div>
+					    		<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />個人雲端發票
+					    	</div>
+					    </label>
+					    <!--Pestaña 2 inactiva por defecto-->
+					    <input id="tab-2" type="radio" name="tab-group" />
+					    <label for="tab-2" class="nav-item">
+					    	<div>
+					    		<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>公司用(線上列印)
+					    	</div>
+					    </label>
+					    <!--Pestaña 3 inactiva por defecto-->
+					    <input id="tab-3" type="radio" name="tab-group" />
+					    <label for="tab-3" class="nav-item">
+					    	<div>
+					    		<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>雲端發票捐贈
+					    	</div>
+					    </label>
+					    <!--Pestaña 4 inactiva por defecto-->
+					    <input id="tab-4" type="radio" name="tab-group" />
+					    <label for="tab-4" class="nav-item">
+					    	<div>
+					    		<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>個人紙本發票
+					    	</div>
+					    </label>
+					    <!--Pestaña 5 inactiva por defecto-->
+					    <input id="tab-5" type="radio" name="tab-group" />
+					    <label for="tab-5" class="nav-item">
+					    	<div>
+					    		<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>公司用(郵寄)
+					    	</div>
+					    </label>
+
+					    <!--Contenido a mostrar/ocultar-->
+					    <div id="tabs-content">
+					    	<!--Contenido de la Pestaña 1-->
+					        <div id="tabs-content-1">
+					            <p class="left"><img src="http://ximg.es/160x120" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit reprehenderit iusto harum minima. Assumenda, accusamus, perspiciatis inventore tempora qui pariatur quisquam? Deleniti, placeat ea nostrum officiis obcaecati temporibus quod. Ullam, in, adipisci autem at fugit ab tempore enim ratione nesciunt alias corporis vitae quo quod nostrum itaque vero iure?</p>
+
+					        </div>
+					        <!--Contenido de la Pestaña 2-->
+					        <div id="tabs-content-2">
+				            	<img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, molestiae, officia repellendus quasi cumque dolor eius deserunt possimus aliquid neque nam assumenda veniam soluta enim commodi aperiam reprehenderit quia incidunt.
+					        </div>
+					        <!--Contenido de la Pestaña 3-->
+					        <div id="tabs-content-3">
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+					        </div>
+					        <!--Contenido de la Pestaña 4-->
+					        <div id="tabs-content-4">
+				            	<img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, molestiae, officia repellendus quasi cumque dolor eius deserunt possimus aliquid neque nam assumenda veniam soluta enim commodi aperiam reprehenderit quia incidunt.
+					        </div>
+					        <!--Contenido de la Pestaña 5-->
+					        <div id="tabs-content-5">
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+					        </div>
+					    </div>
+					</div>
+
+
+
+
+
 
 					<!-- 個人雲端發票 -->
 					<div id="invoice-type-content-for-panel-1" class="tab-container invoice-type-content m-hide">
