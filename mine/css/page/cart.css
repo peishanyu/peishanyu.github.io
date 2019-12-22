@@ -71,9 +71,11 @@
 .page-cart .nav-item {display:inline-block;list-style:none;padding:.5rem;}
 .page-cart .nav-item.active, .page-cart .invoice-type-content {background-color:#f0eae4;}
 
-	.page-cart .nav-item a, 
+	.page-cart .nav-item div, 
 	.page-cart .text-inner, 
 	.page-cart .tip-success {text-decoration:none;color:#8a837f;font-weight:700;font-size:20px;}
+
+	.page-cart .nav-item div {cursor:pointer;}
 
 .page-cart .group-tab {display:inline-block;padding:0;}
 .page-cart .group-tab .nav {margin-bottom:0;padding:0;}
