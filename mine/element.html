@@ -17,77 +17,78 @@
 	<link rel="icon" href="static/favicon.ico" class="next-head">
 
 <style type="text/css">
-	/* popover */
+
+/* popover */
 
   .qs {position:relative;display:inline-block;height:100%;margin:.5rem;vertical-align:text-bottom;cursor:pointer;}
   .qs .popover {
-  	display: inline-block;
+    display: inline-block;
     background-color: #ff9733;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     color: #fff;
     font-size: 14px;
-	text-align: center;
+    text-align: center;
     padding: 7px 10px;
     z-index: 4;
   }
 
   .qs .popover.top-c:before {
-  	position: absolute;
-	top: -20%;
-    bottom: -7px;
-    left: calc(50% - 7px);
-    content: '';
-    display: block;
-	width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 7px 7px 7px;
-    border-color: transparent transparent #ff9733 transparent;
+      position: absolute;
+    top: -20%;
+      bottom: -7px;
+      left: calc(50% - 7px);
+      content: '';
+      display: block;
+    width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7px 7px 7px;
+      border-color: transparent transparent #ff9733 transparent;
   }
 
   .qs .popover.bottom-c:before {
-  	position: absolute;
-	top: 100%;
-    bottom: -7px;
-    left: calc(50% - 7px);
-    content: '';
-    display: block;
-	width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7px 7px 0 7px;
-    border-color: #ff9733 transparent transparent transparent;
-  }
+    	position: absolute;
+    top: 100%;
+      bottom: -7px;
+      left: calc(50% - 7px);
+      content: '';
+      display: block;
+    width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 7px 0 7px;
+      border-color: #ff9733 transparent transparent transparent;
+    }
 
   .qs .popover.left-c:before {
-  	position: absolute;
-	top: calc(50% - 7px);
-    bottom: -7px;
-    left:-14px;
-    content: '';
-    display: block;
-	width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7px;
-    border-color: #ff9733 transparent transparent transparent;
-	transform: rotateZ(90deg);
+      position: absolute;
+    top: calc(50% - 7px);
+      bottom: -7px;
+      left:-14px;
+      content: '';
+      display: block;
+    width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px;
+      border-color: #ff9733 transparent transparent transparent;
+    transform: rotateZ(90deg);
   }
 
   .qs .popover.right-c:before {
-  	position: absolute;
-	top: calc(50% - 7px);
-    bottom: -7px;
-    right:-14px;
-    content: '';
-    display: block;
-	width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7px;
-    border-color: #ff9733 transparent transparent transparent;
-	transform: rotateZ(-90deg);
+    	position: absolute;
+  	top: calc(50% - 7px);
+      bottom: -7px;
+      right:-14px;
+      content: '';
+      display: block;
+  	width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px;
+      border-color: #ff9733 transparent transparent transparent;
+  	transform: rotateZ(-90deg);
   }
 
   .qs:hover .popover {
@@ -95,7 +96,6 @@
     -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
     -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
   }
-
 
   @-webkit-keyframes fade-in {
     from {
@@ -146,8 +146,71 @@
     }
   }
 
-
 /* popover end */
+
+
+/* Radio */
+.page- .control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin: .5rem 1rem 1rem;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.page- .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.page- .control__indicator {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.page- .control--radio .control__indicator {
+  border-radius: 50%;
+}
+.page- .control:hover input ~ .control__indicator,
+.page- .control input:focus ~ .control__indicator {
+  /*background: #ccc;*/
+}
+.page- .control input:checked ~ .control__indicator {
+  background: #fff;
+}
+.page- .control:hover input:not([disabled]):checked ~ .control__indicator,
+.page- .control input:checked:focus ~ .control__indicator {
+  background: #fff;
+}
+
+.page- .control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.page- .control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.page- .control--radio .control__indicator:after {
+  left: 4px;
+  top: 4px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffa150;
+}
+.page- .control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+
+/* Radio end */
+
 </style>
 
 
@@ -180,6 +243,27 @@
 	</div>
 
 </div>
+
+
+<div class="page-">
+  <label class="control control--radio">個人雲端發票
+    <input type="radio" name="radio" checked="checked"/>
+    <div class="control__indicator"></div>
+  </label>
+
+  <label class="control control--radio">公司用(線上列印)
+    <input type="radio" name="radio" checked="checked"/>
+    <div class="control__indicator"></div>
+  </label>
+
+  <label class="control control--radio">雲端發票捐贈
+    <input type="radio" name="radio" checked="checked"/>
+    <div class="control__indicator"></div>
+  </label>
+</div>
+
+
+
 
 </body>
 

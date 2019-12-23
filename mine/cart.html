@@ -312,6 +312,25 @@
 <div id="add-zone-modalMask" class="modal-mask" style="display:none" onclick="modalListZone()"></div>
 <!-- List Zone end -->
 
+<!-- List Recent Address -->
+<div class="page-cart modal_all" style="position:fixed;z-index:99;width:100%">
+	<div id="modalrecentAdd" class="elementToFadeIn modal modal-m" style="display:none;">
+		<div class="list-city address">
+			<div class="list-scroll clearfix">
+				<div class="col-85 block-c">
+					<div class="btn-option">111臺北市信義區 信義路五段7號</div>
+				</div>
+				<div class="col-85 block-c">
+					<div class="btn-option">105臺北市松山區 民生東路5段163之1號</div>
+				</div>
+				<div class="text-inner text-c">無最近用地址，請重新填寫</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="recent-add-modalMask" class="modal-mask" style="display:none" onclick="modalListRecentAdd()"></div>
+<!-- List Recent Address end -->
+
 <div class="page-cart clearfix">
 
 	<div class="banner"></div>
@@ -457,35 +476,46 @@
 								<ul>
 									<li id="tabHeader_1">
 										<div>
-											<img src="static/images/cart/ic-radio-active.svg" class="ic-radio active" />
-											個人雲端發票	
+											<label class="control control--radio">個人雲端發票
+												<input type="radio" name="radio" checked="checked" />
+												<div class="control__indicator"></div>
+											</label>
 										</div>
 									</li>
 
 									<li id="tabHeader_2">
 										<div>
-											<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-											公司用(線上列印)
+											<label class="control control--radio">公司用(線上列印)
+												<input type="radio" name="radio"/>
+												<div class="control__indicator"></div>
+											</label>
 										</div>
 									</li>
 
 									<li id="tabHeader_3">
 										<div>
-											<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-											雲端發票捐贈
+											<label class="control control--radio">雲端發票捐贈
+												<input type="radio" name="radio"/>
+												<div class="control__indicator"></div>
+											</label>
 										</div>
 									</li>
 
 									<li id="tabHeader_4">
-
-										<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-										個人紙本發票
+										<div>
+											<label class="control control--radio">個人紙本發票
+												<input type="radio" name="radio"/>
+												<div class="control__indicator"></div>
+											</label>
+										</div>
 									</li>
 
 									<li id="tabHeader_5">
 										<div>
-											<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-											公司用(郵寄)
+											<label class="control control--radio">公司用(郵寄)
+												<input type="radio" name="radio"/>
+												<div class="control__indicator"></div>
+											</label>
 										</div>
 									</li>
 								</ul>
@@ -495,24 +525,30 @@
 
 								<div class="tabpage" id="tabpage_1">
 							        <ul class="nav nav-tabs">
-										<li id="panel-1-1" class="nav-item">
+										<li id="panel-1-1" class="nav-item pd-0">
 											<div>
-												<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-												會員載具	
+												<label class="control control--radio">會員載具
+													<input type="radio" name="radio"/>
+													<div class="control__indicator"></div>
+												</label>
 											</div>
 										</li>
 
-										<li id="panel-1-2" class="nav-item active">
+										<li id="panel-1-2" class="nav-item pd-0 active">
 											<div>
-												<img src="static/images/cart/ic-radio-active.svg" class="ic-radio active" />
-												手機條碼載具	
+												<label class="control control--radio">手機條碼載具
+													<input type="radio" name="radio" checked="checked"/>
+													<div class="control__indicator"></div>
+												</label>
 											</div>
 										</li>
 
-										<li id="panel-1-3" class="nav-item">
+										<li id="panel-1-3" class="nav-item pd-0">
 											<div>
-												<img src="static/images/cart/ic-radio.svg" class="ic-radio" />
-												自然人憑證載具	
+												<label class="control control--radio">自然人憑證載具
+													<input type="radio" name="radio"/>
+													<div class="control__indicator"></div>
+												</label>
 											</div>
 										</li>
 									</ul>
@@ -529,7 +565,10 @@
 											</div>
 											
 											<div class="invoice-agree mb-5">
-												<img src="static/images/cart/ic-checked.svg" class="mr-1" />我同意紀錄本次手機條碼為常用載具
+												<li>
+													<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+													<label for="styled-checkbox-1">我同意紀錄本次手機條碼為常用載具</label>
+												</li>
 											</div>
 										</div>
 										
@@ -540,21 +579,26 @@
 											</div>
 
 											<div class="invoice-agree mb-5">
-												<img src="static/images/cart/ic-checked.svg" class="mr-1" />我同意紀錄本次自然人憑證為常用載具
+												<li>
+													<input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+													<label for="styled-checkbox-2">我同意紀錄本次自然人憑證為常用載具</label>
+												</li>
 											</div>
 										</div>
 									</div>
 
 									<div class="mt-5 invoice-agree clearfix">
-										<div class="relative">
-											<div class="absolute"><img src="static/images/cart/ic-checked.svg" /></div>
-											<p class="ml-5">
+										<li>
+											<input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+											<label for="styled-checkbox-3">
 												我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
 
-												<span id="personal-cloud-invoice-note" class="inline mt-1 mb-1">依統一發票使用辦法規定，個人發票一經開立，不得更改或改開公司戶發票。<a href="">財政部電子發票流程說明</a></span>
-												
-											</p>
-										</div>
+												<div>
+													依統一發票使用辦法規定，個人發票一經開立，不得更改或改開公司戶發票。<a href="">財政部電子發票流程說明</a>
+												</div>
+
+											</label>
+										</li>
 									</div>
 								</div>
 
@@ -573,16 +617,19 @@
 									</div>
 
 									<div class="mt-3 invoice-agree clearfix">
-										<div class="relative">
-											<div class="absolute"><img src="static/images/cart/ic-checked.svg" /></div>
-											<p class="ml-5">
+
+										<li>
+											<input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">
+											<label for="styled-checkbox-4">
 												我同意辦理退貨時，由 Mine Jade&Jewery 代為處理發票及銷貨退回證明單，以加速退貨退款作業。
 
+												<div>
+													依統一發票使用辦法規定，發票一經開立，不得更改或改開其他統一編號發票。<a href="">財政部電子發票流程說明</a>
+												</div>
 
-												<span id="company-print-invoice-note" class="inline mt-1 mb-1">依統一發票使用辦法規定，發票一經開立，不得更改或改開其他統一編號發票。<a href="">財政部電子發票流程說明</a></span>
+											</label>
+										</li>
 
-											</p>
-										</div>
 									</div>
 
 								</div>
@@ -911,30 +958,37 @@
 
 					<ul id="tabs-list-invoice-deliver" class="nav nav-tabs">
 
-						<li id="li-for-deliver-1" class="nav-item">
+						<li id="li-for-deliver-1" class="nav-item pl-0">
 							<div>
-								<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-								同訂購人地址
+								<label class="control control--radio ml-0">同訂購人地址
+									<input type="radio" name="radio"/>
+									<div class="control__indicator"></div>
+								</label>
 							</div>
 						</li>
 
-						<li id="li-for-deliver-2" class="nav-item">
+						<li id="li-for-deliver-2" class="nav-item pl-0">
 							<div>
-								<img src="static/images/cart/ic-radio.svg" class="ic-radio"/>
-								從最近的地址中挑選
+								<label class="control control--radio ml-0">
+									<span onclick="modalListRecentAdd()">從最近的地址中挑選</span>
+									<input type="radio" name="radio"/>
+									<div class="control__indicator"></div>
+								</label>
 							</div>
 						</li>
 
-						<li id="li-for-deliver-3" class="nav-item">
+						<li id="li-for-deliver-3" class="nav-item pl-0">
 							<div>
-								<img src="static/images/cart/ic-radio-active.svg" class="ic-radio" />
-								重新填寫
+								<label class="control control--radio ml-0">重新填寫
+									<input type="radio" name="radio" checked="checked"/>
+									<div class="control__indicator"></div>
+								</label>
 							</div>
 						</li>
 
 					</ul>
 
-					<div id="invoice-deliver-content" class="tab-container">
+					<div id="invoice-deliver-content" class="tab-container clearfix">
 
 						<div class="btn-select" onclick="modalListCity()">
 							<span>台北市</span>
@@ -947,13 +1001,12 @@
 						</div>
 
 					
-
-
-
 						<div class="relative">
 							<div class="zone-select">台北市大安區</div>
 							<input type="text" class="col-100 zone-add" placeholder="請輸入地址">
 						</div>
+
+						<div class="text-inner">111台北市信義區 信義路五段7號</div>
 
 					</div>
 
@@ -1244,8 +1297,14 @@
 </div>
 <!-- FOOTER end -->
 
+<script src="js/modal_login.js"></script>
+<script src="js/menu_header.js"></script>
+<script src="js/list-city.js"></script>
+<script src="js/list-zone.js"></script>
+<script src="js/list-recentAdd.js"></script>
 
 
+<!-- tab -->
 <script type="text/javascript">
 	// get tab container
   	var container = document.getElementById("tabContainer");
@@ -1290,11 +1349,6 @@
 
 
 
-
-<script src="js/modal_login.js"></script>
-<script src="js/menu_header.js"></script>
-<script src="js/list-city.js"></script>
-<script src="js/list-zone.js"></script>
 
 </body>
 </html>
