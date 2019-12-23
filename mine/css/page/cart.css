@@ -548,6 +548,14 @@
 
 	.page-cart .modal {top:100px;}
 
+	/* Radio */
+	.page-cart .control {font-size:16px;}
+
+	.page-cart .m-show .control {margin: .25rem 1rem .25rem;}
+
+	.page-cart .control__indicator {width:20px;height:20px;}
+	.page-cart .control--radio .control__indicator:after {width:12px;height:12px;}
+
 	/* CheckBox */
 	.page-cart .prd-list .styled-checkbox + label:before {width:24px;height:24px; border:3px solid #8A837F;}
 	.page-cart .prd-list .styled-checkbox:checked + label:after {width:24px;height:24px;top:0;left:0;transform:scale(1);}
