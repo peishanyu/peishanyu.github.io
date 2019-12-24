@@ -709,10 +709,12 @@
   .page-customization .zone-option .option.active {border:5px solid #5F5853;}
   .page-customization .zone-color-img {position:relative;overflow:auto;padding:1rem 0;}
   .page-customization .scroll-container {white-space: nowrap;overflow:auto;padding-bottom: 1rem;}
-  .page-customization .zone-color-img .img {display:inline-block;width:25%;border: 5px solid transparent;}
+
+  .page-customization .zone-color-img .img {display:inline-block;width:auto;padding:.5rem;border: 5px solid transparent;}
   .page-customization .zone-color-img .img.active {border: 5px solid #5F5853;}
   .page-customization .zone-color-img .img:first-child {margin-left:2rem;}
   .page-customization .zone-color-img .img:last-child {margin-right:2rem;}
+  .page-customization .zone-color-img .img>img {height:80px;}
 
   .page-customization .img-slide {
     position:absolute;top:0;bottom:0;width:12%;height:80%;display:flex;justify-content: center;align-items: center;
