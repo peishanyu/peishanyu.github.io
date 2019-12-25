@@ -750,6 +750,9 @@
     left: calc(50% - 210px);
   }
 
+  .page-customization #letteringPopup .container {margin-top:3rem;}
+  .page-customization #letteringPopup .container img {width:390px;max-height: 464px;}
+
   .page-customization .lettering-sample {
     position: absolute;
     display: block;
@@ -820,6 +823,11 @@
   .page-customization #lookbookPopup .grid.active {border: 3px solid #afafaf;}
 
   .page-customization .img-display {box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);}
+
+  .page-customization #lookbookPopup .grid img {width:100px;max-height:116px;}
+  .page-customization #lookbookPopup .img-display img {width:314px;max-height:364px;}
+
+
   .page-customization .sample-container {display:flex;flex-wrap:wrap;justify-content:center;}
 /* LookBook Item */
 
@@ -847,8 +855,6 @@
   .outer-scroll {position:relative;height:456px;overflow:auto;margin:auto;text-align:center;background-color:#fff;}
   .page-customization #previewPopup .grid {display:inline-block;margin:.5rem;box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);border: 3px solid transparent;}
   .page-customization #previewPopup .grid.active {border: 3px solid #afafaf;}
-
-  .page-customization .img-display {box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);}
 /* Preview end */
 
 
@@ -1110,12 +1116,14 @@
 
 
   /* LookBook */
-	.page-customization .img-display {width:90%;margin : 0 auto;}
+	.page-customization .img-display {width:70%;margin:0 auto;}
     .page-customization #lookbookPopup .container {max-width:500px;left:calc(50% - 250px);}
     .page-customization .outer-scroll {height:25vh;}
     .page-customization #lookbookPopup .outer {height:100vh;}
     .page-customization .modal-btn-comfirm {margin-bottom: 0.85rem;}
     
+    .page-customization #lookbookPopup .grid img {width:140px;max-height:162px;}
+
     /* .page-customization .item-sample-block {margin-bottom: 7vh;} */
 /*     .page-customization .modal-btn-comfirm {
 	    position: absolute;
@@ -1228,18 +1236,20 @@
       transform: translate(-150px, 174px);
     }
 
+    
+
   /* Item Size and Color Setting */
-    .zone-color-img .img {border-width:4px;}
+    .page-customization .zone-color-img .img {border-width:4px;}
     .page-customization .zone-option .option {
       padding: .15rem 1rem;
       border-width:4px;
     }
-    .zone-color-img .img.active,
+    .page-customization .zone-color-img .img.active,
     .page-customization .zone-option .option.active {border-width:4px;}
 
   /* Lettering Item */
-    #letteringPopup.popup-center {left:auto;}
-
+    .page-customization #letteringPopup.popup-center {left:auto;}
+    .page-customization #letteringPopup .container {margin-top:.5rem;}
   /* LookBook */
 	
 	.page-customization #lookbookPopup .container {max-width:320px;padding:1.5rem 1rem;left:calc(50% - 160px);top: calc(50% + 3vh);}
@@ -1249,6 +1259,9 @@
 	    right: 1rem;
     	width: 25px;
     }
+
+  .page-customization #lookbookPopup .grid img {width:100px;height:auto;}
+
 	/* .page-customization .outer-scroll {height:20vh;} */
     /* .page-customization .item-sample-block {margin-bottom: 8vh;}
     .page-customization .modal-btn-comfirm {	   
@@ -1362,6 +1375,7 @@
   .page-customization #previewPopup .img-display {max-width:320px;}
   /* Preview end */
 
+  .page-customization #letteringPopup .container {margin-top:0;}
 
 }
 
