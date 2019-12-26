@@ -331,6 +331,77 @@
 <div id="recent-add-modalMask" class="modal-mask" style="display:none" onclick="modalListRecentAdd()"></div>
 <!-- List Recent Address end -->
 
+
+<!-- Gift Card -->
+<div class="page-cart modal_all" style="position:fixed;z-index:99;width:100%">
+	<div id="modal-giftcard" class="elementToFadeIn modal modal-m" style="display:none;">
+
+		<div class="container">
+
+			<div class="closePopup" onclick="modalGiftCard()">
+				<img src="static/images/menu/ic-close_menu.svg" class="close pointer">
+			</div>
+
+			<div class="mb-4">
+				<div class="title">包裝選擇:</div>
+				<ul>
+					<li class="nav-item">
+						<label class="control control--radio">環保版 +0元/份
+							<input type="radio" name="radio" checked="checked" />
+							<div class="control__indicator"></div>
+						</label>	
+					</li>
+					
+					<li class="nav-item">
+						<label class="control control--radio">精裝版 +168元/份
+							<input type="radio" name="radio" checked="checked" />
+							<div class="control__indicator"></div>
+						</label>
+					</li>
+				</ul>	
+			</div>
+			
+			<div>
+				<div id="spent-time" class="title">
+					您所花費的時長為 <span id="">3</span>小時<span id="">25</span> 分
+				</div>
+				<ul>
+					<li class="nav-item">
+						<label class="control control--radio">顯示於小卡上
+							<input type="radio" name="radio" checked="checked" />
+							<div class="control__indicator"></div>
+						</label>	
+					</li>
+					
+					<li class="nav-item">
+						<label class="control control--radio">不顯示
+							<input type="radio" name="radio" checked="checked" />
+							<div class="control__indicator"></div>
+						</label>
+					</li>
+				</ul>				
+			</div>
+
+			<div>
+				<div class="subtitle">小卡文字</div>
+				<div class="text-area">
+					<textarea rows="3" cols="50" placeholder="寫上您希望於包裝小卡中留下的文字（最多15字）"></textarea>
+				</div>	
+			</div>
+			
+			<div class="text-c">
+				<button class="col-xs-50 btn modal-btn-comfirm mr-0">完成</button>
+			</div>
+			
+
+		</div>
+
+	</div>
+</div>
+<div id="add-giftcardMask" class="modal-mask" style="display:none" onclick="modalGiftCard()"></div>
+<!-- Gift Card end -->
+
+
 <div class="page-cart clearfix">
 
 	<div class="banner"></div>
@@ -361,7 +432,7 @@
 
 					<div class="prd-img">
 						<img src="static/images/cart/thumb-1.jpg" class="thumbnail" />
-						<img src="static/images/cart/btn-gift.svg"/>
+						<img src="static/images/cart/btn-gift.svg" onclick="modalGiftCard()"/>
 					</div>
 
 					<div class="prd-name-number">
@@ -411,7 +482,7 @@
 
 					<div class="prd-img">
 						<img src="static/images/cart/thumb-1.jpg" class="thumbnail"/>
-						<img src="static/images/cart/btn-gift.svg"/>
+						<img src="static/images/cart/btn-gift.svg" onclick="modalGiftCard()"/>
 					</div>
 
 					<div class="prd-name-number">
@@ -1435,7 +1506,7 @@
 <script src="js/list-city.js"></script>
 <script src="js/list-zone.js"></script>
 <script src="js/list-recentAdd.js"></script>
-
+<script src="js/modal-giftcard.js"></script>
 
 <!-- tab -->
 <script type="text/javascript">

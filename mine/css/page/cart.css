@@ -278,25 +278,25 @@
 
 
 /* Tab Custom */
-.page-cart #tabs{height:auto;overflow:hidden;}
-.page-cart #tabs > ul{font:1em;list-style:none;}
+	.page-cart #tabs{height:auto;overflow:hidden;}
+	.page-cart #tabs > ul{font:1em;list-style:none;}
 
-.page-cart #tabs > ul > li{
-	margin:0;
-	padding:0;
-	display:block;
-	float:left;
-	color:#8a837f;
-	font-weight:700;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-	background: #fef8f2; 
-}
+	.page-cart #tabs > ul > li{
+		margin:0;
+		padding:0;
+		display:block;
+		float:left;
+		color:#8a837f;
+		font-weight:700;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+		background: #fef8f2; 
+	}
 
-.page-cart #tabs > ul > li:hover{background:#f0eae4;cursor:pointer;color:#8a837f;}
-.page-cart #tabs > ul > li.tabActiveHeader{background:#f0eae4;cursor:pointer;color:#8a837f;}
-.page-cart #tabscontent {padding:1rem;background:#f0eae4;margin:0;color:#333;}
+	.page-cart #tabs > ul > li:hover{background:#f0eae4;cursor:pointer;color:#8a837f;}
+	.page-cart #tabs > ul > li.tabActiveHeader{background:#f0eae4;cursor:pointer;color:#8a837f;}
+	.page-cart #tabscontent {padding:1rem;background:#f0eae4;margin:0;color:#333;}
 /* Tab Custom End */
 
 
@@ -416,6 +416,44 @@
 	.page-cart .prd-list .styled-checkbox + label:before {width:30px;height:30px; border:4px solid #8A837F;}
 	.page-cart .prd-list .styled-checkbox:checked + label:after {width:30px;height:30px;top:0;left:0;transform:scale(1.2);}
 /* Check Box end */
+
+
+/* GiftCard popup */
+
+  .page-cart #modal-giftcard {
+  	display:block;
+  	position:absolute;
+  }
+
+  .page-cart #modal-giftcard .container {
+    position:relative;
+    max-width:575px;
+    padding:3rem;
+    background:#FFF8F2;
+    color:#8B8380;
+    font-weight:700;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+  }
+
+  .page-cart #modal-giftcard .closePopup {position:absolute;top:1rem;right:1rem;width:30px;}
+
+  .page-cart #modal-giftcard .title {font-size:28px;}
+  .page-cart #modal-giftcard .subtitle {margin-bottom:.5rem;font-size:20px;}
+
+  .page-cart #modal-giftcard textarea {width:100%;margin:auto;padding:0.5rem;font-size:1rem; resize: none;font-weight:400;}
+
+  .page-cart #modal-giftcard .text-area {margin-bottom:1rem;}
+
+  .page-cart #modal-giftcard .control {margin:0;}
+  .page-cart #modal-giftcard .nav-item {padding:.5rem 0;padding-right:1rem;}
+  .page-cart #modal-giftcard ul {padding:0;margin-bottom:.5rem;}
+
+/* GiftCard popup end */
+
+
+
+
+
 
 
 
@@ -561,6 +599,16 @@
 	.page-cart .prd-list .styled-checkbox:checked + label:after {width:24px;height:24px;top:0;left:0;transform:scale(1);}
 
 
+	/* GiftCard popup */
+	.page-cart #modal-giftcard .container {
+		max-width:320px;
+		padding: 3rem 1.5rem;
+	}
+	.page-cart #modal-giftcard .title {font-size:20px;}
+	.page-cart #modal-giftcard .subtitle {font-size:18px;}
+	/* GiftCard popup end */
+
+
 }
 
 @media only screen and (max-width:320px) {
@@ -570,6 +618,30 @@
 	.page-cart .btn-select span {width: 4rem;}
 	.page-cart .btn-group button {margin:0 .25rem;margin-bottom:1rem;}
 	.page-cart .btn-group button {font-size:15px;}
+
+	/* GiftCard popup */
+	.page-cart #modal-giftcard.modal {top:3rem;}
+	  .page-cart #modal-giftcard .container {
+	    max-width:300px;
+	    padding: 2rem 1.5rem;
+	  }
+	  .page-cart #modal-giftcard .title {font-size:18px;}
+	  .page-cart #modal-giftcard .subtitle {font-size:16px;}
+	  .page-cart #modal-giftcard .control {font-size:14px;}
+
+	  .page-cart #modal-giftcard .elementToFadeIn {
+			opacity: 1;
+			animation: fade .5s linear;
+		}
+			@keyframes fade {
+		  		0% { opacity:0;top:130px }
+		  		50%,100% { opacity:1;top:3rem }
+			}
+
+
+	/* GiftCard popup end */
+
+
 }
 
 
