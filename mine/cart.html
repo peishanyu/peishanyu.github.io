@@ -447,11 +447,17 @@
 
 							<div class="prd-price-qty m-show">
 								<div class="price"><span class="usd">$</span>1280</div>
+								<div class="price">
+									<span>數量: 1個</span>
+									<img src="static/images/cart/ic-copy.svg" onclick="" />
+								</div>
+								<!--
 								<div class="qty">
 									<div id=""><img src="static/images/cart/ic-min-qty.svg" class="ic-min-qty" /></div>
 									<div id="" class="qty-num">2</div>
 									<div id=""><img src="static/images/cart/ic-add-qty.svg" class="ic-add-qty" /></div>
 								</div>
+								-->
 							</div>	
 						</div>
 					</div>
@@ -462,11 +468,17 @@
 					</div>
 					<div class="prd-price-qty m-hide">
 						<div class="price"><span class="usd">$</span>1280</div>
+						<div class="price">
+							<span>數量: 1個</span>
+							<img src="static/images/cart/ic-copy.svg" onclick="" />
+						</div>
+						<!--
 						<div class="qty">
 							<div id=""><img src="static/images/cart/ic-min-qty.svg" class="ic-min-qty" /></div>
 							<div id="" class="qty-num">2</div>
 							<div id=""><img src="static/images/cart/ic-add-qty.svg" class="ic-add-qty" /></div>
 						</div>
+						-->
 					</div>
 				</div>
 
@@ -497,10 +509,9 @@
 
 							<div class="prd-price-qty m-show">
 								<div class="price"><span class="usd">$</span>1280</div>
-								<div class="qty">
-									<div id=""><img src="static/images/cart/ic-min-qty.svg" class="ic-min-qty" /></div>
-									<div id="" class="qty-num">2</div>
-									<div id=""><img src="static/images/cart/ic-add-qty.svg" class="ic-add-qty" /></div>
+								<div class="price">
+									<span>數量: 1個</span>
+									<img src="static/images/cart/ic-copy.svg" onclick="" />
 								</div>
 							</div>
 						</div>
@@ -512,10 +523,9 @@
 					</div>
 					<div class="prd-price-qty m-hide">
 						<div class="price"><span class="usd">$</span>1280</div>
-						<div class="qty">
-							<div id=""><img src="static/images/cart/ic-min-qty.svg" class="ic-min-qty" /></div>
-							<div id="" class="qty-num">2</div>
-							<div id=""><img src="static/images/cart/ic-add-qty.svg" class="ic-add-qty" /></div>
+						<div class="price">
+							<span>數量: 1個</span>
+							<img src="static/images/cart/ic-copy.svg" onclick="" />
 						</div>
 					</div>
 				</div>
@@ -1219,6 +1229,331 @@
 
 			<div class="div-title">寄送方式*</div>
 
+			<div class="info-inner-container invoice-type row">
+				<div class="col-15 col-md-100 col-s-100 group-title">寄送類型:</div>
+
+				<div class="col-84 col-md-100 col-s-100 group-tab">
+
+					<div class="m-hide">
+
+						<div id="tabContainer2">
+							<div id="tabs2">
+								<ul>
+									<li id="tabHeader2_1">
+										<div>
+											<label class="control control--radio">店到店
+												<input type="radio" name="invoice-type" checked="checked" />
+												<div class="control__indicator"></div>
+											</label>
+										</div>
+									</li>
+
+									<li id="tabHeader2_2">
+										<div>
+											<label class="control control--radio">郵寄
+												<input type="radio" name="invoice-type" />
+												<div class="control__indicator"></div>
+											</label>
+										</div>
+									</li>
+
+									<li id="tabHeader2_3">
+										<div>
+											<label class="control control--radio">海外配送
+												<input type="radio" name="invoice-type" />
+												<div class="control__indicator"></div>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div id="tabscontent2">
+
+								<div class="tabpage" id="tabpage2_1">
+
+							        <ul class="nav nav-tabs">
+										<li id="li-for-deliver-way-1" class="nav-item">
+											<div>
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-711.png" class="img-2x" />
+													<span class="m-hide">7-11</span>
+													<input type="radio" name="shop"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+											</div>
+										</li>
+
+										<li id="li-for-deliver-way-2" class="nav-item">
+											<div>
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-hilife.png" class="img-2x opaticy50"/>
+													<span class="m-hide">萊爾富</span>
+													<input type="radio" name="shop"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+											</div>
+										</li>
+
+										<li id="li-for-deliver-way-3" class="nav-item">
+											<div>
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-okmart.png" class="img-2x opaticy50" />
+													<span class="m-hide">OK便利超商</span>
+													<input type="radio" name="shop"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+											</div>
+										</li>
+
+										<li id="li-for-deliver-way-4" class="nav-item">
+											<div>
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-familymart.png" class="img-2x opaticy50" />
+													<span class="m-hide">全家</span>
+													<input type="radio" name="shop"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="tab-container">
+
+										<div id="content-for-deliver-way-1">
+											<div class="price text-inner"><span class="usd">$</span>60</div>
+											<div class="btn-select">
+												<span>選門市</span>
+												<img src="static/images/cart/ic-arrowdown-input.svg" />
+											</div>
+											<div class="text-inner">123興安門市-台北市松山區興安街168巷1號</div>
+										</div>
+
+										<div id="content-for-deliver-way-2"></div>
+										<div id="content-for-deliver-way-3"></div>
+										<div id="content-for-deliver-way-4"></div>
+									</div>
+								</div>
+
+
+								<div class="tabpage" id="tabpage2_2">
+									<ul class="nav nav-tabs">
+										<li id="li-for-mailbox-way-1" class="nav-item">
+											<div>
+
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-tcat.svg" />
+													<span class="m-hide">黑貓宅配</span>
+													<input type="radio" name="mailbox"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+
+											</div>
+										</li>
+
+										<li id="li-for-mailbox-way-2" class="nav-item">
+											<div>
+
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-ChunghwaPost.svg" class="img-2x opaticy50" />
+													<span class="m-hide">郵寄掛號</span>
+													<input type="radio" name="mailbox"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+
+											</div>
+										</li>
+									</ul>
+
+									<div class="tab-container">
+										<div id="content-for-mailbox-way-1"></div>
+										<div id="content-for-mailbox-way-2">
+											<div class="price text-inner">
+												<span class="usd">$</span>60
+											</div>
+											<div class="btn-select" onclick="modalListCity()">
+												<span>台北市</span>
+												<img src="static/images/cart/ic-arrowdown-input.svg" />
+											</div>
+											<div class="btn-select" onclick="modalListZone()">
+												<span>大安區</span>
+												<img src="static/images/cart/ic-arrowdown-input.svg" />
+											</div>
+										</div>
+									</div>
+
+									<div class="group-title">地址</div>
+									<div class="relative">
+										<div class="zone-select">台北市大安區</div>
+										<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
+									</div>
+
+									<div class="group-title">寄送備註</div>
+									<div class="textarea">
+										<textarea rows="4" cols="50" placeholder="請輸入快遞/寄送備註" class="width-100"></textarea>
+									</div>
+								</div>
+
+
+								<div class="tabpage" id="tabpage2_3">
+									<ul>
+										<li id="li-for-overseas-way-1" class="nav-item">
+											<div>
+
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-dhl.svg" />
+													<span class="m-hide">DHL</span>
+													<input type="radio" name="radio"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+
+											</div>
+										</li>
+
+										<li id="li-for-overseas-way-2" class="nav-item">
+											<div>
+
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo-fedex.svg" class="opaticy50" />
+													<span class="m-hide">FedEx</span>
+													<input type="radio" name="radio"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+											</div>
+										</li>
+									</ul>
+									<div class="tab-container">
+										<div id="content-for-overseas-way-1"></div>
+										<div id="content-for-overseas-way-2">
+											<div class="price text-inner">
+												<span class="usd">$</span>350
+												<img src="static/images/cart/ic-info.svg" class="pointer" />
+											</div>
+											<div class="btn-select">
+												<span>日本</span>
+												<img src="static/images/cart/ic-arrowdown-input.svg" />
+											</div>
+											<div class="btn-select">
+												<span>東京</span>
+												<img src="static/images/cart/ic-arrowdown-input.svg" />
+											</div>
+										</div>
+									</div>
+
+									<div class="group-title">地址</div>
+									<div class="relative">
+										<div class="zone-select">日本東京</div>
+										<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
+									</div>
+
+									<div class="group-title">寄送備註</div>
+									<div class="textarea">
+										<textarea rows="4" cols="50" placeholder="請輸入快遞/寄送備註" class="width-100"></textarea>
+									</div>
+								</div>	
+
+						    </div>
+						</div>
+
+					</div>
+
+
+					<div class="m-show clearfix">
+						<div class="relative">
+							<ul>
+								<li class="dropdown">
+									<input type="checkbox" />
+									<div data-toggle="dropdown">個人雲端發票</div>
+									<ul class="dropdown-menu">
+										<li id="invoice-type-m-panel-1"><div>個人雲端發票</div></li>
+										<li id="invoice-type-m-panel-2"><div>公司用(線上列印)</div></li>
+										<li id="invoice-type-m-panel-3"><div>雲端發票捐贈</div></li>
+									</ul>
+								</li>
+							</ul>
+
+							<!-- 個人雲端發票 -->
+							<div id="invoice-type-m-content-for-panel2-1">
+								<ul class="nav nav-tabs">
+									<li id="m-panel2-1-1" class="nav-item">
+										
+										<div>
+											<label class="control control--radio ml-0">會員載具
+												<input type="radio" name="radio">
+												<div class="control__indicator"></div>
+											</label>
+										</div>
+
+									</li>
+
+									<li id="m-panel2-1-2" class="nav-item">
+
+										<div>
+											<label class="control control--radio ml-0">手機條碼載具
+												<input type="radio" name="radio">
+												<div class="control__indicator"></div>
+											</label>
+										</div>
+
+									</li>
+
+									<li id="m-panel2-1-3" class="nav-item">
+
+										<div>
+											<label class="control control--radio ml-0">自然人憑證載具
+												<input type="radio" name="radio">
+												<div class="control__indicator"></div>
+											</label>
+										</div>
+
+									</li>
+								</ul>
+
+								<div class="nav-tabs-inner">
+									<!-- 會員載具 -->
+									<div id="content-for-m-panel-1-1">
+										<div class="invoice-agree clearfix">
+
+											<li>
+												<input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value1"/>
+											</li>
+
+										</div>
+									</div>
+
+									<!-- 手機條碼載具 -->
+									<div id="content-for-m-panel-1-2">
+
+									</div>
+
+									<!-- 自然人憑證載具 -->
+									<div id="content-for-m-panel-1-3">
+
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<!--
 			<div class="info-inner-container row">
 				<div class="col-15 col-s-100 group-title">店到店</div>
 
@@ -1291,14 +1626,15 @@
 				</div>
 
 			</div>
+			-->
 
+			<!--
 			<div class="info-inner-container row">
 				<div class="col-15 col-s-100 group-title">郵寄</div>
 
 				<div class="col-84 col-s-100 group-tab pd-0">
 
 					<ul id="tabs-list-mailbox-way" class="nav nav-tabs">
-
 						<li id="li-for-mailbox-way-1" class="nav-item">
 							<div>
 
@@ -1357,7 +1693,9 @@
 				</div>
 
 			</div>
+			-->
 
+			<!--
 			<div class="info-inner-container row">
 				<div class="col-15 col-s-100 group-title">海外配送</div>
 
@@ -1423,6 +1761,7 @@
 				</div>
 
 			</div>
+		-->
 		</div>
 
 		<div class="prd-sepline"></div>

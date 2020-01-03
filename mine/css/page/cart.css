@@ -96,8 +96,8 @@
 
 .page-cart .info-inner-container {margin:2rem auto;padding:0 1rem;}
 
-.page-cart #tabs-list-deliver-way .img-2x {width:52px;}
-
+.page-cart .nav-item .img-2x {width:52px;}
+.page-cart .nav-item .opaticy50 {opacity:.5;}
 
 
 .page-cart .btn-select {display:inline-block;margin:1rem 0;margin-right: .5rem;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
@@ -280,10 +280,10 @@
 
 
 /* Tab Custom */
-	.page-cart #tabs{height:auto;overflow:hidden;}
-	.page-cart #tabs > ul{font:1em;list-style:none;}
+	.page-cart #tabs, .page-cart #tabs2 {height:auto;overflow:hidden;}
+	.page-cart #tabs > ul, .page-cart #tabs2 > ul {font:1em;list-style:none;}
 
-	.page-cart #tabs > ul > li{
+	.page-cart #tabs > ul > li,.page-cart #tabs2 > ul > li{
 		margin:0;
 		padding:0;
 		display:block;
@@ -296,9 +296,11 @@
 		background: #fef8f2; 
 	}
 
-	.page-cart #tabs > ul > li:hover{background:#f0eae4;cursor:pointer;color:#8a837f;}
-	.page-cart #tabs > ul > li.tabActiveHeader{background:#f0eae4;cursor:pointer;color:#8a837f;}
-	.page-cart #tabscontent {padding:1rem;background:#f0eae4;margin:0;color:#333;}
+	.page-cart #tabs > ul > li:hover,.page-cart #tabs2 > ul > li:hover{background:#f0eae4;cursor:pointer;color:#8a837f;}
+	.page-cart #tabs > ul > li.tabActiveHeader,.page-cart #tabs2 > ul > li.tabActiveHeader{background:#f0eae4;cursor:pointer;color:#8a837f;}
+	
+	.page-cart #tabscontent,.page-cart #tabscontent2 {padding:1rem;background:#f0eae4;margin:0;color:#333;}
+
 /* Tab Custom End */
 
 
@@ -453,7 +455,7 @@
 /* GiftCard popup end */
 
 
-
+.page-cart .price>img {vertical-align:middle;}
 
 
 
