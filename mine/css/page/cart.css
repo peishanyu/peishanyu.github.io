@@ -455,6 +455,27 @@
 /* GiftCard popup end */
 
 
+/* International Postage Popup */
+  .page-cart #internationalPostage {
+  	display:block;
+  	position:absolute;
+  }
+
+  .page-cart #internationalPostage .container {
+    position:relative;
+    max-width:575px;
+    margin: 1rem;
+    padding:0;
+    padding-top: 3rem;
+    background:#fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+  }
+
+  .page-cart #internationalPostage .closePopup {position:absolute;top:1rem;right:1rem;width:30px;}
+
+/* International Postage Popup end */
+
+
 .page-cart .price>img {vertical-align:middle;}
 
 
@@ -612,6 +633,7 @@
 	.page-cart #modal-giftcard .subtitle {font-size:18px;}
 	/* GiftCard popup end */
 
+	.page-cart .price>img {width:24px;}
 
 }
 

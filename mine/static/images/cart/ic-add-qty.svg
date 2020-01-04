@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.4" height="49.4" viewBox="0 0 49.4 49.4">
   <defs>
-    <filter id="Path_7" x="0" y="0" width="49.4" height="49.4" filterUnits="userSpaceOnUse">
+    <filter id="Ellipse_1" x="0" y="0" width="49.4" height="49.4" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feFlood flood-opacity="0.698"/>
@@ -8,9 +8,9 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="ic-add-qty" transform="translate(-407.326 -56.988)">
-    <g transform="matrix(1, 0, 0, 1, 407.33, 56.99)" filter="url(#Path_7)">
-      <path id="Path_7-2" data-name="Path 7" d="M107.9,38.3a15.7,15.7,0,1,1,15.7-15.7,15.663,15.663,0,0,1-15.7,15.7" transform="translate(-83.2 2.1)" fill="#fff"/>
+  <g id="ic-add-qty" transform="translate(-407.33 -56.99)">
+    <g transform="matrix(1, 0, 0, 1, 407.33, 56.99)" filter="url(#Ellipse_1)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="15.7" cy="15.7" r="15.7" transform="translate(9 9)" fill="#fff"/>
     </g>
     <rect id="Rectangle_12" data-name="Rectangle 12" width="3.8" height="16.9" transform="translate(430.126 73.288)" fill="#8a837f"/>
     <rect id="Rectangle_13" data-name="Rectangle 13" width="16.9" height="3.8" transform="translate(423.626 79.888)" fill="#8a837f"/>

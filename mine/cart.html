@@ -402,6 +402,23 @@
 <!-- Gift Card end -->
 
 
+<!-- International Postage -->
+<div class="page-cart modal_all" style="position:fixed;z-index:99;width:100%">
+	<div id="internationalPostage" class="elementToFadeIn modal modal-m" style="display:none;">
+		<div class="container">
+			<div class="closePopup" onclick="internationalPostage()">
+				<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
+			</div>
+			<div>
+				<img src="static/images/cart/InternationalPostage.jpg" />
+			</div>
+		</div>
+	</div>
+</div>
+<div id="add-internationalPostageMask" class="modal-mask" style="display:none" onclick="internationalPostage()"></div>
+<!-- International Postage end -->
+
+
 <div class="page-cart clearfix">
 
 	<div class="banner"></div>
@@ -547,6 +564,38 @@
 		</div>
 
 		<div class="prd-sepline"></div>
+
+		<div class="invoice-outer-container clearfix">
+			<div class="div-title">付款方式*</div>
+
+			<div class="info-inner-container row">
+				<div class="col-15 col-md-100 col-s-100 group-title">付款類型:</div>
+				<div class="col-84 col-md-100 col-s-100 group-tab">
+
+					<li class="nav-item pd-0">
+						<div>
+							<label class="control control--radio">信用卡
+								<input type="radio" name="payway"/>
+								<div class="control__indicator"></div>
+							</label>
+						</div>	
+					</li>
+
+					<li class="nav-item pd-0">
+						<div>
+							<label class="control control--radio">ATM轉帳
+								<input type="radio" name="payway"/>
+								<div class="control__indicator"></div>
+							</label>
+						</div>	
+					</li>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="prd-sepline"></div>
+
 
 		<div class="invoice-outer-container info-invoice clearfix">
 			<div class="div-title">發票資料*</div>
@@ -1194,9 +1243,7 @@
 					</div>
 
 				</div>
-
 			</div>
-
 		</div>
 
 
@@ -1234,11 +1281,11 @@
 
 				<div class="col-84 col-md-100 col-s-100 group-tab">
 
-					<div class="m-hide">
+					<div>
 
 						<div id="tabContainer2">
 							<div id="tabs2">
-								<ul>
+								<ul class="m-hide">
 									<li id="tabHeader2_1">
 										<div>
 											<label class="control control--radio">店到店
@@ -1266,6 +1313,22 @@
 										</div>
 									</li>
 								</ul>
+							</div>
+
+							<div class="m-show clearfix">
+								<div class="relative">
+									<ul>
+										<li class="dropdown">
+											<input type="checkbox" />
+											<div data-toggle="dropdown">寄送類型</div>
+											<ul class="dropdown-menu">
+												<li id="invoice-type-m-panel-1"><div>店到店</div></li>
+												<li id="invoice-type-m-panel-2"><div>郵寄</div></li>
+												<li id="invoice-type-m-panel-3"><div>海外配送</div></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
 							</div>
 
 							<div id="tabscontent2">
@@ -1421,28 +1484,43 @@
 												</label>
 											</div>
 										</li>
+
+										<li id="li-for-overseas-way-3" class="nav-item">
+											<div>
+
+												<label class="control control--radio ml-0">
+													<img src="static/images/cart/logo_SFExpress.png" class="opaticy50" />
+													<span class="m-hide">(Asia)</span>
+													<input type="radio" name="radio"/>
+													<div class="control__indicator mt-1"></div>
+												</label>
+											</div>
+										</li>
+
 									</ul>
 									<div class="tab-container">
 										<div id="content-for-overseas-way-1"></div>
 										<div id="content-for-overseas-way-2">
 											<div class="price text-inner">
 												<span class="usd">$</span>350
-												<img src="static/images/cart/ic-info.svg" class="pointer" />
+												<img src="static/images/cart/ic-info.svg" class="pointer" onclick="internationalPostage()" />
 											</div>
 											<div class="btn-select">
 												<span>日本</span>
 												<img src="static/images/cart/ic-arrowdown-input.svg" />
 											</div>
+											<!--
 											<div class="btn-select">
 												<span>東京</span>
 												<img src="static/images/cart/ic-arrowdown-input.svg" />
 											</div>
+											-->
 										</div>
 									</div>
 
 									<div class="group-title">地址</div>
 									<div class="relative">
-										<div class="zone-select">日本東京</div>
+										<div class="zone-select">日本</div>
 										<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
 									</div>
 
@@ -1458,98 +1536,9 @@
 					</div>
 
 
-					<div class="m-show clearfix">
-						<div class="relative">
-							<ul>
-								<li class="dropdown">
-									<input type="checkbox" />
-									<div data-toggle="dropdown">個人雲端發票</div>
-									<ul class="dropdown-menu">
-										<li id="invoice-type-m-panel-1"><div>個人雲端發票</div></li>
-										<li id="invoice-type-m-panel-2"><div>公司用(線上列印)</div></li>
-										<li id="invoice-type-m-panel-3"><div>雲端發票捐贈</div></li>
-									</ul>
-								</li>
-							</ul>
-
-							<!-- 個人雲端發票 -->
-							<div id="invoice-type-m-content-for-panel2-1">
-								<ul class="nav nav-tabs">
-									<li id="m-panel2-1-1" class="nav-item">
-										
-										<div>
-											<label class="control control--radio ml-0">會員載具
-												<input type="radio" name="radio">
-												<div class="control__indicator"></div>
-											</label>
-										</div>
-
-									</li>
-
-									<li id="m-panel2-1-2" class="nav-item">
-
-										<div>
-											<label class="control control--radio ml-0">手機條碼載具
-												<input type="radio" name="radio">
-												<div class="control__indicator"></div>
-											</label>
-										</div>
-
-									</li>
-
-									<li id="m-panel2-1-3" class="nav-item">
-
-										<div>
-											<label class="control control--radio ml-0">自然人憑證載具
-												<input type="radio" name="radio">
-												<div class="control__indicator"></div>
-											</label>
-										</div>
-
-									</li>
-								</ul>
-
-								<div class="nav-tabs-inner">
-									<!-- 會員載具 -->
-									<div id="content-for-m-panel-1-1">
-										<div class="invoice-agree clearfix">
-
-											<li>
-												<input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value1"/>
-											</li>
-
-										</div>
-									</div>
-
-									<!-- 手機條碼載具 -->
-									<div id="content-for-m-panel-1-2">
-
-									</div>
-
-									<!-- 自然人憑證載具 -->
-									<div id="content-for-m-panel-1-3">
-
-									</div>
-								</div>
-							</div>
-
-
-
-						</div>
-
-					</div>
-
-
 				</div>
 				<div class="clearfix"></div>
 			</div>
-
-
-
-
-
-
-
 
 
 
@@ -1845,6 +1834,7 @@
 <script src="js/list-zone.js"></script>
 <script src="js/list-recentAdd.js"></script>
 <script src="js/modal-giftcard.js"></script>
+<script src="js/modal-international-postage.js"></script>
 
 <!-- tab -->
 <script type="text/javascript">
