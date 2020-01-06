@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic-skin" transform="translate(373 -16)">
+    <rect id="Rectangle_47" data-name="Rectangle 47" width="40" height="40" transform="translate(-373 16)" fill="rgba(234,234,234,0)"/>
+    <g id="Group_32" data-name="Group 32" transform="translate(-858.964 -805.572)">
+      <g id="Group_42" data-name="Group 42">
+        <path id="Path_18" data-name="Path 18" d="M520.459,837a14.424,14.424,0,0,0-14.424-14.424l-6.209,21.765,6.209,15.6C514,859.934,520.459,844.962,520.459,837Z" fill="#c4bbb5"/>
+        <path id="Path_19" data-name="Path 19" d="M491.61,837c0,7.966,6.458,22.938,14.425,22.938,0-4.838.218-9.75-.251-14.537-.34-.086-3.788-.961-3.838-.894a4.32,4.32,0,0,0,.473-1.089,50.347,50.347,0,0,0,2.754-10.858c.123-.834,1-9.984.86-9.984A14.424,14.424,0,0,0,491.61,837Z" fill="#8a837f"/>
+      </g>
+      <g id="Group_43" data-name="Group 43">
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.347" cy="2.347" r="2.347" transform="translate(509.896 834.742)" fill="#fef8f2"/>
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.347" cy="2.347" r="2.347" transform="translate(497.479 834.742)" fill="#fef8f2"/>
+      </g>
+    </g>
+  </g>
+</svg>

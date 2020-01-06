@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="ic-logout_submenu" transform="translate(-41 -23)">
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="48" height="48" transform="translate(41 23)" fill="rgba(160,160,160,0)"/>
+    <g id="Group_26" data-name="Group 26" transform="translate(-210.167 -121.304)">
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="21.798" height="31.229" rx="2.022" transform="translate(261.167 153.304)" fill="none" stroke="#8a837f" stroke-miterlimit="10" stroke-width="3.779"/>
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="20.391" height="16.02" transform="translate(273.135 160.908)" fill="#fef8f2"/>
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="20.391" height="7.695" transform="translate(273.135 165.07)" fill="#8a837f"/>
+      <path id="Path_7" data-name="Path 7" d="M287.083,166.464l-9.6,9.6v-19.2Z" transform="translate(11.243 2.454)" fill="#8a837f"/>
+    </g>
+  </g>
+</svg>

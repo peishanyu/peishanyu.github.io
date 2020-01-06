@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic-gender" transform="translate(373 42)">
+    <rect id="Rectangle_46" data-name="Rectangle 46" width="40" height="40" transform="translate(-373 -42)" fill="rgba(234,234,234,0)"/>
+    <g id="Group_30" data-name="Group 30" transform="translate(-858.41 -790.655)">
+      <g id="Group_31" data-name="Group 31">
+        <path id="Path_14" data-name="Path 14" d="M505.048,783.936h0a9.568,9.568,0,1,1,5.848-17.145,9.568,9.568,0,0,1-5.847,17.145Zm.011-16.157a6.59,6.59,0,0,0-.012,13.179h0a6.59,6.59,0,1,0,.011-13.179Z" fill="#8a837f"/>
+      </g>
+      <g id="Group_34" data-name="Group 34">
+        <g id="Group_32" data-name="Group 32">
+          <rect id="Rectangle_33" data-name="Rectangle 33" width="2.977" height="16.157" transform="translate(507.613 757.82) rotate(-52.365)" fill="#8a837f"/>
+        </g>
+        <g id="Group_33" data-name="Group 33">
+          <rect id="Rectangle_34" data-name="Rectangle 34" width="16.156" height="2.977" transform="translate(508.807 767.061) rotate(-52.363)" fill="#8a837f"/>
+        </g>
+      </g>
+      <g id="Group_37" data-name="Group 37">
+        <g id="Group_35" data-name="Group 35">
+          <rect id="Rectangle_35" data-name="Rectangle 35" width="2.978" height="14.251" transform="translate(491.949 756.228) rotate(-32.028)" fill="#8a837f"/>
+        </g>
+        <g id="Group_36" data-name="Group 36">
+          <path id="Path_15" data-name="Path 15" d="M492.308,765.658l-2.9-.689,2.695-11.314,11.916,2.745-.667,2.9-9.036-2.082Z" fill="#8a837f"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
