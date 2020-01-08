@@ -134,7 +134,7 @@
 
 .page-cart .zone-select {position:absolute;top:1rem;left:.5rem;z-index:5;}
 
-.page-cart input.zone-add {padding-left:10rem;}
+.page-cart input.zone-add {padding-left:8rem;}
 
 
 /* dropdown */
@@ -265,6 +265,12 @@
 
 
 .page-cart #modalListCity, .page-cart #modalListZone {max-width:720px;}
+
+/* input 前 */
+.page-cart .before-container {overflow:hidden;}
+.page-cart .before-container .zone-select {max-width:110px;white-space:nowrap;overflow:auto;}
+
+.page-cart .before-container .zone-select::-webkit-scrollbar {display:none;}
 
 .page-cart .list-city {background:#fff;border-radius:6px;box-shadow:0 0 4px rgba(0, 0, 0, 0.5);margin: .5rem;padding:1rem .5rem;overflow:hidden;pointer-events:all;}
 .page-cart .list-scroll {max-height:50vh;overflow:auto;}
