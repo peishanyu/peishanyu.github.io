@@ -18,7 +18,7 @@
 
 .page-cart .cart-container {max-width:1680px;margin:auto;}
 
-	.page-cart .invoice-outer-container {max-width:1400px;margin:auto;}
+	.page-cart .invoice-outer-container {max-width:1240px;margin:auto;}
 
 .page-cart .div-title {margin-bottom: 3rem;padding: 0 1rem;color:#8a837f;font-weight:700;font-size:31px;}
 
@@ -51,7 +51,8 @@
 .page-cart .prd-price-qty .ic-add-qty {position:absolute;right:-10px;}
 
 
-.page-cart .prd-note, .page-cart .prd-amount {max-width:1100px;margin:auto;padding:0 1rem;}
+.page-cart .prd-note, .page-cart .prd-info .prd-amount {max-width:1200px;margin:auto;padding:0 1rem;}
+.page-cart .prd-amount {padding:0;}
 
 .page-cart .prd-note {display:flex;}
 .page-cart .prd-note .group-title {margin-top:.75rem;}
@@ -101,7 +102,7 @@
 
 
 .page-cart .btn-select {display:inline-block;margin:1rem 0;margin-right: .5rem;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
-.page-cart .btn-select span {display:inline-block;width:5rem;margin-right:1rem;}
+.page-cart .btn-select span {display:inline-block;min-width:5rem;margin-right:1rem;}
 
 .page-cart textarea,.page-cart input {margin:.5rem 0 1.5rem;padding:.5rem;border:0;box-shadow:0 0 4px rgba(0, 0, 0, 0.5);}
 
@@ -117,6 +118,7 @@
 .page-cart .tip-for-login span.text-link {text-decoration:underline;cursor:pointer;}
 
 .page-cart .btn {
+	margin: 0 .5rem;
 	padding:.5rem 2rem;
 	border-radius: 10rem;
     font-size: 19px;
@@ -132,7 +134,7 @@
 
 .page-cart .zone-select {position:absolute;top:1rem;left:.5rem;z-index:5;}
 
-.page-cart input.zone-add {padding-left:7rem;}
+.page-cart input.zone-add {padding-left:10rem;}
 
 
 /* dropdown */
@@ -260,6 +262,9 @@
 
 .page-cart #modalrecentAdd ,
 .page-cart #modalListCity {pointer-events:none;}
+
+
+.page-cart #modalListCity, .page-cart #modalListZone {max-width:720px;}
 
 .page-cart .list-city {background:#fff;border-radius:6px;box-shadow:0 0 4px rgba(0, 0, 0, 0.5);margin: .5rem;padding:1rem .5rem;overflow:hidden;pointer-events:all;}
 .page-cart .list-scroll {max-height:50vh;overflow:auto;}
