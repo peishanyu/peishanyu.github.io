@@ -578,7 +578,7 @@
 
 	.page-cart .deco-before-title {width:36px;height:30px;}
 	.page-cart h1.page-title {margin:0 10px 0 10px;font-size:24px;}
-	.page-cart .zone-title .ic-cartbag {width:16px;}
+	.page-cart .zone-title .ic-cartbag {width:16px;margin: 0 1rem;}
 
 	.page-cart .prd-list .prd-img {width:50%;}
 	.page-cart .prd-list .prd-item {margin:.85rem;}
