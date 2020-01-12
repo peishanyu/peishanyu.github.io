@@ -37,7 +37,7 @@
 
 .page-member .container.inner {max-width:1100px;padding-bottom:5rem;}
 
-.page-member .container.inner form {margin-bottom:3rem;overflow:auto;}
+.page-member .container.inner form {margin-bottom:3rem;overflow:hidden;}
 
 .page-member .form-item {padding:.875rem 0;border-bottom: solid 2px #969696;}
 .page-member .form-item .row {width:100%;display:flex;}
@@ -221,7 +221,7 @@
   .page-member input.sms-input {width:100%;}
 
   .page-member .col-md-3 {font-size:13px;}
-  .page-member .form-item input.width-auto,.page-member input.sms-input {width:120px;}
+  .page-member .form-item input.width-auto,.page-member input.sms-input {width:110px;}
 
 }
 
