@@ -146,8 +146,12 @@
   .page-member .deco-before-title {width:80px;height:48px;}
   .page-member .zone-title .ic-member {width:48px;}
 
+  .page-member .container.inner {max-width:1060px;}
+
   .page-member .member-submenu {font-size:18px;}
   .page-member .subitem>img {width:36px;}
+
+
 }
 
 @media only screen and (max-width: 1024px) {
