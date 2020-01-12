@@ -206,28 +206,28 @@
 					</div>
 				</div>
 
-				<div class="subitem col-md-3" onclick="">
+				<div class="subitem col-md-3" onclick="location.href='vip.html'">
 					<div>
 						<img src="static/images/member/ic-vip_submenu.svg" />
 						<span>VIP室</span>	
 					</div>
 				</div>
 
-				<div class="subitem col-md-3" onclick="">
+				<div class="subitem col-md-3 active" onclick="location.href='order.html'">
 					<div>
 						<img src="static/images/member/ic-order_submenu.svg" />
 						<span>查看訂單</span>	
 					</div>
 				</div>
 
-				<div class="subitem col-md-3" onclick="">
+				<div class="subitem col-md-3" onclick="location.href='wish.html'">
 					<div>
 						<img src="static/images/member/ic-wish_submenu.svg" />
 						<span>心願清單</span>	
 					</div>
 				</div>
 
-				<div class="subitem col-md-3 active" onclick="">
+				<div class="subitem col-md-3" onclick="location.href='member.html'">
 					<div>
 						<img src="static/images/member/ic-memberInfo_submenu.svg" />
 						<span>會員資料</span>	
@@ -249,184 +249,22 @@
 
 	<div class="zone-title">
 		<div class="deco-before-title"></div>
-		<img src="static/images/member/ic-memberInfo_submenu.svg" class="ic-member ic-memberInfo">
-		<h1 class="page-title">會員資料</h1>
+		<img src="static/images/member/ic-order_submenu.svg" class="ic-member ic-order">
+		<h1 class="page-title">查看訂單</h1>
 	</div>
 
 	<div class="container inner">
-		<form>
+
+		<div class="order-item">
 			
+			<div class="order-detail show">
+				<div>
+					<div id="orderStatus"><span>世上獨一無二的作品誕生了</span></div>
 
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-username.svg" /></div>
-					<div class="col-90 col-s-80"><input type="text" name="" placeholder="請輸入姓名*" /></div>
 				</div>
+			
 			</div>
 
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-mobile.svg" /></div>
-					<div class="col-90 col-s-80">
-
-						<div class="pc-inline">
-							<div class="btn-select inline" onclick="">
-								<span>+886</span>
-								<img src="static/images/cart/ic-arrowdown-input.svg">
-							</div>
-							<input type="text" name="" placeholder="請輸入電話*" class="width-auto" />	
-						</div>
-						
-
-						<div class="pc-inline">
-							<div class="btn-select sms-send" onclick="">
-								<span>發送驗證碼</span>
-							</div>
-
-							<div class="form-label">驗證碼*</div>
-							<input type="text" name="" placeholder="請輸入驗證碼*" class="sms-input" />	
-						</div>
-						
-					</div>
-				</div>
-			</div>
-
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-birthday.svg" /></div>
-					<div class="col-90 col-s-80">
-						<input type="text" name="" placeholder="請輸入生日*" class="width-auto" />
-						<div class="btn-select inline" onclick="">
-							<span>年/月/日</span>
-							<img src="static/images/cart/ic-arrowdown-input.svg">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-address.svg" /></div>
-					<div class="col-90 col-s-80">
-
-						<div id="invoice-deliver-content" class="tab-container clearfix">
-
-							<div class="btn-select" onclick="modalListCity()">
-								<span>台北市</span>
-								<img src="static/images/cart/ic-arrowdown-input.svg">
-							</div>
-
-							<div class="btn-select" onclick="modalListZone()">
-								<span>大安區</span>
-								<img src="static/images/cart/ic-arrowdown-input.svg">
-							</div>
-
-						
-							<div class="relative">
-								<div class="before-container">
-									<div class="zone-select">台北市大安區</div>	
-								</div>
-								<input type="text" class="col-100 zone-add" placeholder="請輸入地址">
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-gender.svg" /></div>
-					<div class="col-90 col-s-80">
-
-						<div class="inline">
-							<label class="control control--radio ml-0">男性
-								<input type="radio" name="gender" checked="checked" />
-								<div class="control__indicator"></div>
-							</label>
-						</div>
-
-						<div class="inline">
-							<label class="control control--radio ml-0">女性
-								<input type="radio" name="gender" />
-								<div class="control__indicator"></div>
-							</label>
-						</div>
-
-						<div class="inline">
-							<label class="control control--radio ml-0">多元
-								<input type="radio" name="gender" />
-								<div class="control__indicator"></div>
-							</label>
-						</div>
-
-
-					</div>
-				</div>
-			</div>
-
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-skin.svg" /></div>
-					<div class="col-90 col-s-80">
-
-						<div class="inline">
-							<label class="control control--radio ml-0">白皙
-								<input type="radio" name="skin" />
-								<div class="control__indicator"></div>
-							</label>
-						</div>
-
-						<div class="inline">
-							<label class="control control--radio ml-0">自然
-								<input type="radio" name="skin" />
-								<div class="control__indicator"></div>
-							</label>
-						</div>
-
-						<div class="inline">
-							<label class="control control--radio ml-0">健康
-								<input type="radio" name="skin" checked="checked" />
-								<div class="control__indicator"></div>
-							</label>
-						</div>
-
-
-					</div>
-				</div>
-			</div>
-
-			<div class="form-item">
-				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-email.svg" /></div>
-					<div class="col-90 col-s-80">
-						<input type="text" name="" placeholder="請輸入信箱*" value="reqocd@gmail.com" class="width-auto" />
-						<div class="btn-select email-verified">
-							<img src="static/images/member/memberInfo/ic-check_btn.svg" />
-							<span>已驗證</span>
-						</div>
-						<div class="btn-select email-notverified" onclick="">
-							<span>未驗證</span>
-						</div>
-
-						<div>
-							<div class="btn-select sms-send" onclick="">
-								<span>發送驗證碼</span>
-							</div>
-
-							<div class="form-label">驗證碼*</div>
-							<input type="text" name="" placeholder="請輸入驗證碼*" class="sms-input">	
-						</div>
-
-
-					</div>
-				</div>
-			</div>
-
-		</form>
-		<div class="text-c">
-			<button class="col-xs-50 btn btn-primary" onclick="">確 認</button>	
 		</div>
 		
 	</div>

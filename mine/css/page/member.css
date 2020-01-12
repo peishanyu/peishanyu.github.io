@@ -171,6 +171,7 @@
   .page-member .subitem:after, .page-member .subitem.active {border-bottom: solid 3px #8a837f;}
 
   .page-member .form-item {padding:.5rem 0;}
+  .page-member .form-item .col-s-20 img {width:36px;}
 
   .page-member .btn-select {margin:.5rem .25rem;padding:.5rem 1rem;font-size:13px;}
   .page-member .form-label {font-size:14px}
