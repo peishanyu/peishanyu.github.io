@@ -211,7 +211,7 @@
 
   .page-member .form-item .single-line {margin-top:10px;}
   .page-member .form-item .double-line,.page-member .form-item .single-line-btn {margin-top:5px;}
-
+  .page-member .form-item input.width-auto,.page-member input.sms-input {width:110px;}
 
 }
 
@@ -221,7 +221,7 @@
   .page-member input.sms-input {width:100%;}
 
   .page-member .col-md-3 {font-size:13px;}
-  .page-member .form-item input.width-auto,.page-member input.sms-input {width:110px;}
+
 
 }
 
