@@ -59,7 +59,7 @@
 .page-member .form-item input.width-auto {width:auto;}
 .page-member .form-label {display:inline-block;color:#8F8F8F;font-weight:700;font-size:16px;}
 .page-member .sms-send span, .page-member .email-verified span, .page-member .email-notverified span {margin-right:0;text-align:center;}
-.page-member input.sms-input {width:20%;margin-left:1rem;}
+.page-member input.sms-input {width:auto;}
 
 .page-member .zone-select {position:absolute;top:.5rem;left:0;z-index:5;}
 .page-member input.zone-add {padding-left:8rem;}
@@ -149,7 +149,6 @@
 @media only screen and (max-width: 1024px) {
   .page-member .subitem img {width:36px;}
   .page-member .form-item input.width-auto, .page-member input.sms-input {width:100%;}
-  .page-member input.sms-input {margin-left:0;}
 }
 
 
