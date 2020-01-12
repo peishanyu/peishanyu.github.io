@@ -61,7 +61,7 @@
 .page-member .sms-send span, .page-member .email-verified span, .page-member .email-notverified span {margin-right:0;text-align:center;}
 .page-member input.sms-input {width:20%;margin-left:1rem;}
 
-.page-member .zone-select {position:absolute;top:.5rem;left:.5rem;z-index:5;}
+.page-member .zone-select {position:absolute;top:.5rem;left:0;z-index:5;}
 .page-member input.zone-add {padding-left:8rem;}
 
 .page-member .email-verified,.page-member .email-notverified {text-align:center;}
@@ -149,6 +149,7 @@
 @media only screen and (max-width: 1024px) {
   .page-member .subitem img {width:36px;}
   .page-member .form-item input.width-auto, .page-member input.sms-input {width:100%;}
+  .page-member input.sms-input {margin-left:0;}
 }
 
 
@@ -176,9 +177,10 @@
   .page-member .form-item .col-s-20 img {height:36px;}
   .page-member .control {margin: 1rem .5rem;}
 
-  .page-member .btn-select {margin:.5rem .25rem;padding:.5rem .75rem;font-size:13px;}
+  .page-member .btn-select {margin:.5rem .25rem;margin-left: 0;padding:.5rem .75rem;font-size:13px;}
   .page-member .form-label {font-size:14px}
   .page-member .form-item input {font-size:14px;}
+
 
   .page-member .control {font-size:16px;line-height:2;}
 
