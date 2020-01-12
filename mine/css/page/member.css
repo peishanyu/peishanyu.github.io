@@ -187,10 +187,14 @@
   .page-member .zone-title .ic-member {width:36px;margin: 0 0 0 1rem;}
   .page-member .zone-title {margin-top:3rem;margin-bottom:2rem;}
 
+  .page-member .col-md-3 {width:30%;}
+
 }
 
 @media only screen and (max-width: 320px) {
 
   .page-member .btn-select,.page-member .form-label {font-size:14px;}
   .page-member input.sms-input {width:100%;}
+
+  .page-member .col-md-3 {font-size:13px;}
 }
