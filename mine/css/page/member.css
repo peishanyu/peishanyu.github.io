@@ -1,4 +1,3 @@
-
 .page-member {min-height: 64vh;background-color:#fef8f2;}
 .page-member .banner {height:15vh;background:url(../../static/images/customization/bg_header.jpg) no-repeat;background-size:cover;pointer-events:none;}
 
@@ -138,6 +137,7 @@
 
 /* ====== RWD ====== */
 @media only screen and (max-width: 1680px) {
+  .page-member .banner {height:20vh;}
   .page-member h1.page-title {font-size:36px;}
   .page-member .deco-before-title {width:80px;height:48px;}
   .page-member .zone-title .ic-member {width:48px;}
@@ -163,6 +163,7 @@
 
 
 @media only screen and (max-width: 480px) {
+  .page-member .banner {height:15vh;}
   .page-member .col-md-3 {font-size:14px;}
   .page-member .subitem.col-md-3>div {margin:.5rem;}
   .page-member .subitem img {width:24px;}
