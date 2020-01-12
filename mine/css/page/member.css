@@ -148,7 +148,7 @@
 
 @media only screen and (max-width: 1024px) {
   .page-member .subitem img {width:36px;}
-  .page-member input.sms-input {width:auto;}
+  .page-member .form-item input.width-auto, .page-member input.sms-input {width:100%;}
 }
 
 
