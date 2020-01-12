@@ -267,7 +267,7 @@
 
 			<div class="form-item">
 				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-mobile.svg" /></div>
+					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-mobile.svg" class="double-line" /></div>
 					<div class="col-90 col-s-80">
 
 						<div class="tab-container clearfix">
@@ -275,13 +275,13 @@
 							<div class="pc-inline">
 								<div class="btn-select inline" onclick="">
 									<span>+886</span>
-									<img src="static/images/cart/ic-arrowdown-input.svg">
+									<img src="static/images/cart/ic-arrowdown-input.svg"/>
 								</div>
 								<input type="text" name="" placeholder="請輸入電話*" class="width-auto" />	
 							</div>
 						
 
-							<div class="pc-inline">
+							<div class="pc-inline m-hide">
 								<div class="btn-select sms-send" onclick="">
 									<span>發送驗證碼</span>
 								</div>
@@ -293,42 +293,51 @@
 						</div>
 
 					</div>
+
+				</div>
+				<div class="m-show form-sms">
+					<div class="btn-select sms-send" onclick="">
+						<span>發送驗證碼</span>
+					</div>
+
+					<div class="form-label">驗證碼*</div>
+					<input type="text" name="" placeholder="請輸入驗證碼*" class="sms-input" />
 				</div>
 			</div>
 
 			<div class="form-item">
 				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-birthday.svg" /></div>
+					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-birthday.svg" class="single-line-btn" /></div>
 					<div class="col-90 col-s-80">
-						<input type="text" name="" placeholder="請輸入生日*" class="width-auto" />
 						<div class="btn-select inline" onclick="">
 							<span>年/月/日</span>
-							<img src="static/images/cart/ic-arrowdown-input.svg">
+							<img src="static/images/cart/ic-arrowdown-input.svg" />
 						</div>
+						<div class="select-birth form-label" onclick="">請選擇生日*</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="form-item">
 				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-address.svg" /></div>
+					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-address.svg" class="double-line" /></div>
 					<div class="col-90 col-s-80">
 
 						<div id="invoice-deliver-content" class="tab-container clearfix">
 
-							
+
 							<div class="btn-select" onclick="modalListCity()">
 								<span>台北市</span>
-								<img src="static/images/cart/ic-arrowdown-input.svg">
+								<img src="static/images/cart/ic-arrowdown-input.svg"/>
 							</div>
 
 							<div class="btn-select" onclick="modalListZone()">
 								<span>大安區</span>
-								<img src="static/images/cart/ic-arrowdown-input.svg">
+								<img src="static/images/cart/ic-arrowdown-input.svg"/>
 							</div>
 
 						
-							<div class="relative">
+							<div class="relative m-hide">
 								<div class="before-container">
 									<div class="zone-select">台北市大安區</div>	
 								</div>
@@ -339,11 +348,19 @@
 
 					</div>
 				</div>
+
+				<div class="relative m-show address">
+					<div class="before-container">
+						<div class="zone-select">台北市大安區</div>	
+					</div>
+					<input type="text" class="col-100 zone-add" placeholder="請輸入地址" />
+				</div>
+
 			</div>
 
 			<div class="form-item">
 				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-gender.svg" /></div>
+					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-gender.svg" class="single-line" /></div>
 					<div class="col-90 col-s-80">
 
 						<div class="inline">
@@ -374,7 +391,7 @@
 
 			<div class="form-item">
 				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-skin.svg" /></div>
+					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-skin.svg" class="single-line" /></div>
 					<div class="col-90 col-s-80">
 
 						<div class="inline">
@@ -405,18 +422,24 @@
 
 			<div class="form-item">
 				<div class="row">
-					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-email.svg" /></div>
+					<div class="col-10 col-s-20"><img src="static/images/member/memberInfo/ic-email.svg" class="double-line" /></div>
 					<div class="col-90 col-s-80">
-						<input type="text" name="" placeholder="請輸入信箱*" value="reqocd@gmail.com" class="width-auto" />
-						<div class="btn-select email-verified">
-							<img src="static/images/member/memberInfo/ic-check_btn.svg" />
-							<span>已驗證</span>
-						</div>
-						<div class="btn-select email-notverified" onclick="">
-							<span>未驗證</span>
-						</div>
 
-						<div>
+						<div class="inline">
+							<input type="text" name="" placeholder="請輸入信箱*" value="reqocd@gmail.com" class="width-auto" />
+							<div class="btn-select email-verified">
+								<img src="static/images/member/memberInfo/ic-check_btn.svg" />
+								<span>已驗證</span>
+							</div>
+
+							<div class="btn-select email-notverified" onclick="">
+								<span>未驗證</span>
+							</div>
+
+						</div>
+						
+
+						<div class="inline m-hide">
 							<div class="btn-select sms-send" onclick="">
 								<span>發送驗證碼</span>
 							</div>
@@ -424,9 +447,16 @@
 							<div class="form-label">驗證碼*</div>
 							<input type="text" name="" placeholder="請輸入驗證碼*" class="sms-input" />	
 						</div>
-
-
 					</div>
+				</div>
+
+				<div class="m-show">
+					<div class="btn-select sms-send" onclick="">
+						<span>發送驗證碼</span>
+					</div>
+
+					<div class="form-label">驗證碼*</div>
+					<input type="text" name="" placeholder="請輸入驗證碼*" class="sms-input" />
 				</div>
 			</div>
 
