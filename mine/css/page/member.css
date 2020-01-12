@@ -173,6 +173,7 @@
   .page-member .form-item {padding:.5rem 0;}
   .page-member .pc-inline {display:block;}
   .page-member .form-item .col-s-20 img {height:36px;}
+  .page-member .control {margin: 1rem .5rem;}
 
   .page-member .btn-select {margin:.5rem .25rem;padding:.5rem 1rem;font-size:13px;}
   .page-member .form-label {font-size:14px}
