@@ -40,7 +40,7 @@
 .page-member .container.inner form {margin-bottom:3rem;overflow:hidden;}
 
 .page-member .form-item {padding:.875rem 0;border-bottom: solid 2px #969696;}
-.page-member .form-item .row {width:100%;display:flex;}
+.page-member .form-item .row {/*width:100%;*/display:flex;}
 
 .page-member .form-item input {
   width:100%;
@@ -211,7 +211,10 @@
 
   .page-member .form-item .single-line {margin-top:10px;}
   .page-member .form-item .double-line,.page-member .form-item .single-line-btn {margin-top:5px;}
-  .page-member .form-item input.width-auto,.page-member input.sms-input {width:110px;}
+  .page-member .form-item input.width-auto,
+  .page-member input.sms-input {width:110px;}
+
+  .page-member .form-item input.input-email {width:125px;}
 
 }
 
