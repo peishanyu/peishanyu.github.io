@@ -16,7 +16,7 @@
 	
 	<!-- custom -->
 	<link rel="stylesheet" type="text/css" href="css/admin-style.css">
-
+	<link rel="stylesheet" type="text/css" href="css/page/order.css">
 
 	<title>MINE | 查看訂單</title>
 	<link rel="icon" href="static/favicon.ico" class="next-head">
@@ -252,19 +252,169 @@
 		<h1 class="page-title">查看訂單</h1>
 	</div>
 
-	<div class="container inner">
+	<div>
 
 		<div class="order-item">
 			
+			<div class="container inner ">
+				<div class="row">
+					<div class="col-16">
+						<div class="prd-img"><img src="https://peishanyu.github.io/mine/static/images/cart/thumb-1.jpg" /></div>	
+					</div>
+					<div class="col-84">
+						<div class="order-info">
+							<div class="order-info-group">
+								<div class="order-time">時間：<span>2019/12/02 08:20</span></div>
+								<div class="order-info order-num">訂單編號：<span>76864782739</span></div>	
+							</div>
+							<div class="order-info-group">
+								<div class="order-info order-invoice">發票號碼：<span>VX-88674231</span></div>
+								<div>
+									<div class="order-info order-status">狀態：<span>待付款</span><button>前往付款</button></div>
+									<div class="order-info order-price">
+										總額
+										<span class="usd">$</span>
+										<span>1280</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swich-order-detail pointer active">
+					<span>收起訂單詳情</span>
+					<div class="triangle"></div>
+				</div>	
+			</div>
+
 			<div class="order-detail show">
-				<div class="container">
-					<div id="orderStatus"><span>世上獨一無二的作品誕生了</span></div>
+				<div class="container inner">
+					<div id="orderStatus" class="orderStatus"><span>世上獨一無二的作品誕生了！</span></div>
+					
+					<div class="title pay-way">
+						付款方式
+						<span>信用卡</span>
+					</div>
+
+					<div class="title invoice-info">
+						發票資訊
+						<span>YUP-0928221</span>
+					</div>
+
+					<div class="title receive-info">
+						收件資訊
+						<div class="address">地址<span>220 台灣 新北市板橋區觀光街56號一樓之一201室</span></div>
+						<div class="name">姓名<span>許芳綺</span></div>
+						<div class="phone">手機<span>0935946128</span></div>
+						<div class="email">電子信箱<span>a932@gmail.com</span></div>
+					</div>
+
+					<div class="title transport-way">
+						運送方式
+						<span>郵寄</span>
+						<div class="inner-title">運送備註</div>
+						<div class="note shipping-note">
+							管理員簽收，謝謝
+						</div>
+					</div>
+					<div class="title shipping-number">
+						物流編號
+						<span>123123123123</span>
+					</div>
+
+					<div class="title receive-info">
+						商品備註
+						<div class="note product">
+							很期待收到東西，請幫我包好謝謝。假設字數很多假設字數
+							很多假設字數很多假設字數很多假設字數很多...</div>
+					</div>
 
 				</div>
-			
 			</div>
 
 		</div>
+
+
+		<div class="order-item">
+			
+			<div class="container inner ">
+				<div class="row">
+					<div class="col-16">
+						<div class="prd-img"><img src="https://peishanyu.github.io/mine/static/images/cart/thumb-1.jpg" /></div>	
+					</div>
+					<div class="col-84">
+						<div class="order-info">
+							<div class="order-info-group">
+								<div class="order-time">時間：<span>2019/12/02 08:20</span></div>
+								<div class="order-info order-num">訂單編號：<span>76864782739</span></div>	
+							</div>
+							<div class="order-info-group">
+								<div class="order-info order-invoice">發票號碼：<span>VX-88674231</span></div>
+								<div>
+									<div class="order-info order-status">狀態：<span>待付款</span><button>前往付款</button></div>
+									<div class="order-info order-price">
+										總額
+										<span class="usd">$</span>
+										<span>1280</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swich-order-detail pointer">
+					<span>收起訂單詳情</span>
+					<div class="triangle"></div>
+				</div>	
+			</div>
+
+			<div class="order-detail hide">
+				<div class="container inner">
+					<div id="orderStatus" class="orderStatus"><span>世上獨一無二的作品誕生了！</span></div>
+					
+					<div class="title pay-way">
+						付款方式
+						<span>信用卡</span>
+					</div>
+
+					<div class="title invoice-info">
+						發票資訊
+						<span>YUP-0928221</span>
+					</div>
+
+					<div class="title receive-info">
+						收件資訊
+						<div class="address">地址<span>220 台灣 新北市板橋區觀光街56號一樓之一201室</span></div>
+						<div class="name">姓名<span>許芳綺</span></div>
+						<div class="phone">手機<span>0935946128</span></div>
+						<div class="email">電子信箱<span>a932@gmail.com</span></div>
+					</div>
+
+					<div class="title transport-way">
+						運送方式
+						<span>郵寄</span>
+						<div class="inner-title">運送備註</div>
+						<div class="note shipping-note">
+							管理員簽收，謝謝
+						</div>
+					</div>
+					<div class="title shipping-number">
+						物流編號
+						<span>123123123123</span>
+					</div>
+
+					<div class="title receive-info">
+						商品備註
+						<div class="note product">
+							很期待收到東西，請幫我包好謝謝。假設字數很多假設字數
+							很多假設字數很多假設字數很多假設字數很多...</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
 		
 	</div>
 
