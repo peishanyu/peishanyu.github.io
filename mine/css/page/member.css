@@ -21,7 +21,7 @@
 
 /* input前 */
 .page-member .before-container {overflow:hidden;}
-.page-member .before-container .zone-select {max-width:110px;white-space:nowrap;overflow:auto;}
+.page-member .before-container .zone-select {max-width:100px;white-space:nowrap;overflow:auto;}
 .page-member .before-container .zone-select::-webkit-scrollbar {display:none;}
 
 .page-member .zone-title {display:flex;align-items:center;margin-top:4rem;margin-bottom:3rem;}
@@ -215,7 +215,7 @@
   .page-member input.sms-input {width:110px;}
 
   .page-member .form-item input.input-email {width:125px;}
-  .page-member .before-container .zone-select {line-height:1.8;}
+  .page-member .before-container .zone-select {line-height:1.5;}
 
 }
 
