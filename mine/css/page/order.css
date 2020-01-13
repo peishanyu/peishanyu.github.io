@@ -26,6 +26,7 @@
   border-style: solid;
   border-width: 0 12px 12px 12px;
   border-color: transparent transparent #8A837F transparent;
+  transform: rotate(180deg);
   transition: all .2s linear;
 }
 
@@ -55,6 +56,31 @@
 .page-order .shipping-number {margin-top: -20px;}
 
 .page-order .note.product {max-width:600px;}
+
+/* button */
+	.page-order .go-to-pay {margin:0 16px;padding:0 12px;line-height:1.8;border-radius:10rem;outline:none;border:0;box-shadow: 0 0px 6px rgba(0, 0, 0, 0.5);}
+	.page-order .go-to-pay:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
+/* button end */
+
+.page-order .sep-line {padding:10px 0;border-bottom:1px solid #6e6965;}
+
+
+/* prd detail */
+.page-order .prd-item {display:flex;position:relative;}
+.page-order .prd-item .prd-img {width:8%;}
+.page-order .prd-item .prd-img img {margin-bottom:10px;}
+.prd-name-number {margin:0 20px;}
+
+.page-order .prd-name-number {color:#fff;}
+.page-order .prd-name-number .name {margin-bottom:4px;font-size:22px;font-weight:700;}
+.page-order .number, .page-order .prd-size-color, .page-order .prd-price-qty {margin-bottom:4px;font-size:18px;font-weight:500;}
+.page-order .prd-price-qty {margin:0 24px;}
+
+.page-order .prd-size-color .color, .page-order .prd-price-qty .qty {margin-top:6px;}
+
+.page-order .flex {display:flex;}
+
+/* prd detail end */
 
 /* ====== RWD ====== */
 @media only screen and (max-width: 1680px) {
