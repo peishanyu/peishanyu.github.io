@@ -52,7 +52,15 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .page-admin .container.inner {padding-right:30px;padding-left:30px;}
+
   .page-admin .subitem img {width:36px;}
+}
+
+
+@media only screen and (max-width:1024px) {
+  .page-admin .container.inner {padding-right:30px;padding-left:30px;}
 }
 
 
@@ -63,8 +71,6 @@
   .page-admin .deco-before-title {width:54px;height:45px;}
   .page-admin h1.page-title {font-size:37px;}
   .page-admin .zone-title .ic-cartbag {width:36px;}
-
-
 
 }
 
@@ -86,6 +92,8 @@
   .page-admin .zone-title {margin-top:3rem;margin-bottom:2rem;}
 
   .page-admin .col-md-3 {width:30%;}
+
+  .page-admin .container.inner {padding-right:15px;padding-left:15px;}
 
 
 }
