@@ -63,7 +63,7 @@
 .page-order .note.product {max-width:600px;}
 
 .page-order .transport-way > .title,.page-order .receive-info> .title {margin-bottom:4px;}
-
+.page-order .transport-way > .title {margin-top:40px;}
 /* button */
 	.page-order .go-to-pay {margin:0 16px;padding:0 12px;line-height:1.8;border-radius:10rem;outline:none;border:0;box-shadow: 0 0px 6px rgba(0, 0, 0, 0.35);background-color:#fff;}
 	.page-order .go-to-pay:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
@@ -148,6 +148,7 @@
 .page-order .prd-price-qty {font-size:12px;}
 
 .page-order .receive-info .title,.page-order .transport-way .title {margin-bottom:4px;}
+.page-order .transport-way .title {margin-top:20px;}
 .page-order .shipping-number {margin-top:-4px;}
 .page-order .note {margin:0;}
 
