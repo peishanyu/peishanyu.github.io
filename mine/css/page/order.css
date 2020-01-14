@@ -139,19 +139,24 @@
 
 .page-order .number, .page-order .prd-size-color, .page-order .prd-price-qty {margin-bottom:10px;}
 .page-order .prd-name-number {margin-top:4px;}
-.page-order .swich-order-detail .triangle {    border-width: 0 8px 8px 8px;}
+.page-order .swich-order-detail .triangle {border-width: 0 8px 8px 8px;}
+.page-order .order-item .prd-img {width:60px;}
 }
 
 @media only screen and (max-width: 320px) {
 
 
+.page-order .order-info-group {margin:0;}
 }
 
 
 @media screen and (min-device-width : 320px) and (max-device-width : 812px) and (orientation : landscape) { 
-.page-order .order-detail .container.inner {padding:30px;}
+  .page-order .order-detail .container.inner {padding:30px;}
 }
 
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+  .page-order .order-item .prd-img {width:60px;}
+}
 
 @media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
 
