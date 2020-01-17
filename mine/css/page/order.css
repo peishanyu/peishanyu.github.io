@@ -50,15 +50,20 @@
 .page-order .orderStatus {text-align:center;color:#fff;font-size:22px;font-weight:700;}
 .page-order .orderStatus span {display:inline-block;padding:0 12px 10px;border-bottom:3px solid #fff;}
 .page-order .orderStatus span img {margin-right:4px;margin-bottom:4px;}
-.page-order .title div {margin:4px 0;font-size:18px;font-weight:500;}
-.page-order div.inner-title {font-size:22px;color:#fff;font-weight:700;}
-.page-order .title span {display:inline-block;margin-left:12px;font-size:18px;color:#fff;font-weight:500;}
-.page-order .title {margin:20px 0;font-size:22px;color:#fff;font-weight:700;}
 
+.page-order .info-title .title {display:inline-block;margin:20px 0;font-size:22px;color:#fff;font-weight:700;}
+.page-order .info-title span,
+.page-order .info-title span.subtitle {display:inline-block;font-size:18px;color:#fff;font-weight:500;}
+
+.page-order .info-title .title div,.page-order .note {margin:4px 0;font-size:18px;color:#fff;font-weight:500;}
+.page-order .info-title div.inner-title {font-size:22px;color:#fff;font-weight:700;}
+
+.page-order .info-title .title, .page-order .info-title span.subtitle {margin-right:12px;}
 .page-order .shipping-number {margin-top:-16px;}
-
 .page-order .note.product {max-width:600px;}
 
+.page-order .transport-way > .title,.page-order .receive-info> .title {margin-bottom:4px;}
+.page-order .transport-way > .title {margin-top:40px;}
 /* button */
 	.page-order .go-to-pay {margin:0 16px;padding:0 12px;line-height:1.8;border-radius:10rem;outline:none;border:0;box-shadow: 0 0px 6px rgba(0, 0, 0, 0.35);background-color:#fff;}
 	.page-order .go-to-pay:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
@@ -94,7 +99,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
+  .page-order .order-detail .container.inner {
+      padding: 30px;
+  }
 }
 
 
@@ -119,33 +126,54 @@
 
 
 @media only screen and (max-width: 480px) {
-
+.page-order .container.inner {padding-bottom:3rem;}
 .page-order .order-item .prd-img {margin-top:10px;}
 .page-order .order-time {font-size:17px;}
-.page-order .order-info,.page-order .swich-order-detail span {font-size:13px;}
-.page-order .container.inner {padding-bottom:3rem;}
-.page-order .orderStatus span {font-size:13px;}
 
-.page-order .orderStatus span img {margin-bottom:0;width:16px;}
+.page-order .order-info,
+.page-order .swich-order-detail span {font-size:13px;}
 
-.page-order .title,.page-order .title.transport-way .inner-title {font-size:14px;}
-.page-order .title div,.page-order .title span,.page-order .number, .page-order .prd-size-color, .page-order .prd-price-qty {font-size:12px;}
+.page-order .orderStatus {margin-bottom:20px;}
+.page-order .orderStatus span {padding: 0 12px 4px;font-size:14px;}
+.page-order .orderStatus span img {width:16px;}
+
+.page-order .info-title .title {margin:10px 0;}
+.page-order .info-title .title,
+.page-order .title.transport-way .inner-title,.page-order .info-title div.inner-title {font-size:14px;}
+
+.page-order .info-title span, .page-order .info-title span.subtitle,
+.page-order .info-title .title div, .page-order .note,
+.page-order .number,
+.page-order .prd-size-color,
+.page-order .prd-price-qty {font-size:12px;}
+
+.page-order .receive-info .title,.page-order .transport-way .title {margin-bottom:4px;}
+.page-order .transport-way .title {margin-top:20px;}
+.page-order .shipping-number {margin-top:-4px;}
+.page-order .note {margin:0;}
+
+.page-order .receive-info {line-height:1.25;}
+
 .page-order .prd-name-number .name {font-size:15px;}
 
 .page-order .order-detail .container.inner {padding: 30px 15px;}
 
-.page-order .col-xs-70 {padding-left:0;}
+.page-order .col-xs-70 {margin: 0;padding-left:0;}
 .page-order .sep-line {padding:0;}
 
 .page-order .number, .page-order .prd-size-color, .page-order .prd-price-qty {margin-bottom:10px;}
 .page-order .prd-name-number {margin-top:4px;}
 .page-order .swich-order-detail .triangle {border-width: 0 8px 8px 8px;}
 
+.page-order .order-item .prd-img,.page-order .prd-item .prd-img img {width: 80px;}
+
 }
 
 @media only screen and (max-width: 320px) {
 
-.page-order .order-item .prd-img {width:60px;}
+
+.page-order .order-item .prd-img,.page-order .prd-item .prd-img img {width: 60px;}
+
 .page-order .order-info-group {margin:0;}
 }
 
