@@ -1,0 +1,92 @@
+.page-wish .container.inner {max-width:900px;padding-bottom:0;}
+
+.page-wish .wish-heart {position:absolute;right:0;top:10px;}
+.page-wish .wish-heart img {width:24px;}
+
+.page-wish .wish-item {padding-bottom:60px;}
+.page-wish .wish-item .prd-img {width:85px;}
+
+
+.page-wish .order-info {display:flex;align-items:flex-end;position:relative;margin-left:25px;color:#8A837F;font-size:18px;font-weight:700;line-height:2;}
+.page-wish .order-info-group {margin:0 25px;}
+.page-wish .order-info-group:first-child {margin-left:0;}
+
+.page-wish .order-info .item-name {color:#8A837F;font-size:24px;font-weight:700;}
+.page-wish .page-wish .order-price {display:inline-block;margin-left:50px;font-size:22px;}
+
+
+.page-wish .m-show {display:none;}
+
+
+/* ====== RWD ====== */
+@media only screen and (max-width: 1680px) {
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .page-wish .order-detail .container.inner {
+      padding: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+.page-wish .container.inner {max-width:650px;}
+.page-wish .wish-heart {right:30px;}
+.page-wish .order-info {display:block;}
+
+.page-wish .order-info-group {margin-left:0;}
+
+.page-wish .wish-item .prd-img {margin-top:15px;}
+.page-wish .order-price {margin-left:0;}
+
+.page-wish .m-hide {display:none;}
+.page-wish .m-show {display:block;}
+
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+.page-wish .wish-item {padding-bottom:30px;}
+.page-wish .wish-item .prd-img {margin-top:10px;}
+.page-wish .order-info .item-name {font-size:16px;}
+
+.page-wish .order-info {margin-left:0;font-size:13px;}
+
+.page-wish .wish-heart {right:15px;}
+.page-wish .wish-heart img {width:16px;}
+
+.page-wish .col-xs-70 {margin: 0;padding-left:0;}
+
+
+.page-wish .wish-item .prd-img,.page-wish .prd-item .prd-img img {width: 80px;}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+.page-wish .wish-item .prd-img,.page-wish .prd-item .prd-img img {width: 60px;}
+
+.page-wish .order-info-group {margin:0;}
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 812px) and (orientation : landscape) { 
+.page-wish .wish-heart {right:30px;}
+.page-wish .order-info {font-size:16px;}
+.page-wish .order-info .item-name {font-size:20px;}
+
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+  .page-wish .wish-item .prd-img {width:60px;}
+}
+
+@media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
+
+}

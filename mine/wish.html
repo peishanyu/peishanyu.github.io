@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" class="next-head">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	
+	<!-- css -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/pure.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin-style.css">
+	<link rel="stylesheet" type="text/css" href="css/page/wish.css">
+
+	<title>MINE | 心願清單</title>
+	<link rel="icon" href="static/favicon.ico" class="next-head">
+
+</head>
+<body id="page-all">
+
+<!-- LOGIN popup start-->
+<div class="modal_all" style="position:fixed;z-index:99;width:100%">
+	<div id="modal_login" class="elementToFadeIn modal modal-m" style="display:none;">
+		<div class="mg-5 block-shadow-1">
+			<div id="userLogin">
+				<div class="modal-header">
+					<div class="col-50 pd-0">
+						<span class="modal-header-title fw-bold">登入</span> 
+						<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
+					</div>
+					<div class="col-50 pd-0 text-r">
+						<button class="btn text-link-1 fw-bold" onclick="changeToSignUp()">註冊</button>
+					</div>
+					<div class="clearfix line"></div>
+				</div>
+
+				<div class="modal-body">
+					<div class="container">
+						<div class="form-group row">
+							<div class="col-20 col-xs-100 col-form-label"><span class="">手機號碼</span></div>
+							<div class="col-50 col-xs-100 col-form-label"><input class="width-100" type="" name="" /></div>
+							<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
+						</div>
+						<div class="form-group row">
+							<div class="col-16 col-xs-100 col-form-label"><span class="">驗證碼</span></div>
+							<div class="col-84 col-xs-100 col-form-label"><input class="width-100" type="" name="" /></div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="col-xs-100 btn modal-btn-comfirm" class="mr-1" onclick="loginModal()"/>確認</button>
+					<div class="inline mt-3 mb-2">
+						<img src="static/images/modal/ic-fb_login.svg" class="pr-1 pl-1" />
+						<img src="static/images/modal/ic-google_login.svg" class="pr-1 pl-1" />
+						<img src="static/images/modal/ic-line_login.svg" class="pr-1 pl-1" />
+					</div>
+					<button class="btn btn-round-gray">需要幫助？</button>
+				</div>
+			</div>
+			
+			<div id="userSignup" style="display:none">
+				<div class="modal-header">
+					<div class="col-50 pd-0">
+						<span class="modal-header-title fw-bold">註冊</span> 
+						<img src="static/images/modal/ic-arrowDown_login.svg" class="vertical-super" />
+					</div>
+					<div class="col-50 pd-0 text-r">
+						<button class="btn text-link-1 fw-bold" onclick="changeToLogin()">登入</button>
+					</div>
+					<div class="clearfix line"></div>
+				</div>
+
+				<div class="modal-body">
+					<div class="container">
+						<div class="form-group row">
+							<div class="col-20 col-xs-100 col-form-label"><span class="">手機號碼</span></div>
+							<div class="col-50 col-xs-100 col-form-label"><input class="width-100" type="" name="" /></div>
+							<div class="col-30 col-form-label"><button class="btn sendSms">寄送驗證碼</button></div>
+						</div>
+						<div class="form-group row">
+							<div class="col-16 col-xs-100 col-form-label"><span class="">驗證碼</span></div>
+							<div class="col-84 col-xs-100 col-form-label clearfix"><input class="width-100" type="" name="" /></div>
+						</div>
+						<div class="form-group row">
+							<div class="col-16 col-xs-100 col-form-label"><span class="">姓名</span></div>
+							<div class="col-84 col-xs-100 col-form-label clearfix"><input class="width-100" type="" name="" /></div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="col-xs-100 btn modal-btn-comfirm" class="mr-1" onclick="loginModal()"/>確認</button>
+					<div class="inline mt-3 mb-2">
+						<img src="static/images/modal/ic-fb_login.svg" class="pr-1 pl-1" />
+						<img src="static/images/modal/ic-google_login.svg" class="pr-1 pl-1" />
+						<img src="static/images/modal/ic-line_login.svg" class="pr-1 pl-1" />
+					</div>
+					<button class="btn btn-round-gray">需要幫助？</button>
+					<div class="mt-3 text-c font-size-12" style="color:#7d7d7d">確認即表示同意本網站之<a href="" class="text-deco-underline fw-bold">使用者條款</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="add-modalMask" class="modal-mask" style="display:none" onclick="loginModal()"></div>
+<!-- login end -->
+
+<!-- Menu Start -->
+<div id="menu-r" class="page-all menu-r menuMaskFadeOut" style="display:none;" onclick="menuClose();" />
+	
+	<div class="absolute container ">
+		<div onclick="menuClose();" ><img src="static/images/menu/ic-close_menu.svg" class="close pointer" /></div>
+		<div class="menu-r-list">
+
+			<div class="menu-r-item"><a href="index.html">首頁 <span></span></a></div>
+			<div class="menu-r-item"><a href="about.html">關於我們 <span></span></a></div>
+			<div class="menu-r-item"><a href="collections.html">本季新品 <span></span></a></div>
+			<div class="menu-r-item"><a href="campaigns.html">主題系列 <span></span></a></div>
+			<div class="menu-r-item pointer" onclick="loginModal();addBlur()">會員 <span></span></div>
+			<div class="menu-r-item"><a href="">購物車 <span></span></a></div>
+
+			<div class="menu-r-item-line"><img src="static/images/menu/line-sep_menu.svg" class="width-100" /></div>
+
+			<div class="menu-r-item"><a href="horoscopes.html">運勢推薦 <span></span></a></div>
+			<div class="menu-r-item"><a href="material.html">天然石介紹 <span></span></a></div>
+			<div class="menu-r-item"><a href="">專屬訂製 <span></span></a></div>
+
+			<div class="menu-r-item-line"><img src="static/images/menu/line-sep_menu.svg" class="width-100" /></div>
+
+			<div class="menu-r-item"><a href="products.html">全部商品 <span></span></a></div>
+			<div class="menu-r-item"><a href="">手鍊 <span></span></a></div>
+			<div class="menu-r-item"><a href="">耳環 <span></span></a></div>
+			<div class="menu-r-item"><a href="">項鍊 <span></span></a></div>
+			<div class="menu-r-item"><a href="">戒指 <span></span></a></div>
+			<div class="menu-r-item"><a href="">腳鍊 <span></span></a></div>
+
+
+			
+		</div>
+	</div>
+
+	<!-- <img src="static/images/menu/img-mask_menu.svg" class="mask menuFadeInMask" />  -->
+
+</div>
+<!-- Menu end -->
+
+<!-- HEADER start -->
+<header>
+	<div class="mask-header">
+		<img src="static/images/header_top_line.png" class="absolute width-100" />
+		<div class="container menu">
+			<div class="row">
+				<div class="col-70">
+					<a href="index.html"><img src="static/images/logo.svg" class="logo-header vertical-t" /></a>
+					
+					<ul class="menu-item">
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="about.html">關於我們</li></a>
+						<li><a href="collections.html">本季新品</li></a>
+						<li><a href="campaigns.html">主題系列</li></a>
+						<!--
+						<li><a href="">VIP室</li></a>
+						-->
+					</ul>
+				</div>
+				<div class="col-30 text-r ic-menu-item" >
+					<div>
+						<img src="static/images/ic-member_header.svg" id="ic-member" class="pointer" onclick="loginModal();addBlur()" />
+					</div>
+					<div class="relative">
+						<div class="absolute dot-cart active"></div>
+						<img src="static/images/ic-cart_header.svg" id="ic-cart" class="pointer" />
+					</div>
+					<div>
+						<img src="static/images/ic-menu_header.svg" id="ic-menu" class="pointer" onclick="menuShow();" />	
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- header end -->
+
+
+
+<div class="page-admin page-wish">
+
+	<div class="banner"></div>
+
+	<div class="member-submenu">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="subitem col-md-3" onclick="location.href='cart.html'">
+					<div>
+						<img src="static/images/member/ic-cart_submenu.svg" />
+						<span>購物車</span>	
+					</div>
+				</div>
+
+				<div class="subitem col-md-3" onclick="location.href='vip.html'">
+					<div>
+						<img src="static/images/member/ic-vip_submenu.svg" />
+						<span>VIP室</span>	
+					</div>
+				</div>
+
+				<div class="subitem col-md-3" onclick="location.href='order.html'">
+					<div>
+						<img src="static/images/member/ic-order_submenu.svg" />
+						<span>查看訂單</span>	
+					</div>
+				</div>
+
+				<div class="subitem col-md-3 active" onclick="location.href='wish.html'">
+					<div>
+						<img src="static/images/member/ic-wish_submenu.svg" />
+						<span>心願清單</span>	
+					</div>
+				</div>
+
+				<div class="subitem col-md-3" onclick="location.href='member.html'">
+					<div>
+						<img src="static/images/member/ic-memberInfo_submenu.svg" />
+						<span>會員資料</span>	
+					</div>
+				</div>
+
+				<div class="subitem col-md-3" onclick="">
+					<div>
+						<img src="static/images/member/ic-logout_submenu.svg" />
+						<span>登出</span>	
+					</div>
+				</div>
+			</div>
+				
+
+		</div>
+
+	</div>
+
+	<div class="zone-title">
+		<div class="deco-before-title"></div>
+		<img src="static/images/member/ic-wish_submenu.svg" class="ic-member ic-order">
+		<h1 class="page-title">心願清單</h1>
+	</div>
+
+
+
+	<div class="wish-item">
+		
+		<div class="container inner">
+
+			<div class="wish-heart" onclick=""><img src="static/images/member/wish/heart.svg" /></div>
+
+			<div class="row">
+
+				<div class="col-10 col-s-15 col-xs-30">
+					<div class="prd-img"><img src="https://peishanyu.github.io/mine/static/images/cart/thumb-1.jpg" /></div>	
+				</div>
+
+				<div class="col-90 col-s-85 col-xs-70">
+
+					<div class="order-info">
+
+						<div class="order-info-group">
+							<div class="item-name">玫瑰幸運腳鏈</div>
+							<div class="order-num">瀏覽時間：<span>2019/12/02 19:35</span></div>
+							<div>
+								<div class="order-num m-show">商品編號：<span>TUB986572</span></div>
+								<div class="order-price m-show">
+									價格
+									<span class="usd">$</span>
+									<span>5860</span>
+								</div>	
+							</div>
+						</div>
+
+						<div class="order-info-group">
+							<div class="order-num m-hide">商品編號：<span>TUB986572</span></div>
+						</div>
+
+						<div class="order-info-group">
+							<div class="order-price m-hide">
+								價格
+								<span class="usd">$</span>
+								<span>5860</span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="wish-item">
+		
+		<div class="container inner">
+
+			<div class="wish-heart" onclick=""><img src="static/images/member/wish/heart.svg" /></div>
+
+			<div class="row">
+
+				<div class="col-10 col-s-15 col-xs-30">
+					<div class="prd-img"><img src="https://peishanyu.github.io/mine/static/images/cart/thumb-1.jpg" /></div>	
+				</div>
+
+				<div class="col-90 col-s-85 col-xs-70">
+
+					<div class="order-info">
+
+						<div class="order-info-group">
+							<div class="item-name">玫瑰幸運腳鏈</div>
+							<div class="order-num">瀏覽時間：<span>2019/12/02 19:35</span></div>
+							<div>
+								<div class="order-num m-show">商品編號：<span>TUB986572</span></div>
+								<div class="order-price m-show">
+									價格
+									<span class="usd">$</span>
+									<span>5860</span>
+								</div>	
+							</div>
+						</div>
+
+						<div class="order-info-group">
+							<div class="order-num m-hide">商品編號：<span>TUB986572</span></div>
+						</div>
+
+						<div class="order-info-group">
+							<div class="order-price m-hide">
+								價格
+								<span class="usd">$</span>
+								<span>5860</span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+		
+</div>
+
+
+<!-- FOOTER start -->
+<div id="footer" class="relative">
+	<div class="container">
+		<div class="row">
+			<div class="col-60 col-xs-50">
+				<div class="row">
+					<div class="col-50 col-xs-100 footer-item">
+						<div><a href="">客戶服務</a></div>
+						<div><a href="contact.html#contactInfo">連絡我們</a></div>
+						<div><a href="contact.html#faq">常見問題解答</a></div>
+					</div>
+					<div class="col-50 col-xs-100 footer-item">
+						<div><a href="">預約手鍊諮詢服務</a></div>
+						<div><a href="material.html">產品目錄</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-40 col-xs-50 text-r socialmedia">
+				<img src="static/images/footer_logo.svg" class="footer-logo" />
+				<div>
+					<img src="static/images/ic-youtube_footer.svg" class="social-item" />
+					<img src="static/images/ic-fb_footer.svg" class="social-item" />
+					<img src="static/images/ic-ig_footer.svg" class="social-item" />	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FOOTER end -->
+
+<script src="js/modal_login.js"></script>
+<script src="js/menu_header.js"></script>
+
+
+
+</body>
+</html>
