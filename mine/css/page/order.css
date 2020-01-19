@@ -11,15 +11,15 @@
 .page-order .order-info-group {margin:0 25px;}
 .page-order .order-info-group:first-child {margin-left:0;}
 
-.page-order .order-time {color:#8A837F;font-size:24px;font-weight:700;}
-.page-order .order-info {position:relative;color:#8A837F;font-size:18px;font-weight:700;line-height:2;}
+.page-order .order-time {color:#78726f;font-size:24px;font-weight:700;}
+.page-order .order-info {position:relative;color:#78726f;font-size:18px;font-weight:700;line-height:2;}
 
 .page-order .order-price {margin-left:50px;}
 
 .page-order .order-status, .page-order .order-price {display:inline-block;}
 
 
-.page-order .swich-order-detail span {display:inline-block;color:#8A837F;font-size:18px;font-weight:700;line-height: 1.25;border-bottom:2px solid #8A837F;}
+.page-order .swich-order-detail span {display:inline-block;color:#78726f;font-size:18px;font-weight:700;line-height: 1.25;border-bottom:2px solid #8A837F;}
 
 .page-order .swich-order-detail .triangle {
   display: inline-block;

@@ -18,7 +18,7 @@
   border:0;
   outline:none;
   background-color:#fef8f2;
-  color:#a89b92;
+  color:#78726f;
   font-weight:700;
 }
 
@@ -27,7 +27,7 @@
 .page-member .btn-select {display:inline-block;margin:1rem 0;margin-right: .5rem;padding:.5rem 1.5rem;border-radius:100rem;background-color:#8A837F;color:#fff;cursor:pointer;}
 .page-member .btn-select span {display:inline-block;min-width:3rem;}
 .page-member .form-item input.width-auto {width:auto;}
-.page-member .form-label {display:inline-block;color:#8F8F8F;font-weight:700;font-size:16px;}
+.page-member .form-label {display:inline-block;color:#8a837f;font-weight:700;font-size:16px;}
 .page-member .sms-send span, .page-member .email-verified span, .page-member .email-notverified span {margin-right:0;text-align:center;}
 .page-member input.sms-input {width:auto;}
 
@@ -46,7 +46,7 @@
     cursor: pointer;
     font-size: 18px;
     line-height: 1.6;
-    color:#a89b92;
+    color:#8a837f;
     font-weight:700;
   }
   .page-member .control input {

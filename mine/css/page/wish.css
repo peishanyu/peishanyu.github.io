@@ -9,11 +9,11 @@
 .page-wish .wish-item .prd-img {width:85px;cursor:pointer;}
 
 
-.page-wish .order-info {display:flex;align-items:flex-end;position:relative;margin-left:25px;color:#8A837F;font-size:18px;font-weight:700;line-height:2;}
+.page-wish .order-info {display:flex;align-items:flex-end;position:relative;margin-left:25px;color:#78726f;font-size:18px;font-weight:700;line-height:2;}
 .page-wish .order-info-group {margin:0 25px;}
 .page-wish .order-info-group:first-child {margin-left:0;}
 
-.page-wish .order-info .item-name {color:#8A837F;font-size:24px;font-weight:700;}
+.page-wish .order-info .item-name {color:#78726f;font-size:24px;font-weight:700;}
 .page-wish .order-info .item-name a {text-decoration:none;}
 .page-wish .page-wish .order-price {display:inline-block;margin-left:50px;font-size:22px;}
 
