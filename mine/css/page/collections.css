@@ -24,7 +24,7 @@
 }
 
 /* main promo */
-.page-collections .discount {position:absolute;right:2%;bottom:4%;;text-align:right;}
+.page-collections .discount {position:absolute;right:0;bottom:8%;text-align:right;padding:0 4%;}
 .page-collections .leaf-r, .page-collections .leaf-l {position:absolute;}
 
 .page-collections .leaf-r {top:15%;right:20%;}
@@ -58,21 +58,16 @@
 
 
 /* text style */
-.page-collections .discount h3,
-.page-collections .discount .description,
-.page-collections h3.title,
-.page-collections p.description {color:#574c45;}
-
 .page-collections .series h3,
 .page-collections .series .description {color:#fff}
 
 .page-collections .discount h3,
 .page-collections h3.title,
-.page-collections .series h3 {margin-bottom:10px;font-size:53px;font-weight:700;}
+.page-collections .series h3 {margin-bottom:10px;}
 
 .page-collections .discount .description,
 .page-collections p.description,
-.page-collections .series p {margin-bottom:30px;font-size:27px;line-height:2;font-weight:500; /*medium*/}
+.page-collections .series p {margin-bottom:30px;line-height:2;font-weight:500; /*medium*/}
 
 .page-collections p.description,
 .page-collections .series p {margin:20px 0 140px;font-weight:500; /*medium*/}
@@ -125,17 +120,16 @@
 	transform: translateY(45%);
 }
 
-.page-collections .subtitle {margin-bottom:40px;font-size:33px;font-weight:700} 
+.page-collections .subtitle {margin-bottom:40px;font-weight:700} 
 .page-collections .intro3 {transform: translate(40%, 68%);}
 
 
 #footer.page-collections {transform: translateY(230%);}
 
 /* btn style */
-.page-collections .btn-round-fill-orange {font-size:34px;}
 
 .page-collections .btn-round-outline-darkbrown,
-.page-collections .btn-round-outline-white {font-size:34px;vertical-align:unset;}
+.page-collections .btn-round-outline-white {vertical-align:unset;}
 /* btn style end */
 
 .page-collections .slider-dot-control {text-align:center;}
@@ -157,6 +151,31 @@
 	border:3px solid #574C45; 
 }
 
+
+/* === font size & color === */
+.page-collections .discount h3,.page-collections .discount .description,
+.page-collections h3.title,.page-collections p.description {color:#78726f;}
+
+.page-collections .discount h3,
+.page-collections h3.title,
+.page-collections .series h3 {font-size:36px;font-weight:700;}
+
+.page-collections .subtitle {font-size:28px;}
+
+.page-collections .discount .description,
+.page-collections p.description,
+.page-collections .series p,
+.page-collections .btn-round-fill-orange,
+.page-collections .btn-round-outline-darkbrown,
+.page-collections .btn-round-outline-white {font-size:24px;}
+
+.page-campaigns.under-banner2 .description p,
+.page-collections p.description,
+.page-collections .series .description {font-size:20px;}
+/* === font size & color end === */
+
+
+
 /* Responseve */
 
 @media only screen and (max-width:1680px) {
@@ -167,7 +186,7 @@
 
     .page-collections .bg-stone {margin-top:50px;}
 
-	.page-collections .discount h3,.page-collections h3.title,.page-collections .series h3 {margin-bottom:20px;font-size:40px;}
+	.page-collections .discount h3,.page-collections h3.title,.page-collections .series h3 {margin-bottom:20px;}
 	.page-collections .discount .description,.page-collections p.description,.page-collections .series .description {margin-bottom:30px;font-size:20px;}
 	.page-collections p.description {margin-top:20px;margin-bottom:50px}
 
@@ -209,12 +228,27 @@
 	.page-collections .bg-earing-bottom {height:960px;transform:translateY(50%);}
 	#footer.page-collections {transform: translateY(59vh);}
 
-	.page-collections .discount h3, .page-collections h3.title, .page-collections .series h3 {font-size:36px;}
-	.page-collections .subtitle {font-size:24px;}
-	.page-collections .discount .description, .page-collections p.description, .page-collections .series .description {font-size:18px;}
-
 	.page-collections .btn-round-fill-orange, .page-collections .btn-round-outline-darkbrown, .page-collections .btn-round-outline-white {font-size:24px;}
 	.page-collections .intro3 {transform: translate(40%, 85%);}
+
+	/* === font size & color === */
+	.page-collections .discount h3,
+	.page-collections h3.title,
+	.page-collections .series h3 {font-size:30px;}
+
+	.page-collections .subtitle {font-size:24px;}
+
+	.page-collections .discount .description,
+	.page-collections .series p,
+	.page-collections .btn-round-fill-orange,
+	.page-collections .btn-round-outline-darkbrown,
+	.page-collections .btn-round-outline-white {font-size:20px;}
+
+	.page-campaigns.under-banner2 .description p,
+	.page-collections p.description,
+	.page-collections .series .description {font-size:18px;}
+	/* === font size & color end === */
+
 
 }
 
@@ -237,8 +271,6 @@
 
 @media only screen and (max-width:1024px) {
 	.page-collections .banner {height:95vh;}
-
-	.page-collections .discount {bottom:0;}
 	.page-collections .leaf-r {width:20%;top:35%;right:22%;}
 	.page-collections .leaf-l {width:35%;}
 
@@ -246,10 +278,6 @@
 	.page-collections .circle {width:640px;height:640px;}
 
 	.page-collections p.description {margin-bottom:30px;}
-
-	.page-collections .discount h3, .page-collections h3.title, .page-collections .series h3 {font-size:32px;}
-	.page-collections .discount .description, .page-collections p.description, .page-collections .series .description {font-size:16px;}
-	.page-collections .btn-round-fill-orange, .page-collections .btn-round-outline-darkbrown, .page-collections .btn-round-outline-white {font-size:20px;}
 
 	.page-collections .bg-stone-2 {
 	    height: 600px;
@@ -264,6 +292,25 @@
 	}
 
 	.page-collections #album {padding-top:5px;height: calc(100vh * 0.28);}
+
+	/* === font size & color === */
+	.page-collections .discount h3,
+	.page-collections h3.title,
+	.page-collections .series h3 {font-size:24px;}
+
+	.page-collections .subtitle {font-size:20px;}
+
+	.page-collections .discount .description,
+	.page-collections .series p,
+	.page-collections .btn-round-fill-orange,
+	.page-collections .btn-round-outline-darkbrown,
+	.page-collections .btn-round-outline-white {font-size:18px;}
+
+	.page-campaigns.under-banner2 .description p,
+	.page-collections p.description,
+	.page-collections .series .description {font-size:16px;}
+	/* === font size & color end === */
+
 
 }
 
@@ -322,33 +369,28 @@
 
 
 	/* btn style */
-	.page-collections .btn-round-fill-orange {font-size:14px;}
-	.page-collections .btn-round-outline-darkbrown,.page-collections .btn-round-outline-white {border-width:2px;font-size:14px;}
+	.page-collections .btn-round-outline-darkbrown,.page-collections .btn-round-outline-white {border-width:2px;}
 	/* btn style end */
 
 
 	/* text style */
 	.page-collections h3.title, .page-collections .series h3 {
     	margin-bottom:0;
-    	font-size:18px;
 	}
 	.page-collections .discount .description,
 	.page-collections p.description,
 	.page-collections .series .description {
 	    margin-top:10px;
 	    margin-bottom:20px;
-	    font-size:9px;
 	}
 	.page-collections p.description {margin-bottom:30px;}
 	.page-collections h3.title {margin-bottom:10px;}
 	.page-collections .subtitle {
 	    margin-bottom:25px;
-	    font-size:10px;
 	}
 
 
-	.page-collections .discount h3 {margin-bottom:10px;font-size:26px;}
-	.page-collections .discount .description {font-size:13px;}
+	.page-collections .discount h3 {margin-bottom:10px;}
 	/* text style end */
 
 
@@ -409,6 +451,25 @@
 	}
 
 	.page-collections .space.l {margin:50px 0;}
+
+	/* === font size & color === */
+	.page-collections .discount h3,
+	.page-collections h3.title,
+	.page-collections .series h3 {font-size:20px;}
+
+	.page-collections .subtitle {font-size:18px;}
+
+	.page-collections .discount .description,
+	.page-collections .series p,
+	.page-collections .btn-round-fill-orange,
+	.page-collections .btn-round-outline-darkbrown,
+	.page-collections .btn-round-outline-white {font-size:14px;}
+
+	.page-campaigns.under-banner2 .description p,
+	.page-collections p.description,
+	.page-collections .series .description {font-size:12px;}
+	/* === font size & color end === */
+
 	
 }
 
@@ -417,14 +478,60 @@
 }
 
 @media only screen and (max-width:320px) {
-		.page-collections .leaf-r {top:8%;}
-		.page-collections .discount {transform: translateY(105%);}
-		.page-collections .bg-stone {margin-top:50%;padding-bottom:25vh;}
-		.page-collections .square {width:160px;background-size:cover}
-		.page-collections .space.l {margin:70px 0;}
-		.page-collections .circle {width:168px;height:168px;}
+	.page-collections .leaf-r {top:8%;}
+	.page-collections .discount {transform: translateY(105%);}
+	.page-collections .bg-stone {margin-top:50%;padding-bottom:25vh;}
+	.page-collections .square {width:160px;background-size:cover}
+	.page-collections .space.l {margin:70px 0;}
+	.page-collections .circle {width:168px;height:168px;}
 
-		.page-collections #album {height: calc(100vh * 0.3);}
-		.page-collections .bg-stone-2 {height:360px;padding-top:40px;}
-		.page-collections .bg-earing-bottom {transform:translateY(40%);}
+	.page-collections #album {height: calc(100vh * 0.3);}
+	.page-collections .bg-stone-2 {height:360px;padding-top:40px;}
+	.page-collections .bg-earing-bottom {transform:translateY(40%);}
 }
+
+
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+}
+
+@media only screen and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 823px) and (orientation : landscape) { 
+	.page-collections .discount {bottom:0;}
+	.page-collections .discount h3, .page-collections h3.title, .page-collections .series h3 {margin-bottom:10px;}
+	.page-collections .discount .description, .page-collections p.description, .page-collections .series .description {
+		margin-bottom:20px;
+	}
+	.page-collections .square,.page-collections .circle {width:420px;height:420px;}
+	.page-collections .intro1 {transform: translateY(50%);}
+	.page-collections .intro2 {top: 10%;}
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+	.page-collections .banner {height:55vh;}
+	.page-collections .square,.page-collections .circle {width:320px;height:320px;}
+	.page-collections .intro1 {transform: translateY(40%);}
+	.page-collections .bg-stone {padding-bottom: 20vh;}
+	/* === font size & color === */
+	.page-collections .discount h3,
+	.page-collections h3.title,
+	.page-collections .series h3 {font-size:20px;}
+
+	.page-collections .subtitle {font-size:18px;}
+
+	.page-collections .discount .description,
+	.page-collections .series p,
+	.page-collections .btn-round-fill-orange,
+	.page-collections .btn-round-outline-darkbrown,
+	.page-collections .btn-round-outline-white {font-size:14px;}
+
+	.page-campaigns.under-banner2 .description p,
+	.page-collections p.description,
+	.page-collections .series .description {font-size:12px;}
+	/* === font size & color end === */
+}
+
