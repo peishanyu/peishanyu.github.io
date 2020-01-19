@@ -94,33 +94,55 @@
 .page-campaigns.campaignsZone2 img.imgUp, .page-campaigns.campaignsZone2 img.imgUnder {width:100%;}
 
 /* text style */
-.page-campaigns .discount h3, .page-campaigns .discount .description {color:#574c45;}
 
 .page-campaigns .discount h3,
-.page-campaigns.campaignsZone2 .descriptionContainer h3 {margin-bottom:10px;font-size:53px;font-weight:700;}
-.page-campaigns .discount .description,
-.page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:30px;font-size:27px;line-height:2;font-weight:500; /*medium*/}
-.page-campaigns .discount .btn-round-fill-orange {font-size:34px;}
+.page-campaigns.campaignsZone2 .descriptionContainer h3 {margin-bottom:10px;}
 
-.page-campaigns.campaignsZone1 .descriptionContainer h3 {color:#fff;font-weight:700;margin-bottom:4rem;font-size:48px}
-.page-campaigns.campaignsZone1 .descriptionContainer p {line-height:2;color:#fff;font-weight:500;font-size:24px}
-.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white {position:absolute;right:4rem;bottom:4rem;font-size:31px;}
+.page-campaigns .discount .description,
+.page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:30px;line-height:2;font-weight:500; /*medium*/}
+
+
+.page-campaigns.campaignsZone1 .descriptionContainer h3 {color:#fff;font-weight:700;margin-bottom:4rem;}
+.page-campaigns.campaignsZone1 .descriptionContainer p {line-height:2;color:#fff;font-weight:500;font-size:24px;}
+.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white {position:absolute;right:4rem;bottom:4rem;}
 
 .page-campaigns.campaignsZone2 .descriptionContainer h3,
 .page-campaigns.campaignsZone2 .descriptionContainer p {color:#fff;}
 
 .page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:0;}
 
-.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:45px;}
-.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white {font-size:31px;}
-
-.page-campaigns .discount2 h3 {font-weight:700;color:#fff;font-size:56px;}
-.page-campaigns .discount2 .subtitle {font-weight:700;color:#fff;font-size:31px;}
+.page-campaigns .discount2 h3 {font-weight:700;color:#fff;}
+.page-campaigns .discount2 .subtitle {font-weight:700;color:#fff;}
 
 .page-campaigns.under-banner2 .description {background-color:#473E38;padding:2% 5% 6%;}
-.page-campaigns.under-banner2 .description p {margin-bottom:2%;color:#fff;font-size:30px;line-height:2;}
+.page-campaigns.under-banner2 .description p {margin-bottom:2%;color:#fff;line-height:2;}
 .page-campaigns.under-banner2 .description .btn-round-outline-white {font-size:30px;}
 /* text style end */
+
+
+/* === font size & color === */
+
+.page-campaigns .discount h3, .page-campaigns .discount .description {color:#78726f;}
+
+.page-campaigns .discount h3,
+.page-campaigns.campaignsZone2 .descriptionContainer h3,
+.page-campaigns.campaignsZone1 .descriptionContainer h3,
+.page-campaigns .discount2 h3 {font-size:40px;font-weight:700;}
+
+.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:36px;}
+
+.page-campaigns .discount .description,
+.page-campaigns.campaignsZone2 .descriptionContainer p,
+.page-campaigns .discount .btn-round-fill-orange,
+.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+.page-campaigns .discount2 .subtitle,
+.page-campaigns.under-banner2 .description .btn-round-outline-white,
+.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white {font-size:25px;}
+
+.page-campaigns.under-banner2 .description p {font-size:22px;}
+
+/* === font size & color end === */
+
 
 
 /* Responseve */
@@ -137,9 +159,6 @@
 .page-campaigns.campaignsZone2 .sliderImg.up {right:6%;}
 .page-campaigns.campaignsZone2 .sliderImg.under {right:16%;}
 
-/* text style */
-.page-campaigns.campaignsZone1 .descriptionContainer h3 {font-size:45px;}
-/* text style end */
 
 }
 
@@ -167,28 +186,34 @@
 
 
 /* text style */
-.page-campaigns .discount h3,
-.page-campaigns.campaignsZone2 .descriptionContainer h3 {font-size:46px;}
 .page-campaigns .discount .description,
-.page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:23px;font-size:23px;}
-.page-campaigns .discount .btn-round-fill-orange {font-size:24px;}
-
-.page-campaigns.campaignsZone1 .descriptionContainer h3 {margin-bottom:3rem;font-size:32px}
-.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:18px}
-.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white {position:absolute;right:3.5rem;bottom:3.4rem;font-size:20px;}
-
+.page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:23px;}
+.page-campaigns.campaignsZone1 .descriptionContainer h3 {margin-bottom:3rem;}
+.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white {position:absolute;right:3.5rem;bottom:3.4rem;}
 .page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:0;}
-
-.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:38px;}
-.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white {font-size:24px;}
-
-.page-campaigns .discount2 h3 {font-size:48px;}
-.page-campaigns .discount2 .subtitle {font-size:26px;}
-
 .page-campaigns.under-banner2 .description p {margin-bottom:2%;font-size:24px;line-height:2;}
-.page-campaigns.under-banner2 .description .btn-round-outline-white {font-size:26px;}
 /* text style end */
 
+
+/* === font size & color === */
+.page-campaigns .discount h3,
+.page-campaigns.campaignsZone2 .descriptionContainer h3,
+.page-campaigns.campaignsZone1 .descriptionContainer h3,
+.page-campaigns .discount2 h3 {font-size:30px;font-weight:700;}
+
+.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:26px;}
+
+.page-campaigns .discount .description,
+.page-campaigns.campaignsZone2 .descriptionContainer p,
+.page-campaigns .discount .btn-round-fill-orange,
+.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+.page-campaigns .discount2 .subtitle,
+.page-campaigns.under-banner2 .description .btn-round-outline-white,
+.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
+.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:20px;}
+
+.page-campaigns.under-banner2 .description p {font-size:18px;}
+/* === font size & color end === */
 
 }
 
@@ -239,7 +264,7 @@
 	.page-campaigns.under-banner {padding-bottom:10%;}
 
 	.page-campaigns .mainProduct {top:20%;left:0;}
-	.page-campaigns .mainProduct img {width:50vw;}
+	.page-campaigns .mainProduct img {width:45vw;}
 
 	.page-campaigns .bg-bevel {background:transparent;}
 
@@ -287,8 +312,8 @@
 
 .page-campaigns .banner2 {
 	height: 50vh;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 95%);
+	    clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 95%);
 }
 
 .page-campaigns.campaignsZone1 #prevBtn {left:-4%;}
@@ -298,6 +323,25 @@
 
 .page-campaigns .discount2 {margin-top:-20%;}
 
+/* === font size & color === */
+.page-campaigns .discount h3,
+.page-campaigns.campaignsZone2 .descriptionContainer h3,
+.page-campaigns.campaignsZone1 .descriptionContainer h3,
+.page-campaigns .discount2 h3 {font-size:32px;}
+
+.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:28px;}
+
+.page-campaigns .discount .description,
+.page-campaigns.campaignsZone2 .descriptionContainer p,
+.page-campaigns .discount .btn-round-fill-orange,
+.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+.page-campaigns .discount2 .subtitle,
+.page-campaigns.under-banner2 .description .btn-round-outline-white,
+.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
+.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:20px;}
+
+.page-campaigns.under-banner2 .description p {font-size:16px;}
+/* === font size & color end === */
 
 }
 
@@ -314,7 +358,7 @@
 	.page-campaigns .mainProduct {top:35%}
 	.page-campaigns .mainProduct img {width:60vw;}
 
-	.page-campaigns.campaignsZone1 .descriptionContainer {padding:1rem 1.75rem;padding-bottom:4rem;}
+	.page-campaigns.campaignsZone1 .descriptionContainer {padding: 2rem;padding-bottom:4rem;}
 	.page-campaigns.campaignsZone1 #prevBtn {width:40px;left:-8%;transform:translateY(-20px);}
 	.page-campaigns.campaignsZone1 #nextBtn {width:40px;right:-8%;transform:translateY(-20px);}
 
@@ -345,29 +389,62 @@
 	}
 
 	.page-campaigns .discount2 {margin-top:-20%;padding-bottom:4%;}
-
+	.page-campaigns.campaignsZone1 {padding-bottom:4rem;}
 	/* text style */
-	.page-campaigns .discount h3 {font-size:26px;}
-	.page-campaigns .discount .description {margin-bottom:20px;font-size:13px;}
-	.page-campaigns .discount .btn-round-fill-orange {font-size:14px;}
-
-	.page-campaigns.campaignsZone1 .descriptionContainer h3 {margin-bottom:1rem;font-size:18px}
-	.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:9px}
-	.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white {right:1.75rem;bottom:1rem;border-width:2px;font-size:11px;}
-
-	.page-campaigns.campaignsZone2 .descriptionContainer h3 {font-size:20px;}
-	.page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:0;font-size:12px;}
-	.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:18px;}
-	.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white {border-width:2px;font-size:11px;}
-
-	.page-campaigns .discount2 h3 {font-size:17px;}
-	.page-campaigns .discount2 .subtitle {font-size:10px;}
-
+	.page-campaigns .discount .description {margin-bottom:20px;}
+	.page-campaigns.campaignsZone1 .descriptionContainer h3 {margin-bottom:1rem;}
+	.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white {right:1.75rem;bottom:1rem;border-width:2px;}
+	.page-campaigns.campaignsZone2 .descriptionContainer p {margin-bottom:0;}
+	.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white {border-width:2px;}
 	.page-campaigns.under-banner2 .description {background-color:#473E38;padding:6%;}
-	.page-campaigns.under-banner2 .description p {margin-bottom:5%;color:#fff;font-size:9px;line-height:2;}
-	.page-campaigns.under-banner2 .description .btn-round-outline-white {border-width:2px;font-size:11px;}
+	.page-campaigns.under-banner2 .description p {margin-bottom:5%;color:#fff;line-height:2;}
+	.page-campaigns.under-banner2 .description .btn-round-outline-white {border-width:2px;}
 	/* text style end */
 
+	/* === font size & color === */
+	.page-campaigns .discount h3,
+	.page-campaigns.campaignsZone2 .descriptionContainer h3,
+	.page-campaigns.campaignsZone1 .descriptionContainer h3,
+	.page-campaigns .discount2 h3 {font-size:22px;}
+
+	.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:18px;}
+
+	.page-campaigns .discount .description,
+	.page-campaigns.campaignsZone2 .descriptionContainer p,
+	.page-campaigns .discount .btn-round-fill-orange,
+	.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+	.page-campaigns .discount2 .subtitle,
+	.page-campaigns.under-banner2 .description .btn-round-outline-white,
+	.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
+	.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:14px;}
+
+	.page-campaigns.under-banner2 .description p {font-size:14px;}
+	/* === font size & color end === */
+
+
+}
+
+@media only screen and (max-width:320px) {
+	.page-campaigns.campaignsZone2 .sliderContainer {height:340px;}
+	/* === font size & color === */
+	.page-campaigns .discount h3,
+	.page-campaigns.campaignsZone2 .descriptionContainer h3,
+	.page-campaigns.campaignsZone1 .descriptionContainer h3,
+	.page-campaigns .discount2 h3 {font-size:18px;}
+
+	.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:16px;}
+
+	.page-campaigns .discount .description,
+	.page-campaigns.campaignsZone2 .descriptionContainer p,
+	.page-campaigns .discount .btn-round-fill-orange,
+	.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+	.page-campaigns .discount2 .subtitle,
+	.page-campaigns.under-banner2 .description .btn-round-outline-white,
+	.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
+	.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:14px;}
+
+	.page-campaigns.under-banner2 .description p {font-size:12px;}
+	/* === font size & color end === */
 }
 
 @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
@@ -410,5 +487,70 @@
 }
 
 
+
+@media screen and (min-device-width : 320px) and (max-device-width : 823px) and (orientation : landscape) { 
+.page-campaigns .banner {height:70vh;}
+.page-campaigns .discount {margin-top: -10%;}
+
+.page-campaigns .mainProduct {left:12%;}
+.page-campaigns .mainProduct img {width:35vw;}
+.page-campaigns.under-banner {padding-bottom:0;}
+.page-campaigns.campaignsZone1 {height:900px;}
+.page-campaigns.campaignsZone2 .sliderContainer {height:760px;}
+.page-campaigns .discount2 {margin-top:-5%;}
+
+/* === font size & color === */
+.page-campaigns .discount h3,
+.page-campaigns.campaignsZone2 .descriptionContainer h3,
+.page-campaigns.campaignsZone1 .descriptionContainer h3,
+.page-campaigns .discount2 h3 {font-size:32px;}
+
+.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:28px;}
+
+.page-campaigns .discount .description,
+.page-campaigns.campaignsZone2 .descriptionContainer p,
+.page-campaigns .discount .btn-round-fill-orange,
+.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+.page-campaigns .discount2 .subtitle,
+.page-campaigns.under-banner2 .description .btn-round-outline-white,
+.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
+.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:20px;}
+
+.page-campaigns.under-banner2 .description p {font-size:16px;}
+/* === font size & color end === */
+
+
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	.page-campaigns .mainProduct {top:35%;}
+	.page-campaigns.campaignsZone1 {height:700px;}
+	.page-campaigns.campaignsZone2 .sliderDot .dot {width:12px;height:12px;margin: 1.1rem;}
+	.page-campaigns.campaignsZone2 .sliderContainer {height:540px;}
+	/* === font size & color === */
+	.page-campaigns .discount h3,
+	.page-campaigns.campaignsZone2 .descriptionContainer h3,
+	.page-campaigns.campaignsZone1 .descriptionContainer h3,
+	.page-campaigns .discount2 h3 {font-size:18px;}
+
+	.page-campaigns.campaignsZone2 .imgTitle h4 {font-size:16px;}
+
+	.page-campaigns .discount .description,
+	.page-campaigns.campaignsZone2 .descriptionContainer p,
+	.page-campaigns .discount .btn-round-fill-orange,
+	.page-campaigns.campaignsZone1 .descriptionContainer .btn-round-outline-white,
+	.page-campaigns .discount2 .subtitle,
+	.page-campaigns.under-banner2 .description .btn-round-outline-white,
+	.page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
+	.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:14px;}
+
+	.page-campaigns.under-banner2 .description p {font-size:12px;}
+	/* === font size & color end === */
+
+}
+
+@media screen and (device-width : 1024px) and (device-height : 1366px) and (orientation : portrait) { 
+
+}
 
 

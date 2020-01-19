@@ -858,13 +858,13 @@ button:focus {
 .btn-outline-orange {border:1px solid #ff9933;color:#ff9933;background:transparent;border-radius:100rem;font-weight:700;font-size:20px;padding:6px 32px}
 
 
-.btn-round-fill-orange {padding: 10px 50px;font-weight:700;background:url(../static/images/btn-bg.jpg) no-repeat center 95%;border-radius:20rem;color:#fff;}
+.btn-round-fill-orange {padding:6px 50px;font-weight:700;background:url(../static/images/btn-bg.jpg) no-repeat center 95%;border-radius:20rem;color:#fff;}
 .btn-round-fill-orange:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
 
-.btn-round-outline-darkbrown {padding: 10px 50px;font-weight:700;background:transparent;border-radius:20rem;border:3px solid #574C45;color:#574C45;}
+.btn-round-outline-darkbrown {padding:6px 50px;font-weight:700;background:transparent;border-radius:20rem;border:3px solid #574C45;color:#574C45;}
 .btn-round-outline-darkbrown:active {box-shadow:0 0 0 0.2rem rgba(139, 108, 87, 0.2);}
 
-.btn-round-outline-white {padding: 10px 50px;font-weight:700;background:transparent;border-radius:20rem;border:3px solid #fff;color:#fff;}
+.btn-round-outline-white {padding:6px 50px;font-weight:700;background:transparent;border-radius:20rem;border:3px solid #fff;color:#fff;}
 .btn-round-outline-white:active {box-shadow: 0 0 0 0.2rem rgba(241, 120, 38, 0.2);}
 /* --- */
 
