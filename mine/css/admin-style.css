@@ -87,9 +87,9 @@
   .page-admin .subitem:after, .page-admin .subitem.active {border-bottom: solid 3px #8a837f;}
 
   .page-admin .deco-before-title {width:36px;height:30px;}
-  .page-admin h1.page-title {margin:0 10px 0 10px;font-size:24px;}
-  .page-admin .zone-title .ic-member {width:36px;margin: 0 0 0 1rem;}
-  .page-admin .zone-title {margin-top:3rem;margin-bottom:2rem;}
+  .page-admin h1.page-title {margin:0 10px 0 10px;font-size:20px;}
+  .page-admin .zone-title .ic-member {width:36px;margin: 0 0 0 .5rem;}
+  .page-admin .zone-title {margin-top:2rem;margin-bottom:2rem;}
 
   .page-admin .col-md-3 {width:30%;}
 
