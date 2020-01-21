@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
   <g id="ic-cart-w_submenu" transform="translate(267 -23)">
     <rect id="Rectangle_26" data-name="Rectangle 26" width="48" height="48" transform="translate(-267 23)" fill="rgba(160,160,160,0)"/>
-    <g id="Group_21" data-name="Group 21" transform="translate(-642.502 -264.542)">
-      <rect id="Rectangle_1" data-name="Rectangle 1" width="28.983" height="32.602" transform="translate(385.502 299.745)" fill="#fef8f2"/>
-      <circle id="Ellipse_1" data-name="Ellipse 1" cx="8.202" cy="8.202" r="8.202" transform="translate(391.791 291.542)" fill="none" stroke="#fef8f2" stroke-miterlimit="10" stroke-width="2.964"/>
+    <g id="Group_21" data-name="Group 21" transform="translate(-640.502 -262.542)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="24.305" height="27.34" transform="translate(385.502 298.421)" fill="#fef8f2"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="6.878" cy="6.878" r="6.878" transform="translate(390.776 291.542)" fill="none" stroke="#fef8f2" stroke-miterlimit="10" stroke-width="2.964"/>
     </g>
   </g>
 </svg>

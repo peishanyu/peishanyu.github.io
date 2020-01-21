@@ -21,15 +21,15 @@
 
 
 .page-admin .zone-title {display:flex;align-items:center;margin-top:4rem;margin-bottom:3rem;}
-.page-admin .deco-before-title {display:inline-block;background-color:#78726f;width:166px;height:54px;}
+.page-admin .deco-before-title {display:inline-block;background-color:#78726f;width:166px;height:48px;}
 .page-admin h1.page-title {
 	display:inline-block;
 	margin:0 20px 0 10px;
 	color:#78726f;
 	font-weight:700;
-	font-size:45px;
+	font-size:36px;
 }
-.page-admin .zone-title .ic-member {width:54px; margin:0 2rem;}
+.page-admin .zone-title .ic-member {width:48px; margin:0 2rem;}
 
 .page-admin .container.inner {max-width:1100px;padding-bottom:5rem;}
 

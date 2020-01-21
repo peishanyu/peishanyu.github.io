@@ -15,17 +15,7 @@
 .page-cart .prd-list .prd-item.active .ic-delete {display:block;}
 .page-cart .price>img {width:32px;vertical-align:middle;margin-left:.5rem;}
 .page-cart .color img {width:32px;}
-.page-cart .ic-cartbag {margin:0 2rem;width:30px;}
-
-
-.page-cart .zone-title {display:flex;margin-top:3rem;margin-bottom:4rem;}
-.page-cart .deco-before-title {display:inline-block;background-color:#78726f;width:166px;height:48px;}
-.page-cart h1.page-title {
-	display:inline-block;
-	margin:0 20px 0 10px;
-	font-weight:700;
-}
-
+.page-cart .ic-cartbag {width:48px;margin:0 2rem;}
 
 .page-cart .cart-container,.page-cart .invoice-outer-container {margin:auto;}
 
@@ -505,7 +495,7 @@
 .page-cart .form-row-title,
 .page-cart #modal-giftcard .container {color:#78726f;}
 
-.page-cart h1.page-title {font-size:36px;}
+
 
 .page-cart .div-title,
 .page-cart #modal-giftcard .title,
@@ -541,10 +531,6 @@
 	/* container width end */
 
 
-	.page-cart .deco-before-title {width:80px;height:40px;}
-	.page-cart .ic-cartbag {width:24px;}
-
-
 		/* Invoice Tab */
 		.page-cart #tabs-container label {padding:.5rem .65rem;}
 
@@ -557,7 +543,7 @@
 @media only screen and (max-width:1440px) {
 
 	/* === font-size & font-color === */
-	.page-cart h1.page-title {font-size:30px;}
+
 
 	.page-cart .div-title,
 	.page-cart #modal-giftcard .title,
@@ -600,8 +586,6 @@
 	.page-cart .cart-container {max-width:720px;}
 
 /* === font-size & font-color === */
-.page-cart h1.page-title {font-size:28px;}
-
 .page-cart .div-title,
 .page-cart #modal-giftcard .title {font-size:22px;}
 
@@ -626,10 +610,6 @@
 .page-cart .invoice-agree {font-size:13px;}
 /* === font-size & font-color end === */
 
-
-
-	.page-cart .deco-before-title {width:54px;height:36px;}
-	.page-cart .zone-title .ic-cartbag {width:24px;}
 
 	.page-cart .prd-list .ic-delete {width:36px;transform: translate(18px, -18px);}
 	.page-cart .m-hide {display:none;}
@@ -698,10 +678,6 @@
 	.page-cart .zone-title {margin:2rem 0;}
 
 	.page-cart .div-title {margin-bottom:0;}
-
-	.page-cart .deco-before-title {width:36px;height:30px;}
-	.page-cart h1.page-title {margin:0 10px 0 10px;}
-	.page-cart .zone-title .ic-cartbag {width:16px;margin: 0 1rem;}
 
 	.page-cart .color img {width:24px;}
 	.page-cart .price>img {margin-left:.25rem;}
@@ -813,11 +789,9 @@
 	.page-cart .ic-delete {width:36px;transform:translate(18px, -18px);}
 	.page-cart .color img,.page-cart .price>img {width:28px;}
 	.page-cart .prd-sepline {border-bottom:3px solid #D3CCC6;}
-	.page-cart .ic-cartbag {width:18px;margin: 0 1rem;}
-	.page-cart .deco-before-title {height:24px;}
-	.page-cart .zone-title {margin:3rem 0;}
+
 	/* === font-size & font-color === */
-	.page-cart h1.page-title {font-size:20px;}
+
 
 	.page-cart .div-title,
 	.page-cart #modal-giftcard .title {font-size:18px;}

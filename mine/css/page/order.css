@@ -11,7 +11,7 @@
 .page-order .order-info-group {margin:0 25px;}
 .page-order .order-info-group:first-child {margin-left:0;}
 
-.page-order .order-time {color:#78726f;font-size:24px;font-weight:700;}
+.page-order .order-time {color:#78726f;font-size:20px;font-weight:700;}
 .page-order .order-info {position:relative;color:#78726f;font-size:18px;font-weight:700;line-height:2;}
 
 .page-order .order-price {margin-left:50px;}
@@ -47,11 +47,11 @@
 .page-order .order-detail.show {display:block;}
 .page-order .order-detail.hide {display:none;}
 
-.page-order .orderStatus {text-align:center;color:#fff;font-size:22px;font-weight:700;}
+.page-order .orderStatus {text-align:center;color:#fff;font-size:24px;font-weight:700;}
 .page-order .orderStatus span {display:inline-block;padding:0 12px 10px;border-bottom:3px solid #fff;}
 .page-order .orderStatus span img {margin-right:4px;margin-bottom:4px;}
 
-.page-order .info-title .title {display:inline-block;margin:20px 0;font-size:22px;color:#fff;font-weight:700;}
+.page-order .info-title .title {display:inline-block;margin:20px 0;font-size:20px;color:#fff;font-weight:700;}
 .page-order .info-title span,
 .page-order .info-title span.subtitle {display:inline-block;font-size:18px;color:#fff;font-weight:500;}
 
@@ -79,7 +79,7 @@
 .prd-name-number {margin:0 20px;}
 
 .page-order .prd-name-number {color:#fff;}
-.page-order .prd-name-number .name {margin-bottom:4px;font-size:22px;font-weight:700;}
+.page-order .prd-name-number .name {margin-bottom:4px;font-size:20px;font-weight:700;}
 .page-order .number, .page-order .prd-size-color, .page-order .prd-price-qty {margin-bottom:4px;font-size:18px;font-weight:500;}
 .page-order .prd-price-qty {margin:0 24px;}
 
@@ -128,13 +128,13 @@
 @media only screen and (max-width: 480px) {
 .page-order .container.inner {padding-bottom:3rem;}
 .page-order .order-item .prd-img {margin-top:10px;}
-.page-order .order-time {font-size:17px;}
+.page-order .order-time {font-size:16px;}
 
 .page-order .order-info,
-.page-order .swich-order-detail span {font-size:13px;}
+.page-order .swich-order-detail span {font-size:14px;}
 
 .page-order .orderStatus {margin-bottom:20px;}
-.page-order .orderStatus span {padding: 0 12px 4px;font-size:14px;}
+.page-order .orderStatus span {padding: 0 12px 4px;font-size:16px;}
 .page-order .orderStatus span img {width:16px;}
 
 .page-order .info-title .title {margin:10px 0;}
@@ -154,7 +154,7 @@
 
 .page-order .receive-info {line-height:1.25;}
 
-.page-order .prd-name-number .name {font-size:15px;}
+.page-order .prd-name-number .name {font-size:14px;}
 
 .page-order .order-detail .container.inner {padding: 30px 15px;}
 

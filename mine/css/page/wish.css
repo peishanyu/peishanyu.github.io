@@ -13,7 +13,7 @@
 .page-wish .order-info-group {margin:0 25px;}
 .page-wish .order-info-group:first-child {margin-left:0;}
 
-.page-wish .order-info .item-name {color:#78726f;font-size:24px;font-weight:700;}
+.page-wish .order-info .item-name {color:#78726f;font-size:20px;font-weight:700;}
 .page-wish .order-info .item-name a {text-decoration:none;}
 .page-wish .page-wish .order-price {display:inline-block;margin-left:50px;font-size:22px;}
 
@@ -58,7 +58,7 @@
 .page-wish .wish-item .prd-img {margin-top:10px;}
 .page-wish .order-info .item-name {font-size:16px;}
 
-.page-wish .order-info {margin-left:0;font-size:13px;}
+.page-wish .order-info {margin-left:0;font-size:14px;}
 
 .page-wish .wish-heart {right:15px;}
 .page-wish .wish-heart img {width:16px;}
