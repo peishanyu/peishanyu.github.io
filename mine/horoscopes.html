@@ -150,6 +150,132 @@
 <!-- Menu end -->
 
 
+<!-- prd carousel detail -->
+<div class="modal_all" style="position:fixed;z-index:299;width:100%">
+	<div id="modal_carousel" class="page-horoscopes elementToFadeIn modal clear" style="display:none;">
+
+		<div class="container">
+			<div>
+				<div class="closePopup text-r" onclick="carouselHoroscopesModal()">
+					<img src="static/images/menu/ic-close_menu.svg" class="close pointer" />
+				</div>
+
+				<div class="recommand prd-carousel">
+					<div class="title">依星座運勢結果為您推薦</div>
+					<div class="sepline"></div>
+				</div>
+
+				<div class="clear">
+
+					<div class="col-50 col-s-100 flex">
+						<div class="col-25 col-s-25">
+							<div class="left-panel">
+								<div class="arrow-thumbnail top">
+									<img src="static/images/product/productCarousel_arrowTop.svg" />
+								</div>
+								<div class="arrow-thumbnail bottom">
+									<img src="static/images/product/productCarousel_arrowDown.svg" />
+								</div>
+
+								<div class="thumbnail-container">
+									<div class="thumbnail-img">
+										<img src="static/images/product/thumb-1.jpg" />
+									</div>
+									<div class="thumbnail-img active">
+										<img src="static/images/product/earing.jpg" />
+									</div>
+									<div class="thumbnail-img">
+										<img src="static/images/product/thumb-1.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-75 col-s-75">
+							<div>
+								<img src="static/images/product/earing.jpg" />	
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-50 col-s-100">
+						<div class="prd-title">
+							<span>幸運耳環</span>
+							<span class="prd-subtitle">成為你每日的幸運星</span>
+						</div>
+						<div class="prd-price"> <span class="USD">$</span>1380</div>
+						<div class="prd-description">
+							<p>
+								當代女性獻上自信而優雅的系列作品，悉心打造歷久彌新的經典設計，純粹而細膩！流行大勢耳環專區，眾多名人推薦！款式最豐富的無耳洞專屬耳夾飾品。
+							</p>
+						</div>
+
+						<div class="row spec">
+							<div class="col-50">
+								<span class="label">規格: </span>
+								<div class="dropDown-wrapper">
+									<input type="checkbox" id="dropDown-toggle">
+									<label for="dropDown-toggle" class="dropDown-toggle-label">[M. 15 cm] </label>
+									<div class="dropDown">
+										<input type="radio" id="option-1" name="options">
+										    <label for="option-1">[S. 12 cm] </label>
+										    <input type="radio" id="option-2" name="options">
+										    <label for="option-2">[M. 15 cm] </label>
+										    <input type="radio" id="option-3" name="options">
+										    <label for="option-3">[L. 18 cm] </label>
+										    <input type="radio" id="option-4" name="options">
+										    <label for="option-4">[XL. 20 cm] </label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-50">
+								<span class="label">商品數量: </span>
+								<div id="quantitySelect" class="inline">
+									<form>
+									  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">
+									  	<img src="static/images/horoscopes/ic-min.svg" />
+									  </div>
+									  <input type="number" id="number" value="0">
+									  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
+									  	<img src="static/images/horoscopes/ic-add.svg" />
+									  </div>
+									</form>
+								</div>
+							</div>
+								
+						</div>
+
+						<div class="prd-color">
+							<div class="label">顏色: </div>
+							<div class="colorCircle active">
+								<img src="static/images/product/colorPalettes/color-1.svg" />
+							</div>
+							<div class="colorCircle">
+								<img src="static/images/product/colorPalettes/color-12.svg" />
+							</div>
+							<div class="colorCircle">
+								<img src="static/images/product/colorPalettes/color-22.svg" />
+							</div>
+						</div>
+
+						<div class="text-r">
+							<button class="btn modal-btn-comfirm">加入購物車</button>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+				</div>	
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="add-prd-carousel-Mask" class="modal-mask" style="display:none" onclick="carouselHoroscopesModal()"></div>
+<!-- prd carousel detail end -->
+
 <!-- HEADER start -->
 <header>
 	<div class="mask-header">
@@ -358,6 +484,62 @@
 					</div>
 				</div>
 			</div>
+
+			<div id="recommand" class="recommand prd-carousel typeA">
+				<div>
+					<div class="title">依星座運勢結果為您推薦</div>
+					<div class="sepline"></div>
+				</div>
+
+				<div id="recommandCarousel" class="container-fluid recommandCarousel">
+					<div class="wild-container">
+
+						<div class="grid" onclick="carouselHoroscopesModal()">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊test</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid" onclick="carouselHoroscopesModal()">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid" onclick="carouselHoroscopesModal()">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid" onclick="carouselHoroscopesModal()">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid" onclick="carouselHoroscopesModal()">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+					</div>
+					
+
+				</div>
+				<div class="carousel-end-line"><div class="orange-line"></div></div>
+			</div>
 		</div>
 	</div>
 	<!-- fotune typeA end -->
@@ -451,10 +633,17 @@
 			</div>
 
 			<div class="clearfix flexContainer">
+				<div id="typeIntro" class="col-45 col-s-100 show-m">
+					<div class="note">
+						<p class="white">
+							手中的圓盤包今了陰和陽的符號，它代表她的內在平衡，在她另外一隻手中的水晶棒指向地面，顯示她將她的光和洞見導引到具寅面，並且著根於地。在她的背後有山和濃密的森林，這是她所旅行過的地方，如今來到現在這個點有一些束西已經種在她裡面，而且開始成長。
+						</p>	
+					</div>
+				</div>
 				<div id="typeCard" class="col-55 col-s-100 pd-0">
 					<img src="static/images/horoscopes/typeC/card.jpg" />
 				</div>
-				<div id="typeIntro" class="col-45 col-s-100">
+				<div id="typeIntro" class="col-45 col-s-100 hide-m">
 					<div class="note">
 						<p class="white">
 							手中的圓盤包今了陰和陽的符號，它代表她的內在平衡，在她另外一隻手中的水晶棒指向地面，顯示她將她的光和洞見導引到具寅面，並且著根於地。在她的背後有山和濃密的森林，這是她所旅行過的地方，如今來到現在這個點有一些束西已經種在她裡面，而且開始成長。
@@ -523,7 +712,7 @@
 					<div class="clearfix">
 						<div class="col-70">
 							<div class="inline"><img src="static/images/horoscopes/for-title-h.svg" class="forHeight"></div>
-							<div class="title">心理測驗結果</div>	
+							<div class="title">【<span class="user-name">王小明</span>】的名字吉凶測算結果</div>	
 						</div>
 						<div class="col-30 text-r">
 							<img src="static/images/horoscopes/arrowTop.svg" class="arrowTop">
@@ -539,6 +728,60 @@
 
 			</div>
 
+			<div id="recommand" class="recommand prd-carousel typeD">
+				<div>
+					<div class="title">依名字吉凶測算結果為您推薦</div>
+					<div class="sepline"></div>
+				</div>
+
+				<div id="recommandCarousel" class="container-fluid recommandCarousel">
+					<div class="wild-container">
+
+						<div class="grid">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+						<div class="grid">
+							<img src="static/images/product/earing.jpg" class="relative" />
+							<div class="recommandMask">
+								<div class="productSubtitle">粉晶珍珠手鍊</div>
+								<div class="price"> <span class="USD">$</span>1380</div>
+							</div>
+						</div>
+
+					</div>
+					
+
+				</div>
+			</div>
 
 		</div>
 	</div>	
@@ -546,173 +789,6 @@
 </div>
 
 
-<div id="recommand" class="page-product recommand">
-	<div class="text-c">
-		<div class="title">更多推薦商品</div>
-		<div class="sepline"><img src="static/images/product/sepline.svg"></div>
-	</div>
-
-	<div id="recommandCarousel" class="container-fluid recommandCarousel">
-		<div class="wild-container">
-
-			<div class="grid">
-				<img src="static/images/product/earing.jpg" class="relative">
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<img src="static/images/product/earing.jpg" class="relative">
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<img src="static/images/product/earing.jpg" class="relative">
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<img src="static/images/product/earing.jpg" class="relative">
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<img src="static/images/product/earing.jpg" class="relative">
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-		</div>
-		
-
-	</div>
-
-
-	<!--
-	<div id="" class="container-fluid recommandCarousel">
-		<div class="grid5">
-			<div class="col-20">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-20">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-20">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-20">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-20 col-s-33">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="grid4">
-
-			<div class="col-25">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-25">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-25">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-25">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="grid3">
-
-			<div class="col-15"></div>
-
-			<div class="col-20 col-s-70">
-				<img src="static/images/product/earing.jpg" class="relative" />
-				<div class="recommandMask">
-					<div class="productTitle">凱旋門下的加冕典禮</div>
-					<div class="productSubtitle">粉晶珍珠手鍊</div>
-					<div class="price"> <span class="USD">$</span>1380</div>
-				</div>
-			</div>
-
-			<div class="col-15"></div>
-		</div>
-	</div>
-	-->
-
-</div>
 
 
 <!-- FOOTER start -->
@@ -749,6 +825,7 @@
 
 <script src="js/modal_login.js"></script>
 <script src="js/menu_header.js"></script>
+<script src="js/carousel-horoscopes.js"></script>
 
 </body>
 </html>
