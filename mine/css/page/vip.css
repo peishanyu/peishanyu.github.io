@@ -9,7 +9,33 @@
 
 .page-vip .promo-btn {padding:4px 30px;border-radius:10rem;border:0;outline:none;font-size:20px;font-weight:700;color:#57524F;background-color:#FEF8F2;}
 
-.page-vip .m-show {display:none;}
+
+
+/* not vip */
+.page-not-vip {background-color:#fef8f2;}
+
+.page-not-vip .member-submenu,
+.page-not-vip h1.page-title {color:#78726f;}
+.page-not-vip .deco-before-title {background-color:#78726f;}
+.page-not-vip .subitem.active,
+.page-not-vip .subitem:after {border-color:#78726f;}
+
+.page-not-vip .promo {color:#78726f;}
+
+.page-not-vip .promo-btn {color:#ffffff;background-color:#8a837f;}
+
+.page-not-vip .promo-card .not-vip-show {position:relative;}
+.page-not-vip .text-in-card {position:absolute;right:8%;top:35%;text-align:right;color:#fef8f2;font-weight:700;font-size:16px;}
+.page-not-vip .text-in-card .promo-btn {margin-top:1rem;color:#8A837F;background-color:#fef8f2;font-size:16px;}
+
+/* vip or not-vip */
+.page-vip .m-show,
+.page-not-vip .m-show {display:none;}
+
+.page-vip .not-vip-show,
+.page-not-vip .not-vip-hide {display:none;}
+.page-not-vip .not-vip-show {display:inline-block;}
+
 
 /* ====== RWD ====== */
 @media only screen and (max-width: 1680px) {
@@ -33,18 +59,34 @@
 	.page-vip .promo-title {font-size:20px;}
 	.page-vip .promo-description,.page-vip .promo-btn {font-size:18px;}
 
+
+.page-not-vip .promo-card.m-show .text-in-card,
+.page-not-vip .promo-card.m-show .text-in-card .promo-btn {font-size:20px;}
+.page-not-vip .promo-card.m-show .text-in-card .promo-btn {margin-top:2rem;}
+.page-not-vip .promo-card.m-show .text-in-card {right:6%;}
+
 }
 
 
 @media only screen and (max-width: 480px) {
-  .page-vip .container.inner {padding-bottom:3rem;}
+	.page-vip .container.inner {padding-bottom:3rem;}
 
-  .page-vip .promo-title {font-size:16px;}
-  .page-vip .promo-description,.page-vip .promo-btn {font-size:14px;}
+	.page-vip .promo-title {font-size:16px;}
+	.page-vip .promo-description,.page-vip .promo-btn {font-size:14px;}
+
+	.page-not-vip .promo-card.m-show .text-in-card,
+	.page-not-vip .promo-card.m-show .text-in-card .promo-btn {font-size:14px;}
+	.page-not-vip .promo-card.m-show .text-in-card .promo-btn {margin-top:1rem;}
+	.page-not-vip .promo-card.m-show .text-in-card {right:4%;top:35%;}
+
 
 }
 
 @media only screen and (max-width: 320px) {
+
+	.page-not-vip .promo-card.m-show .text-in-card,
+	.page-not-vip .promo-card.m-show .text-in-card .promo-btn {font-size:12px;}
+	.page-not-vip .promo-card.m-show .text-in-card .promo-btn {margin-top:1rem;}
 
 }
 

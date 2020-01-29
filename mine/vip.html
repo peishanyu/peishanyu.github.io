@@ -189,7 +189,7 @@
 
 
 
-<div class="page-admin page-vip">
+<div class="page-admin page-vip page-not-vip">
 
 	<div class="banner"></div>
 
@@ -200,42 +200,48 @@
 			<div class="row">
 				<div class="subitem col-md-3" onclick="location.href='cart.html'">
 					<div>
-						<img src="static/images/member/ic-cart-w_submenu.svg" />
+						<img src="static/images/member/ic-cart_submenu.svg" class="not-vip-show" />
+						<img src="static/images/member/ic-cart-w_submenu.svg" class="not-vip-hide" />
 						<span>購物車</span>	
 					</div>
 				</div>
 
 				<div class="subitem col-md-3 active" onclick="location.href='vip.html'">
 					<div>
-						<img src="static/images/member/ic-vip-w_submenu.svg" />
+						<img src="static/images/member/ic-vip_submenu.svg" class="not-vip-show" />
+						<img src="static/images/member/ic-vip-w_submenu.svg" class="not-vip-hide" />
 						<span>VIP室</span>	
 					</div>
 				</div>
 
 				<div class="subitem col-md-3" onclick="location.href='order.html'">
 					<div>
-						<img src="static/images/member/ic-order-w_submenu.svg" />
+						<img src="static/images/member/ic-order_submenu.svg" class="not-vip-show" />
+						<img src="static/images/member/ic-order-w_submenu.svg" class="not-vip-hide" />
 						<span>查看訂單</span>	
 					</div>
 				</div>
 
 				<div class="subitem col-md-3" onclick="location.href='wish.html'">
 					<div>
-						<img src="static/images/member/ic-wish-w_submenu.svg" />
+						<img src="static/images/member/ic-wish_submenu.svg" class="not-vip-show" />
+						<img src="static/images/member/ic-wish-w_submenu.svg" class="not-vip-hide" />
 						<span>心願清單</span>	
 					</div>
 				</div>
 
 				<div class="subitem col-md-3" onclick="location.href='member.html'">
 					<div>
-						<img src="static/images/member/ic-memberInfo-w_submenu.svg" />
+						<img src="static/images/member/ic-memberInfo_submenu.svg" class="not-vip-show" />
+						<img src="static/images/member/ic-memberInfo-w_submenu.svg" class="not-vip-hide" />
 						<span>會員資料</span>	
 					</div>
 				</div>
 
 				<div class="subitem col-md-3" onclick="">
 					<div>
-						<img src="static/images/member/ic-logout-w_submenu.svg" />
+						<img src="static/images/member/ic-logout_submenu.svg" class="not-vip-show" />
+						<img src="static/images/member/ic-logout-w_submenu.svg" class="not-vip-hide" />
 						<span>登出</span>	
 					</div>
 				</div>
@@ -248,7 +254,8 @@
 
 	<div class="zone-title">
 		<div class="deco-before-title"></div>
-		<img src="static/images/member/ic-vip-w_submenu.svg" class="ic-member ic-vip">
+		<img src="static/images/member/ic-vip_submenu.svg" class="ic-member ic-vip not-vip-show">
+		<img src="static/images/member/ic-vip-w_submenu.svg" class="ic-member ic-vip not-vip-hide">
 		<h1 class="page-title">VIP室</h1>
 	</div>
 
@@ -256,28 +263,69 @@
 		
 			
 			<div class="col-50 col-s-100 promo-card m-show">
-				<img src="static/images/member/vip/img-vip-card-mobile.png" />
+
+				<div class="not-vip-show">
+					<img src="static/images/member/vip/img-not-vip-card-mobile.png" />
+					<div class="text-in-card">
+						還不是VIP嗎？<br>
+						加入以享更多優惠<br>
+						<button class="promo-btn">立即加入</button>
+					</div>
+				</div>
+				
+				<div class="not-vip-hide">
+					<img src="static/images/member/vip/img-vip-card-mobile.png" />	
+				</div>
+				
 			</div>
 
 			<div class="col-50 col-s-100">
-				
-				<div class="promo">
-					<div class="promo-title">聖誕月限量墜飾</div>
-					<div class="promo-description">Mine獨家設計出爐，VIP專屬配件，限量訂製中！</div>
-					<div class="text-r"><button class="promo-btn">前往購物</button></div>
-						
+
+
+				<div class="not-vip-show">
+					<div class="promo">
+						<div class="promo-title">VIP招募中</div>
+						<div class="promo-description">
+							Mine Jade & Jewelry 開幕慶期間，<br>
+							加入會員並完成消費，即可獲得會員資格！<br>
+							享有限量商品獲得資格，以及更多專屬優惠！<br>
+							<br>
+							<br>
+						</div>
+						<div class="text-r"><button class="promo-btn">快去逛逛</button></div>
+							
+					</div>
 				</div>
 
-				<div class="promo">
-					<div class="promo-title">VIP運費減免</div>
-					<div class="promo-description">台灣本島一律免運費，海外運費最高折抵$100！</div>
-					<div class="text-r"><button class="promo-btn">前往訂製</button></div>
+				<div class="not-vip-hide">
+					<div class="promo">
+						<div class="promo-title">聖誕月限量墜飾</div>
+						<div class="promo-description">Mine獨家設計出爐，VIP專屬配件，限量訂製中！</div>
+						<div class="text-r"><button class="promo-btn">前往購物</button></div>
+							
+					</div>
+
+					<div class="promo">
+						<div class="promo-title">VIP運費減免</div>
+						<div class="promo-description">台灣本島一律免運費，海外運費最高折抵$100！</div>
+						<div class="text-r"><button class="promo-btn">前往訂製</button></div>
+					</div>	
 				</div>
 
 			</div>
 
 			<div class="col-50 col-s-100 promo-card m-hide">
-				<img src="static/images/member/vip/img-vip-card.png" />
+				<div class="not-vip-show">
+					<img src="static/images/member/vip/img-not-vip-card.png" />
+					<div class="text-in-card">
+						還不是VIP嗎？<br>
+						加入以享更多優惠<br>
+						<button class="promo-btn">立即加入</button>
+					</div>
+				</div>
+				<div class="not-vip-hide">
+					<img src="static/images/member/vip/img-vip-card.png" />	
+				</div>
 			</div>
 
 
