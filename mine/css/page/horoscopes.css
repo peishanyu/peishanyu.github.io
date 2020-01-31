@@ -162,7 +162,7 @@ div.forOrder .page-horoscopes:first-child {background: linear-gradient(0deg, rgb
     z-index: -1;
 }
 
-
+.page-horoscopes #typeC .result-btn {padding:4px 30px;border-radius:10rem;border:0;outline:none;font-size:20px;font-weight:700;color:#8A837F;background-color:#fef8f2;}
 /* ========== typeC end ========== */
 
 
@@ -467,6 +467,7 @@ div.forOrder .page-horoscopes:first-child {background: linear-gradient(0deg, rgb
 
 .page-horoscopes #typeC .flexContainer {padding:0;}
 .page-horoscopes #typeC .resultTitle {margin-top:0;}
+.page-horoscopes #typeC .result-btn {margin:1rem 0;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -519,8 +520,10 @@ div.forOrder .page-horoscopes:first-child {background: linear-gradient(0deg, rgb
 .page-horoscopes #typeC .zoneTitle {padding:1rem;padding-left: 0;}
 .page-horoscopes #typeC .resultTitle {margin-top:0;padding:0;}
 .page-horoscopes #typeC .note {padding:0;}
-.page-horoscopes #typeC .note p {padding: 2rem 0.25rem;}
+.page-horoscopes #typeC .note p {padding:1rem 0.25rem;}
 .page-horoscopes #typeC .zoneResult p {padding:2rem 1.25rem;font-size:13px;}
+.page-horoscopes #typeC .result-btn {margin-top:0;font-size:16px;}
+
 
 .page-horoscopes #typeD #nameFortune {padding: 2rem 0;}
 
