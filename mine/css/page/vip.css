@@ -25,7 +25,7 @@
 .page-not-vip .promo-btn {color:#ffffff;background-color:#8a837f;}
 
 .page-not-vip .promo-card .not-vip-show {position:relative;}
-.page-not-vip .text-in-card {position:absolute;right:8%;top:35%;text-align:right;color:#fef8f2;font-weight:700;font-size:16px;}
+.page-not-vip .text-in-card {position:absolute;right:8%;top:35%;text-align:right;color:#fef8f2;font-weight:700;font-size:16px;z-index:9;}
 .page-not-vip .text-in-card .promo-btn {margin-top:1rem;color:#8A837F;background-color:#fef8f2;font-size:16px;}
 
 /* vip or not-vip */
@@ -35,6 +35,17 @@
 .page-vip .not-vip-show,
 .page-not-vip .not-vip-hide {display:none;}
 .page-not-vip .not-vip-show {display:inline-block;}
+
+.img-vipcard-container {position:relative;clear:both;}
+
+
+.page-vip .card1,
+.page-not-vip .card1 {position:absolute;width:60%;top:6%;z-index:1;}
+
+.page-vip .card2,
+.page-not-vip .card2 {position:absolute;width:42%;top:0;right:0;z-index:2;clear:both;}
+
+
 
 
 /* ====== RWD ====== */
@@ -64,6 +75,13 @@
 .page-not-vip .promo-card.m-show .text-in-card .promo-btn {font-size:20px;}
 .page-not-vip .promo-card.m-show .text-in-card .promo-btn {margin-top:2rem;}
 .page-not-vip .promo-card.m-show .text-in-card {right:6%;}
+
+.page-vip .card1,
+.page-not-vip .card1 {top:7%;}
+
+.page-vip .not-vip-hide .card1 {width:76%;}
+.page-vip .not-vip-hide .card2 {width:24%;}
+
 
 }
 
