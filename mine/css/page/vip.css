@@ -40,7 +40,7 @@
 
 
 .page-vip .card1,
-.page-not-vip .card1 {position:absolute;width:60%;top:6%;z-index:1;}
+.page-not-vip .card1 {position:absolute;width:60%;top:6%;z-index:1;box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);}
 
 .page-vip .card2,
 .page-not-vip .card2 {position:absolute;width:42%;top:0;right:0;z-index:2;clear:both;}
