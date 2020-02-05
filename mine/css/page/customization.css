@@ -52,7 +52,7 @@
 /* cus-menu end */
 
 .page-customization .workbench {position:relative;height:85vh;overflow: hidden;}
-.page-customization .wood {background:url(../../static/images/customization/bg_wood.jpg) no-repeat;background-size:cover;}
+.page-customization .wood {background:url(../../static/images/customization/wooden.jpg) no-repeat;background-size:cover;}
 
 
 .page-customization #zoneControl {position:absolute;bottom:0;padding:2rem;}
@@ -161,6 +161,23 @@
     z-index : 35;
   }
 
+  .page-customization #obj-center .item-container.active .btn-item-text {
+    position:absolute;
+    top:-24px;
+    left:-24px;
+    width:3rem;
+    height:3rem;
+    background:url(../../static/images/customization/ic-item-text.svg) no-repeat center #fff;
+    box-shadow:0 0 6px rgba(0,0,0,.3);
+    border-radius:100rem;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+    z-index : 35;
+  }
+
+
+
   .page-customization #obj-center .item-container.active .node.top-r {
     top:-5px;
     right:-5px;
@@ -195,7 +212,8 @@
   }
 
   .page-customization #obj-center .item-container.active .btn-item-setting:hover,
-  .page-customization #obj-center .item-container.active .btn-item-close:hover {
+  .page-customization #obj-center .item-container.active .btn-item-close:hover,
+  .page-customization #obj-center .item-container.active .btn-item-text:hover {
     -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
     transform: scale(1.2, 1.2) translate3d(0, 0, 0);
   }
@@ -231,9 +249,9 @@
 .page-customization .itemChoose-wrapper{overflow:hidden;transition: all ease-in 200ms;}
 .page-customization .itemChoose-wrapper.expand{transition: all ease-out 200ms;}
 
-.page-customization .itemChoose {height:80vh;}
-.page-customization .itemChooseTop {background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;background-size:cover;}
-.page-customization .itemChooseBottom {overflow:auto;background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;background-size:cover;}
+.page-customization .itemChoose {height:80vh;background:url(../../static/images/customization/flannel.jpg) no-repeat;background-size:cover;}
+.page-customization .itemChooseTop {/*background:url(../../static/images/customization/bg_itemChoose_top.jpg) no-repeat;*/background: rgba(0, 0, 0, 0.09);background-size:cover;}
+.page-customization .itemChooseBottom {overflow:auto;/*background:url(../../static/images/customization/bg_itemChoose_bottom.jpg) no-repeat;*/background-size:cover;}
 
 /* cate tab */
 .page-customization #itemTab {overflow:hidden;font-size:0;line-height:2;}
@@ -589,7 +607,8 @@
   }
 
   .page-customization .btn-item-close .qs .popover,
-  .page-customization .btn-item-setting .qs .popover {width:85px;left:-1.25rem;bottom:4rem;font-size:16px;}
+  .page-customization .btn-item-setting .qs .popover,
+  .page-customization .btn-item-text .qs .popover {width:85px;left:-1.25rem;bottom:4rem;font-size:16px;}
 
   .qs .popover.right {width:118px;height:2rem;left:4rem;top:0.25rem;}
   .qs .popover.right:before {transform: rotate(90deg);left: -18%;top: -15%;}
