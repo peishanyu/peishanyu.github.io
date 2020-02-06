@@ -114,7 +114,7 @@
 .page-campaigns .discount2 h3 {font-weight:700;color:#fff;}
 .page-campaigns .discount2 .subtitle {font-weight:700;color:#fff;}
 
-.page-campaigns.under-banner2 .description {background-color:#473E38;padding:2% 5% 6%;}
+.page-campaigns.under-banner2 .description {background-color:#473E38;padding:2% 5% 4%;}
 .page-campaigns.under-banner2 .description p {margin-bottom:2%;color:#fff;line-height:2;}
 .page-campaigns.under-banner2 .description .btn-round-outline-white {font-size:30px;}
 /* text style end */
@@ -138,7 +138,7 @@
 .page-campaigns .discount2 .subtitle,
 .page-campaigns.under-banner2 .description .btn-round-outline-white,
 .page-campaigns.campaignsZone2 .imgTitle .btn-round-outline-white,
-.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:24px;}
+.page-campaigns.campaignsZone1 .descriptionContainer p {font-size:20px;}
 
 .page-campaigns.under-banner2 .description p {font-size:20px;}
 
