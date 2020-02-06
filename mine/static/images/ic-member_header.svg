@@ -1,9 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
-  <g id="ic-member_header" transform="translate(-734 -43)">
-    <rect id="Rectangle_63" data-name="Rectangle 63" width="45" height="45" transform="translate(734 43)" fill="none"/>
-    <g id="Group_36" data-name="Group 36" transform="translate(-911.895 -19.754)">
-      <circle id="Ellipse_1" data-name="Ellipse 1" cx="6.5" cy="6.5" r="6.5" transform="translate(1661.73 68.094)" fill="#fff"/>
-      <path id="Path_78" data-name="Path 78" d="M1653.9,102.868h28.669c0-5.866-3.526-14.478-8.572-18.548a10.213,10.213,0,0,1-11.525,0C1657.42,88.39,1653.9,97,1653.9,102.868Z" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64.67" height="70.773" viewBox="0 0 64.67 70.773">
+  <defs>
+    <filter id="联合_65" x="0" y="0" width="64.67" height="70.773" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#686868"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="ic-member_header" transform="translate(-724 -30.999)">
+    <rect id="Rectangle_63" data-name="Rectangle 63" width="54" height="54" transform="translate(729 38)" fill="none"/>
+    <g transform="matrix(1, 0, 0, 1, 724, 31)" filter="url(#联合_65)">
+      <path id="联合_65-2" data-name="联合 65" d="M4901,12928.774c0-5.866,3.52-14.479,8.572-18.547a10.222,10.222,0,0,0,11.525,0c5.046,4.068,8.573,12.681,8.573,18.547Zm7.833-28.274a6.5,6.5,0,1,1,6.5,6.5A6.5,6.5,0,0,1,4908.832,12900.5Z" transform="translate(-4883 -12878)" fill="#fff"/>
     </g>
   </g>
 </svg>

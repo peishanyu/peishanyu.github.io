@@ -1,9 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
-  <g id="ic-cart_header" transform="translate(-819 -43)">
-    <rect id="Rectangle_62" data-name="Rectangle 62" width="45" height="45" transform="translate(819 43)" fill="none"/>
-    <g id="Group_35" data-name="Group 35" transform="translate(-911.895 -19.754)">
-      <rect id="Rectangle_60" data-name="Rectangle 60" width="26.059" height="26.839" transform="translate(1739.919 75.222)" fill="#fff"/>
-      <path id="Path_77" data-name="Path 77" d="M1744.93,79.009V74a7.684,7.684,0,1,1,15.368,0v5.011" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.67"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.059" height="65.839" viewBox="0 0 65.059 65.839">
+  <defs>
+    <filter id="Rectangle_60" x="0" y="0" width="65.059" height="65.839" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-color="#686868"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="ic-cart_header" transform="translate(-808.5 -34.406)">
+    <rect id="Rectangle_62" data-name="Rectangle 62" width="54" height="54" transform="translate(814 37)" fill="none"/>
+    <g id="组_15941" data-name="组 15941" transform="translate(-0.024 -1.562)">
+      <g transform="matrix(1, 0, 0, 1, 808.52, 35.97)" filter="url(#Rectangle_60)">
+        <rect id="Rectangle_60-2" data-name="Rectangle 60" width="26.059" height="26.839" transform="translate(19.5 19.5)" fill="#fff"/>
+      </g>
+      <path id="Path_77" data-name="Path 77" d="M1744.93,79.009V74a7.684,7.684,0,1,1,15.368,0v5.011" transform="translate(-911.895 -19.754)" fill="none" stroke="#fff" stroke-width="1.67"/>
     </g>
   </g>
 </svg>
