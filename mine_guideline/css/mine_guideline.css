@@ -1,0 +1,221 @@
+/* === Header === */
+.guide_header {
+	width: 100%;
+	background: #ff9933;
+	position: fixed;
+	z-index: 999;
+}
+.guide_header .guide_logo {
+    background: url(http://35.247.29.184:19999/static/images/header_logo.png) left no-repeat;
+	margin:4px 0;
+    padding-left:110px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight:700;
+    float: left;
+    background-size:contain;
+	line-height: 1.6;
+    height: 30px;
+}
+.guide_container {
+	max-width: 1200px;
+	margin: auto;
+}
+.guide_mainmenu {
+    float: right;
+}
+.guide_mainmenu ul {
+    padding: 0;
+    margin: 0;
+}
+.guide_mainmenu ul li {
+    border-left: 1px solid #FFF;
+    list-style: none;
+    float: left;
+}
+.guide_mainmenu ul li a {
+    padding: 8px 1em;
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+}
+.guide_mainmenu ul li a.active, .guide_mainmenu ul li a:hover {
+    background: #FFF;
+    color: #f37200;
+}
+
+
+
+/* === Left Panel === */
+.guide_sidemenu {
+	width: 210px;
+	padding: 20px 0 20px 10px;
+	border-right: 1px solid #DDD;
+	position: fixed;
+	top: 36px;
+	bottom: 0;
+	z-index: 998;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.guide_sidemenu ul a {
+	display: block;
+	text-decoration: none;
+}
+.guide_sidemenu ul a.active {
+	color: #f37200;
+	border-right: 3px solid #f39700;
+	margin-right: 0;
+}
+.guide_sidemenu ul, .guide_sidemenu ul li {
+	margin: 10px 0;
+	padding: 0;
+}
+.guide_sidemenu ul li {
+	list-style: none;
+}
+.guide_sidemenu > ul > li:nth-child(n+2) {
+	margin-top: 20px;
+}
+.guide_sidemenu ul li li {
+	margin-left: 10px;
+}
+.guide_sidemenu ul li a:not(.active):hover {
+	color: #f39700;
+}
+.guide_sidemenu ul > li > a {
+	padding-bottom: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+}
+.guide_sidemenu ul > li > ul > li > a {
+	padding: 5px 0;
+	color: #666;
+	font-size: 15px;
+	font-weight: normal;
+	position: relative;
+}
+
+
+
+/* === Right Content === */
+pre {
+    width: auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-left: 4px solid #ccc;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: auto;
+    font-size: 90%;
+    color: #306090;
+}
+.guide_content .blue {
+    color: #4f9fcf;
+}
+.guide_content .highlight {
+    color: #f37200 !important;
+}
+.navtag::before {
+    display: block;
+    content: " ";
+    margin-top: -40px;
+    padding-top: 50px;
+    visibility: hidden;
+}
+.guide_content {
+    margin-left: 210px;
+    padding: 40px 30px 0;
+    line-height: 1.5em;
+}
+.guide_content h2 {
+    line-height: 1em;
+}
+.guide_content li {
+    margin-bottom: 0.5em;
+}
+.guide_example {
+    position: relative;
+    margin: 15px 0;
+    padding: 50px 20px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+.guide_example:after {
+    content: "Detail";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
+    -webkit-border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    border-radius: 4px 0 4px 0;
+}
+
+.blockGroup > div {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.5em;
+    text-align: left;
+    position: relative;
+}
+
+/*------ 商品照片圖 ------*/
+.pdc_pictures {
+    border: none !important;
+    text-align: center !important;
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: top;
+}
+/* 解決去除float 改為inline-block屬性後的間距問題 */
+.blockGroup.three > div.pdc_pictures,
+.blockGroup.four > div.pdc_pictures {
+    margin: 0 1.8% 10px 0;
+}
+.blockGroup.five div.pdc_pictures,
+.blockGroup.six div.pdc_pictures {
+    margin: 0 0.8% 10px 0;
+}
+.blockGroup.three > div.pdc_pictures:nth-child(3n),
+.blockGroup.four > div.pdc_pictures:nth-child(4n),
+.blockGroup.five > div.pdc_pictures:nth-child(5n),
+.blockGroup.six div.pdc_pictures:nth-child(6n) {
+    margin: 0 0 10px 0;
+}
+.pdc_pictures img {
+    width: calc(100% - 10px);
+    border: 5px solid #eee;
+    outline: 1px solid #ccc;
+    vertical-align: middle;
+}
+.pdc_pictures a {
+    display: inline-block;
+}
+.pdc_pictures a:hover img {
+    border: 5px solid #ddd;
+}
+.pdc_pictures a.active img {
+    border: 5px solid #f39800;
+    outline: 1px solid #f37200;
+}
+.pdc_pictures img + h5, 
+.pdc_pictures img ~ button {
+    margin-top: 10px;
+}
+
+.guide_example pre {
+    margin: 20px -21px -16px;
+    padding-top: 15px;
+}

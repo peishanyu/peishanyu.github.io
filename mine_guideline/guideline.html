@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" class="next-head">
+	<!-- css -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/mine_guideline.css">
+
+
+	<title>MINE Guideline</title>
+</head>
+<body>
+
+<div class="guide_header">
+	<div class="guide_container clearfix">
+		<div class="guide_logo">System Guideline</div>
+		
+		<div class="guide_mainmenu">
+			<ul class="clearfix">
+				<li><a class="active" href="guideline.html">全站頁面導覽</a></li>
+				<li><a href="page.html">內頁導覽</a></li>
+				<li><a href="cis.html">Web CIS</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="guide_container">
+	<div class="guide_sidemenu">
+		<ul>
+			<li><a href="#top">全站頁面導覽</a>
+				<ul>
+					<li><a href="#nav1-1" class="active">首頁</a></li>
+					<li><a href="#nav1-2">選單</a></li>
+					<li><a href="#nav1-3">頁尾</a></li>
+					<li><a href="#nav1-4">登入/註冊</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="guide_content">
+		<article class="navtag">
+			<h2>全站頁面導覽</h2>
+
+			<section id="nav1-1" class="navtag">
+                <h3>首頁</h3>
+
+				<div class="guide_example">
+                    <div class="container clearfix">
+                        <div class="blockGroup three clearfix">
+                            <div class="pdc_pictures">
+                                <h5>首頁全覽</h5>
+                                <img src="images/screenshot_home.jpg">
+                            </div>
+                            <div class="pdc_pictures">
+                                <h5>全版輪播圖 (pc)<span class="highlight">*</span></h5>
+                                <img src="images/screenshot_home_carousel-full.jpg">
+                            </div>
+                            <div class="pdc_pictures">
+                                <h5>全版輪播圖 (m)<span class="highlight">*</span></h5>
+                                <img src="images/screenshot_home_m_carousel-full.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+                    <pre>全版輪播圖上的文字可設定【左】、【中】、【右】位置。</pre>
+				</div>
+
+				<div class="guide_example">
+                    <div class="container clearfix">
+                        <div class="blockGroup four clearfix">
+                            <div class="pdc_pictures">
+                                <h5>首頁圖 (pc)<span class="highlight">*</span></h5>
+                                <img src="images/screenshot_home_grid2.jpg">
+                            </div>
+                            <div class="pdc_pictures">
+                                <h5>首頁圖 (m)<span class="highlight">*</span></h5>
+                                <img src="images/screenshot_home_m_grid2.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+                    <pre>首頁圖之一尺寸: 805*545px；首頁圖之二尺寸: 545*545px。</pre>
+				</div>
+
+			</section>
+
+		</article>
+	</div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	//Guideline錨點連結用
+	// 設定leftmenu錨點連結
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			var items = $(".guide_content").find(".navtag");
+			var menu = $(".guide_sidemenu ul");
+			var top = $(document).scrollTop(); //当前位置相对于垂直滚动条顶部的偏移
+			var currentId = ""; //滚动条现在所在位置的item id
+			// 以下实现让导航菜单在滚动条滚动的时候自动设置焦点
+			items.each(function () {
+				var m = $(this);
+				//注意：m.offset().top代表每一个item的顶部位置
+				if (top > m.offset().top - 40) {
+					currentId = "#" + m.attr("id");
+				} else {
+					return false;
+				}
+			});
+			//给相应楼层的a设置current样式，取消其他链接的current样式
+			var currentLink = menu.find(".active");
+			if (currentId && currentLink.attr("href") != currentId) {
+				currentLink.removeClass("active");
+				menu.find("[href=" + currentId + "]").addClass("active");
+			}
+		});
+	});
+</script>
+
+</body>
+</html>

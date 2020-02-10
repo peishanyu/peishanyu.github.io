@@ -1,0 +1,289 @@
+* {
+	-webkit-box-sizing: inherit !important;
+	-moz-box-sizing: inherit !important;
+	box-sizing: inherit !important;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	*display: inline-block;
+	/*height: 1%;*/
+}
+
+
+
+/* common */
+body {
+	font-family: "Microsoft JhengHei", "Heiti TC", "WenQuanYi Zen Hei", "Arial";
+	margin: 0;
+	font-size: 15px;
+	color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Microsoft JhengHei", "Heiti TC", "WenQuanYi Zen Hei", "Arial";
+	font-weight: bold;
+}
+h1, h2, h3, h4 {
+	margin: 0 0 20px;
+}
+h5, h6 {
+	margin: 0 0 10px;
+}
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 15px;
+}
+h6 {
+	font-size: 18px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #CCC;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+ *display: inline-block;
+	/*height: 1%;*/
+}
+.clear {
+	clear: both;
+}
+.float_left {
+	float: left !important;
+}
+.float_right {
+	float: right !important;
+}
+.align_left {
+	text-align: left !important;
+}
+.align_right {
+	text-align: right !important;
+}
+.align_center {
+	text-align: center !important;
+}
+.valign_bottom {
+	position: absolute;
+	bottom: 1em;
+}
+.hide {
+	display: none !important;
+}
+.half {
+    width: 50%;
+    float: left;
+}
+.highlight {
+    color: #C00 !important;
+    font-weight: bold !important;
+}
+.disable {
+    color: #999;
+}
+.wrong_text {
+    font-weight: bold;
+    color: #ff2800 !important;
+}
+input.disable {
+    background: #eee;
+    color: #999;
+}
+input.disable [placeholder] {
+    color: #aaa;
+}
+input.larger[type=checkbox] {
+    width: 1.2em;
+    height: 1.2em;
+}
+input.wrong_status, select.wrong_status {
+    background: rgba(255,40,0,0.1);
+    border: 1px solid #ff2800 !important;
+    font-weight: bold;
+    color: #ff2800 !important;
+}
+input.full_text {
+    min-width: 400px;
+}
+label + label {
+    margin-left: 2em;
+}
+textarea {
+    width: 90%;
+}
+
+.bulletin { /*公告框線區塊*/
+    border-radius: 3px;
+    padding: 40px;
+    border: 1px solid #ccc;
+}
+
+.bulletin_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0 0 20px;
+}
+h2 {
+    font-size: 30px;
+}
+
+article > h2 {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+}
+section {
+	margin-bottom: 40px;
+}
+section + section {
+	border-top: dotted 1px #DDD;
+	padding-top: 40px;
+}
+article:last-child section:last-child {
+	min-height: calc(100vh - 86px);
+}
+section > h3 {
+	line-height: 1.3em;
+}
+
+
+
+/* common */
+/* 多欄式區塊群組 */
+.blockGroup {
+    margin: 0 auto;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.blockGroup > div {
+	background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	line-height: 1.5em;
+    text-align: left;
+    position: relative;
+}
+/* 多欄式區塊群組-二欄 */
+.blockGroup.two > div {
+    width: calc(50% - 32px);
+	padding: 15px;
+}
+/* 多欄式區塊群組-三欄 */
+.blockGroup.three > div {
+    width: calc(32% - 32px);
+	padding: 15px;
+}
+/* 多欄式區塊群組-四欄 */
+.blockGroup.four > div {
+    width: calc(23.5% - 22px);
+	padding: 10px;
+}
+/* 多欄式區塊群組-五欄 */
+.blockGroup.five > div {
+    width: calc(19.2% - 22px);
+    padding: 10px;
+}
+/* 多欄式區塊群組-六欄 */
+.blockGroup.six > div {
+    width: calc(15.8% - 22px);
+    padding: 10px;
+}
+.blockGroup.three > div,
+.blockGroup.four > div {
+    margin: 0 2% 20px 0;
+}
+.blockGroup.five > div,
+.blockGroup.six > div {
+    margin: 0 1% 20px 0;
+}
+.blockGroup.three > div:nth-child(3n),
+.blockGroup.four > div:nth-child(4n),
+.blockGroup.five > div:nth-child(5n),
+.blockGroup.six > div:nth-child(6n) {
+    margin: 0 0 20px 0;
+}
