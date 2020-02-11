@@ -236,7 +236,7 @@ article:last-child section:last-child {
 section > h3 {
 	line-height: 1.3em;
 }
-
+section li img {vertical-align:top;}
 
 
 /* common */
