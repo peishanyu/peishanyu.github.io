@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="ic-05_status" transform="translate(10936 -4169)">
+    <rect id="矩形_3347" data-name="矩形 3347" width="25" height="25" transform="translate(-10936 4169)" fill="rgba(209,209,209,0)"/>
+    <g id="组_1333" data-name="组 1333" transform="translate(-10935 4170)">
+      <ellipse id="椭圆_3" data-name="椭圆 3" cx="4.77" cy="4.769" rx="4.77" ry="4.769" transform="translate(6.778 6.778)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.592"/>
+      <line id="直线_18" data-name="直线 18" y1="3.113" transform="translate(11.548 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_19" data-name="直线 19" y1="2.201" x2="2.202" transform="translate(17.511 3.382)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_20" data-name="直线 20" x2="3.114" transform="translate(19.982 11.547)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_21" data-name="直线 21" x2="2.202" y2="2.201" transform="translate(17.511 17.511)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_22" data-name="直线 22" y2="3.113" transform="translate(11.548 19.981)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_23" data-name="直线 23" x1="2.202" y2="2.201" transform="translate(3.382 17.511)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_24" data-name="直线 24" x1="3.114" transform="translate(0 11.547)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+      <line id="直线_25" data-name="直线 25" x1="2.202" y1="2.201" transform="translate(3.382 3.382)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.328"/>
+    </g>
+  </g>
+</svg>

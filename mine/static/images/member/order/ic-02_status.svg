@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="ic-02_status" transform="translate(10936 -4169)">
+    <rect id="矩形_3347" data-name="矩形 3347" width="25" height="25" transform="translate(-10936 4169)" fill="rgba(209,209,209,0)"/>
+    <g id="组_1330" data-name="组 1330" transform="translate(-10934.818 4171.103)">
+      <g id="组_1320" data-name="组 1320" transform="translate(2.742 1.249)">
+        <line id="直线_2" data-name="直线 2" x1="5.835" y2="17.217" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.728"/>
+      </g>
+      <path id="路径_112" data-name="路径 112" d="M-63.579,429.823s10.213-6.235,15.927,4.785A15.614,15.614,0,0,0-63.579,429.823Z" transform="translate(63.579 -428.066)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.03"/>
+      <path id="路径_113" data-name="路径 113" d="M-50.545,437.725c.578-1-1-1.969-1.666-.976C-53.085,438.048-51.333,437.694-50.545,437.725Z" transform="translate(67.836 -424.904)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.617"/>
+      <path id="路径_114" data-name="路径 114" d="M-49.088,433.9c.614.473,1.4-.492.8-1.026C-49.078,432.175-49,433.375-49.088,433.9Z" transform="translate(69.122 -426.309)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.415"/>
+      <path id="路径_115" data-name="路径 115" d="M-50.006,439.342a1.778,1.778,0,0,1,2.382-.171c1.369,1.624-2.146,1.428-2.428.968A.645.645,0,0,1-50.006,439.342Z" transform="translate(68.709 -423.967)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.951"/>
+      <path id="路径_116" data-name="路径 116" d="M-47.477,439.316a2.845,2.845,0,0,1-1.07.452c-.3.025-.586-.137-.9,0-.626.278-.675,1.207-1.358,1.406-.665.194-1.134-.423-1.793-.319-.709.112-.827.933-1.373,1.24s-1.066-.358-1.589.035c-.361.272-.957,1.572-.722,1.958s.78.228,1.117.361a2.9,2.9,0,0,1,.781.653c.6.517.636.093,1.221-.169.44-.2.776-.019,1.2.1.621.174.828-.021,1.409-.137.4-.08.688.119,1.078.182a3.987,3.987,0,0,0,1.378-.083c1.282-.25,5.165,1.264,4.808-1.095.008.058-.653-.928-.682-.981-.245-.458-.191-.979-.582-1.472C-45.26,440.554-46.4,438.727-47.477,439.316Z" transform="translate(66.351 -423.807)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.161"/>
+    </g>
+  </g>
+</svg>
