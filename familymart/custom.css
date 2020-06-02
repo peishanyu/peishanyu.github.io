@@ -168,7 +168,9 @@ h1{
 .tableFee table tr:nth-child(even) {background-color:#FFE9D0;}
 
 .contactTable {max-width:600px;margin:5vh auto;padding:40px 20px;border-radius:20px;background:linear-gradient(#fff 0%, #fcfafe 26.63%, #fff2e3 55.86%, #ffe1bf 92.74%, #ffe3c3 100%);box-shadow: 0 0 20px #c76800;}
-.contactTable input {width:100%;padding:10px;border-radius:6px;background:#fff;border:1px solid #BABABA;font-size:18px;}
+.contactTable input {width:100%;padding:10px;border-radius:6px;background:#fff;border:2px solid #cacaca;font-size:18px;outline:none;}
+.contactTable input:focus {border:2px solid #ff9432;}
+
 .contactTable .item {width:50%;margin:10px;}
 .contactTable .itemfull {width:100%;margin:10px;}
 .contactTable .required {color:#FF0202;}
@@ -212,13 +214,44 @@ h1{
 	#header .container ul li {margin:0 20px;}
 	#header .btnCTA {margin-left: 20px;padding: 15px 40px;}
 
-	.contactTable {max-width:900px;}
+	.contactTable {max-width:900px;padding: 40px 20px;}
 	.contactTable .clabel,
 	.cSummit button,
 	.contactTable .captcha button,
 	.contactTable input {font-size:35px;}
 
-	.contactTable .item {margin:20px 15px;}
+	.cSummit button {padding: 20px 10px;}
+	.contactTable input {padding: 20px 15px;}
 
+	.contactTable .item {margin:20px 15px;}
+	.cSummit {margin-top: 40px;}
 }
 
+
+/* Landscape */ 
+@media only screen and (min-width: 1366px) and (orientation: landscape) {
+	#section6 .m-hide {display: inline;}
+}
+
+/*Portrait*/ 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+	#section6 .m-hide {display: inline;}
+}
+
+
+/* Landscape */ 
+@media only screen and (min-device-width: 1112px) and (orientation: landscape) { #section6 .m-hide {display: inline;} }
+
+/*Portrait*/ 
+@media only screen and (min-device-width: 834px) and (orientation: portrait) { #section6 .m-hide {display: inline;} }
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	#section6 .m-hide {display: inline;} 
+	#section6 img.m-hide {width:60%;}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	#section6 .m-hide {display: inline;} 
+	#section6 {background: url(images/bg_contact.svg) no-repeat center;}
+}
