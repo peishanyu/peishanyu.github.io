@@ -188,7 +188,7 @@ h1{
 }
 
 @media (min-width: 768px) and (max-width: 1600px) {
-	.contactTable {max-width:480px;margin:auto;margin-top:5%;padding:20px;}
+	.contactTable {max-width:480px;margin:auto;margin-top:2%;padding:20px;}
 	.contactTable .clabel,.contactTable input,.cSummit button {font-size:15px;}
 }
 
@@ -240,7 +240,7 @@ h1{
 
 
 /* Landscape */ 
-@media only screen and (min-device-width: 1112px) and (orientation: landscape) { #section6 .m-hide {display: inline;} }
+@media only screen and (min-device-width: 1112px) and (orientation: landscape) { #section6 .m-hide {display:inline;width:50%;margin-top:5%;} }
 
 /*Portrait*/ 
 @media only screen and (min-device-width: 834px) and (orientation: portrait) { #section6 .m-hide {display: inline;} }
