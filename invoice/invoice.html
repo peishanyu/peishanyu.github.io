@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+	<meta name="description" content="發票新增作業" />
+	<meta name="keywords"  content="電子發票,paynow" />
+	<title>發票新增作業</title>
+
+	<style type="text/css">
+		/* global */
+			html {min-height:100%;}
+			body {
+				min-height: 100%;
+				margin: 0;
+				color: #6a6f8c;
+				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFangSC","Source Han Sans","Microsoft YaHei", sans-serif;
+				font-weight: normal;
+				background: rgb(255,170,68);
+				background: linear-gradient(-45deg, rgba(255,170,68,1) 0%, rgba(249,133,4,1) 100%);
+			}
+			*,
+			:after,
+			:before {
+			  box-sizing: border-box;
+			}
+			.clearfix:after,
+			.clearfix:before {
+			  content: "";
+			  display: table;
+			}
+			.clearfix:after {
+			  clear: both;
+			  display: block;
+			}
+			a {
+			  color: inherit;
+			  text-decoration: none;
+			}
+
+			input,button {
+				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFangSC","Source Han Sans","Microsoft YaHei", sans-serif;
+			}
+
+			input {
+				padding:10px;
+				height:45px;
+				border-radius: 6px;
+				background: #fff;
+				border: 1px solid #bababa;
+				font-size:16px;
+				transition: box-shadow .2s linear;
+			}
+			input:focus {
+			    border-color:#FF9800;
+			    outline: 0;
+			    box-shadow: 0 0 0 0.2rem rgb(255 203 106 / 80%);
+			}
+			input.error {
+				border-color: #FF5722;
+				box-shadow: 0 0 0 0.2rem rgb(255 87 34 / 30%);
+			}
+
+			.margin-l-r-5px {margin-right:5px;margin-left:5px;}
+			.relative {position:relative;}
+			.absolute {position:absolute;}
+			.text-c {text-align:center;}
+			.flex {display:flex;}
+			.flex-center {display:flex;align-items:center;}
+		/* global end */
+
+		/* custom */
+			#invoice-issuance .font-color-1 {color:#373943;}
+			#invoice-issuance .font-color-2 {color:#EF7E00;}
+
+			#invoice-issuance #header {text-align:center;}
+			#invoice-issuance.outer {
+				height:100%;
+				padding: 20px;
+				padding-top: 0;
+				background:url(images/bg.svg) no-repeat center center;
+				background-attachment: fixed;
+			}
+			#invoice-issuance .container {
+				max-width: 900px;
+				margin: 30px auto;
+				border-radius:20px;
+				background: linear-gradient(#fff 0%, #fcfafe 26.63%, #fff2e3 55.86%, #ffe1bf 92.74%, #ffe3c3 100%);
+				box-shadow: 0 0 20px #f98506;
+			}
+
+			#invoice-issuance .container .sep {height:1px;background:#fdb15e;margin:20px 0;}
+			#invoice-issuance .container-head {
+				display: flex;
+				justify-content: center;
+				padding:15px;
+				font-size:28px;
+				font-weight: 600;
+				background: #e0c3a4;
+				border-radius: 15px 15px 0 0;
+				color: #fff;
+			}
+			#invoice-issuance .add-inviove-table {padding:40px;padding-top:10px;}
+			#invoice-issuance .add-inviove-table .item {display:flex;justify-content:space-between;}
+			#invoice-issuance .add-inviove-table .item > div {width:50%;margin:10px 0;}
+			#invoice-issuance .add-inviove-table .item .w-100 {width:100%;}
+			#invoice-issuance .add-inviove-table .item .item-1 {margin-right:10px;}
+			#invoice-issuance .add-inviove-table .item .item-2 {margin-left:10px;}
+			#invoice-issuance .add-inviove-table .item input {width:100%;}
+			#invoice-issuance .add-inviove-table .item .label {margin-bottom:10px;font-size:16px;}
+			#invoice-issuance .add-inviove-table .item .error-message {margin-top:5px;color:#FF5722;font-size:14px;}
+
+			#invoice-issuance .add-inviove-table .btn-main {
+				display: flex;
+				align-items: center;
+				justify-content:center;
+				width:100%;
+				height:45px;
+				margin: 10px 0;
+				border:#ef7e00 solid 2px;
+				border-radius: 6px;
+				background: #ef7e00;
+				color: #fff;
+				font-size:18px;
+				font-weight: 600;
+				cursor:pointer;
+			}
+			#invoice-issuance .add-inviove-table .btn-main img {margin:0 10px;}
+			#invoice-issuance .add-inviove-table .btn-main:hover {background:#e47800;}
+			#invoice-issuance .add-inviove-table .btn-main:active {transform:scale(.95);}
+
+			#invoice-issuance .add-inviove-table .btn-main.outline {
+				background: transparent;
+				color: #ef7e00;
+			}
+		/* custom end*/
+
+		/* media query */
+			@media screen and (max-width:1600px){ 
+			  #invoice-issuance #header img {width:15vw;}
+			  #invoice-issuance .add-inviove-table .item > div {width:50%;}
+			  #invoice-issuance .container-head {font-size:24px;}
+			}
+			@media screen and (min-width:768px) and (max-width:1199px){ 
+			  
+			}
+			@media screen and (max-width:767px) and (orientation : portrait) {
+				#invoice-issuance .container {margin-top:20px;}
+				#invoice-issuance .add-inviove-table {padding:20px;padding-top:10px;}
+				#invoice-issuance #header img {width:30vw;}
+				#invoice-issuance .add-inviove-table .item {display:block;}
+				#invoice-issuance .add-inviove-table .item > div {width:100%;}
+				#invoice-issuance .add-inviove-table .item .item-1 {margin-right:0;}
+				#invoice-issuance .add-inviove-table .item .item-2 {margin-left:0;}
+				#invoice-issuance .container-head {font-size:20px;padding:10px;}
+				#invoice-issuance .add-inviove-table .btn-main {font-size:16px;}
+			}
+
+
+			/* Landscape */ 
+			@media only screen and (min-width: 1366px) and (orientation: landscape) {
+			}
+
+			/* Portrait */ 
+			@media only screen and (min-width: 1024px) and (orientation: portrait) {
+			}
+
+			/* iX Landscape, iPad Landscape */ 
+			@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) { 
+				#invoice-issuance #header img {width:15vw;}
+			}
+
+			/* iPad Landscape */ 
+			@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+			}
+
+		/* media query end */
+	</style>
+</head>
+<body>
+	<div id="invoice-issuance" class="outer">
+		<div id="header" class="">
+			<img src="images/logo_header.svg" />
+		</div>
+
+		<div class="container">
+			<div class="container-head">開立發票</div>
+
+			<div class="add-inviove-table">
+
+				<div class="item">
+					<div class="item-1">
+						<div for="iamount" class="label font-color-1">發票金額</div>
+						<input type="text" id="iamount" name="iamount" class="error" />
+						<div class="error-message">*請輸入發票金額</div>
+					</div>
+
+					<div class="item-2">
+						<div for="phone" class="label font-color-1">手機號碼</div>
+						<input type="text" id="phone" name="phone" />
+						<div class="error-message"></div>
+					</div>	
+				</div>
+
+				<div class="item">
+					<div class="item-1">
+						<div for="cname" class="label font-color-1">公司抬頭</div>
+						<input type="text" id="cname" name="cname" />
+						<div class="error-message"></div>	
+					</div>
+
+					<div class="item-2">
+						<div for="cnum" class="label font-color-1">公司統編</div>
+						<input type="text" id="cnum" name="cnum" />	
+						<div class="error-message"></div>
+					</div>	
+				</div>
+
+
+				<div class="item">
+					<div class="w-100">
+						<div for="aitem" class="label font-color-1">品項 <span class="font-color-2">(最多5項)</span></div>
+						<input type="text" id="aitem1" name="aitem" />
+					</div>
+				</div>
+				<div class="btn-main outline">
+					<img src="images/ic-add_btn.svg" />
+					新增品項
+				</div>
+
+
+				<div class="item">
+					<div class="w-100">
+						<div for="aitem" class="label">條碼載具</div>
+						<input type="text" id="aitem1" name="aitem" />
+						<div class="error-message"></div>
+					</div>
+				</div>
+
+				<div class="sep"></div>
+
+				<div class="btn-main">
+					確定開立
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
