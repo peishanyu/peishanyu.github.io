@@ -43,6 +43,11 @@
 				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFangSC","Source Han Sans","Microsoft YaHei", sans-serif;
 			}
 
+			button {
+				outline: none;
+				border: none;
+			}
+
 			input {
 				padding:10px;
 				height:45px;
@@ -126,8 +131,9 @@
 				font-size:18px;
 				font-weight: 600;
 				cursor:pointer;
+				outline: none;
 			}
-			#invoice-issuance .add-inviove-table .btn-main img {margin:0 10px;}
+			
 			#invoice-issuance .add-inviove-table .btn-main:active {
 				box-shadow: 0 2px #c36c0b;
 				background: linear-gradient(#ff7a00 0%, #ffab4f 100%);
@@ -142,6 +148,8 @@
 			#invoice-issuance .add-inviove-table .btn-main.outline:active {
 				background: #ffe9c8;
 			}
+
+			#invoice-issuance .add-inviove-table .btn-main img {margin:0 10px;}
 		/* custom end*/
 
 		/* media query */
@@ -233,10 +241,10 @@
 						<input type="text" id="aitem1" name="aitem" />
 					</div>
 				</div>
-				<div class="btn-main outline">
+				<button class="btn-main outline">
 					<img src="images/ic-add_btn.svg" />
 					新增品項
-				</div>
+				</button>
 
 
 				<div class="item">
@@ -249,9 +257,9 @@
 
 				<div class="sep"></div>
 
-				<div class="btn-main">
+				<button class="btn-main">
 					確定開立
-				</div>
+				</button>
 				
 			</div>
 		</div>
