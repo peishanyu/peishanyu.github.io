@@ -118,21 +118,29 @@
 				width:100%;
 				height:45px;
 				margin: 10px 0;
-				border:#ef7e00 solid 2px;
 				border-radius: 6px;
-				background: #ef7e00;
+				box-shadow: 0 4px #c36c0b;
+				background:#ef7e00;
+				background:linear-gradient(#ffab4f 0%, #ff7a00 100%);
 				color: #fff;
 				font-size:18px;
 				font-weight: 600;
 				cursor:pointer;
 			}
 			#invoice-issuance .add-inviove-table .btn-main img {margin:0 10px;}
-			#invoice-issuance .add-inviove-table .btn-main:hover {background:#e47800;}
-			#invoice-issuance .add-inviove-table .btn-main:active {-webkit-transform:scale(.95);-ms-transform:scale(.95);transform:scale(.95);}
+			#invoice-issuance .add-inviove-table .btn-main:active {
+				box-shadow: 0 2px #c36c0b;
+				background: linear-gradient(#ff7a00 0%, #ffab4f 100%);
+			}
 
 			#invoice-issuance .add-inviove-table .btn-main.outline {
+				border:#ef7e00 solid 2px;
 				background: transparent;
 				color: #ef7e00;
+				box-shadow: none;
+			}
+			#invoice-issuance .add-inviove-table .btn-main.outline:active {
+				background: #ffe9c8;
 			}
 		/* custom end*/
 
