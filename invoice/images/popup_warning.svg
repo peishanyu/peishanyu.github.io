@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116" height="116" viewBox="0 0 116 116">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eeddb6"/>
+      <stop offset="1" stop-color="#dfb658"/>
+    </linearGradient>
+    <filter id="椭圆_195" x="0" y="0" width="116" height="116" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#f88f53"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1.126" x2="0.851" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4600"/>
+      <stop offset="0.331" stop-color="#ff5c19"/>
+      <stop offset="1" stop-color="#ffab61"/>
+    </linearGradient>
+  </defs>
+  <g id="popup_warning" transform="translate(19698 17409)">
+    <g transform="matrix(1, 0, 0, 1, -19698, -17409)" filter="url(#椭圆_195)">
+      <circle id="椭圆_195-2" data-name="椭圆 195" cx="40" cy="40" r="40" transform="translate(18 14)" fill="url(#linear-gradient)"/>
+    </g>
+    <circle id="椭圆_196" data-name="椭圆 196" cx="33" cy="33" r="33" transform="translate(-19673 -17388)" opacity="0.74" fill="url(#linear-gradient-2)"/>
+    <path id="路径_32277" data-name="路径 32277" d="M44,48H36V40h8Zm0-16H36L35,10H45Z" transform="translate(-19680 -17384)" fill="#fff"/>
+  </g>
+</svg>

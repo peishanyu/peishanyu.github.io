@@ -15,7 +15,7 @@
 				min-height: 100%;
 				margin: 0;
 				color: #6a6f8c;
-				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFangSC","Source Han Sans","Microsoft YaHei", sans-serif;
+				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFang SC","Source Han Sans","Microsoft YaHei", "Microsoft JhengHei",sans-serif;
 				font-weight: normal;
 				background: rgb(255,170,68);
 				background: linear-gradient(-45deg, rgba(255,170,68,1) 0%, rgba(249,133,4,1) 100%);
@@ -40,12 +40,7 @@
 			}
 
 			input,button {
-				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFangSC","Source Han Sans","Microsoft YaHei", sans-serif;
-			}
-
-			button {
-				outline: none;
-				border: none;
+				font-family: -apple-system,BlinkMacSystemFont,"Arial","PingFang SC","Source Han Sans","Microsoft YaHei", "Microsoft JhengHei",sans-serif;
 			}
 
 			input {
@@ -76,7 +71,7 @@
 		/* global end */
 
 		/* custom */
-			#invoice-issuance .font-color-1 {color:#373943;}
+			#invoice-issuance .font-color-1 {color:#9c8771;}
 			#invoice-issuance .font-color-2 {color:#EF7E00;}
 
 			#invoice-issuance #header {text-align:center;}
@@ -108,48 +103,129 @@
 			}
 			#invoice-issuance .add-inviove-table {padding:40px;padding-top:10px;}
 			#invoice-issuance .add-inviove-table .item {display:flex;justify-content:space-between;}
-			#invoice-issuance .add-inviove-table .item > div {width:50%;margin:10px 0;}
+			#invoice-issuance .add-inviove-table .item > div {position:relative;width:50%;margin:10px 0;}
 			#invoice-issuance .add-inviove-table .item .w-100 {width:100%;}
+
 			#invoice-issuance .add-inviove-table .item .item-1 {margin-right:10px;}
 			#invoice-issuance .add-inviove-table .item .item-2 {margin-left:10px;}
-			#invoice-issuance .add-inviove-table .item input {width:100%;}
-			#invoice-issuance .add-inviove-table .item .label {margin-bottom:10px;font-size:16px;}
+			#invoice-issuance .add-inviove-table .item input {width:100%;padding-left:80px;}
+			#invoice-issuance .add-inviove-table .item .label {
+				position: absolute;
+				top: 11px;
+				left: 10px;
+				font-size:16px;
+				font-weight: 600;
+			}
 			#invoice-issuance .add-inviove-table .item .error-message {margin-top:5px;color:#FF5722;font-size:14px;}
 
-			#invoice-issuance .add-inviove-table button.btn-main {
+			#invoice-issuance .add-inviove-table .btn-main {
 				display: flex;
 				align-items: center;
 				justify-content:center;
 				width:100%;
 				height:45px;
 				margin: 10px 0;
+				border:#ef7e00 solid 2px;
 				border-radius: 6px;
-				box-shadow: 0 4px #c36c0b;
-				background:#ef7e00;
-				background:linear-gradient(#ffab4f 0%, #ff7a00 100%);
+				background: #ef7e00;
 				color: #fff;
 				font-size:18px;
 				font-weight: 600;
 				cursor:pointer;
-				outline: none;
 			}
-			
-			#invoice-issuance .add-inviove-table button.btn-main:active {
-				box-shadow: 0 2px #c36c0b;
-				background: linear-gradient(#ff7a00 0%, #ffab4f 100%);
-			}
+			#invoice-issuance .add-inviove-table .btn-main img {margin:0 10px;}
+			#invoice-issuance .add-inviove-table .btn-main:hover {background:#e47800;}
+			#invoice-issuance .add-inviove-table .btn-main:active {transform:scale(.95);}
 
 			#invoice-issuance .add-inviove-table .btn-main.outline {
-				border:#ef7e00 solid 2px;
 				background: transparent;
 				color: #ef7e00;
-				box-shadow: none;
-			}
-			#invoice-issuance .add-inviove-table .btn-main.outline:active {
-				background: #ffe9c8;
 			}
 
-			#invoice-issuance .add-inviove-table .btn-main img {margin:0 10px;}
+			#popup-message.mask {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width:100%;
+				height: 100vh;
+				background:rgb(0 0 0 / 0.5);
+				z-index: 9;
+			}
+
+			.close-popup {position:absolute;right:10px;top:10px;cursor:pointer;z-index:9;}
+			.close-popup:active {transform: scale(0.9);}
+
+			.popup-wrap {margin:auto;position:relative;display:flex;}
+
+			.popup-wrap .container {
+				width: 300px;
+				position:relative;
+				border-radius: 8px;
+				background: #fff;
+				box-shadow: 0px 0px 12px #ff9f80;
+				-webkit-animation-name: popIn; 
+	            -webkit-animation-timing-function: linear;
+	            -webkit-animation-iteration-count:1;  
+	            -webkit-animation-duration: .5s; 
+			}
+
+			@keyframes popIn {  /*定義關鍵幀、scaleDrew是需要繫結到選擇器的關鍵幀名稱*/
+	            0% {
+	                transform: scale(0);
+	                opacity:0;
+	            }
+	            30%{
+	                transform: scale(0.6);
+	                opacity:.7;
+	            }
+	            60%{
+	                transform: scale(1.2);
+	                opacity:1;
+	            }
+	            100%{
+	                transform: scale(1);
+	            }
+	        }
+
+			.popup-wrap .container .popup-head {position:relative;height:70px;background:url(images/popup_bg_head.svg) center no-repeat;border-radius:6px 6px 0 0;}
+			.popup-wrap .container .popup-head .title {padding:20px;padding-left:25px;font-size:20px;color:#fff;font-weight:700;letter-spacing:1px}
+			.popup-wrap .container .popup-body {min-height:120px;}
+
+			.popup-wrap .container .signal {position:absolute;bottom:calc(0% - 50px);left:calc(50% - 50px);width:100px;height:100px;background-position:center;background-repeat:no-repeat;background-size:contain;}
+			.popup-wrap .container .signal.warning {background-image:url(images/popup_warning.svg);}
+
+			.popup-wrap .container .popup-body .text {
+				font-size:18px;
+				color: #FF5722;
+				padding: 15px;
+				padding-top: 50px;
+				padding-bottom: 30px;
+				text-align: center;
+				letter-spacing: 1px;
+				line-height: 1.5;
+			}
+
+			.popup-wrap .container .popup-foot {display:flex;justify-content:center;flex-wrap:wrap;border-radius: 0px 0px 6px 6px;background: #e1eef6;padding:15px 20px;}
+
+			.popup-wrap .button {
+				text-transform:uppercase;
+				color:#46C8C4;
+				display:block;
+				margin:5px 10px;
+				outline:none;
+				border-radius: 20px;
+				background: rgba(255, 255, 255, 0);
+				border: 1.5px solid #46c8c4;
+				font-family:-apple-system,BlinkMacSystemFont,"Arial","PingFangSC","Source Han Sans CN","Microsoft YaHei", sans-serif;
+				cursor:pointer;
+			}
+
+			.popup-wrap .button.medium {width:160px;height:40px;font-size:17px;}
+			.popup-wrap .button.main {background: linear-gradient(#46c8c4 0%, #0c8f8a 100%);box-shadow: 0px 8px 12px rgba(22, 77, 75, 0.2);color:#fff;}
+
+			.popup-wrap .button.main:active {background: linear-gradient(#0c8f8a 0%, #46c8c4 100%);}
+
 		/* custom end*/
 
 		/* media query */
@@ -161,7 +237,7 @@
 			@media screen and (min-width:768px) and (max-width:1199px){ 
 			  
 			}
-			@media screen and (max-width:767px) {
+			@media screen and (max-width:767px) and (orientation : portrait) {
 				#invoice-issuance .container {margin-top:20px;}
 				#invoice-issuance .add-inviove-table {padding:20px;padding-top:10px;}
 				#invoice-issuance #header img {width:30vw;}
@@ -171,6 +247,7 @@
 				#invoice-issuance .add-inviove-table .item .item-2 {margin-left:0;}
 				#invoice-issuance .container-head {font-size:20px;padding:10px;}
 				#invoice-issuance .add-inviove-table .btn-main {font-size:16px;}
+				.popup-wrap .container {width:250px;}
 			}
 
 
@@ -194,8 +271,36 @@
 
 		/* media query end */
 	</style>
+
+	<script type="text/javascript">
+		function errorMessage() {
+		  var x = document.getElementById("popup-message");
+		  if (x.style.display === "none") {
+		    x.style.display = "flex";
+		  } else {
+		    x.style.display = "none";
+		  }
+		}
+	</script>
 </head>
 <body>
+
+	<div id="popup-message" class="mask" onclick="errorMessage()" style="display:none;">
+		<div class="popup-wrap">
+			<div class="container">
+				<div class="popup-head">
+					<div class="close-popup">
+						<img src="images/popup_close.svg" />
+					</div>
+					<div class="signal warning"></div>
+				</div>
+				<div class="popup-body">
+					<div class="text">請填寫手機號碼</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
 	<div id="invoice-issuance" class="outer">
 		<div id="header" class="">
 			<img src="images/logo_header.svg" />
@@ -209,8 +314,8 @@
 				<div class="item">
 					<div class="item-1">
 						<div for="iamount" class="label font-color-1">發票金額</div>
-						<input type="text" id="iamount" name="iamount" class="error" />
-						<div class="error-message">*請輸入發票金額</div>
+						<input type="text" id="iamount" name="iamount" class="" />
+						<!-- <div class="error-message">*請輸入發票金額</div> -->
 					</div>
 
 					<div class="item-2">
@@ -220,45 +325,57 @@
 					</div>	
 				</div>
 
+				<div class="btn-main" onclick="errorMessage()">
+					確定開立
+				</div>
+
+				<div class="sep"></div>
+
 				<div class="item">
 					<div class="item-1">
-						<div for="cname" class="label font-color-1">公司抬頭</div>
-						<input type="text" id="cname" name="cname" />
-						<div class="error-message"></div>	
-					</div>
-
-					<div class="item-2">
 						<div for="cnum" class="label font-color-1">公司統編</div>
 						<input type="text" id="cnum" name="cnum" />	
 						<div class="error-message"></div>
 					</div>	
-				</div>
 
-
-				<div class="item">
-					<div class="w-100">
-						<div for="aitem" class="label font-color-1">品項 <span class="font-color-2">(最多5項)</span></div>
-						<input type="text" id="aitem1" name="aitem" />
-					</div>
-				</div>
-				<button class="btn-main outline">
-					<img src="images/ic-add_btn.svg" />
-					新增品項
-				</button>
-
-
-				<div class="item">
-					<div class="w-100">
-						<div for="aitem" class="label">條碼載具</div>
-						<input type="text" id="aitem1" name="aitem" />
-						<div class="error-message"></div>
+					<div class="item-2">
+						<div for="cname" class="label font-color-1">公司抬頭</div>
+						<input type="text" id="cname" name="cname" />
+						<div class="error-message"></div>	
 					</div>
 				</div>
 
 				<div class="sep"></div>
 
-				<button class="btn-main">確定開立</button>
-				
+				<div class="item">
+					<div class="w-100">
+						<div for="aitem" class="label font-color-1">品項</div>
+						<input type="text" id="aitem1" name="aitem" />
+					</div>
+				</div>
+				<span class="font-color-2">(最多5項)</span>
+				<div class="btn-main outline">
+					<img src="images/ic-add_btn.svg" />
+					新增品項
+				</div>
+
+
+				<div class="item">
+					<div class="w-100">
+						<div for="aitem" class="label font-color-1">條碼載具</div>
+						<input type="text" id="aitem1" name="aitem" />
+						<div class="error-message"></div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="w-100">
+						<div for="aitem" class="label font-color-1">備註</div>
+						<input type="text" id="aitem1" name="aitem" />
+						<div class="error-message"></div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

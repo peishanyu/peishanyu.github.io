@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="70" viewBox="0 0 700 70">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.052" y1="0.092" x2="0.988" y2="0.745" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#46c8c4"/>
+      <stop offset="1" stop-color="#0c8f8a"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_3444" data-name="矩形 3444" width="700" height="70" transform="translate(-5436 -8225)" fill="#145452"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4600"/>
+      <stop offset="0.193" stop-color="#ff5c19"/>
+      <stop offset="0.545" stop-color="#ff8527"/>
+      <stop offset="1" stop-color="#fb5d00"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="路径_32281" data-name="路径 32281" d="M-19831.8-17426.4s-56.18,103.447,0,120.375,214.664,47.02,387.2,22.568,200.625-27.27,288.9-22.568,0-128.836,0-128.836Z" transform="translate(14420.617 9119.381)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="popup_bg_head" transform="translate(5436 8225)" clip-path="url(#clip-path)">
+    <path id="bg" d="M-19831.8-17426.4s-56.18,103.447,0,120.375,214.664,47.02,387.2,22.568,200.625-27.27,288.9-22.568,0-128.836,0-128.836Z" transform="translate(14420.617 9119.381)" opacity="0.74" fill="url(#linear-gradient-2)"/>
+    <g id="蒙版组_430" data-name="蒙版组 430" clip-path="url(#clip-path-2)">
+      <ellipse id="椭圆_205" data-name="椭圆 205" cx="173" cy="96.5" rx="173" ry="96.5" transform="translate(-5371 -8194)" fill="#fff" opacity="0.26"/>
+      <ellipse id="椭圆_204" data-name="椭圆 204" cx="269.5" cy="114" rx="269.5" ry="114" transform="translate(-5262 -8212)" fill="#fff" opacity="0.23"/>
+    </g>
+  </g>
+</svg>
